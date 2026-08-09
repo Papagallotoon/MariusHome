@@ -77,11 +77,11 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-semibold text-site-text mb-1">Email</h3>
                   <a
-                    href="mailto:marius@videlivres.fr"
+                    href="mailto:marius@viedelivres.fr"
                     className="font-medium hover:underline"
                     style={{ color: siteConfig.colors.primary }}
                   >
-                    marius@videlivres.fr
+                    marius@viedelivres.fr
                   </a>
                   <p className="text-sm text-text-muted mt-1">Réponse sous 48h en moyenne</p>
                 </div>
@@ -139,7 +139,7 @@ export default function ContactPage() {
                 le plus précisément possible pour que je puisse vous aider au mieux.
               </p>
               <a
-                href="mailto:marius@videlivres.fr?subject=Contact depuis Marius Dumas Home"
+                href="mailto:marius@viedelivres.fr?subject=Contact depuis Marius Dumas Home"
                 className="vivid-btn"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
