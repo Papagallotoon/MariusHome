@@ -1,0 +1,57 @@
+# En-têtes de sécurité pour Cloudflare Pages.
+# Ce fichier est recopié tel quel dans le dossier de sortie (out/) au build
+# (next.config.ts -> output: "export"), Cloudflare Pages le lit automatiquement.
+# Doc : https://developers.cloudflare.com/pages/configuration/headers/
+#
+# X-Content-Type-Options et Referrer-Policy ne sont PAS redéfinis ici : l'audit
+# du 9 août 2026 les a trouvés déjà présents en sortie (probablement injectés
+# par défaut par Cloudflare Pages), on ne les duplique pas pour éviter toute
+# divergence de valeur entre ce fichier et ce qui est réellement servi.
+
+/*
+  # HSTS sans "preload" : l'inscription à la liste preload des navigateurs
+  # est quasi irréversible et s'appliquerait à tous les sous-domaines actuels
+  # ET futurs de marius-home.com (voir Problème 1 du prompt d'audit).
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+  # Empêche l'affichage du site dans une <iframe> sur un autre domaine
+  # (protection anti-clickjacking). SAMEORIGIN car aucune intégration
+  # légitime en iframe cross-site n'a été identifiée dans le dépôt.
+  X-Frame-Options: SAMEORIGIN
+
+  # Désactive les API sensibles non utilisées par le site (aucune n'est
+  # appelée dans le code : pas de géoloc, pas de micro/caméra) et bloque
+  # explicitement le FLoC/Topics de Google ("interest-cohort").
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()
+
+  # --- Content-Security-Policy : déployée en Report-Only d'abord ---
+  # Construite UNIQUEMENT à partir des tiers réellement chargés par le site
+  # (cf. src/app/layout.tsx) : Google Funding Choices (bandeau consentement
+  # RGPD), Google AdSense (régie pub), Google Analytics (GA4). Les polices
+  # (next/font/google) sont auto-hébergées au build : aucun domaine externe
+  # requis pour font-src. Les images produits sont 100% self-hébergées
+  # (public/images/products/) : aucun domaine externe requis pour img-src.
+  #
+  # googleads.g.doubleclick.net / tpc.googlesyndication.com / www.google.com
+  # sont ajoutés en frame-src / connect-src car AdSense les appelle au
+  # runtime pour servir les annonces (invisibles dans un crawl HTML statique,
+  # cf. limite de l'analyse notée par l'audit : 13 sources avant exécution JS).
+  #
+  # 'unsafe-inline' est nécessaire tant que le site reste un export statique
+  # Next.js sans middleware/serveur capable de générer un nonce par requête
+  # (script inline "googlefcPresent" + styles React injectés en attribut
+  # style="..."). C'est un compromis documenté, pas un oubli.
+  #
+  # PROCÉDURE DE PASSAGE EN MODE BLOQUANT :
+  #  1. Laisser tourner cette version Report-Only au moins 1 à 2 semaines.
+  #  2. Ouvrir la console navigateur (F12 > Console) sur les pages clés
+  #     (accueil, une page catégorie, une page article avec produits) et
+  #     vérifier l'absence de ligne "[Report Only] Refused to..." qui
+  #     signalerait une ressource légitime non couverte par la policy.
+  #  3. Si aucune violation inattendue après ce délai, renommer l'en-tête
+  #     ci-dessous de "Content-Security-Policy-Report-Only" à
+  #     "Content-Security-Policy" (sans autre changement de valeur).
+  #  4. Re-tester immédiatement après bascule : pub AdSense visible, bandeau
+  #     de consentement fonctionnel, Google Analytics reçoit des events
+  #     (Rapports en temps réel GA4), aucune image produit cassée.
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'unsafe-inline' https://fundingchoicesmessages.google.com https://pagead2.googlesyndication.com https://www.googletagmanager.com https://www.google-analytics.com https://googleads.g.doubleclick.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://pagead2.googlesyndication.com https://www.google-analytics.com https://www.googletagmanager.com; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://analytics.google.com https://pagead2.googlesyndication.com https://fundingchoicesmessages.google.com; frame-src https://fundingchoicesmessages.google.com https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://www.google.com; base-uri 'self'; form-action 'self'; object-src 'none'; frame-ancestors 'self'
