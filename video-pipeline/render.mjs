@@ -98,7 +98,7 @@ async function renderSegment({ imagePath, audioPath, captionPath, duration, outP
     `crop=${VIDEO_WIDTH}:${VIDEO_HEIGHT},gblur=sigma=30,eq=brightness=-0.15[bg];` +
     `[fg_src]scale=${safeW}:${safeH}:force_original_aspect_ratio=decrease[fg];` +
     `[bg][fg]overlay=(W-w)/2:(H-h)/2[composite];` +
-    `[composite]zoompan=z='min(zoom+0.0008,1.06)':d=1:s=${VIDEO_WIDTH}x${VIDEO_HEIGHT}:fps=${FPS},setsar=1[zoomed];` +
+    `[composite]zoompan=z='min(zoom+0.0012,1.09)':d=1:s=${VIDEO_WIDTH}x${VIDEO_HEIGHT}:fps=${FPS},setsar=1[zoomed];` +
     `[zoomed]drawtext=${drawtextFont}:textfile=${caption}:fontcolor=white:fontsize=48:` +
     `line_spacing=10:box=1:boxcolor=black@0.55:boxborderw=24:` +
     `x=(w-text_w)/2:y=h-th-180[v]`;

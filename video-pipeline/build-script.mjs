@@ -14,8 +14,10 @@ function clean(text) {
 // Strip the whole parenthetical group when it carries a measurement (e.g.
 // "(68/51/41cm Hauteur)") so no orphan words like "Hauteur" are left behind,
 // then mop up any remaining bare dimension token outside parentheses.
-const PAREN_WITH_DIMENSION = /\([^()]*\d[^()]*(?:cm|mm|kg|cl|ml)[^()]*\)/gi;
-const DIMENSION_TOKEN = /[ØøΦ]?\d[\d.,/x×\s]*\s?(cm|mm|kg|cl|ml)\b\.?/gi;
+const PAREN_WITH_DIMENSION = /\([^()]*\d[^()]*(?:cm|mm|kg|cl|ml|m)[^()]*\)/gi;
+// "D45cm" / "Ø45cm" are common French notations for a diameter, immediately
+// followed by digits with no space — both stripped as a unit.
+const DIMENSION_TOKEN = /(?:[ØøΦ]|D(?=\d))?\s?\d[\d.,/x×\s]*\s?(cm|mm|kg|cl|ml|m)\b\.?/gi;
 
 function stripDimensionsForSpeech(text) {
   return clean(
@@ -31,6 +33,30 @@ function stripDimensionsForSpeech(text) {
 function isDimensionHeavy(text) {
   DIMENSION_TOKEN.lastIndex = 0;
   return DIMENSION_TOKEN.test(text);
+}
+
+const MAX_SPOKEN_NAME_WORDS = 8;
+
+// Product names are written for an Amazon listing, not for being read aloud:
+// invented/foreign brand names (ALL-CAPS gibberish, "- tectake" suffixes)
+// are exactly the words a TTS voice mangles worst. Strip what we can
+// recognize and cap the length — captions keep the full original name.
+function simplifyNameForSpeech(name) {
+  let cleaned = name
+    .replace(/\s*[-–]\s*[A-Za-z][\w'.]*$/, "") // trailing "- BrandName" suffix
+    .replace(/^(?:[A-Z]{2,}[A-Z0-9]*\s+)+/, ""); // leading ALL-CAPS brand word(s)
+
+  const TRAILING_STOPWORDS = new Set(["à", "de", "du", "des", "en", "et", "avec", "la", "le", "les", "un", "une"]);
+  let words = cleaned.trim().split(/\s+/);
+  if (words.length > MAX_SPOKEN_NAME_WORDS) {
+    words = words.slice(0, MAX_SPOKEN_NAME_WORDS);
+    // Don't leave a dangling connector word at the cut point.
+    while (words.length > 1 && TRAILING_STOPWORDS.has(words[words.length - 1].toLowerCase())) {
+      words.pop();
+    }
+    cleaned = words.join(" ");
+  }
+  return cleaned.trim() || name; // never end up with an empty name
 }
 
 // Picks a "strong point" to read aloud that isn't just a measurement —
@@ -74,7 +100,7 @@ export function buildScript(article) {
     lines.push({
       id: `product-${i}`,
       spoken: clean(
-        `${RANK_INTROS[i]} : ${stripDimensionsForSpeech(product.name)}, à ${product.price}.${proSentence}`
+        `${RANK_INTROS[i]} : ${simplifyNameForSpeech(stripDimensionsForSpeech(product.name))}, à ${product.price}.${proSentence}`
       ),
       caption: `${rank}. ${product.name}\n${product.price}`,
       image: product.image,

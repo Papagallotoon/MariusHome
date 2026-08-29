@@ -15,7 +15,9 @@ export const CHIME_PATH = path.join(__dirname, "assets", "chime.mp3");
 // Multilingual-generation neural voice — sounds noticeably warmer/more
 // natural than the older single-locale neural voices (e.g. DeniseNeural).
 export const TTS_VOICE = "fr-FR-VivienneMultilingualNeural";
-export const TTS_PROSODY = { rate: "+6%", pitch: "+5%" };
+// A faster rate reads as rushed/robotic rather than "smiling" — a modest
+// pitch lift carries the warmth instead, at a closer-to-natural pace.
+export const TTS_PROSODY = { rate: "+2%", pitch: "+4%" };
 export const VIDEO_WIDTH = 1080;
 export const VIDEO_HEIGHT = 1920;
 export const FPS = 30;

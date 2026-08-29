@@ -17,6 +17,13 @@ export function markUsed(slug) {
   saveState(state);
 }
 
+// Some catalog entries carry a placeholder like "Voir prix" instead of an
+// actual price (Amazon price temporarily unavailable when the article was
+// written) — never read that out loud or show it, drop the product instead.
+function hasRealPrice(product) {
+  return /\d/.test(product.price || "");
+}
+
 // Picks the next article that hasn't been turned into a video yet.
 // Returns null once every article has been used at least once.
 export function selectNextArticle() {
@@ -30,10 +37,11 @@ export function selectNextArticle() {
     const slug = file.replace(/\.json$/, "");
     if (state.usedSlugs.includes(slug)) continue;
     const article = JSON.parse(fs.readFileSync(path.join(ARTICLES_DIR, file), "utf8"));
+    article.products = (article.products || []).filter(hasRealPrice);
     // Many articles (the "ambiance" mood-board ones, buying guides, etc.)
     // carry no products / affiliate links at all — skip those, a video with
     // nothing to sell isn't worth publishing.
-    if (!article.products || article.products.length === 0) continue;
+    if (article.products.length === 0) continue;
     return { slug, article };
   }
   return null;
