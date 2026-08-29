@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Marius Dumas",
+    "role": "Fondateur & Directeur Artistique",
+    "bio": "Decorateur diplome de l'Ecole Bleue, Marius selectionne chaque piece avec un oeil exigeant pour creer des interieurs singuliers et chaleureux.",
+    "image": "/images/team/marius-dumas.png",
+    "gradient": [
+      "#4a5e4f",
+      "#2d3b31"
+    ]
+  },
+  {
+    "name": "Sofia Rinaldi",
+    "role": "Experte Textiles & Matieres",
+    "bio": "Formee a l'Istituto Marangoni de Milan, Sofia a passe 6 ans comme acheteuse textile chez Poltrona Frau avant de rejoindre l'equipe pour denicher les plus belles matieres.",
+    "image": "/images/team/sofia-rinaldi.png",
+    "gradient": [
+      "#C5A572",
+      "#A68B55"
+    ]
+  },
+  {
+    "name": "Antoine Lefevre",
+    "role": "Specialiste Luminaires & Ambiance",
+    "bio": "Ingenieur eclairage de formation, Antoine cree des atmospheres uniques en jouant sur les sources lumineuses et les temperatures de couleur.",
+    "image": "/images/team/antoine-lefevre.png",
+    "gradient": [
+      "#6b7c6e",
+      "#4a5e4f"
+    ]
+  },
+  {
+    "name": "Emily Carter",
+    "role": "Redactrice & Photographe Deco",
+    "bio": "Ancienne journaliste pour Architectural Digest UK, Emily apporte un regard international et capture l'essence de chaque objet a travers ses textes et photographies.",
+    "image": "/images/team/emily-carter.png",
+    "gradient": [
+      "#8b7e9b",
+      "#6b5e7b"
+    ]
+  },
+  {
+    "name": "Hugo Perrin",
+    "role": "Analyste Tendances & Prix",
+    "bio": "Expert en marketing digital, Hugo surveille les tendances et negocie les meilleurs prix pour vous proposer le meilleur rapport qualite-prix.",
+    "image": "/images/team/hugo-perrin.png",
+    "gradient": [
+      "#A68B55",
+      "#7a6b3e"
+    ]
+  }
+]

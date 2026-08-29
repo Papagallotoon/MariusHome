@@ -32,7 +32,7 @@ export const siteConfig = {
     vividDark: "#9c3f22",
     vividLight: "#f4e1d8",
   },
-  amazon: { tag: "architectu071-21", marketplace: "fr" },
+  amazon: { tag: "secure012de-21", marketplace: "fr" },
   seo: { titleSeparator: " | ", defaultAuthor: "Marius Dumas" },
   social: { twitter: "", pinterest: "", facebook: "" },
   homepage: {

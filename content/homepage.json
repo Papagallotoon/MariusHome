@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "backgroundImage": "/images/hero-bg.png",
+    "backgroundOverlayOpacity": 0.7,
+    "title": "Créez un intérieur",
+    "titleAccent": "qui vous ressemble",
+    "subtitle": "Sélections tendances, comparatifs honnêtes et bons plans déco. Trouvez les plus beaux objets pour votre intérieur au meilleur prix.",
+    "ctaPrimary": {
+      "label": "Voir les catégories",
+      "href": "#categories"
+    },
+    "ctaSecondary": {
+      "label": "Dernières sélections",
+      "href": "#articles"
+    }
+  },
+  "features": {
+    "items": [
+      {
+        "title": "Sélections soignées",
+        "description": "Chaque produit est choisi pour son design, sa qualité et son rapport qualité-prix."
+      },
+      {
+        "title": "Tendances 2026",
+        "description": "Nos recommandations suivent les dernières tendances déco : Pinterest, Instagram et salons."
+      },
+      {
+        "title": "Meilleurs prix Amazon",
+        "description": "Liens directs vers les meilleures offres Amazon pour chaque objet déco recommandé."
+      }
+    ]
+  },
+  "categoriesSection": {
+    "title": "Nos univers déco",
+    "subtitle": "Explorez nos sélections par univers pour trouver l'inspiration et les objets parfaits pour votre intérieur."
+  },
+  "articlesSection": {
+    "title": "Dernières sélections",
+    "subtitle": "Nos guides d'achat les plus récents, mis à jour régulièrement.",
+    "count": 4
+  },
+  "cta": {
+    "title": "Besoin d'inspiration ?",
+    "subtitle": "Parcourez nos sélections déco pour trouver les objets tendance qui transformeront votre intérieur.",
+    "buttonLabel": "Explorer les univers déco"
+  }
+}

@@ -1,0 +1,158 @@
+[
+  {
+    "name": "Ambiance Japon",
+    "slug": "japon",
+    "description": "Minimalisme zen, matériaux naturels et sérénité. Créez un intérieur épuré inspiré de l'art de vivre japonais.",
+    "image": "/images/ambiances/japon.png",
+    "color": "#8B7355",
+    "colorAccent": "#C4A882",
+    "icon": "japon",
+    "rooms": [
+      {
+        "name": "Salon",
+        "slug": "salon",
+        "articleSlug": "ambiance-japon-salon"
+      },
+      {
+        "name": "Salle de bain",
+        "slug": "salle-de-bain",
+        "articleSlug": "ambiance-japon-salle-de-bain"
+      },
+      {
+        "name": "Chambre",
+        "slug": "chambre",
+        "articleSlug": "ambiance-japon-chambre"
+      }
+    ]
+  },
+  {
+    "name": "Ambiance Bohème",
+    "slug": "boheme",
+    "description": "Esprit libre, textures naturelles et couleurs chaudes. Un intérieur bohème chic plein de caractère.",
+    "image": "/images/ambiances/boheme.png",
+    "color": "#C2785C",
+    "colorAccent": "#E8A87C",
+    "icon": "boheme",
+    "rooms": [
+      {
+        "name": "Salon",
+        "slug": "salon",
+        "articleSlug": "ambiance-boheme-salon"
+      },
+      {
+        "name": "Salle de bain",
+        "slug": "salle-de-bain",
+        "articleSlug": "ambiance-boheme-salle-de-bain"
+      },
+      {
+        "name": "Chambre",
+        "slug": "chambre",
+        "articleSlug": "ambiance-boheme-chambre"
+      }
+    ]
+  },
+  {
+    "name": "Ambiance Bali",
+    "slug": "bali",
+    "description": "Jungle tropicale, bois exotiques et végétation luxuriante. Transformez votre intérieur en resort balinais.",
+    "image": "/images/ambiances/bali.png",
+    "color": "#5B8C5A",
+    "colorAccent": "#8FBC8F",
+    "icon": "bali",
+    "rooms": [
+      {
+        "name": "Salon",
+        "slug": "salon",
+        "articleSlug": "ambiance-bali-salon"
+      },
+      {
+        "name": "Salle de bain",
+        "slug": "salle-de-bain",
+        "articleSlug": "ambiance-bali-salle-de-bain"
+      },
+      {
+        "name": "Chambre",
+        "slug": "chambre",
+        "articleSlug": "ambiance-bali-chambre"
+      }
+    ]
+  },
+  {
+    "name": "Ambiance Provençale",
+    "slug": "provencal",
+    "description": "Lavande, pierre naturelle et lumière du Sud. L'élégance rustique de la Provence dans votre maison.",
+    "image": "/images/ambiances/provencal.png",
+    "color": "#9B7EB4",
+    "colorAccent": "#C8A2C8",
+    "icon": "provencal",
+    "rooms": [
+      {
+        "name": "Salon",
+        "slug": "salon",
+        "articleSlug": "ambiance-provencal-salon"
+      },
+      {
+        "name": "Salle de bain",
+        "slug": "salle-de-bain",
+        "articleSlug": "ambiance-provencal-salle-de-bain"
+      },
+      {
+        "name": "Chambre",
+        "slug": "chambre",
+        "articleSlug": "ambiance-provencal-chambre"
+      }
+    ]
+  },
+  {
+    "name": "Ambiance Industriel",
+    "slug": "industriel",
+    "description": "Métal brut, briques apparentes et esprit loft. L'esthétique urbaine new-yorkaise dans votre intérieur.",
+    "image": "/images/ambiances/industriel.png",
+    "color": "#6B6B6B",
+    "colorAccent": "#A0522D",
+    "icon": "industriel",
+    "rooms": [
+      {
+        "name": "Salon",
+        "slug": "salon",
+        "articleSlug": "ambiance-industriel-salon"
+      },
+      {
+        "name": "Salle de bain",
+        "slug": "salle-de-bain",
+        "articleSlug": "ambiance-industriel-salle-de-bain"
+      },
+      {
+        "name": "Chambre",
+        "slug": "chambre",
+        "articleSlug": "ambiance-industriel-chambre"
+      }
+    ]
+  },
+  {
+    "name": "Ambiance Indienne",
+    "slug": "indien",
+    "description": "Couleurs vibrantes, motifs ornementaux et richesse textile. L'opulence de l'Inde dans votre décoration.",
+    "image": "/images/ambiances/indien.png",
+    "color": "#C4532E",
+    "colorAccent": "#E8B44C",
+    "icon": "indien",
+    "rooms": [
+      {
+        "name": "Salon",
+        "slug": "salon",
+        "articleSlug": "ambiance-indien-salon"
+      },
+      {
+        "name": "Salle de bain",
+        "slug": "salle-de-bain",
+        "articleSlug": "ambiance-indien-salle-de-bain"
+      },
+      {
+        "name": "Chambre",
+        "slug": "chambre",
+        "articleSlug": "ambiance-indien-chambre"
+      }
+    ]
+  }
+]

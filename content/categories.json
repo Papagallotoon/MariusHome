@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Bougies & Parfums d'Intérieur",
+    "slug": "bougies-parfums",
+    "description": "Bougies parfumées, diffuseurs et senteurs d'ambiance pour créer une atmosphère chaleureuse et apaisante chez vous.",
+    "image": "/images/categories/bougies-parfums.png",
+    "color": "#c8956c"
+  },
+  {
+    "name": "Coussins, Plaids & Textiles",
+    "slug": "coussins-textiles",
+    "description": "Housses de coussin, plaids douillets et textiles déco tendance pour habiller votre canapé et votre intérieur avec style.",
+    "image": "/images/categories/coussins-textiles.png",
+    "color": "#8b7e9b"
+  },
+  {
+    "name": "Luminaires & Éclairage Déco",
+    "slug": "luminaires-eclairage",
+    "description": "Guirlandes lumineuses, lampes d'ambiance et éclairage décoratif pour sublimer chaque pièce de votre maison.",
+    "image": "/images/categories/luminaires-eclairage.jpg",
+    "color": "#d4a855"
+  },
+  {
+    "name": "Art Mural & Cadres",
+    "slug": "art-mural-cadres",
+    "description": "Cadres photo, affiches déco, toiles et art mural pour personnaliser vos murs et exprimer votre style.",
+    "image": "/images/categories/art-mural-cadres.jpg",
+    "color": "#6b7c6e"
+  },
+  {
+    "name": "Vases, Plantes & Déco Naturelle",
+    "slug": "vases-plantes-deco",
+    "description": "Vases design, plantes artificielles et déco naturelle pour apporter une touche végétale et organique à votre intérieur.",
+    "image": "/images/categories/vases-plantes-deco.png",
+    "color": "#7a9e7e"
+  },
+  {
+    "name": "Best-Sellers Déco",
+    "slug": "best-sellers",
+    "description": "Les objets de décoration les plus vendus et les mieux notés sur Amazon. Le top du top pour votre intérieur.",
+    "image": "/images/categories/best-sellers.png",
+    "color": "#c47d7d"
+  },
+  {
+    "name": "Ambiances & Styles",
+    "slug": "ambiances-styles",
+    "description": "Explorez nos sélections déco par ambiance : bohème, scandinave, industriel, japandi... Trouvez le style qui vous ressemble.",
+    "image": "/images/categories/ambiances-styles.png",
+    "color": "#c4a882"
+  },
+  {
+    "name": "Guides & Inspirations",
+    "slug": "guides-inspirations",
+    "description": "Conseils d'experts, histoire du design, tendances déco, notions d'architecture et guides pratiques pour réussir votre projet d'intérieur.",
+    "image": "/images/categories/guides-inspirations.png",
+    "color": "#5b8a8a"
+  }
+]
