@@ -46,6 +46,11 @@ async function main() {
 }
 
 main().catch((err) => {
+  // Node's default console.error truncates nested objects (e.g. the actual
+  // Google API error payload), which is exactly the part that matters.
+  if (err?.response?.data) {
+    console.error("API error response:", JSON.stringify(err.response.data, null, 2));
+  }
   console.error(err);
   process.exit(1);
 });
