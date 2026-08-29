@@ -15,19 +15,43 @@ function getAuthedClient() {
   return oauth2Client;
 }
 
+function hashString(str) {
+  let h = 0;
+  for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0;
+  return h;
+}
+
+// Deterministic per-article pick (not random) so re-runs / retries produce
+// the same title instead of a different hook each time.
+const HOOK_TEMPLATES = [
+  (t) => `${t} 😍`,
+  (t) => `${t} — le n°1 va te surprendre 😱`,
+  (t) => `${t} ✨ (tu vas adorer le dernier)`,
+  (t) => `Stop scroll 🛑 : ${t}`,
+  (t) => `${t} 🏡 à shopper direct`,
+];
+
+function buildHookTitle(article) {
+  const template = HOOK_TEMPLATES[hashString(article.slug) % HOOK_TEMPLATES.length];
+  return `${template(article.title)} #Shorts`.slice(0, 100);
+}
+
+const RANK_EMOJIS = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣"];
+
 function buildDescription(article) {
   const articleUrl = `${SITE_DOMAIN}/articles/${article.slug}`;
   const links = article.products
-    .slice(0, 5) // matches the products actually featured in the video (see build-script.mjs)
-    .map((p, i) => `${i + 1}. ${p.name} — ${p.price}\n${p.affiliateUrl}`)
+    .slice(0, 5) // matches the products actually featured in the video (see build-script.mjs), same order
+    .map((p, i) => `${RANK_EMOJIS[i] || `${i + 1}.`} ${p.name} — ${p.price}\n🛒 ${p.affiliateUrl}`)
     .join("\n\n");
 
   return [
     article.metaDescription || article.excerpt,
     "",
-    `Article complet : ${articleUrl}`,
+    `🏡 Article complet sur le site : ${SITE_DOMAIN.replace(/^https?:\/\//, "")} → ${articleUrl}`,
     "",
-    "Liens des produits (liens affiliés Amazon) :",
+    "Les produits de la vidéo, dans l'ordre :",
+    "",
     links,
     "",
     "Les prix sont ceux constatés au moment de la publication de cette vidéo et peuvent avoir changé depuis.",
@@ -47,7 +71,7 @@ export async function uploadVideo({ videoPath, article }) {
     part: ["snippet", "status"],
     requestBody: {
       snippet: {
-        title: `${article.title} #Shorts`.slice(0, 100),
+        title: buildHookTitle(article),
         description: buildDescription(article),
         tags: ["decoration", "deco", "maison", "shorts"],
         categoryId: "26", // Howto & Style
