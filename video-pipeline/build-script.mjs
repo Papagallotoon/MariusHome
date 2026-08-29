@@ -54,7 +54,7 @@ export function buildScript(article) {
   const lines = [];
   // Always open (and close) on a fully styled room — the article's own
   // cover is often just a flat-lay of the products, not a "pièce".
-  const roomImage = pickRoomImage(article.slug);
+  const roomImage = pickRoomImage(article);
 
   lines.push({
     id: "intro",
