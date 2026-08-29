@@ -4,3 +4,4 @@ out/
 *.zip
 nul
 tsconfig.tsbuildinfo
+video-pipeline/tmp/
