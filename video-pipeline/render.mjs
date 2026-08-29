@@ -43,9 +43,17 @@ function wrapCaption(caption, maxChars = CAPTION_MAX_CHARS_PER_LINE) {
     .join("\n");
 }
 
-function resolvePublicImage(relPath) {
-  if (!relPath) return null;
-  const full = path.join(PUBLIC_DIR, relPath.replace(/^\//, ""));
+// A line's image is either a site-relative path ("/images/...", resolved
+// against public/) or already a resolved absolute path under the project
+// (room images picked from room-image.mjs). Note: Node's path.isAbsolute()
+// is *not* a reliable discriminator here — "/images/foo.jpg" also counts as
+// absolute on both POSIX and win32, so it's checked against ROOT_DIR instead.
+function resolveImage(candidate) {
+  if (!candidate) return null;
+  if (candidate.startsWith(ROOT_DIR)) {
+    return fs.existsSync(candidate) ? candidate : null;
+  }
+  const full = path.join(PUBLIC_DIR, candidate.replace(/^\//, ""));
   return fs.existsSync(full) ? full : null;
 }
 
@@ -54,7 +62,7 @@ function resolvePublicImage(relPath) {
 function resolveLineImage(line, article) {
   const candidates = [line.image, article.image, article.products?.[0]?.image];
   for (const candidate of candidates) {
-    const resolved = resolvePublicImage(candidate);
+    const resolved = resolveImage(candidate);
     if (resolved) return resolved;
   }
   return null;
