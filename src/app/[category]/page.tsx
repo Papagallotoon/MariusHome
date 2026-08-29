@@ -67,7 +67,15 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
       {/* Header */}
       <section
         className="py-12 sm:py-16 md:py-24 relative overflow-hidden"
-        style={{ background: `linear-gradient(135deg, ${category.color}, ${category.color}cc)` }}
+        style={
+          category.image
+            ? {
+                backgroundImage: `linear-gradient(135deg, ${category.color}e6, ${category.color}b3), url(${category.image})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }
+            : { background: `linear-gradient(135deg, ${category.color}, ${category.color}cc)` }
+        }
       >
         <div
           className="absolute -right-20 -top-20 w-72 h-72 rounded-full opacity-25 pointer-events-none"

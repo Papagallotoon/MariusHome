@@ -50,7 +50,15 @@ export default async function AmbianceStylePage({ params }: { params: Promise<{ 
       />
       <section
         className="py-16 md:py-24 relative overflow-hidden"
-        style={{ background: `linear-gradient(135deg, ${ambiance.color}, ${ambiance.colorAccent})` }}
+        style={
+          ambiance.image
+            ? {
+                backgroundImage: `linear-gradient(135deg, ${ambiance.color}e6, ${ambiance.colorAccent}b3), url(${ambiance.image})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }
+            : { background: `linear-gradient(135deg, ${ambiance.color}, ${ambiance.colorAccent})` }
+        }
       >
         <div
           className="absolute -right-20 -top-20 w-72 h-72 rounded-full opacity-20 pointer-events-none"
