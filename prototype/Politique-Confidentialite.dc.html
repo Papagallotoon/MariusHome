@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ window.dataLayer.push(arguments); }
+  gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500 });
+</script>
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #F7F4EE; color: #23281F; font-family: 'Jost', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #A64B2A; text-decoration: none; }
+  a:hover { color: #23281F; }
+  p { text-wrap: pretty; }
+</style>
+</helmet>
+
+<div style="min-height: 100vh; background: #F7F4EE;">
+  <div style="position: sticky; top: 0; z-index: 60; background: rgba(247,244,238,0.94); backdrop-filter: blur(14px); borderBottom: 1px solid rgba(35,40,31,0.10);">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 0 40px; display: flex; align-items: center; justify-content: space-between; height: 82px; gap: 24px;">
+      <a href="Accueil-A-Vert-Editorial.dc.html" style="display: flex; flex-direction: column; gap: 3px; flex-shrink: 0; color: #23281F;">
+        <span style="font-family: 'Cormorant Garamond', serif; font-size: 25px; font-weight: 500; letter-spacing: 0.14em; line-height: 1; white-space: nowrap;">MARIUS DUMAS</span>
+        <span style="font-size: 9.5px; font-weight: 500; letter-spacing: 0.3em; color: #8C8378; text-transform: uppercase; white-space: nowrap;">Architecte d’ambiance</span>
+      </a>
+      <nav style="display: flex; align-items: center; gap: 20px; flex-shrink: 0;">
+        <a href="Mentions-Legales.dc.html" style="font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #5C6154; white-space: nowrap;">Mentions légales</a>
+        <a href="Accueil-A-Vert-Editorial.dc.html" style="font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #5C6154; white-space: nowrap;">Retour au site</a>
+      </nav>
+    </div>
+  </div>
+
+  <header style="max-width: 1280px; margin: 0 auto; padding: 64px 40px 0;">
+    <span style="display: flex; align-items: center; gap: 14px; font-size: 10px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: #A64B2A; margin-bottom: 26px;">
+      <span style="width: 34px; height: 1px; background: #A64B2A;"></span>RGPD · Données personnelles
+    </span>
+    <h1 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: clamp(40px, 5vw, 68px); font-weight: 300; line-height: 1.06; letter-spacing: -0.015em; color: #23281F; max-width: 22ch;">Politique de confidentialité</h1>
+    <p style="margin: 26px 0 0; font-size: 15px; line-height: 1.8; color: #6E7266; max-width: 64ch;">
+      Cette politique décrit quelles données sont collectées sur ce site, pourquoi, combien de temps elles sont conservées, avec quels services tiers elles sont partagées, et comment exercer vos droits.
+    </p>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 34px;">
+      <button type="button" onClick="{{ openConsent }}" style="display: inline-flex; align-items: center; gap: 11px; padding: 15px 26px; background: #23281F; border: 0; color: #F7F4EE; font-family: 'Jost', system-ui, sans-serif; font-size: 10.5px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer;" style-hover="background: #A64B2A;">
+        <span style="width: 7px; height: 7px; border-radius: 50%; background: #C9A87C;"></span>Gérer mes préférences cookies
+      </button>
+      <span style="font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #A9A29A;">Dernière mise à jour : 30 août 2026</span>
+    </div>
+  </header>
+
+  <div style="max-width: 1280px; margin: 0 auto; padding: 60px 40px 0; display: flex; flex-wrap: wrap; gap: clamp(40px, 5vw, 84px); align-items: flex-start;">
+    <aside style="position: sticky; top: 118px; flex: 0 1 250px; min-width: 220px;">
+      <span style="display: block; font-size: 10px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: #A64B2A; margin-bottom: 18px;">Sommaire</span>
+      <sc-for list="{{ toc }}" as="t" hint-placeholder-count="9">
+        <a href="{{ t.href }}" style="display: flex; gap: 12px; padding: 11px 0; borderTop: 1px solid rgba(35,40,31,0.1); font-size: 13.5px; line-height: 1.5; color: #5C6154;" style-hover="color: #A64B2A;">
+          <span style="font-family: 'Cormorant Garamond', serif; font-size: 15px; font-style: italic; color: #C9A87C;">{{ t.num }}</span>{{ t.label }}
+        </a>
+      </sc-for>
+    </aside>
+
+    <article style="flex: 1 1 520px; min-width: 0; max-width: 720px;">
+
+      <section id="responsable" style="margin: 0 0 56px; scroll-margin-top: 118px;">
+        <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 20px;">
+          <span style="font-family: 'Cormorant Garamond', serif; font-size: 38px; font-style: italic; font-weight: 300; color: #C9A87C; line-height: 0.8;">01</span>
+          <h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: clamp(26px, 3vw, 34px); font-weight: 400; line-height: 1.16; color: #23281F;">Responsable du traitement</h2>
+        </div>
+        <p style="margin: 0 0 20px; font-size: 16.5px; line-height: 1.9; color: #3A4036;">
+          Le responsable du traitement des données collectées sur ce site est <strong style="font-weight: 500;">[Prénom Nom ou raison sociale]</strong>, dont le siège est situé <strong style="font-weight: 500;">[adresse complète]</strong>, immatriculé sous le SIRET <strong style="font-weight: 500;">[numéro]</strong>.
+        </p>
+        <p style="margin: 0; font-size: 16.5px; line-height: 1.9; color: #3A4036;">
+          Toute question relative à cette politique ou à vos données peut être adressée à <a href="mailto:contact@votredomaine.fr">[contact@votredomaine.fr]</a>.
+        </p>
+      </section>
+
+      <section id="donnees" style="margin: 0 0 56px; scroll-margin-top: 118px;">
+        <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 20px;">
+          <span style="font-family: 'Cormorant Garamond', serif; font-size: 38px; font-style: italic; font-weight: 300; color: #C9A87C; line-height: 0.8;">02</span>
+          <h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: clamp(26px, 3vw, 34px); font-weight: 400; line-height: 1.16; color: #23281F;">Données collectées, finalités et durées</h2>
+        </div>
+        <p style="margin: 0 0 26px; font-size: 16.5px; line-height: 1.9; color: #3A4036;">
+          Aucune donnée n’est collectée à votre insu. Le tableau ci-dessous récapitule l’intégralité des traitements réalisés sur ce site.
+        </p>
+        <div style="display: flex; flex-direction: column;">
+          <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr) minmax(0, 0.85fr) 96px; gap: 16px; padding: 0 0 12px; borderBottom: 1px solid rgba(35,40,31,0.22); font-size: 9.5px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #A9A29A;">
+            <span>Données</span><span>Finalité</span><span>Base légale</span><span>Durée</span>
+          </div>
+          <sc-for list="{{ treatments }}" as="t" hint-placeholder-count="4">
+            <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr) minmax(0, 0.85fr) 96px; gap: 16px; padding: 18px 0; borderBottom: 1px solid rgba(35,40,31,0.1); align-items: start;">
+              <span style="font-size: 14.5px; line-height: 1.6; color: #23281F;">{{ t.data }}</span>
+              <span style="font-size: 14px; line-height: 1.65; color: #5C6154;">{{ t.purpose }}</span>
+              <span style="font-size: 13px; line-height: 1.6; color: #6E7266;">{{ t.basis }}</span>
+              <span style="font-size: 14px; line-height: 1.6; color: #23281F;">{{ t.duration }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <p style="margin: 24px 0 0; font-size: 15px; line-height: 1.85; color: #6E7266;">
+          Aucune donnée sensible au sens de l’article 9 du RGPD n’est collectée. Aucune décision automatisée ni profilage à effet juridique n’est réalisé. Vos données ne sont jamais vendues ni louées à des tiers.
+        </p>
+      </section>
+
+      <section id="consent-mode" style="margin: 0 0 56px; scroll-margin-top: 118px;">
+        <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 20px;">
+          <span style="font-family: 'Cormorant Garamond', serif; font-size: 38px; font-style: italic; font-weight: 300; color: #C9A87C; line-height: 0.8;">03</span>
+          <h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: clamp(26px, 3vw, 34px); font-weight: 400; line-height: 1.16; color: #23281F;">Cookies et Google Consent Mode V2</h2>
+        </div>
+        <p style="margin: 0 0 20px; font-size: 16.5px; line-height: 1.9; color: #3A4036;">
+          Aucun cookie de mesure d’audience ou de publicité n’est déposé avant votre consentement explicite. À l’ouverture du site, les balises Google sont initialisées avec l’ensemble des signaux de consentement en état <em>denied</em>, conformément à Google Consent Mode V2 et au Règlement européen sur les marchés numériques (DMA).
+        </p>
+        <p style="margin: 0 0 26px; font-size: 16.5px; line-height: 1.9; color: #3A4036;">
+          Votre choix est transmis à Google via quatre signaux, mis à jour immédiatement après votre clic dans la bannière ou le centre de préférences :
+        </p>
+        <div style="display: flex; flex-direction: column; margin-bottom: 26px;">
+          <sc-for list="{{ signals }}" as="s" hint-placeholder-count="4">
+            <div style="display: grid; grid-template-columns: minmax(160px, 0.65fr) minmax(0, 1fr); gap: 20px; padding: 16px 0; borderTop: 1px solid rgba(35,40,31,0.1);">
+              <span style="font-family: ui-monospace, monospace; font-size: 13px; letter-spacing: 0.02em; color: #A64B2A; line-height: 1.6;">{{ s.name }}</span>
+              <span style="font-size: 14.5px; line-height: 1.7; color: #3A4036;">{{ s.text }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <p style="margin: 0 0 20px; font-size: 16.5px; line-height: 1.9; color: #3A4036;">
+          La bannière respecte les recommandations de la CNIL : le refus est aussi accessible et visuellement équivalent à l’acceptation — même taille, même contraste, même niveau de lecture. Un refus n’altère en rien l’accès au contenu.
+        </p>
+        <p style="margin: 0; font-size: 16.5px; line-height: 1.9; color: #3A4036;">
+          Votre choix est conservé six mois, puis la question vous est reposée. Vous pouvez le modifier à tout moment via le bouton « Cookies » en bas d’écran ou depuis cette page.
+        </p>
+        <div style="margin-top: 28px; padding: 22px 26px; background: #F2EDE3; borderLeft: 2px solid #A64B2A;">
+          <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #5C6154;">
+            <strong style="font-weight: 500; color: #23281F;">Note de mise en production :</strong> pour la diffusion d’annonces Google Ads, cette interface doit être adossée à une CMP certifiée par Google et enregistrée auprès du TCF de l’IAB Europe — Axeptio, Cookiebot, Didomi ou iubenda. Le bandeau présenté ici en reproduit l’ergonomie et les signaux ; le branchement de la CMP certifiée reste à effectuer côté hébergement.
+          </p>
+        </div>
+      </section>
+
+      <section id="tiers" style="margin: 0 0 56px; scroll-margin-top: 118px;">
+        <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 20px;">
+          <span style="font-family: 'Cormorant Garamond', serif; font-size: 38px; font-style: italic; font-weight: 300; color: #C9A87C; line-height: 0.8;">04</span>
+          <h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: clamp(26px, 3vw, 34px); font-weight: 400; line-height: 1.16; color: #23281F;">Services tiers et destinataires</h2>
+        </div>
+        <p style="margin: 0 0 26px; font-size: 16.5px; line-height: 1.9; color: #3A4036;">
+          Les services suivants sont susceptibles de recevoir des données vous concernant, dans les limites de votre consentement.
+        </p>
+        <sc-for list="{{ thirdParties }}" as="tp" hint-placeholder-count="4">
+          <div style="padding: 26px 0; borderTop: 1px solid rgba(35,40,31,0.12);">
+            <div style="display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 12px;">
+              <span style="font-family: 'Cormorant Garamond', serif; font-size: 23px; font-weight: 500; color: #23281F;">{{ tp.name }}</span>
+              <span style="font-size: 9.5px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #A64B2A;">{{ tp.role }}</span>
+            </div>
+            <p style="margin: 0 0 14px; font-size: 15.5px; line-height: 1.85; color: #3A4036; max-width: 62ch;">{{ tp.text }}</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px 26px;">
+              <span style="font-size: 12.5px; letter-spacing: 0.04em; color: #8C8378;">Données : {{ tp.data }}</span>
+              <span style="font-size: 12.5px; letter-spacing: 0.04em; color: #8C8378;">Transfert hors UE : {{ tp.transfer }}</span>
+            </div>
+          </div>
+        </sc-for>
+      </section>
+
+      <section id="droits" style="margin: 0 0 56px; scroll-margin-top: 118px;">
+        <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 20px;">
+          <span style="font-family: 'Cormorant Garamond', serif; font-size: 38px; font-style: italic; font-weight: 300; color: #C9A87C; line-height: 0.8;">05</span>
+          <h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: clamp(26px, 3vw, 34px); font-weight: 400; line-height: 1.16; color: #23281F;">Vos droits et comment les exercer</h2>
+        </div>
+        <p style="margin: 0 0 26px; font-size: 16.5px; line-height: 1.9; color: #3A4036;">
+          Conformément aux articles 15 à 22 du RGPD, vous disposez des droits suivants sur vos données :
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2px 30px; margin-bottom: 30px;">
+          <sc-for list="{{ rights }}" as="r" hint-placeholder-count="6">
+            <div style="padding: 16px 0; borderTop: 1px solid rgba(35,40,31,0.1);">
+              <span style="display: block; font-size: 15.5px; font-weight: 500; color: #23281F; margin-bottom: 6px;">{{ r.title }}</span>
+              <span style="display: block; font-size: 14px; line-height: 1.7; color: #6E7266;">{{ r.text }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <p style="margin: 0 0 20px; font-size: 16.5px; line-height: 1.9; color: #3A4036;">
+          Pour exercer l’un de ces droits, écrivez à <a href="mailto:contact@votredomaine.fr">[contact@votredomaine.fr]</a> en précisant votre demande. Une réponse vous sera apportée dans un délai maximal d’un mois, prolongeable de deux mois pour les demandes complexes. Une pièce justificative d’identité pourra être demandée en cas de doute raisonnable.
+        </p>
+        <p style="margin: 0; font-size: 16.5px; line-height: 1.9; color: #3A4036;">
+          Si vous estimez, après nous avoir contactés, que vos droits ne sont pas respectés, vous pouvez adresser une réclamation à la <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener">CNIL</a>, 3 place de Fontenoy, TSA 80715, 75334 Paris Cedex 07.
+        </p>
+      </section>
+
+      <section id="securite" style="margin: 0 0 56px; scroll-margin-top: 118px;">
+        <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 20px;">
+          <span style="font-family: 'Cormorant Garamond', serif; font-size: 38px; font-style: italic; font-weight: 300; color: #C9A87C; line-height: 0.8;">06</span>
+          <h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: clamp(26px, 3vw, 34px); font-weight: 400; line-height: 1.16; color: #23281F;">Sécurité des données</h2>
+        </div>
+        <p style="margin: 0 0 20px; font-size: 16.5px; line-height: 1.9; color: #3A4036;">
+          L’ensemble des échanges avec le site est chiffré par un certificat SSL/TLS valide (HTTPS), avec redirection automatique depuis HTTP et en-tête HSTS actif. Les données de formulaire sont acheminées vers une boîte de réception protégée par authentification à deux facteurs.
+        </p>
+        <p style="margin: 0; font-size: 16.5px; line-height: 1.9; color: #3A4036;">
+          L’accès aux outils d’administration est restreint aux seules personnes habilitées. En cas de violation de données susceptible d’engendrer un risque pour vos droits, la CNIL sera notifiée sous 72 heures et vous serez informé sans délai injustifié.
+        </p>
+      </section>
+
+      <section id="modifications" style="margin: 0 0 20px; scroll-margin-top: 118px;">
+        <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 20px;">
+          <span style="font-family: 'Cormorant Garamond', serif; font-size: 38px; font-style: italic; font-weight: 300; color: #C9A87C; line-height: 0.8;">07</span>
+          <h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: clamp(26px, 3vw, 34px); font-weight: 400; line-height: 1.16; color: #23281F;">Évolution de cette politique</h2>
+        </div>
+        <p style="margin: 0; font-size: 16.5px; line-height: 1.9; color: #3A4036;">
+          Cette politique peut être modifiée pour tenir compte d’évolutions légales ou techniques. La date de dernière mise à jour figure en tête de page. En cas de changement substantiel affectant vos consentements, la bannière vous sera présentée à nouveau.
+        </p>
+      </section>
+    </article>
+  </div>
+
+  <footer style="background: #1E2419; color: rgba(247,244,238,0.62); margin-top: 60px;">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 56px 40px 40px; display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 30px;">
+      <div>
+        <span style="font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 500; letter-spacing: 0.14em; color: #F7F4EE;">MARIUS DUMAS</span>
+        <div style="display: flex; flex-wrap: wrap; gap: 22px; margin-top: 20px;">
+          <a href="Mentions-Legales.dc.html" style="font-size: 13px; color: rgba(247,244,238,0.62);" style-hover="color: #F7F4EE;">Mentions légales</a>
+          <a href="Politique-Confidentialite.dc.html" style="font-size: 13px; color: rgba(247,244,238,0.62);" style-hover="color: #F7F4EE;">Politique de confidentialité</a>
+          <a href="Accueil-A-Vert-Editorial.dc.html" style="font-size: 13px; color: rgba(247,244,238,0.62);" style-hover="color: #F7F4EE;">Accueil</a>
+        </div>
+      </div>
+      <span style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(247,244,238,0.4);">© 2026 Marius Dumas Home</span>
+    </div>
+  </footer>
+
+  <dc-import name="Consentement" force-open="{{ forceOpen }}" hint-size="100%,0"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { forceOpen: 0 };
+
+  renderVals() {
+    return {
+      forceOpen: this.state.forceOpen,
+      openConsent: () => this.setState(s => ({ forceOpen: s.forceOpen + 1 })),
+      toc: [
+        { num: "01", label: "Responsable du traitement", href: "#responsable" },
+        { num: "02", label: "Données, finalités, durées", href: "#donnees" },
+        { num: "03", label: "Cookies et Consent Mode V2", href: "#consent-mode" },
+        { num: "04", label: "Services tiers", href: "#tiers" },
+        { num: "05", label: "Vos droits", href: "#droits" },
+        { num: "06", label: "Sécurité des données", href: "#securite" },
+        { num: "07", label: "Évolution de cette politique", href: "#modifications" }
+      ],
+      treatments: [
+        { data: "Nom, adresse e-mail, description du projet", purpose: "Répondre à une demande de conseil envoyée via le formulaire de contact", basis: "Consentement (art. 6.1.a)", duration: "3 ans après le dernier échange" },
+        { data: "Pages vues, durée de visite, source de trafic, appareil", purpose: "Mesurer l’audience et améliorer les contenus", basis: "Consentement", duration: "14 mois" },
+        { data: "Identifiants publicitaires, clics sur annonces, conversions", purpose: "Mesurer l’efficacité des campagnes Google Ads", basis: "Consentement", duration: "13 mois" },
+        { data: "Choix de consentement (accepté / refusé par finalité)", purpose: "Mémoriser votre choix et ne pas vous le redemander", basis: "Obligation légale", duration: "6 mois" },
+        { data: "Clic sur un lien affilié (sans identification nominative)", purpose: "Attribution de la commission par la place de marché", basis: "Consentement", duration: "Selon Amazon (24 h à 90 j)" }
+      ],
+      signals: [
+        { name: "analytics_storage", text: "Autorise ou refuse le stockage lié à la mesure d’audience, par exemple la durée des visites et les pages consultées." },
+        { name: "ad_storage", text: "Autorise ou refuse le stockage lié à la publicité, notamment le suivi des conversions après un clic sur une annonce." },
+        { name: "ad_user_data", text: "Autorise ou refuse l’envoi à Google de données personnelles à des fins publicitaires. Signal requis par le DMA depuis mars 2024." },
+        { name: "ad_personalization", text: "Autorise ou refuse la personnalisation des annonces, c’est-à-dire le remarketing et les audiences fondées sur les centres d’intérêt." }
+      ],
+      thirdParties: [
+        { name: "Google Analytics 4", role: "Sous-traitant · Google Ireland Ltd", text: "Mesure d’audience anonymisée. La collecte des adresses IP est tronquée et les signaux publicitaires sont désactivés tant que le consentement correspondant n’est pas accordé. Les données sont traitées selon Consent Mode V2.", data: "Identifiant de session, pages, appareil", transfer: "États-Unis — clauses contractuelles types + DPF" },
+        { name: "Google Ads", role: "Sous-traitant · Google Ireland Ltd", text: "Mesure des conversions issues de nos campagnes publicitaires et, si vous l’acceptez, personnalisation des annonces. En l’absence de consentement, Google ne reçoit que des données agrégées et modélisées, sans identifiant.", data: "Identifiant publicitaire, clic, conversion", transfer: "États-Unis — clauses contractuelles types + DPF" },
+        { name: "Programme Partenaires Amazon EU", role: "Responsable conjoint · Amazon Europe Core Sàrl", text: "Attribution des commissions d’affiliation lorsqu’un achat suit un clic sur un lien de nos comparatifs. Le suivi est opéré par Amazon selon sa propre politique de confidentialité ; nous ne recevons que des rapports agrégés, sans identité d’acheteur.", data: "Cookie d’attribution Amazon", transfer: "Selon la politique Amazon" },
+        { name: "[Hébergeur du site]", role: "Sous-traitant technique", text: "Hébergement des pages et journalisation technique des accès à des fins de sécurité et de détection d’incident. Les journaux ne sont pas exploités à des fins d’analyse comportementale.", data: "Adresse IP, horodatage, agent utilisateur", transfer: "Union européenne" }
+      ],
+      rights: [
+        { title: "Droit d’accès", text: "Obtenir la confirmation que des données vous concernant sont traitées et en recevoir une copie." },
+        { title: "Droit de rectification", text: "Faire corriger une donnée inexacte ou compléter une donnée incomplète." },
+        { title: "Droit à l’effacement", text: "Demander la suppression de vos données, sauf obligation légale de conservation." },
+        { title: "Droit à la limitation", text: "Demander le gel temporaire d’un traitement le temps d’une vérification." },
+        { title: "Droit d’opposition", text: "Vous opposer à un traitement fondé sur l’intérêt légitime, notamment à la prospection." },
+        { title: "Droit à la portabilité", text: "Recevoir vos données dans un format structuré et lisible par machine." },
+        { title: "Retrait du consentement", text: "Retirer votre accord à tout moment, aussi simplement que vous l’avez donné." },
+        { title: "Droit de réclamation", text: "Saisir la CNIL si vous estimez que vos droits ne sont pas respectés." }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

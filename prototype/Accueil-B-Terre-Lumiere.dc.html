@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #F4EDE3; color: #241E18; font-family: 'Archivo', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #241E18; text-decoration: none; }
+  a:hover { color: #A9552F; }
+  p { text-wrap: pretty; }
+  @keyframes dropIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: none; } }
+</style>
+</helmet>
+
+<div style="min-height: 100vh; background: #F4EDE3;">
+
+  <div style="position: sticky; top: 0; z-index: 60; background: #FBF6EE; borderBottom: 1px solid rgba(36,30,24,0.09);">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 0 44px; display: flex; align-items: center; justify-content: space-between; height: 76px;">
+      <a href="#" style="display: flex; align-items: baseline; gap: 10px; flex-shrink: 0; white-space: nowrap;">
+        <span style="font-size: 19px; font-weight: 700; letter-spacing: -0.02em; color: #241E18;">Marius Dumas</span>
+        <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-size: 17px; color: #A9552F;">home</span>
+      </a>
+      <nav style="display: flex; align-items: center; gap: 6px; flex-wrap: nowrap; flex-shrink: 0;">
+        <button type="button" onClick="{{ toggleMenu }}" onMouseEnter="{{ openMenu }}" style="display: flex; align-items: center; gap: 8px; background: {{ navPillBg }}; border: 0; border-radius: 999px; padding: 10px 18px; cursor: pointer; font-family: 'Archivo', sans-serif; font-size: 13.5px; font-weight: 500; color: #241E18; white-space: nowrap;">
+          Ambiances
+          <span style="width: 5px; height: 5px; border-right: 1.5px solid #A9552F; border-bottom: 1.5px solid #A9552F; transform: rotate(45deg); margin-bottom: 2px;"></span>
+        </button>
+        <a href="#objets" style="padding: 10px 14px; border-radius: 999px; font-size: 13.5px; font-weight: 500; color: #574E45; white-space: nowrap;" style-hover="background: #EFE5D7; color: #241E18;">Objets déco</a>
+        <a href="#selections" style="padding: 10px 14px; border-radius: 999px; font-size: 13.5px; font-weight: 500; color: #574E45; white-space: nowrap;" style-hover="background: #EFE5D7; color: #241E18;">Sélections</a>
+        <a href="#conseil" style="padding: 10px 14px; border-radius: 999px; font-size: 13.5px; font-weight: 500; color: #574E45; white-space: nowrap;" style-hover="background: #EFE5D7; color: #241E18;">Conseil</a>
+        <a href="#contact" style="margin-left: 10px; display: inline-flex; align-items: center; gap: 9px; padding: 12px 20px; border-radius: 999px; background: #A9552F; color: #FBF6EE; font-size: 13.5px; font-weight: 600; white-space: nowrap;" style-hover="background: #8E4425;">
+          Prendre rendez-vous
+        </a>
+      </nav>
+    </div>
+
+    <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+      <div onMouseLeave="{{ closeMenu }}" style="position: absolute; left: 0; right: 0; top: 76px; background: #FBF6EE; borderBottom: 1px solid rgba(36,30,24,0.09); boxShadow: 0 34px 60px -34px rgba(36,30,24,0.32); animation: dropIn 0.2s ease-out;">
+        <div style="max-width: 1320px; margin: 0 auto; padding: 34px 44px 32px;">
+          <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 26px;">
+            <span style="font-family: 'Instrument Serif', serif; font-size: clamp(20px, 2vw, 26px); color: #241E18;">Six ambiances, cinq lectures chacune</span>
+            <a href="#objets" style="font-size: 13px; font-weight: 600; color: #A9552F;">Toutes les ambiances →</a>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px;">
+            <sc-for list="{{ ambiances }}" as="amb" hint-placeholder-count="6">
+              <div style="display: flex; flex-direction: column; gap: 12px;">
+                <a href="#" style="display: block; border-radius: 14px; overflow: hidden; position: relative;">
+                  <img src="{{ amb.image }}" alt="{{ amb.name }}" style="width: 100%; height: 116px; object-fit: cover; display: block; transition: transform 0.6s cubic-bezier(0.2,0.7,0.2,1);" style-hover="transform: scale(1.06);" />
+                  <span style="position: absolute; left: 10px; bottom: 10px; padding: 4px 10px; border-radius: 999px; background: rgba(251,246,238,0.94); font-size: 12px; font-weight: 600; color: #241E18;">{{ amb.name }}</span>
+                </a>
+                <div style="display: flex; flex-direction: column; gap: 5px;">
+                  <a href="#" style="font-size: 13px; color: #574E45; padding: 3px 0;" style-hover="color: #A9552F;">Salon</a>
+                  <a href="#" style="font-size: 13px; color: #574E45; padding: 3px 0;" style-hover="color: #A9552F;">Chambre</a>
+                  <a href="#" style="font-size: 13px; color: #574E45; padding: 3px 0;" style-hover="color: #A9552F;">Salle de bain</a>
+                  <a href="#" style="font-size: 13px; color: #574E45; padding: 3px 0;" style-hover="color: #A9552F;">Guide du style</a>
+                  <sc-if value="{{ showTopProducts }}" hint-placeholder-val="{{ true }}">
+                    <a href="#" style="display: inline-flex; align-items: center; gap: 7px; margin-top: 4px; padding: 7px 11px; border-radius: 999px; background: #F1E4D5; font-size: 12.5px; font-weight: 600; color: #A9552F;" style-hover="background: #A9552F; color: #FBF6EE;">
+                      <span style="font-family: 'Instrument Serif', serif; font-size: 15px;">5</span>
+                      Top produits
+                    </a>
+                  </sc-if>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+  </div>
+
+  <section style="padding: 22px 44px 0; max-width: 1320px; margin: 0 auto;">
+    <div style="position: relative; border-radius: 28px; overflow: hidden; min-height: 620px; display: flex; align-items: flex-end;">
+      <img src="img/hero-bg.jpg" alt="Terrasse d’ambiance au crépuscule" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;" />
+      <span style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(28,22,16,0.86) 0%, rgba(28,22,16,0.35) 45%, rgba(28,22,16,0.12) 100%);"></span>
+      <div style="position: relative; padding: clamp(34px, 4vw, 58px) clamp(28px, 4vw, 58px) clamp(34px, 4vw, 54px); width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(32px, 4vw, 56px); align-items: end;">
+        <div>
+          <span style="display: inline-flex; align-self: flex-start; max-width: 100%; white-space: nowrap; align-items: center; gap: 9px; padding: 8px 15px; border-radius: 999px; background: rgba(251,246,238,0.16); backdrop-filter: blur(6px); font-size: 12px; font-weight: 600; letter-spacing: 0.04em; color: #F7EFE3; margin-bottom: 26px;">
+            <span style="width: 6px; height: 6px; border-radius: 50%; background: #E0A15C;"></span>
+            Conseil en décoration d’intérieur
+          </span>
+          <h1 style="margin: 0; font-size: clamp(42px, 5.8vw, 82px); font-weight: 700; line-height: 0.98; letter-spacing: -0.035em; color: #FBF6EE; max-width: 15ch;">
+            Une maison qui
+            <span style="font-family: 'Instrument Serif', serif; font-weight: 400; font-style: italic; letter-spacing: -0.01em; color: #E9B274;">respire</span>
+          </h1>
+          <p style="margin: 28px 0 0; font-size: clamp(15px, 1.2vw, 17px); line-height: 1.75; color: rgba(251,246,238,0.82); max-width: 46ch;">
+            Naturel et contemporain à la fois. On choisit l’ambiance, puis les matières, et enfin les objets — dans cet ordre, jamais l’inverse.
+          </p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 14px; align-items: stretch;">
+          <a href="#objets" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 26px; border-radius: 999px; background: #FBF6EE; color: #241E18; font-size: 15px; font-weight: 600;" style-hover="background: #E9B274;">
+            Découvrir les 6 ambiances
+            <span style="width: 7px; height: 7px; border-top: 1.6px solid currentColor; border-right: 1.6px solid currentColor; transform: rotate(45deg);"></span>
+          </a>
+          <a href="#selections" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 26px; border-radius: 999px; border: 1px solid rgba(251,246,238,0.42); color: #FBF6EE; font-size: 15px; font-weight: 500;" style-hover="background: rgba(251,246,238,0.12); color: #FBF6EE;">
+            Dernières sélections
+            <span style="width: 7px; height: 7px; border-top: 1.6px solid currentColor; border-right: 1.6px solid currentColor; transform: rotate(45deg);"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width: 1320px; margin: 0 auto; padding: 34px 44px 0;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px;">
+      <sc-for list="{{ features }}" as="f" hint-placeholder-count="3">
+        <div style="background: #FBF6EE; border-radius: 20px; padding: 30px 32px; display: flex; gap: 20px; align-items: flex-start;">
+          <span style="font-family: 'Instrument Serif', serif; font-size: 40px; color: #C99A62; line-height: 0.85;">{{ f.num }}</span>
+          <div>
+            <h3 style="margin: 0 0 9px; font-size: 17px; font-weight: 600; letter-spacing: -0.01em; color: #241E18;">{{ f.title }}</h3>
+            <p style="margin: 0; font-size: 14.5px; line-height: 1.7; color: #6B6058; max-width: 36ch;">{{ f.text }}</p>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="objets" style="max-width: 1320px; margin: 0 auto; padding: 104px 44px 0;">
+    <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 60px; margin-bottom: 42px;">
+      <div>
+        <span style="display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A9552F; margin-bottom: 18px;">Les six ambiances</span>
+        <h2 style="margin: 0; font-size: clamp(34px, 4vw, 54px); font-weight: 700; letter-spacing: -0.035em; line-height: 1.02; color: #241E18; max-width: 18ch;">
+          Trouvez votre
+          <span style="font-family: 'Instrument Serif', serif; font-weight: 400; font-style: italic; letter-spacing: -0.01em; color: #A9552F;">univers</span>
+        </h2>
+      </div>
+      <p style="margin: 0 0 6px; font-size: 15.5px; line-height: 1.8; color: #6B6058; max-width: 38ch;">Salon, chambre, salle de bain, guide du style, et le comparatif des cinq meilleurs produits — pour chaque ambiance.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px;">
+      <sc-for list="{{ ambiances }}" as="amb" hint-placeholder-count="6">
+        <a href="#" style="display: block; border-radius: 24px; overflow: hidden; background: #FBF6EE; position: relative;">
+          <span style="display: block; overflow: hidden;">
+            <img src="{{ amb.image }}" alt="{{ amb.name }}" style="width: 100%; height: 300px; object-fit: cover; display: block; transition: transform 0.7s cubic-bezier(0.2,0.7,0.2,1);" style-hover="transform: scale(1.05);" />
+          </span>
+          <span style="display: flex; flex-direction: column; gap: 10px; padding: 24px 26px 26px;">
+            <span style="display: flex; align-items: center; gap: 9px;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background: {{ amb.color }};"></span>
+              <span style="font-size: 11.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #9A8E83;">{{ amb.kicker }}</span>
+            </span>
+            <span style="font-size: 26px; font-weight: 600; letter-spacing: -0.025em; color: #241E18;">{{ amb.name }}</span>
+            <span style="font-size: 14.5px; line-height: 1.7; color: #6B6058;">{{ amb.short }}</span>
+            <span style="display: inline-flex; align-items: center; gap: 8px; margin-top: 8px; font-size: 13.5px; font-weight: 600; color: #A9552F;">
+              5 lectures
+              <span style="width: 6px; height: 6px; border-top: 1.5px solid currentColor; border-right: 1.5px solid currentColor; transform: rotate(45deg);"></span>
+            </span>
+          </span>
+        </a>
+      </sc-for>
+    </div>
+  </section>
+
+  <section style="max-width: 1320px; margin: 0 auto; padding: 100px 44px 0;">
+    <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; margin-bottom: 34px;">
+      <h2 style="margin: 0; font-size: clamp(28px, 3.1vw, 40px); font-weight: 700; letter-spacing: -0.03em; color: #241E18;">Objets déco, par famille</h2>
+      <a href="#" style="font-size: 14px; font-weight: 600; color: #A9552F;">Tout parcourir →</a>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 18px;">
+      <sc-for list="{{ categories }}" as="cat" hint-placeholder-count="5">
+        <a href="#" style="display: flex; flex-direction: column; gap: 14px;">
+          <span style="display: block; border-radius: 18px; overflow: hidden; background: #EFE5D7;">
+            <img src="{{ cat.image }}" alt="{{ cat.name }}" style="width: 100%; height: 200px; object-fit: cover; display: block; transition: transform 0.6s cubic-bezier(0.2,0.7,0.2,1);" style-hover="transform: scale(1.06);" />
+          </span>
+          <span style="display: flex; flex-direction: column; gap: 5px;">
+            <span style="font-size: 16px; font-weight: 600; letter-spacing: -0.015em; color: #241E18;">{{ cat.name }}</span>
+            <span style="font-size: 13px; color: #9A8E83;">{{ cat.count }}</span>
+          </span>
+        </a>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="selections" style="max-width: 1320px; margin: 0 auto; padding: 104px 44px 0;">
+    <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; margin-bottom: 38px;">
+      <div>
+        <span style="display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #A9552F; margin-bottom: 16px;">À la une</span>
+        <h2 style="margin: 0; font-size: clamp(30px, 3.4vw, 44px); font-weight: 700; letter-spacing: -0.03em; color: #241E18;">Dernières sélections</h2>
+      </div>
+      <p style="margin: 0 0 6px; font-size: 15px; line-height: 1.8; color: #6B6058; max-width: 34ch;">Comparatifs mis à jour chaque semaine, prix relevés à la main.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 24px; align-items: stretch;">
+      <a href="#" style="display: block; border-radius: 24px; overflow: hidden; background: #FBF6EE;">
+        <span style="display: block; overflow: hidden;">
+          <img src="img/boheme.jpg" alt="Salon bohème" style="width: 100%; height: 400px; object-fit: cover; display: block; transition: transform 0.7s cubic-bezier(0.2,0.7,0.2,1);" style-hover="transform: scale(1.04);" />
+        </span>
+        <span style="display: flex; flex-direction: column; gap: 14px; padding: 30px 34px 34px;">
+          <span style="display: flex; align-items: center; gap: 10px;">
+            <span style="padding: 5px 11px; border-radius: 999px; background: #F1E4D5; font-size: 11.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #A9552F;">Top 5 produits</span>
+            <span style="font-size: 13px; color: #9A8E83;">Ambiance bohème · Salon</span>
+          </span>
+          <span style="font-size: clamp(26px, 2.7vw, 34px); font-weight: 600; letter-spacing: -0.03em; line-height: 1.12; color: #241E18; max-width: 24ch;">Les 5 meilleurs objets déco pour un salon bohème</span>
+          <span style="font-size: 15.5px; line-height: 1.8; color: #6B6058; max-width: 54ch;">Macramé, rotin, terre cuite : le trio qui réchauffe une pièce sans l’encombrer. Comparatif détaillé et liens directs.</span>
+          <span style="font-size: 13px; color: #9A8E83;">Mis à jour le 28 août · 8 min de lecture</span>
+        </span>
+      </a>
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <sc-for list="{{ articles }}" as="a" hint-placeholder-count="4">
+          <a href="#" style="display: flex; gap: 20px; align-items: center; background: #FBF6EE; border-radius: 20px; padding: 16px; flex: 1;" style-hover="background: #F6EEE2;">
+            <span style="display: block; width: 116px; height: 92px; flex-shrink: 0; border-radius: 14px; overflow: hidden; background: #EFE5D7;">
+              <img src="{{ a.image }}" alt="{{ a.title }}" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            </span>
+            <span style="display: flex; flex-direction: column; gap: 7px;">
+              <span style="font-size: 11.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #A9552F;">{{ a.kicker }}</span>
+              <span style="font-size: 18px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.25; color: #241E18;">{{ a.title }}</span>
+              <span style="font-size: 12.5px; color: #9A8E83;">{{ a.meta }}</span>
+            </span>
+          </a>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="conseil" style="max-width: 1320px; margin: 0 auto; padding: 104px 44px 0;">
+    <div style="background: #241E18; border-radius: 28px; overflow: hidden; display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));">
+      <img src="img/japon.jpg" alt="Intérieur épuré" style="width: 100%; height: 100%; min-height: 460px; object-fit: cover; display: block;" />
+      <div style="padding: clamp(40px, 4.4vw, 62px) clamp(32px, 4.4vw, 62px); display: flex; flex-direction: column; justify-content: center;">
+        <span style="display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #E9B274; margin-bottom: 24px;">La méthode</span>
+        <p style="margin: 0; font-family: 'Instrument Serif', serif; font-size: clamp(28px, 3vw, 38px); font-style: italic; line-height: 1.28; color: #FBF6EE; max-width: 26ch;">« Une pièce juste, c’est trois matières, deux couleurs, et beaucoup de lumière. »</p>
+        <p style="margin: 30px 0 0; font-size: 15.5px; line-height: 1.85; color: rgba(251,246,238,0.72); max-width: 52ch;">
+          Je travaille l’intérieur comme un paysage : d’abord l’ambiance, ensuite les matières, et seulement à la fin les objets. C’est ce qui évite les achats regrettés.
+        </p>
+        <p style="margin: 20px 0 0; font-size: 15.5px; line-height: 1.85; color: rgba(251,246,238,0.72); max-width: 52ch;">
+          Chaque sélection publiée ici suit la même règle : comparée à trois alternatives, jamais recommandée pour son prix seul.
+        </p>
+        <div style="display: flex; align-items: center; gap: 14px; margin-top: 36px;">
+          <span style="font-size: 17px; font-weight: 600; color: #FBF6EE;">Marius Dumas</span>
+          <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(233,178,116,0.7);"></span>
+          <span style="font-size: 13.5px; color: rgba(251,246,238,0.6);">Décorateur d’intérieur</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="max-width: 1320px; margin: 0 auto; padding: 104px 44px;">
+    <div style="background: #FBF6EE; border-radius: 28px; padding: clamp(56px, 6vw, 84px) 44px; text-align: center;">
+      <h2 style="margin: 0 auto; font-size: clamp(32px, 3.9vw, 50px); font-weight: 700; letter-spacing: -0.035em; line-height: 1.06; color: #241E18; max-width: 20ch;">
+        Besoin d’un regard sur votre
+        <span style="font-family: 'Instrument Serif', serif; font-weight: 400; font-style: italic; letter-spacing: -0.01em; color: #A9552F;">intérieur ?</span>
+      </h2>
+      <p style="margin: 24px auto 0; font-size: 16.5px; line-height: 1.8; color: #6B6058; max-width: 50ch;">Racontez-moi votre pièce en trois lignes. Je réponds avec une direction d’ambiance et une première sélection d’objets.</p>
+      <a href="#" style="display: inline-flex; align-items: center; gap: 12px; margin-top: 36px; padding: 19px 34px; border-radius: 999px; background: #A9552F; color: #FBF6EE; font-size: 15px; font-weight: 600;" style-hover="background: #8E4425;">
+        Écrire à Marius
+        <span style="width: 7px; height: 7px; border-top: 1.6px solid currentColor; border-right: 1.6px solid currentColor; transform: rotate(45deg);"></span>
+      </a>
+    </div>
+  </section>
+
+  <footer style="background: #241E18; color: rgba(251,246,238,0.62);">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 70px 44px 38px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 44px 54px;">
+      <div>
+        <span style="display: flex; align-items: baseline; gap: 9px;">
+          <span style="font-size: 19px; font-weight: 700; color: #FBF6EE;">Marius Dumas</span>
+          <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-size: 17px; color: #E9B274;">home</span>
+        </span>
+        <p style="margin: 18px 0 0; font-size: 14px; line-height: 1.8; max-width: 34ch;">Conseil en décoration, ambiances et sélections d’objets pour la maison. Certains liens sont affiliés ; le prix reste identique pour vous.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 11px;">
+        <span style="font-size: 11.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #E9B274; margin-bottom: 5px;">Ambiances</span>
+        <a href="#" style="font-size: 14px; color: rgba(251,246,238,0.62);" style-hover="color: #FBF6EE;">Japon</a>
+        <a href="#" style="font-size: 14px; color: rgba(251,246,238,0.62);" style-hover="color: #FBF6EE;">Bohème</a>
+        <a href="#" style="font-size: 14px; color: rgba(251,246,238,0.62);" style-hover="color: #FBF6EE;">Bali</a>
+        <a href="#" style="font-size: 14px; color: rgba(251,246,238,0.62);" style-hover="color: #FBF6EE;">Provençal</a>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 11px;">
+        <span style="font-size: 11.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #E9B274; margin-bottom: 5px;">Objets</span>
+        <a href="#" style="font-size: 14px; color: rgba(251,246,238,0.62);" style-hover="color: #FBF6EE;">Bougies &amp; parfums</a>
+        <a href="#" style="font-size: 14px; color: rgba(251,246,238,0.62);" style-hover="color: #FBF6EE;">Coussins &amp; textiles</a>
+        <a href="#" style="font-size: 14px; color: rgba(251,246,238,0.62);" style-hover="color: #FBF6EE;">Luminaires</a>
+        <a href="#" style="font-size: 14px; color: rgba(251,246,238,0.62);" style-hover="color: #FBF6EE;">Vases &amp; plantes</a>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 11px;">
+        <span style="font-size: 11.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #E9B274; margin-bottom: 5px;">Maison</span>
+        <a href="#" style="font-size: 14px; color: rgba(251,246,238,0.62);" style-hover="color: #FBF6EE;">À propos</a>
+        <a href="#" style="font-size: 14px; color: rgba(251,246,238,0.62);" style-hover="color: #FBF6EE;">Contact</a>
+        <a href="#" style="font-size: 14px; color: rgba(251,246,238,0.62);" style-hover="color: #FBF6EE;">Mentions légales</a>
+        <a href="#" style="font-size: 14px; color: rgba(251,246,238,0.62);" style-hover="color: #FBF6EE;">Confidentialité</a>
+      </div>
+    </div>
+    <div style="max-width: 1320px; margin: 0 auto; padding: 20px 44px 38px; borderTop: 1px solid rgba(251,246,238,0.12); font-size: 13px; color: rgba(251,246,238,0.42);">© 2026 Marius Dumas Home</div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showTopProducts&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Menu Ambiances&quot;}}">
+class Component extends DCLogic {
+  state = { menuOpen: false };
+
+  data = [
+    { name: "Japon", color: "#8B7355", kicker: "Minimalisme zen", image: "img/japon.jpg", short: "Bois clair, papier, pierre. Chaque objet a sa raison d’être." },
+    { name: "Bohème", color: "#C2785C", kicker: "Esprit libre", image: "img/boheme.jpg", short: "Rotin, macramé, terre cuite et couleurs chaudes." },
+    { name: "Bali", color: "#5B8C5A", kicker: "Jungle tropicale", image: "img/bali.jpg", short: "Bois exotiques, végétation dense, lumière tamisée." },
+    { name: "Provençal", color: "#9B7EB4", kicker: "Lumière du Sud", image: "img/provencal.jpg", short: "Lin lavé, pierre naturelle, lavande et patine." },
+    { name: "Industriel", color: "#6B6B6B", kicker: "Esprit loft", image: "img/industriel.jpg", short: "Métal brut et brique, adoucis par le bois." },
+    { name: "Indienne", color: "#C4532E", kicker: "Couleurs vibrantes", image: "img/indien.jpg", short: "Motifs ornementaux, laiton, richesse textile." }
+  ];
+
+  renderVals() {
+    return {
+      menuOpen: this.state.menuOpen,
+      navPillBg: this.state.menuOpen ? "#EFE5D7" : "transparent",
+      showTopProducts: this.props.showTopProducts ?? true,
+      openMenu: () => this.setState({ menuOpen: true }),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
+      ambiances: this.data,
+      categories: [
+        { name: "Bougies & parfums", image: "img/bougies-parfums.jpg", count: "14 sélections" },
+        { name: "Coussins & textiles", image: "img/coussins-textiles.jpg", count: "11 sélections" },
+        { name: "Luminaires", image: "img/luminaires-eclairage.jpg", count: "9 sélections" },
+        { name: "Art mural & cadres", image: "img/art-mural-cadres.jpg", count: "8 sélections" },
+        { name: "Vases & plantes", image: "img/vases-plantes-deco.jpg", count: "12 sélections" }
+      ],
+      features: [
+        { num: "01", title: "Une ambiance d’abord", text: "On part du style de vie, pas du catalogue. La cohérence avant l’achat." },
+        { num: "02", title: "Sélections testées", text: "Matières vues en vrai, comparées à trois alternatives, prix relevés chaque semaine." },
+        { num: "03", title: "Transparence totale", text: "Liens affiliés signalés. Aucun produit recommandé pour sa seule commission." }
+      ],
+      articles: [
+        { kicker: "Japon · Chambre", title: "Une chambre japonaise en 6 objets", meta: "26 août · 7 min", image: "img/japon.jpg" },
+        { kicker: "Bali · Salle de bain", title: "Salle de bain balinaise : le bois qui résiste", meta: "22 août · 6 min", image: "img/bali.jpg" },
+        { kicker: "Provençal · Salon", title: "Lin, pierre et lumière : le salon du Sud", meta: "19 août · 9 min", image: "img/provencal.jpg" },
+        { kicker: "Industriel · Guide", title: "Loft habitable : adoucir le métal brut", meta: "14 août · 8 min", image: "img/industriel.jpg" }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ window.dataLayer.push(arguments); }
+  gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500 });
+</script>
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #F7F4EE; color: #23281F; font-family: 'Jost', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #A64B2A; text-decoration: none; }
+  a:hover { color: #23281F; }
+  p { text-wrap: pretty; }
+</style>
+</helmet>
+
+<div style="min-height: 100vh; background: #F7F4EE;">
+  <div style="position: sticky; top: 0; z-index: 60; background: rgba(247,244,238,0.94); backdrop-filter: blur(14px); borderBottom: 1px solid rgba(35,40,31,0.10);">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 0 40px; display: flex; align-items: center; justify-content: space-between; height: 82px; gap: 24px;">
+      <a href="Accueil-A-Vert-Editorial.dc.html" style="display: flex; flex-direction: column; gap: 3px; flex-shrink: 0; color: #23281F;">
+        <span style="font-family: 'Cormorant Garamond', serif; font-size: 25px; font-weight: 500; letter-spacing: 0.14em; line-height: 1; white-space: nowrap;">MARIUS DUMAS</span>
+        <span style="font-size: 9.5px; font-weight: 500; letter-spacing: 0.3em; color: #8C8378; text-transform: uppercase; white-space: nowrap;">Architecte d’ambiance</span>
+      </a>
+      <nav style="display: flex; align-items: center; gap: 20px; flex-shrink: 0;">
+        <a href="Politique-Confidentialite.dc.html" style="font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #5C6154; white-space: nowrap;">Confidentialité</a>
+        <a href="Accueil-A-Vert-Editorial.dc.html" style="font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #5C6154; white-space: nowrap;">Retour au site</a>
+      </nav>
+    </div>
+  </div>
+
+  <header style="max-width: 1280px; margin: 0 auto; padding: 64px 40px 0;">
+    <span style="display: flex; align-items: center; gap: 14px; font-size: 10px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: #A64B2A; margin-bottom: 26px;">
+      <span style="width: 34px; height: 1px; background: #A64B2A;"></span>Informations légales
+    </span>
+    <h1 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: clamp(40px, 5vw, 68px); font-weight: 300; line-height: 1.06; letter-spacing: -0.015em; color: #23281F;">Mentions légales</h1>
+    <p style="margin: 26px 0 0; font-size: 15px; line-height: 1.8; color: #6E7266; max-width: 62ch;">
+      Conformément à l’article 6-III de la loi n°2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique, les informations suivantes sont portées à la connaissance des utilisateurs du site.
+    </p>
+    <p style="margin: 18px 0 0; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #A9A29A;">Dernière mise à jour : 30 août 2026</p>
+  </header>
+
+  <div style="max-width: 1280px; margin: 0 auto; padding: 60px 40px 0; display: flex; flex-wrap: wrap; gap: clamp(40px, 5vw, 84px); align-items: flex-start;">
+    <aside style="position: sticky; top: 118px; flex: 0 1 250px; min-width: 220px;">
+      <span style="display: block; font-size: 10px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: #A64B2A; margin-bottom: 18px;">Sommaire</span>
+      <sc-for list="{{ toc }}" as="t" hint-placeholder-count="7">
+        <a href="{{ t.href }}" style="display: flex; gap: 12px; padding: 11px 0; borderTop: 1px solid rgba(35,40,31,0.1); font-size: 13.5px; line-height: 1.5; color: #5C6154;" style-hover="color: #A64B2A;">
+          <span style="font-family: 'Cormorant Garamond', serif; font-size: 15px; font-style: italic; color: #C9A87C;">{{ t.num }}</span>{{ t.label }}
+        </a>
+      </sc-for>
+    </aside>
+
+    <article style="flex: 1 1 520px; min-width: 0; max-width: 720px;">
+      <div style="padding: 22px 26px; background: #F2EDE3; borderLeft: 2px solid #A64B2A; margin-bottom: 56px;">
+        <p style="margin: 0; font-size: 14px; line-height: 1.8; color: #5C6154;">
+          <strong style="font-weight: 500; color: #23281F;">À compléter avant mise en ligne :</strong> les champs entre crochets doivent être remplis avec vos informations réelles (identité, SIRET, hébergeur). Un site publicitaire dont les mentions légales sont incomplètes peut voir ses annonces refusées.
+        </p>
+      </div>
+
+      <sc-for list="{{ sections }}" as="s" hint-placeholder-count="7">
+        <section id="{{ s.id }}" style="margin: 0 0 56px; scroll-margin-top: 118px;">
+          <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 20px;">
+            <span style="font-family: 'Cormorant Garamond', serif; font-size: 38px; font-style: italic; font-weight: 300; color: #C9A87C; line-height: 0.8;">{{ s.num }}</span>
+            <h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: clamp(26px, 3vw, 34px); font-weight: 400; line-height: 1.16; color: #23281F;">{{ s.title }}</h2>
+          </div>
+          <sc-for list="{{ s.paragraphs }}" as="para" hint-placeholder-count="2">
+            <p style="margin: 0 0 20px; font-size: 16.5px; line-height: 1.9; color: #3A4036;">{{ para }}</p>
+          </sc-for>
+          <sc-if value="{{ s.hasRows }}" hint-placeholder-val="{{ false }}">
+            <div style="display: flex; flex-direction: column; margin-top: 6px;">
+              <sc-for list="{{ s.rows }}" as="r" hint-placeholder-count="4">
+                <div style="display: grid; grid-template-columns: minmax(150px, 0.6fr) minmax(0, 1fr); gap: 24px; padding: 15px 0; borderTop: 1px solid rgba(35,40,31,0.1);">
+                  <span style="font-size: 10.5px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #8C8378; line-height: 1.6;">{{ r.label }}</span>
+                  <span style="font-size: 15.5px; line-height: 1.7; color: #23281F;">{{ r.value }}</span>
+                </div>
+              </sc-for>
+            </div>
+          </sc-if>
+        </section>
+      </sc-for>
+    </article>
+  </div>
+
+  <footer style="background: #1E2419; color: rgba(247,244,238,0.62); margin-top: 60px;">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 56px 40px 40px; display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 30px;">
+      <div>
+        <span style="font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 500; letter-spacing: 0.14em; color: #F7F4EE;">MARIUS DUMAS</span>
+        <div style="display: flex; flex-wrap: wrap; gap: 22px; margin-top: 20px;">
+          <a href="Mentions-Legales.dc.html" style="font-size: 13px; color: rgba(247,244,238,0.62);" style-hover="color: #F7F4EE;">Mentions légales</a>
+          <a href="Politique-Confidentialite.dc.html" style="font-size: 13px; color: rgba(247,244,238,0.62);" style-hover="color: #F7F4EE;">Politique de confidentialité</a>
+          <a href="Accueil-A-Vert-Editorial.dc.html" style="font-size: 13px; color: rgba(247,244,238,0.62);" style-hover="color: #F7F4EE;">Accueil</a>
+        </div>
+      </div>
+      <span style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(247,244,238,0.4);">© 2026 Marius Dumas Home</span>
+    </div>
+  </footer>
+
+  <dc-import name="Consentement" hint-size="100%,0"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const sections = [
+      {
+        id: "editeur", num: "01", title: "Éditeur du site",
+        paragraphs: ["Le présent site est édité par :"],
+        rows: [
+          { label: "Identité", value: "[Prénom Nom ou raison sociale]" },
+          { label: "Forme juridique", value: "[Entreprise individuelle / SASU / SARL]" },
+          { label: "Capital social", value: "[Montant en euros — le cas échéant]" },
+          { label: "Siège social", value: "[Adresse complète, code postal, ville]" },
+          { label: "SIRET", value: "[14 chiffres]" },
+          { label: "RCS", value: "[Ville et numéro d’immatriculation]" },
+          { label: "TVA intracom.", value: "[FR + 11 caractères — le cas échéant]" },
+          { label: "Courriel", value: "[contact@votredomaine.fr]" },
+          { label: "Téléphone", value: "[+33 …]" }
+        ]
+      },
+      {
+        id: "responsable", num: "02", title: "Responsable de la publication",
+        paragraphs: ["La responsabilité éditoriale du site, de ses articles et de ses sélections de produits est assurée par [Prénom Nom], joignable à l’adresse [contact@votredomaine.fr]."],
+        rows: []
+      },
+      {
+        id: "hebergeur", num: "03", title: "Hébergeur",
+        paragraphs: ["Le site est hébergé par :"],
+        rows: [
+          { label: "Dénomination", value: "[Nom de l’hébergeur — ex. OVH SAS, Vercel Inc., Hostinger]" },
+          { label: "Adresse", value: "[Adresse postale complète de l’hébergeur]" },
+          { label: "Téléphone", value: "[Numéro de contact de l’hébergeur]" }
+        ]
+      },
+      {
+        id: "securite", num: "04", title: "Sécurité et chiffrement des échanges",
+        paragraphs: [
+          "L’intégralité du site est servie en HTTPS au moyen d’un certificat SSL/TLS valide. Les connexions en HTTP sont automatiquement redirigées vers HTTPS, et l’en-tête HSTS est activé afin d’empêcher toute connexion non chiffrée ultérieure.",
+          "Ce chiffrement protège les informations transmises via les formulaires de contact et constitue un prérequis technique pour la diffusion d’annonces publicitaires ainsi que pour un référencement naturel non pénalisé."
+        ],
+        rows: []
+      },
+      {
+        id: "propriete", num: "05", title: "Propriété intellectuelle",
+        paragraphs: [
+          "L’ensemble des contenus présents sur ce site — textes, photographies, comparatifs, sélections, identité graphique et code source — est protégé par le droit d’auteur et demeure la propriété exclusive de l’éditeur, sauf mention contraire explicite.",
+          "Toute reproduction, représentation, adaptation ou exploitation, totale ou partielle, de ces contenus sans autorisation écrite préalable est interdite et constitue une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle. Les visuels de produits fournis par les fabricants ou par la place de marché restent la propriété de leurs titulaires respectifs."
+        ],
+        rows: []
+      },
+      {
+        id: "affiliation", num: "06", title: "Liens affiliés et transparence commerciale",
+        paragraphs: [
+          "Ce site participe au Programme Partenaires d’Amazon EU, un programme d’affiliation permettant à des sites de percevoir une rémunération grâce à la création de liens vers Amazon.fr. Certains liens présents dans nos articles et comparatifs sont donc des liens affiliés.",
+          "Lorsqu’un achat est réalisé après un clic sur l’un de ces liens, l’éditeur perçoit une commission, sans que le prix payé par l’utilisateur soit modifié. Ces liens sont signalés dans chaque article et techniquement identifiés par les attributs rel=\"sponsored nofollow\". Cette rémunération n’influence ni la sélection des produits ni leur classement, établis sur des critères de matière, de durabilité et de rapport qualité-prix."
+        ],
+        rows: []
+      },
+      {
+        id: "responsabilite", num: "07", title: "Limitation de responsabilité",
+        paragraphs: [
+          "Les informations diffusées sur ce site relèvent du conseil décoratif et sont fournies à titre indicatif. Les prix, disponibilités et caractéristiques des produits mentionnés sont relevés manuellement à une date donnée et peuvent varier à tout moment : seules les informations affichées sur la fiche du vendeur au moment de la commande sont contractuelles.",
+          "L’éditeur ne saurait être tenu responsable des contenus des sites tiers vers lesquels des liens hypertextes sont proposés, ni d’un dommage résultant d’une interruption temporaire du service ou d’une erreur matérielle dans le contenu publié."
+        ],
+        rows: []
+      },
+      {
+        id: "litiges", num: "08", title: "Droit applicable et litiges",
+        paragraphs: [
+          "Les présentes mentions légales sont régies par le droit français. En cas de litige relatif à l’utilisation du site, et à défaut de résolution amiable, les tribunaux français seront seuls compétents.",
+          "Le site étant un site éditorial ne procédant à aucune vente directe, il n’est pas soumis à l’obligation de conditions générales de vente, de dispositif de rétractation ni de résiliation en ligne. Ces obligations s’appliqueraient si une prestation de conseil payante venait à être commercialisée directement depuis le site."
+        ],
+        rows: []
+      }
+    ];
+
+    return {
+      sections: sections.map(s => ({ ...s, hasRows: s.rows.length > 0 })),
+      toc: sections.map(s => ({ num: s.num, label: s.title, href: "#" + s.id }))
+    };
+  }
+}
+</script>
+</body>
+</html>

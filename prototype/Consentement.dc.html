@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+  @keyframes cmpRise { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+  @keyframes cmpFade { from { opacity: 0; } to { opacity: 1; } }
+</style>
+</helmet>
+
+<div>
+  <sc-if value="{{ showBanner }}" hint-placeholder-val="{{ true }}">
+    <div role="dialog" aria-modal="false" aria-label="Gestion du consentement aux cookies" style="position: fixed; left: 0; right: 0; bottom: 0; z-index: 9000; background: #23281F; borderTop: 2px solid #C9A87C; boxShadow: 0 -24px 60px -28px rgba(24,30,22,0.6); animation: cmpRise 0.28s cubic-bezier(0.2,0.7,0.2,1); font-family: 'Jost', system-ui, sans-serif;">
+      <div style="max-width: 1280px; margin: 0 auto; padding: 30px 40px 32px; display: flex; flex-wrap: wrap; gap: 36px; align-items: center;">
+        <div style="flex: 1 1 460px; min-width: 0;">
+          <span style="display: flex; align-items: center; gap: 12px; font-size: 9.5px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: #C9A87C; margin-bottom: 14px;">
+            <span style="width: 26px; height: 1px; background: #C9A87C;"></span>Vos préférences de confidentialité
+          </span>
+          <p style="margin: 0 0 10px; font-size: 15px; line-height: 1.8; color: rgba(247,244,238,0.82); max-width: 78ch; text-wrap: pretty;">
+            Nous utilisons des cookies pour mesurer l’audience du site (Google&nbsp;Analytics) et mesurer l’efficacité de nos campagnes publicitaires (Google&nbsp;Ads). Aucun cookie de mesure ou de publicité n’est déposé avant votre accord.
+          </p>
+          <p style="margin: 0; font-size: 13px; line-height: 1.75; color: rgba(247,244,238,0.55); max-width: 78ch;">
+            Vous pouvez accepter, refuser ou choisir finalité par finalité. Votre choix est conservé 6 mois et modifiable à tout moment depuis le pied de page.
+            <a href="Politique-Confidentialite.dc.html" style="color: #C9A87C; borderBottom: 1px solid rgba(201,168,124,0.4);" style-hover="color: #F7F4EE;">Politique de confidentialité</a>
+          </p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px; flex: 0 0 auto; min-width: 236px;">
+          <div style="display: flex; gap: 12px;">
+            <button type="button" onClick="{{ refuseAll }}" style="flex: 1 1 0; padding: 16px 24px; background: transparent; border: 1px solid rgba(247,244,238,0.42); color: #F7F4EE; font-family: 'Jost', system-ui, sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer; white-space: nowrap;" style-hover="border-color: #F7F4EE; background: rgba(247,244,238,0.08);">Tout refuser</button>
+            <button type="button" onClick="{{ acceptAll }}" style="flex: 1 1 0; padding: 16px 24px; background: transparent; border: 1px solid rgba(247,244,238,0.42); color: #F7F4EE; font-family: 'Jost', system-ui, sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer; white-space: nowrap;" style-hover="border-color: #F7F4EE; background: rgba(247,244,238,0.08);">Tout accepter</button>
+          </div>
+          <button type="button" onClick="{{ openPanel }}" style="padding: 12px 24px; background: none; border: 0; color: rgba(247,244,238,0.7); font-family: 'Jost', system-ui, sans-serif; font-size: 10.5px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer; text-decoration: underline; text-underline-offset: 4px;" style-hover="color: #C9A87C;">Personnaliser mes choix</button>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ panelOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position: fixed; inset: 0; z-index: 9100; background: rgba(24,30,22,0.62); backdrop-filter: blur(4px); display: flex; align-items: center; justify-content: center; padding: 32px; animation: cmpFade 0.2s ease-out; font-family: 'Jost', system-ui, sans-serif;">
+      <div role="dialog" aria-modal="true" aria-label="Personnaliser le consentement" style="background: #F7F4EE; width: 100%; max-width: 720px; max-height: 88vh; overflow-y: auto; boxShadow: 0 40px 90px -40px rgba(24,30,22,0.6); animation: cmpRise 0.26s cubic-bezier(0.2,0.7,0.2,1);">
+        <div style="padding: 34px 40px 26px; borderBottom: 1px solid rgba(35,40,31,0.12); display: flex; align-items: flex-start; justify-content: space-between; gap: 24px;">
+          <div>
+            <span style="display: block; font-size: 9.5px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: #A64B2A; margin-bottom: 12px;">Centre de préférences</span>
+            <h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 34px; font-weight: 300; line-height: 1.12; color: #23281F;">Choisissez ce que vous autorisez</h2>
+          </div>
+          <button type="button" onClick="{{ closePanel }}" aria-label="Fermer" style="flex-shrink: 0; width: 38px; height: 38px; background: none; border: 1px solid rgba(35,40,31,0.18); color: #5C6154; font-family: 'Jost', system-ui, sans-serif; font-size: 17px; line-height: 1; cursor: pointer;" style-hover="border-color: #23281F; color: #23281F;">×</button>
+        </div>
+
+        <div style="padding: 8px 40px 0;">
+          <sc-for list="{{ purposes }}" as="p" hint-placeholder-count="4">
+            <div style="display: flex; gap: 26px; align-items: flex-start; padding: 26px 0; borderBottom: 1px solid rgba(35,40,31,0.1);">
+              <div style="flex: 1 1 auto; min-width: 0;">
+                <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 9px; flex-wrap: wrap;">
+                  <span style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 22px; font-weight: 500; color: #23281F;">{{ p.title }}</span>
+                  <span style="font-size: 9.5px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: {{ p.tagColor }};">{{ p.tag }}</span>
+                </div>
+                <p style="margin: 0 0 10px; font-size: 14.5px; line-height: 1.75; color: #5C6154; max-width: 62ch; text-wrap: pretty;">{{ p.text }}</p>
+                <span style="display: block; font-family: ui-monospace, monospace; font-size: 11px; letter-spacing: 0.04em; color: #A9A29A;">{{ p.signal }}</span>
+              </div>
+              <button type="button" onClick="{{ p.toggle }}" disabled="{{ p.locked }}" role="switch" aria-checked="{{ p.on }}" aria-label="{{ p.title }}" style="flex-shrink: 0; margin-top: 4px; width: 54px; height: 30px; border-radius: 999px; border: 0; padding: 3px; background: {{ p.trackBg }}; cursor: {{ p.cursor }}; display: flex; justify-content: {{ p.knobAlign }}; transition: background 0.22s ease;">
+                <span style="display: block; width: 24px; height: 24px; border-radius: 50%; background: #FFFDF9; boxShadow: 0 2px 5px rgba(24,30,22,0.28);"></span>
+              </button>
+            </div>
+          </sc-for>
+        </div>
+
+        <div style="padding: 26px 40px 34px; display: flex; align-items: center; flex-wrap: wrap; gap: 14px;">
+          <button type="button" onClick="{{ refuseAll }}" style="padding: 15px 24px; background: transparent; border: 1px solid rgba(35,40,31,0.28); color: #23281F; font-family: 'Jost', system-ui, sans-serif; font-size: 10.5px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer;" style-hover="border-color: #23281F; background: rgba(35,40,31,0.05);">Tout refuser</button>
+          <button type="button" onClick="{{ acceptAll }}" style="padding: 15px 24px; background: transparent; border: 1px solid rgba(35,40,31,0.28); color: #23281F; font-family: 'Jost', system-ui, sans-serif; font-size: 10.5px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer;" style-hover="border-color: #23281F; background: rgba(35,40,31,0.05);">Tout accepter</button>
+          <button type="button" onClick="{{ saveChoices }}" style="margin-left: auto; padding: 16px 30px; background: #23281F; border: 1px solid #23281F; color: #F7F4EE; font-family: 'Jost', system-ui, sans-serif; font-size: 10.5px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer;" style-hover="background: #A64B2A; border-color: #A64B2A;">Enregistrer mes choix</button>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ showReopen }}" hint-placeholder-val="{{ false }}">
+    <button type="button" onClick="{{ openPanel }}" aria-label="Gérer mes cookies" style="position: fixed; left: 22px; bottom: 22px; z-index: 8900; display: flex; align-items: center; gap: 10px; padding: 12px 18px; background: #FFFDF9; border: 1px solid rgba(35,40,31,0.16); boxShadow: 0 12px 30px -14px rgba(24,30,22,0.35); font-family: 'Jost', system-ui, sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #5C6154; cursor: pointer;" style-hover="border-color: #A64B2A; color: #A64B2A;">
+      <span style="width: 8px; height: 8px; border-radius: 50%; background: {{ statusColor }};"></span>Cookies
+    </button>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:420},&quot;forceOpen&quot;:{&quot;editor&quot;:null,&quot;default&quot;:0,&quot;tsType&quot;:&quot;number&quot;}}">
+const STORE_KEY = "md-consent-v2";
+const SIGNALS = ["analytics_storage", "ad_storage", "ad_user_data", "ad_personalization"];
+
+class Component extends DCLogic {
+  state = {
+    ready: false,
+    saved: null,
+    panelOpen: false,
+    draft: { analytics_storage: false, ad_storage: false, ad_user_data: false, ad_personalization: false }
+  };
+
+  componentDidMount() {
+    let saved = null;
+    try {
+      const raw = window.localStorage.getItem(STORE_KEY);
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (parsed && parsed.expires > Date.now()) saved = parsed;
+      }
+    } catch (e) {}
+    this.setState({
+      ready: true,
+      saved,
+      draft: saved ? { ...saved.choices } : this.state.draft
+    });
+    if (saved) this.push(saved.choices);
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.forceOpen && this.props.forceOpen !== prevProps.forceOpen) {
+      this.setState({ panelOpen: true, draft: this.state.saved ? { ...this.state.saved.choices } : this.state.draft });
+    }
+  }
+
+  push(choices) {
+    const payload = {};
+    SIGNALS.forEach(s => { payload[s] = choices[s] ? "granted" : "denied"; });
+    try {
+      if (typeof window.gtag === "function") window.gtag("consent", "update", payload);
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: "consent_update", ...payload });
+    } catch (e) {}
+  }
+
+  commit(choices) {
+    const record = { choices, expires: Date.now() + 15552000000, at: new Date().toISOString() };
+    try { window.localStorage.setItem(STORE_KEY, JSON.stringify(record)); } catch (e) {}
+    this.push(choices);
+    this.setState({ saved: record, draft: { ...choices }, panelOpen: false });
+  }
+
+  all(value) {
+    const c = {};
+    SIGNALS.forEach(s => { c[s] = value; });
+    return c;
+  }
+
+  renderVals() {
+    const d = this.state.draft;
+    const meta = [
+      { key: "necessary", title: "Strictement nécessaires", tag: "Toujours actifs", locked: true, on: true,
+        text: "Cookies indispensables au fonctionnement du site et à la mémorisation de votre choix de consentement. Aucune donnée publicitaire n’est collectée.",
+        signal: "Aucun signal Google — hors périmètre du consentement" },
+      { key: "analytics_storage", title: "Mesure d’audience", tag: "Google Analytics", locked: false, on: !!d.analytics_storage,
+        text: "Nous permet de savoir quelles pages sont lues et combien de temps, afin d’améliorer les articles. Données agrégées, jamais revendues.",
+        signal: "analytics_storage" },
+      { key: "ad_storage", title: "Mesure publicitaire", tag: "Google Ads", locked: false, on: !!d.ad_storage,
+        text: "Permet de savoir si une visite provient d’une de nos annonces et si elle a mené à un contact. Sans ce cookie, nos campagnes deviennent aveugles.",
+        signal: "ad_storage" },
+      { key: "ad_user_data", title: "Envoi de données à Google", tag: "DMA", locked: false, on: !!d.ad_user_data,
+        text: "Autorise la transmission à Google de données vous concernant à des fins publicitaires, comme l’exige le Règlement sur les marchés numériques.",
+        signal: "ad_user_data" },
+      { key: "ad_personalization", title: "Publicité personnalisée", tag: "DMA", locked: false, on: !!d.ad_personalization,
+        text: "Permet à Google d’adapter les annonces que vous voyez à vos centres d’intérêt. En refusant, vous verrez des annonces non personnalisées.",
+        signal: "ad_personalization" }
+    ];
+
+    return {
+      showBanner: this.state.ready && !this.state.saved && !this.state.panelOpen,
+      showReopen: false,
+      panelOpen: this.state.panelOpen,
+      statusColor: this.state.saved && SIGNALS.some(s => this.state.saved.choices[s]) ? "#4A6B4E" : "#A9A29A",
+      openPanel: () => this.setState({ panelOpen: true, draft: this.state.saved ? { ...this.state.saved.choices } : this.state.draft }),
+      closePanel: () => this.setState({ panelOpen: false }),
+      acceptAll: () => this.commit(this.all(true)),
+      refuseAll: () => this.commit(this.all(false)),
+      saveChoices: () => this.commit({ ...this.state.draft }),
+      purposes: meta.map(m => ({
+        ...m,
+        tagColor: m.locked ? "#A9A29A" : "#A64B2A",
+        trackBg: m.on ? (m.locked ? "#A9A29A" : "#4A6B4E") : "#D8D2C7",
+        knobAlign: m.on ? "flex-end" : "flex-start",
+        cursor: m.locked ? "not-allowed" : "pointer",
+        toggle: m.locked ? () => {} : () => this.setState(s => ({ draft: { ...s.draft, [m.key]: !s.draft[m.key] } }))
+      }))
+    };
+  }
+}
+</script>
+</body>
+</html>
