@@ -4,7 +4,7 @@
  * /ambiances-styles/<articleSlug> (catégorie "Ambiances & Styles").
  */
 
-export const AMBIANCE_CATEGORY = "ambiances-styles";
+export const AMBIANCE_CATEGORY = "ambiances";
 
 export type Ambiance = {
   name: string;
