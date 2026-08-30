@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Cormorant_Garamond, Jost } from "next/font/google";
 import { siteConfig } from "../../config/site";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -8,16 +8,19 @@ import ChatWidget from "@/components/ChatWidget";
 import JsonLd from "@/components/JsonLd";
 import { getOrganizationJsonLd, getWebSiteJsonLd } from "@/lib/jsonld";
 import "./globals.css";
+import "./refonte.css";
 
-const playfair = Playfair_Display({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["400", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600"],
+  style: ["normal", "italic"],
   variable: "--font-serif",
   display: "swap",
 });
 
-const inter = Inter({
+const jost = Jost({
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
   variable: "--font-sans",
   display: "swap",
 });
@@ -90,11 +93,23 @@ export default function RootLayout({
   } as React.CSSProperties;
 
   return (
-    <html lang="fr" className={`${playfair.variable} ${inter.variable}`} style={colorVars}>
+    <html lang="fr" className={`${cormorant.variable} ${jost.variable}`} style={colorVars}>
       <head>
-        {/* Google Funding Choices (CMP) — bandeau de consentement cookies RGPD, requis pour les annonces
-            personnalisées auprès des visiteurs UE/UK. Le message (texte, options) se configure dans
-            AdSense > Confidentialité et messages. */}
+        {/* Consent Mode V2 — refus par défaut, mis à jour par le CMP Google */}
+        <Script id="consent-default" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('consent', 'default', {
+              analytics_storage: 'denied',
+              ad_storage: 'denied',
+              ad_user_data: 'denied',
+              ad_personalization: 'denied',
+              wait_for_update: 500
+            });
+          `}
+        </Script>
+        {/* Google Funding Choices (CMP) — bandeau de consentement RGPD */}
         <script
           async
           src="https://fundingchoicesmessages.google.com/i/pub-3032721268082286?ers=1"
