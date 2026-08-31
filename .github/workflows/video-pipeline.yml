@@ -2,9 +2,11 @@ name: Video pipeline
 
 on:
   schedule:
-    # 15:00 UTC daily. Adjust to taste — this is the only knob that
-    # controls posting cadence.
-    - cron: "0 15 * * *"
+    # 9h and 15h heure de Paris (currently UTC+2, CEST) = 7h and 13h UTC.
+    # cron is always UTC — when France switches back to UTC+1 in late
+    # October, bump both by 1 hour (8h/14h UTC) to keep the same local times.
+    - cron: "0 7 * * *"
+    - cron: "0 13 * * *"
   workflow_dispatch: {}
 
 permissions:
