@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { selectNextArticle, markUsed } from "./select-article.mjs";
+import { selectNextArticle, loadArticleBySlug, markUsed } from "./select-article.mjs";
 import { buildScript } from "./build-script.mjs";
 import { synthesizeLines } from "./tts.mjs";
 import { renderVideo } from "./render.mjs";
@@ -8,9 +8,17 @@ import { uploadVideo } from "./upload.mjs";
 import { TMP_DIR, OUT_DIR } from "./config.mjs";
 
 async function main() {
-  const picked = selectNextArticle();
+  // FORCE_ARTICLE_SLUG lets you redo one specific video (e.g. after fixing
+  // a bad product photo or swapping a discontinued item) instead of
+  // advancing to the next unused article in the queue.
+  const forcedSlug = process.env.FORCE_ARTICLE_SLUG;
+  const picked = forcedSlug ? loadArticleBySlug(forcedSlug) : selectNextArticle();
   if (!picked) {
-    console.log("No unused article left in content/articles — nothing to do this run.");
+    console.log(
+      forcedSlug
+        ? `Article "${forcedSlug}" not found or has no product with a real price.`
+        : "No unused article left in content/articles — nothing to do this run."
+    );
     return;
   }
   const { slug, article } = picked;

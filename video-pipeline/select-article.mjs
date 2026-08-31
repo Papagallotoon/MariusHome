@@ -24,6 +24,19 @@ function hasRealPrice(product) {
   return /\d/.test(product.price || "");
 }
 
+// Loads one specific article by slug regardless of whether it was already
+// used — for redoing a video after fixing the article's content (a bad
+// product photo, a discontinued item, etc). Returns null if the slug
+// doesn't exist or has no product with a real price.
+export function loadArticleBySlug(slug) {
+  const file = path.join(ARTICLES_DIR, `${slug}.json`);
+  if (!fs.existsSync(file)) return null;
+  const article = JSON.parse(fs.readFileSync(file, "utf8"));
+  article.products = (article.products || []).filter(hasRealPrice);
+  if (article.products.length === 0) return null;
+  return { slug, article };
+}
+
 // Picks the next article that hasn't been turned into a video yet.
 // Returns null once every article has been used at least once.
 export function selectNextArticle() {
