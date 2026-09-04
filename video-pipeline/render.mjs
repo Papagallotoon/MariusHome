@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
-import { ROOT_DIR, PUBLIC_DIR, VIDEO_WIDTH, VIDEO_HEIGHT, FPS, CHIME_PATH, SITE_BRAND_CAPTION } from "./config.mjs";
+import { ROOT_DIR, PUBLIC_DIR, VIDEO_WIDTH, VIDEO_HEIGHT, FPS, CHIME_PATH, SITE_BRAND_CAPTION, TITLE_CARD_PATH, COLOR_GRADE } from "./config.mjs";
 import { getAudioDurationSeconds } from "./ffprobe.mjs";
 
 const execFileAsync = promisify(execFile);
@@ -80,28 +80,41 @@ function findFontFile() {
   return candidates.find((c) => fs.existsSync(c)) || null;
 }
 
-async function renderSegment({ imagePath, audioPath, captionPath, duration, outPath, fontFile }) {
+async function renderSegment({ imagePath, audioPath, captionPath, duration, outPath, fontFile, fullBleed }) {
   const caption = toFilterPath(captionPath);
   const drawtextFont = fontFile ? `fontfile=${toFilterPath(fontFile)}` : `font=DejaVu Sans Bold`;
 
-  // Two layers so the product is never cropped: a blurred cover-fill
-  // background (fills the vertical frame) behind a "contain"-fit foreground
-  // (scaled down to fit entirely inside a safe area, never cut off). The
-  // slow zoom is applied to the composited frame as a whole, with a low max
-  // zoom, so the safe-area margin absorbs it instead of clipping the object.
-  const safeW = Math.round(VIDEO_WIDTH * 0.92);
-  const safeH = Math.round(VIDEO_HEIGHT * 0.86);
+  let filter;
+  if (fullBleed) {
+    // The brand title card is already a full 1080x1920 composition — no
+    // blur/contain split needed, just scale-to-cover and grade it directly.
+    filter =
+      `[0:v]scale=${VIDEO_WIDTH}:${VIDEO_HEIGHT}:force_original_aspect_ratio=increase,` +
+      `crop=${VIDEO_WIDTH}:${VIDEO_HEIGHT},${COLOR_GRADE},` +
+      `zoompan=z='min(zoom+0.0012,1.09)':d=1:s=${VIDEO_WIDTH}x${VIDEO_HEIGHT}:fps=${FPS},setsar=1[zoomed];` +
+      `[zoomed]drawtext=${drawtextFont}:textfile=${caption}:fontcolor=white:fontsize=48:` +
+      `line_spacing=10:box=1:boxcolor=black@0.55:boxborderw=24:` +
+      `x=(w-text_w)/2:y=h-th-180[v]`;
+  } else {
+    // Two layers so the product is never cropped: a blurred cover-fill
+    // background (fills the vertical frame) behind a "contain"-fit foreground
+    // (scaled down to fit entirely inside a safe area, never cut off). The
+    // slow zoom is applied to the composited frame as a whole, with a low max
+    // zoom, so the safe-area margin absorbs it instead of clipping the object.
+    const safeW = Math.round(VIDEO_WIDTH * 0.92);
+    const safeH = Math.round(VIDEO_HEIGHT * 0.86);
 
-  const filter =
-    `[0:v]split=2[bg_src][fg_src];` +
-    `[bg_src]scale=${VIDEO_WIDTH}:${VIDEO_HEIGHT}:force_original_aspect_ratio=increase,` +
-    `crop=${VIDEO_WIDTH}:${VIDEO_HEIGHT},gblur=sigma=30,eq=brightness=-0.15[bg];` +
-    `[fg_src]scale=${safeW}:${safeH}:force_original_aspect_ratio=decrease[fg];` +
-    `[bg][fg]overlay=(W-w)/2:(H-h)/2[composite];` +
-    `[composite]zoompan=z='min(zoom+0.0012,1.09)':d=1:s=${VIDEO_WIDTH}x${VIDEO_HEIGHT}:fps=${FPS},setsar=1[zoomed];` +
-    `[zoomed]drawtext=${drawtextFont}:textfile=${caption}:fontcolor=white:fontsize=48:` +
-    `line_spacing=10:box=1:boxcolor=black@0.55:boxborderw=24:` +
-    `x=(w-text_w)/2:y=h-th-180[v]`;
+    filter =
+      `[0:v]split=2[bg_src][fg_src];` +
+      `[bg_src]scale=${VIDEO_WIDTH}:${VIDEO_HEIGHT}:force_original_aspect_ratio=increase,` +
+      `crop=${VIDEO_WIDTH}:${VIDEO_HEIGHT},gblur=sigma=30,eq=brightness=-0.15[bg];` +
+      `[fg_src]scale=${safeW}:${safeH}:force_original_aspect_ratio=decrease[fg];` +
+      `[bg][fg]overlay=(W-w)/2:(H-h)/2,${COLOR_GRADE}[composite];` +
+      `[composite]zoompan=z='min(zoom+0.0012,1.09)':d=1:s=${VIDEO_WIDTH}x${VIDEO_HEIGHT}:fps=${FPS},setsar=1[zoomed];` +
+      `[zoomed]drawtext=${drawtextFont}:textfile=${caption}:fontcolor=white:fontsize=48:` +
+      `line_spacing=10:box=1:boxcolor=black@0.55:boxborderw=24:` +
+      `x=(w-text_w)/2:y=h-th-180[v]`;
+  }
 
   const args = [
     "-y",
@@ -153,6 +166,27 @@ async function concatSegments(segmentPaths, outPath) {
 export async function renderVideo({ lines, article, tmpDir, outPath }) {
   const fontFile = findFontFile();
   const segmentPaths = [];
+
+  // Fixed brand bumper first, identical on every video — the one visual
+  // constant that makes the channel recognizable regardless of the ambiance
+  // shown that day.
+  if (fs.existsSync(TITLE_CARD_PATH) && fs.existsSync(CHIME_PATH)) {
+    const titleCaptionPath = path.join(tmpDir, "titlecard", "caption.txt");
+    fs.mkdirSync(path.dirname(titleCaptionPath), { recursive: true });
+    fs.writeFileSync(titleCaptionPath, "");
+
+    const titleSegmentPath = path.join(tmpDir, "segment-titlecard.mp4");
+    await renderSegment({
+      imagePath: TITLE_CARD_PATH,
+      audioPath: CHIME_PATH,
+      captionPath: titleCaptionPath,
+      duration: await getAudioDurationSeconds(CHIME_PATH),
+      outPath: titleSegmentPath,
+      fontFile,
+      fullBleed: true,
+    });
+    segmentPaths.push(titleSegmentPath);
+  }
 
   for (const [i, line] of lines.entries()) {
     const imagePath = resolveLineImage(line, article);

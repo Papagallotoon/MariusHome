@@ -12,6 +12,14 @@ export const OUT_DIR = path.join(__dirname, "out");
 export const SITE_DOMAIN = "https://marius-home.com";
 export const SITE_BRAND_CAPTION = "marius-home.com";
 export const CHIME_PATH = path.join(__dirname, "assets", "chime.mp3");
+// Fixed brand bumper shown at the very start of every video, identical
+// every time — the one recognizable element that doesn't vary with the
+// topic (unlike the room photo, which is per-article on purpose).
+export const TITLE_CARD_PATH = path.join(__dirname, "assets", "title-card.png");
+// Subtle warm/gold push applied to every image in every video, so the
+// channel has a consistent visual signature even though the underlying
+// room photos vary a lot from one ambiance to the next.
+export const COLOR_GRADE = "eq=saturation=1.05:contrast=1.04,colorbalance=rm=0.05:gm=0.02:bm=-0.04";
 // Multilingual-generation neural voice — sounds noticeably warmer/more
 // natural than the older single-locale neural voices (e.g. DeniseNeural).
 export const TTS_VOICE = "fr-FR-VivienneMultilingualNeural";
