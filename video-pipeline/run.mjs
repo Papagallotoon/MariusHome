@@ -5,6 +5,7 @@ import { buildScript } from "./build-script.mjs";
 import { synthesizeLines } from "./tts.mjs";
 import { renderVideo } from "./render.mjs";
 import { uploadVideo } from "./upload.mjs";
+import { generateThemedImage } from "./generate-image.mjs";
 import { TMP_DIR, OUT_DIR } from "./config.mjs";
 
 async function main() {
@@ -28,7 +29,20 @@ async function main() {
   fs.rmSync(runTmpDir, { recursive: true, force: true });
   fs.mkdirSync(runTmpDir, { recursive: true });
 
-  const scriptLines = buildScript(article);
+  const introCoverPath = path.join(runTmpDir, "cover-intro.png");
+  const outroCoverPath = path.join(runTmpDir, "cover-outro.png");
+  const introGenerated = await generateThemedImage(article, "intro", introCoverPath);
+  const outroGenerated = await generateThemedImage(article, "outro", outroCoverPath);
+  console.log(
+    introGenerated
+      ? `Generated themed cover images with OpenAI (outro: ${outroGenerated ? "distinct" : "reused intro"})`
+      : "OpenAI cover generation unavailable — falling back to the room-photo pool"
+  );
+
+  const scriptLines = buildScript(article, {
+    coverImage: introGenerated ? introCoverPath : undefined,
+    outroImage: outroGenerated ? outroCoverPath : undefined,
+  });
   console.log(`Built script with ${scriptLines.length} lines`);
 
   const linesWithAudio = await synthesizeLines(scriptLines, runTmpDir);

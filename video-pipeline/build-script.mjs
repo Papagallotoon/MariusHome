@@ -76,17 +76,20 @@ const RANK_INTROS = [
   "Et pour finir, notre dernier choix",
 ];
 
-export function buildScript(article) {
+export function buildScript(article, { coverImage, outroImage } = {}) {
   const lines = [];
-  // Always open (and close) on a fully styled room — the article's own
-  // cover is often just a flat-lay of the products, not a "pièce".
-  const roomImage = pickRoomImage(article);
+  // Prefers a per-video AI-generated cover (see generate-image.mjs) — falls
+  // back to the static room-photo pool only when that isn't available. The
+  // article's own cover is often just a flat-lay of the products, not a
+  // "pièce", so something styled is always used instead.
+  const intro = coverImage || pickRoomImage(article);
+  const outro = outroImage || intro;
 
   lines.push({
     id: "intro",
     spoken: clean(`${stripDimensionsForSpeech(article.title)} ! ${stripDimensionsForSpeech(article.excerpt)}`),
     caption: article.title,
-    image: roomImage,
+    image: intro,
   });
 
   // Cap at 5 products: a couple of articles carry 10, which would make the
@@ -115,7 +118,7 @@ export function buildScript(article) {
       "Petite précision : les prix peuvent avoir changé depuis la publication de cette vidéo. " +
       "Abonne-toi pour ne rater aucune sélection !",
     caption: "Liens en description",
-    image: roomImage,
+    image: outro,
   });
 
   return lines;

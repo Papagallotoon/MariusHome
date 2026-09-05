@@ -29,3 +29,11 @@ export const TTS_PROSODY = { rate: "+2%", pitch: "+4%" };
 export const VIDEO_WIDTH = 1080;
 export const VIDEO_HEIGHT = 1920;
 export const FPS = 30;
+
+// Intro/outro cover generated per-video with OpenAI instead of picking from
+// the static room-photo pool (which had no reliable way to reject an
+// obviously mismatched image — a leftover Japanese street photo kept
+// getting picked for unrelated articles). Falls back to the room-photo pool
+// automatically if the key is missing or the call fails.
+export const OPENAI_API_KEY = process.env.OPENAI_API_KEY || null;
+export const OPENAI_IMAGE_MODEL = "gpt-image-1.5";
