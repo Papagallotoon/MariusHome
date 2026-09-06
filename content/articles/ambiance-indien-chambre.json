@@ -10,7 +10,113 @@
   "date": "2026-03-28",
   "author": "Marius Dumas",
   "intro": "La chambre indienne est un boudoir de rêve où les couleurs profondes, les broderies scintillantes et les lumières dorées composent un cocon d'une sensualité envoûtante. Dans les palais du Rajasthan, les chambres des maharanis étaient de véritables joyaux architecturaux : murs incrustés de miroirs, voiles de soie suspendus en baldaquin, lampes en laiton ciselé projetant des motifs floraux sur les plafonds peints. Cette opulence raffinée, loin d'être inaccessible, se transpose magnifiquement dans une chambre contemporaine.\n\nL'art de la chambre indienne repose sur le textile. L'Inde est le berceau de certaines des plus anciennes et des plus sophistiquées traditions textiles au monde : soie de Varanasi, broderies miroir du Gujarat, imprimés block print du Rajasthan, couvertures kantha brodées du Bengale. Chacune de ces techniques ancestrales apporte une texture, un éclat et une histoire uniques. La superposition de ces textiles crée cette richesse visuelle caractéristique du style indien.\n\nEn 2026, la chambre indienne se réinvente dans une version « royal chic » qui conserve la richesse des matériaux artisanaux tout en les intégrant dans un cadre plus épuré. Les murs restent neutres pour laisser briller les textiles, le mobilier est simple mais rehaussé par les accessoires dorés, et l'éclairage d'ambiance crée une atmosphère de palais sans la surcharge décorative.\n\nDécouvrez notre sélection de 5 objets pour transformer votre chambre en suite de palais indien, entre tradition artisanale et confort contemporain.",
-  "products": [],
+  "products": [
+    {
+      "name": "Lampe Turque en Laiton Antique Mosaïque Ajourée",
+      "badge": "Meilleur Choix",
+      "image": "/images/products/lampe-laiton-ajoure-mosaique-turque.jpg",
+      "rating": 4.6,
+      "amazonAsin": "B08YD97272",
+      "price": "49,99 €",
+      "pros": [
+        "Corps en métal couleur laiton antique, 100% fait main",
+        "Motif ajouré qui projette des jeux d'ombres colorés",
+        "Base en métal martelé, artisanat authentique",
+        "Transforme instantanément l'éclairage de la chambre"
+      ],
+      "cons": [
+        "Ampoule non incluse dans certains lots",
+        "Câble assez court, prévoir une prise à proximité",
+        "Nécessite un dépoussiérage régulier des perforations"
+      ],
+      "description": "Cette lampe en laiton antique aux motifs ajourés projette un jeu d'ombres et de lumières colorées digne d'un palais du Rajasthan. Posée sur une table de chevet, elle devient à elle seule le point focal de la chambre indienne, une fois la nuit tombée.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B08YD97272?tag=secure012de-21"
+    },
+    {
+      "name": "Couvre-Lit Kantha Patchwork Indien Fait Main",
+      "badge": "Pièce Maîtresse",
+      "image": "/images/products/couvre-lit-kantha-patchwork-indien.jpg",
+      "rating": 4.3,
+      "amazonAsin": "B08YNXVJWH",
+      "price": "40,52 €",
+      "pros": [
+        "Broderie kantha traditionnelle, technique indienne ancestrale",
+        "Réversible, deux ambiances en une seule pièce",
+        "100% coton, texture légère et respirante",
+        "Chaque pièce est unique, patchwork fait main"
+      ],
+      "cons": [
+        "Motifs et couleurs varient d'une pièce à l'autre",
+        "Lavage délicat recommandé pour préserver la broderie",
+        "Format à vérifier selon la taille du lit"
+      ],
+      "description": "Ce couvre-lit kantha, cousu à la main selon une technique de broderie traditionnelle du Bengale, apporte une authenticité rare à la chambre indienne. Son patchwork coloré et sa texture légèrement froissée racontent une histoire artisanale unique à chaque exemplaire.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B08YNXVJWH?tag=secure012de-21"
+    },
+    {
+      "name": "Boîte à Bijoux en Bois Sculpté Incrustations Laiton",
+      "badge": "Artisanat Précieux",
+      "image": "/images/products/boite-a-bijoux-bois-sculpte-laiton-ajuny.jpg",
+      "rating": 4.5,
+      "amazonAsin": "B0871KF85R",
+      "price": "19,89 €",
+      "pros": [
+        "Bois massif sculpté avec incrustations florales en laiton",
+        "Coffret vintage fait main, finition soignée",
+        "Format compact, s'installe sur toute commode ou chevet",
+        "Fonctionnel autant que décoratif"
+      ],
+      "cons": [
+        "Petit format, capacité de rangement limitée",
+        "Charnières à manipuler avec douceur",
+        "Le bois massif craint l'exposition directe au soleil"
+      ],
+      "description": "Cette boîte à bijoux en bois sculpté, ornée d'incrustations florales en laiton, complète la commode ou la table de chevet avec une touche précieuse d'artisanat indien. Fonctionnelle pour ranger bijoux et petits objets, elle est aussi bel objet posé à vue.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B0871KF85R?tag=secure012de-21"
+    },
+    {
+      "name": "Housse de Coussin Brodée Miroir Style Indien",
+      "badge": "Touche Rajasthan",
+      "image": "/images/products/coussin-brode-miroir-indien-eyes-of-india.jpg",
+      "rating": 4.4,
+      "amazonAsin": "B00YP9USXG",
+      "price": "17,09 €",
+      "pros": [
+        "Broderie miroir (shisha) faite main, technique traditionnelle",
+        "Coloris vifs typiques de l'artisanat du Rajasthan",
+        "Format standard 40x40cm, facile à intégrer",
+        "Chaque pièce brille légèrement à la lumière"
+      ],
+      "cons": [
+        "Garnissage vendu séparément",
+        "Broderie fragile, lavage à la main recommandé",
+        "Coloris disponibles selon le stock du fabricant"
+      ],
+      "description": "Cette housse de coussin brodée de petits miroirs selon la technique shisha capte et reflète la lumière ambiante, un détail caractéristique de l'artisanat textile du Rajasthan. Elle apporte éclat et couleur sur un lit habillé de kantha et de coton naturel.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B00YP9USXG?tag=secure012de-21"
+    },
+    {
+      "name": "Voile en Tissu Sari Indien pour Ciel de Lit",
+      "badge": "Meilleur Rapport",
+      "image": "/images/products/voile-sari-indien-ciel-de-lit-orange.jpg",
+      "rating": 3.9,
+      "amazonAsin": "B09SDXCD2Y",
+      "price": "30,03 €",
+      "pros": [
+        "Tissu sari authentique, couleurs vives et chatoyantes",
+        "Filtre la lumière avec un effet chaleureux et doré",
+        "Polyvalent : ciel de lit, tenture murale ou rideau",
+        "Format généreux 213x119cm"
+      ],
+      "cons": [
+        "Coloris et motifs varient selon les lots disponibles",
+        "Tissu léger, à doubler pour plus d'opacité si besoin",
+        "Fixation au plafond à prévoir séparément"
+      ],
+      "description": "Ce voile en tissu sari, aux couleurs chatoyantes typiques de l'Inde, se drape au-dessus du lit pour créer un ciel de lit digne d'un boudoir du Rajasthan. Sa texture légère filtre la lumière du jour en une teinte dorée et enveloppante.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B09SDXCD2Y?tag=secure012de-21"
+    }
+  ],
   "buyingGuide": {
     "title": "Guide : Comment créer une chambre d'inspiration indienne ?",
     "content": "<h3>L'esprit de la chambre royale indienne</h3><p>La chambre indienne s'inspire des <strong>chambres des palais du Rajasthan</strong>, où opulence textile et lumière dorée créaient des espaces d'une beauté envoûtante. L'objectif n'est pas la surcharge décorative, mais la création d'un <strong>cocon sensoriel</strong> où les textures, les couleurs et la lumière invitent au repos et au rêve. La clé est de garder des murs neutres (blanc, crème) et de concentrer la richesse indienne sur le <strong>lit</strong> (textiles brodés, voile de sari, couvre-lit kantha) et les <strong>points de lumière</strong> (lampes en laiton ajouré, photophores). Cette approche crée un contraste spectaculaire entre la sobriété des murs et la richesse des détails.</p><h3>Le lit comme trône royal</h3><p>Dans la tradition indienne, le lit est un <strong>espace sacré</strong>. Pour lui donner la dimension royale qu'il mérite, commencez par un <strong>ciel de lit en voile de sari</strong> suspendu au plafond, qui retombe en cascade colorée autour du lit. Ajoutez un <strong>couvre-lit kantha</strong> brodé comme base textile. Disposez des <strong>coussins en soie brodée</strong> de tailles et couleurs différentes (5 à 7 coussins pour un lit double). Complétez avec un <strong>jeté de lit en pashmina</strong> ou en velours au pied du lit. La superposition est la clé : chaque couche ajoute de la texture et de la profondeur.</p><h3>L'art textile indien pour la chambre</h3><p>L'Inde offre une variété textile incomparable pour la chambre :</p><ul><li><strong>La soie brodée</strong> : pour les coussins décoratifs et les voiles. La broderie miroir (shisha) du Gujarat et la broderie zari (fil d'or) de Varanasi sont les plus spectaculaires.</li><li><strong>Le kantha</strong> : technique de broderie du Bengale qui assemble des couches de coton. Parfait pour les couvre-lits et les plaids.</li><li><strong>Le block print</strong> : impression artisanale au tampon de bois. Idéal pour les rideaux, les housses de coussin et les draps.</li><li><strong>Le pashmina</strong> : la laine ultrafine du Cachemire. Un châle de pashmina jeté sur le lit ajoute une touche de luxe inégalée.</li><li><strong>Le velours brodé</strong> : riche et somptueux, parfait pour les coussins et les têtes de lit capitonnées.</li></ul><h3>L'éclairage magique : laiton ajouré et bougies</h3><p>L'éclairage est l'ingrédient magique de la chambre indienne. Les <strong>lampes en laiton ajouré</strong> projettent des motifs floraux sur les murs et le plafond, transformant la chambre en décor de conte. Les <strong>photophores en verre coloré</strong> (rubis, ambre, émeraude) posés sur les tables de chevet ajoutent des touches de couleur lumineuse. Les <strong>guirlandes LED blanc chaud</strong> drapées derrière la tête de lit ou autour du ciel de lit créent un halo doré. L'éclairage doit être <strong>exclusivement indirect et tamisé</strong> en chambre — jamais de plafonnier direct. La température idéale est 2200K pour reproduire la lumière dorée des lampes à huile traditionnelles.</p><h3>Les couleurs de la chambre indienne</h3><p>La chambre indienne ose des couleurs que peu d'autres styles utilisent. Les combinaisons les plus réussies sont : <strong>magenta et or</strong> (le plus royal), <strong>indigo et safran</strong> (le plus vibrant), <strong>émeraude et rubis</strong> (le plus somptueux), <strong>safran et crème</strong> (le plus doux). La règle d'or pour éviter la surcharge : gardez les murs en <strong>blanc ou crème</strong> et concentrez les couleurs vives dans les <strong>textiles</strong> (lit, coussins, rideaux). Le <strong>doré</strong>, présent dans le laiton, les broderies et les cadres, sert de fil conducteur qui unifie la palette et empêche le chaos visuel.</p><h3>Les accessoires complémentaires</h3><p>Quelques accessoires complètent la chambre indienne : un <strong>miroir en laiton ciselé</strong> au-dessus de la commode, une <strong>boîte à bijoux en bois sculpté</strong> sur la table de chevet, un <strong>porte-encens en laiton</strong> pour un bâtonnet de santal le soir, un <strong>petit plateau en marbre</strong> pour organiser les parfums et les crèmes. Pour les murs, une <strong>tenture block print</strong> encadrée ou un <strong>panneau en bois sculpté</strong> créent un point focal. Le <strong>miroir rond en métal ajouré</strong> est à la fois fonctionnel et décoratif. Chaque accessoire doit être choisi avec soin : quelques pièces de qualité valent mieux qu'une accumulation d'objets de bazar.</p>"

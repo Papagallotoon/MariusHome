@@ -10,7 +10,113 @@
   "date": "2026-03-28",
   "author": "Marius Dumas",
   "intro": "La chambre bohème est bien plus qu'une tendance décorative : c'est une philosophie de vie qui célèbre la liberté, l'authenticité et la beauté de l'imparfait. Née du mouvement artistique bohème du XIXe siècle — ces poètes, peintres et musiciens qui refusaient les conventions bourgeoises pour vivre selon leurs propres règles — l'esthétique boho chic transpose cet esprit rebelle et créatif dans nos intérieurs. Une chambre bohème raconte une histoire : celle de voyages lointains, de marchés artisanaux, de rencontres et de trouvailles uniques.\n\nLe style bohème se caractérise par une accumulation maîtrisée de textures, de motifs et de matériaux naturels. Contrairement au minimalisme qui épure jusqu'à l'essentiel, le boho chic superpose les couches : un plaid en lin froissé sur un couvre-lit en coton tissé à la main, des coussins aux motifs kilim sur un matelas posé à même le sol, un attrape-rêves qui danse dans le courant d'air au-dessus du lit. Chaque objet porte en lui une intention, une mémoire, une âme.\n\nEn 2026, le style bohème connaît un renouveau remarquable. Les tons neutres et terreux — crème, sable, terracotta, sauge — remplacent les couleurs vives et saturées des premières vagues boho. Le macramé, longtemps cantonné aux suspensions pour plantes, s'est imposé comme un art textile à part entière, ornant têtes de lit, rideaux et tentures murales. L'artisanat revient au centre des préoccupations, porté par une génération qui valorise le fait-main, le local et le durable.\n\nDécouvrez notre sélection de 5 objets essentiels pour créer une chambre bohème enveloppante et pleine de caractère, où le confort cocooning rencontre l'esprit nomade et l'artisanat authentique.",
-  "products": [],
+  "products": [
+    {
+      "name": "Tenture Murale en Macramé pour Tête de Lit 110x80cm",
+      "badge": "Meilleur Choix",
+      "image": "/images/products/tenture-murale-macrame-tete-de-lit-110x80.jpg",
+      "rating": 4.6,
+      "amazonAsin": "B08G1Y85S1",
+      "price": "46,99 €",
+      "pros": [
+        "Tissage main sur bâton en bois naturel",
+        "Format généreux, remplace une vraie tête de lit",
+        "Coton naturel, texture riche et texturée",
+        "Pose simple avec 2 fixations murales"
+      ],
+      "cons": [
+        "Demande un mur assez large pour être bien mis en valeur",
+        "Le coton naturel jaunit légèrement avec le temps",
+        "Fragile aux tractions, à éloigner des jeunes enfants"
+      ],
+      "description": "Cette tenture murale en macramé remplace une tête de lit classique avec beaucoup plus de caractère. Tissée à la main sur un bâton de bois naturel, elle capte la lumière du soir et donne immédiatement le ton bohème de la chambre.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B08G1Y85S1?tag=secure012de-21"
+    },
+    {
+      "name": "Housses de Coussin Ethniques Rayure Rouille, Lot de 2",
+      "badge": "Touche Ethnique",
+      "image": "/images/products/housse-coussin-boheme-rayure-rouille-lot-2.jpg",
+      "rating": 4.4,
+      "amazonAsin": "B0H5K3136X",
+      "price": "18,99 €",
+      "pros": [
+        "Motif rayé terracotta dans l'esprit kilim",
+        "Texture tissée qui rappelle l'artisanat traditionnel",
+        "Lot de 2 housses, format standard 40x40cm",
+        "Se marie avec le lin, le coton et le rotin"
+      ],
+      "cons": [
+        "Garnissage vendu séparément",
+        "Coloris rouille peut légèrement varier selon l'écran",
+        "Lavage à basse température recommandé"
+      ],
+      "description": "Ces housses de coussin aux rayures terracotta apportent la touche ethnique qui fait toute la différence dans une chambre bohème. Posées sur le lit ou dans le fauteuil en rotin, elles réchauffent immédiatement la palette de tons neutres.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B0H5K3136X?tag=secure012de-21"
+    },
+    {
+      "name": "Fauteuil en Rotin Naturel H 84cm Atmosphera",
+      "badge": "Choix Premium",
+      "image": "/images/products/fauteuil-rotin-naturel-atmosphera.jpg",
+      "rating": 4.6,
+      "amazonAsin": "B08Y3NCL62",
+      "price": "97,45 €",
+      "pros": [
+        "Rotin naturel tressé, silhouette élégante et légère",
+        "Parfait pour un coin lecture dans la chambre",
+        "Structure stable malgré son aspect léger",
+        "S'accorde avec le macramé et les textiles en lin"
+      ],
+      "cons": [
+        "Assise sans coussin d'origine, à prévoir séparément",
+        "Montage requis à la réception",
+        "Le rotin naturel craint l'humidité prolongée"
+      ],
+      "description": "Ce fauteuil en rotin naturel crée un coin lecture ou méditation dans la chambre bohème. Sa silhouette légère et aérée n'encombre pas visuellement l'espace, tout en apportant la texture tressée essentielle au style boho chic.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B08Y3NCL62?tag=secure012de-21"
+    },
+    {
+      "name": "Attrape-Rêves Artisanal en Plumes Style Bohème",
+      "badge": "Esprit Nomade",
+      "image": "/images/products/attrape-reves-artisanal-plumes-boheme.jpg",
+      "rating": 4.3,
+      "amazonAsin": "B0CXP84TD1",
+      "price": "8,99 €",
+      "pros": [
+        "Fait main, plumes et perles naturelles",
+        "Petit prix pour un fort impact décoratif",
+        "Léger, se suspend facilement au-dessus du lit",
+        "Symbole fort de l'esthétique bohème et nomade"
+      ],
+      "cons": [
+        "Fragile, à manipuler avec précaution",
+        "Les plumes peuvent se ternir avec la poussière",
+        "Taille modeste, prévoir plusieurs pour un mur composé"
+      ],
+      "description": "Cet attrape-rêves artisanal en plumes naturelles complète la chambre bohème avec sa dimension symbolique et sa légèreté visuelle. Suspendu près de la fenêtre ou au-dessus du lit, il danse doucement au moindre courant d'air.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B0CXP84TD1?tag=secure012de-21"
+    },
+    {
+      "name": "Plaid à Franges en Coton Lin Douceur d'Intérieur",
+      "badge": "Meilleur Rapport",
+      "image": "/images/products/plaid-a-franges-lin-douceur-interieur.jpg",
+      "rating": 5.0,
+      "amazonAsin": "B0G57RB87M",
+      "price": "23,99 €",
+      "pros": [
+        "Grand format 220x240cm, recouvre tout le lit",
+        "Franges tissées à la main sur les bords",
+        "Coton doux, teinte lin neutre et intemporelle",
+        "Excellent rapport qualité-prix"
+      ],
+      "cons": [
+        "Nécessite un lavage délicat pour préserver les franges",
+        "Peut légèrement peluche au premier lavage",
+        "Un seul coloris disponible"
+      ],
+      "description": "Ce plaid à franges en coton complète la superposition textile caractéristique de la chambre bohème. Jeté négligemment sur le lit ou plié au pied, il apporte la touche finale de confort décontracté au décor.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B0G57RB87M?tag=secure012de-21"
+    }
+  ],
   "buyingGuide": {
     "title": "Guide : Comment créer une chambre bohème irrésistible ?",
     "content": "<h3>Comprendre l'esprit bohème en décoration</h3><p>Le style bohème en décoration intérieure est né de la <strong>contre-culture artistique</strong> et du goût pour le voyage, l'artisanat et la liberté créative. Contrairement aux styles codifiés comme le scandinave ou le japonais, le boho chic ne repose pas sur des règles strictes mais sur une <strong>accumulation harmonieuse</strong> de textures, de motifs et de souvenirs. La clé est l'authenticité : chaque objet doit sembler avoir une histoire, avoir été rapporté d'un marché marocain, chiné dans une brocante ou créé par des mains artisanales.</p><p>En chambre, cette philosophie se traduit par un espace enveloppant, chaleureux et profondément personnel. Le lit est le coeur de la pièce, habillé de couches multiples de textiles — draps en lin, couvre-lit en coton tissé, plaids frangés, coussins ethniques. Les murs ne restent jamais nus : macramé, attrape-rêves, miroirs en rotin, étagères en bois brut chargées de plantes et de bougies. L'ensemble crée un cocon protecteur où l'on se sent instantanément chez soi.</p><h3>La palette de couleurs bohème en 2026</h3><p>La palette bohème contemporaine a considérablement évolué. Fini les explosions de couleurs psychédéliques : en 2026, le boho chic privilégie des <strong>tons naturels et terreux</strong> qui créent une atmosphère apaisante dans la chambre. La base repose sur le <strong>crème</strong>, le <strong>blanc cassé</strong> et le <strong>beige sable</strong>. Les accents viennent ensuite en touches mesurées : <strong>terracotta</strong> pour la chaleur, <strong>moutarde dorée</strong> pour la lumière, <strong>vert sauge</strong> pour la fraîcheur et <strong>brun chocolat</strong> pour la profondeur.</p><p>Pour une chambre réussie, appliquez la règle des 60-30-10 : 60% de tons neutres (murs, linge de lit principal), 30% de tons chauds (textiles décoratifs, bois), 10% d'accents colorés (un coussin curcuma, une plante verte, une bougie terracotta). Cette palette douce favorise le sommeil tout en conservant le caractère expressif du style bohème.</p><h3>L'art de superposer les textiles</h3><p>La superposition textile est la <strong>signature absolue</strong> du style bohème en chambre. Le lit doit être composé comme un mille-feuille sensoriel. Commencez par des draps en <strong>lin lavé</strong> aux teintes naturelles — le lin est le textile bohème par excellence grâce à son aspect froissé nonchalant. Ajoutez un <strong>couvre-lit en coton tissé</strong> aux motifs géométriques ou ethniques. Drapez un <strong>plaid frangé</strong> au pied du lit pour le volume.</p><p>Composez ensuite un arrangement de <strong>coussins variés</strong> : mélangez les tailles (60x60 cm à l'arrière, 45x45 cm au milieu, 30x50 cm devant), les textures (tuft, kilim, velours, lin) et les techniques (pompons, franges, broderies). La règle est qu'aucun coussin ne doit être identique à un autre : c'est la diversité qui crée la richesse visuelle. Au sol, un <strong>tapis berbère</strong> ou un kilim vintage complète cet univers textile.</p><h3>Macramé et art textile mural</h3><p>Le macramé est le fil conducteur — littéralement — d'une chambre bohème. Cet <strong>art textile ancestral</strong>, qui consiste à nouer des cordes pour créer des motifs décoratifs, connaît un renouveau spectaculaire depuis quelques années. En tête de lit, une grande <strong>tenture en macramé</strong> remplace avantageusement une tête de lit classique en apportant texture et caractère. Ses motifs géométriques et ses longues franges créent un effet visuel saisissant.</p><p>Au-delà de la tête de lit, le macramé peut habiller les murs sous forme de <strong>suspensions murales</strong>, encadrer une fenêtre en guise de rideau aérien ou servir de support pour des <strong>étagères suspendues</strong> en bois flotté. Pour un rendu harmonieux, restez dans des <strong>tons naturels</strong> — coton écru, jute, corde de chanvre — et variez les tailles et les densités de noeuds pour créer du rythme sur les murs.</p><h3>L'éclairage cocooning de la chambre bohème</h3><p>L'éclairage est crucial dans une chambre bohème : il doit être <strong>doux, chaud et enveloppant</strong>, jamais agressif. Bannissez les plafonniers à lumière blanche directe qui tuent toute ambiance. Privilégiez les <strong>guirlandes lumineuses</strong> drapées autour de la tête de lit ou le long d'une étagère — elles créent un effet de constellation magique. Les <strong>lanternes en rotin</strong> ou en bambou tressé diffusent une lumière filtrée et organique.</p><p>Pour les lampes de chevet, optez pour des modèles en <strong>bois brut</strong>, en <strong>terre cuite</strong> ou en <strong>céramique artisanale</strong> avec des abat-jour en lin ou en jute. Les <strong>bougies</strong> sont évidemment indispensables : disposez-en de différentes tailles sur un plateau en bois ou sur le rebord de la fenêtre. La température de couleur idéale pour les ampoules est entre <strong>2200K et 2500K</strong>, qui recrée la chaleur d'une flamme. L'objectif est de créer une atmosphère de feu de camp intérieur, intime et réconfortante.</p><h3>Les matériaux naturels à privilégier</h3><p>La chambre bohème est un hymne aux <strong>matériaux bruts et non transformés</strong>. Le <strong>rotin</strong> est omniprésent : fauteuil, miroir, table de chevet, lampe, cache-pot. Sa texture tressée apporte chaleur et artisanat. Le <strong>bois brut</strong> — palette recyclée, bois flotté, bois non traité — sert de support aux étagères, aux cadres et parfois même au sommier. Le <strong>lin</strong>, le <strong>coton bio</strong>, la <strong>laine</strong> et le <strong>jute</strong> composent la palette textile.</p><p>Les <strong>fibres végétales</strong> — jacinthe d'eau, palmier, raphia — se retrouvent dans les paniers de rangement et les cache-pots. La <strong>terre cuite</strong> et la <strong>céramique artisanale</strong> habillent les vases et les photophores. Les <strong>plumes</strong>, les <strong>perles en bois</strong> et les <strong>coquillages</strong> viennent orner les attrape-rêves et les suspensions. Chaque matériau apporte sa propre vibration sensorielle et contribue à cette richesse tactile qui définit l'univers bohème.</p>"

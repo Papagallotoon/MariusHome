@@ -10,7 +10,113 @@
   "date": "2026-03-28",
   "author": "Marius Dumas",
   "intro": "La chambre balinaise est un sanctuaire de douceur tropicale. Dans les villas d'Ubud et les resorts de Seminyak, la chambre à coucher est conçue comme un cocon ouvert sur la nature, où le murmure des fontaines se mêle au chant des oiseaux tropicaux. Les matériaux nobles — teck vieilli, rotin tressé, coton naturel — créent une atmosphère de luxe discret qui invite au repos profond.\n\nL'art de la chambre balinaise repose sur un équilibre subtil entre confort moderne et authenticité artisanale. Le lit, toujours majestueux, trône au centre de la pièce sous un ciel de lit en voile léger qui évoque les moustiquaires des pavillons traditionnels. Les textiles en fibres naturelles, les bois sculptés à la main et la lumière tamisée composent un environnement sensoriel complet où chaque détail contribue à la relaxation.\n\nEn 2026, la tendance « tropical sanctuary » transforme la chambre en véritable refuge de déconnexion. Fini les écrans et les stimulations visuelles excessives : place aux textures naturelles, aux lumières douces et aux senteurs de frangipanier qui transforment le rituel du coucher en expérience de spa balinais. Les matériaux éco-responsables et l'artisanat équitable ajoutent une dimension éthique à cette quête de bien-être.\n\nDécouvrez notre sélection de 5 objets déco pour transformer votre chambre en suite de villa balinaise, où chaque nuit devient une escapade tropicale.",
-  "products": [],
+  "products": [
+    {
+      "name": "Tête de Lit en Rotin Naturel 140cm EFELA",
+      "badge": "Meilleur Choix",
+      "image": "/images/products/tete-de-lit-en-rotin-naturel-140-cm-efela.jpg",
+      "rating": 4.8,
+      "amazonAsin": "B0D1KQHTJY",
+      "price": "160,99 €",
+      "pros": [
+        "Rotin naturel tressé, finition artisanale soignée",
+        "Pièce maîtresse immédiatement reconnaissable du style balinais",
+        "Structure solide, compatible sommier à lattes",
+        "S'adapte aussi bien posée au sol qu'accrochée au mur"
+      ],
+      "cons": [
+        "Prix élevé pour un simple élément décoratif",
+        "Encombrante à transporter, prévoir de l'aide au montage",
+        "Le rotin naturel demande un entretien régulier"
+      ],
+      "description": "Cette tête de lit en rotin naturel tressé à la main est la pièce qui installe à elle seule l'ambiance balinaise dans la chambre. Sa texture tressée capte joliment la lumière tamisée du soir et se marie avec le teck, le bambou et les textiles en coton lavé.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B0D1KQHTJY?tag=secure012de-21"
+    },
+    {
+      "name": "Housse de Couette Coton Lavé Motif Botanique Vert Sauge",
+      "badge": "Coup de Coeur",
+      "image": "/images/products/housse-de-couette-coton-lave-motif-botanique-vert-sauge.jpg",
+      "rating": 4.6,
+      "amazonAsin": "B0CY26Z8SZ",
+      "price": "49,99 €",
+      "pros": [
+        "100% coton lavé, certifié Oeko-Tex",
+        "Motif botanique discret, dans les tons vert sauge de la palette balinaise",
+        "Fermeture éclair et 2 taies d'oreiller incluses",
+        "Toucher doux et froissé, effet resort décontracté"
+      ],
+      "cons": [
+        "Le coton lavé peut légèrement rétrécir au premier lavage",
+        "Repassage déconseillé, cela casse l'effet froissé recherché",
+        "Le vert sauge peut varier légèrement selon l'écran"
+      ],
+      "description": "Cette parure en coton lavé certifié Oeko-Tex apporte la superposition textile essentielle à une chambre balinaise réussie. Son motif botanique discret et sa teinte vert sauge s'accordent avec le rotin et le teck, pour un lit qui invite immédiatement au repos.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B0CY26Z8SZ?tag=secure012de-21"
+    },
+    {
+      "name": "Statuette Bouddha en Bois de Bali Sculpté 30cm",
+      "badge": "Art Balinais",
+      "image": "/images/products/statuette-bouddha-en-bois-de-bali-30-cm.jpg",
+      "rating": 4.8,
+      "amazonAsin": "B07TB133ZN",
+      "price": "59,90 €",
+      "pros": [
+        "Bois massif sculpté à la main, fabrication balinaise authentique",
+        "Format généreux de 30cm, bel effet sur une commode ou étagère",
+        "Finition naturelle qui se patine joliment avec le temps",
+        "Pièce durable, pas de résine ni de plastique"
+      ],
+      "cons": [
+        "Sculpture artisanale, légères variations entre les pièces",
+        "Poids conséquent pour une statuette décorative",
+        "Sensible à l'humidité, à éviter en salle de bain"
+      ],
+      "description": "Cette statuette bouddhique en bois massif sculpté à Bali apporte la dimension spirituelle et artisanale propre au style balinais. Posée sur une commode en teck ou une étagère en bambou, elle devient un point de calme visuel dans la chambre.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B07TB133ZN?tag=secure012de-21"
+    },
+    {
+      "name": "Lampe de Chevet en Bambou Tressé Style Zen",
+      "badge": "Lumière Tamisée",
+      "image": "/images/products/lampe-de-chevet-en-bambou-tresse-style-zen.jpg",
+      "rating": 4.4,
+      "amazonAsin": "B09S6W19HM",
+      "price": "39,99 €",
+      "pros": [
+        "Abat-jour en bambou tissé, lumière chaude et diffuse",
+        "Format compact, idéal pour une table de chevet",
+        "Design épuré qui complète le rotin sans surcharger",
+        "Douille E27 standard, compatible ampoule blanc chaud 2200K"
+      ],
+      "cons": [
+        "Ampoule non incluse",
+        "Le bambou tissé demande d'être dépoussiéré régulièrement",
+        "Câble assez court sur certains lots"
+      ],
+      "description": "Cette lampe de chevet à abat-jour en bambou tissé filtre la lumière pour recréer l'éclairage tamisé caractéristique des chambres de villa balinaise. Associée à une ampoule blanc chaud 2200K, elle installe une ambiance de coucher de soleil tropical chaque soir.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B09S6W19HM?tag=secure012de-21"
+    },
+    {
+      "name": "Ciel de Lit Moustiquaire Vintage 245cm Nougat",
+      "badge": "Meilleur Rapport",
+      "image": "/images/products/jollein-moustiquaire-vintage-245-cm-nougat.jpg",
+      "rating": 4.6,
+      "amazonAsin": "B08HRTNV1P",
+      "price": "35,90 €",
+      "pros": [
+        "Teinte nougat neutre, plus sobre que les modèles blancs classiques",
+        "245cm de hauteur, effet ciel de lit spectaculaire",
+        "Voile léger, laisse circuler l'air",
+        "Pose sans perçage avec crochet adhésif"
+      ],
+      "cons": [
+        "Voile fin, à manier avec précaution au montage",
+        "Support de suspension parfois à acheter séparément",
+        "Nécessite un léger repassage vapeur après déballage"
+      ],
+      "description": "Ce ciel de lit en voile ajoute une dimension romantique et protectrice au-dessus du lit, comme dans les pavillons ouverts des villas balinaises. Sa teinte nougat reste neutre et chic, loin des versions blanches trop princesses, et s'accorde avec le rotin et le coton lavé.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B08HRTNV1P?tag=secure012de-21"
+    }
+  ],
   "buyingGuide": {
     "title": "Guide : Comment créer une chambre tropicale balinaise ?",
     "content": "<h3>L'esprit de la chambre balinaise</h3><p>La chambre balinaise est conçue comme un <strong>sanctuaire de repos</strong> où chaque élément contribue à la relaxation. Dans la tradition balinaise, la chambre est un espace sacré séparé du reste de la maison, souvent ouvert sur un jardin privé. Pour recréer cette atmosphère, concentrez-vous sur trois piliers : des <strong>matériaux naturels</strong> (bois, rotin, coton), une <strong>lumière tamisée</strong> et des <strong>senteurs apaisantes</strong>. L'objectif est de stimuler tous les sens pour créer une expérience de resort à domicile.</p><h3>Le lit comme pièce centrale</h3><p>Dans une chambre balinaise, le lit est roi. Il doit être <strong>généreux, majestueux et invitant</strong>. La tête de lit en rotin ou en bois sculpté crée un point focal spectaculaire. Le ciel de lit en voile blanc ajoute une dimension romantique et protectrice. Côté linge, privilégiez le <strong>coton lavé</strong> ou le <strong>lin</strong> dans des tons naturels : blanc cassé, vert sauge, beige sable ou terracotta doux. Superposez les textures avec un jeté de lit en gaze de coton, des coussins en lin froissé et une couverture légère en coton tissé. L'effet de superposition textile est essentiel pour créer cette impression de luxe décontracté.</p><h3>Les matériaux tropicaux pour la chambre</h3><p>Les matériaux de la chambre balinaise sont exclusivement <strong>naturels et chaleureux</strong> :</p><ul><li><strong>Le rotin</strong> : tête de lit, miroir, panier de rangement, fauteuil d'appoint. Sa texture tressée apporte de la chaleur visuelle.</li><li><strong>Le bambou</strong> : lampes, stores, cadres. Sa légèreté et sa finesse conviennent parfaitement à l'ambiance chambre.</li><li><strong>Le teck</strong> : table de chevet, commode, cadre de miroir. Sa patine dorée se marie avec tous les textiles.</li><li><strong>Le coton et le lin</strong> : linge de lit, rideaux, coussins. Toujours dans des textures naturelles non apprêtées.</li><li><strong>Le bois sculpté</strong> : statuettes, panneaux décoratifs, boîtes. L'artisanat balinais dans toute sa splendeur.</li></ul><h3>L'éclairage de la chambre tropicale</h3><p>L'éclairage est crucial dans une chambre balinaise. Bannissez les plafonniers à lumière blanche directe. Privilégiez des <strong>sources lumineuses basses et diffuses</strong> : lampes de chevet en bambou tressé qui filtrent la lumière, guirlandes blanc chaud drapées derrière la tête de lit, bougies parfumées dans des photophores en noix de coco. La température de couleur idéale est de <strong>2200K</strong> pour une lumière dorée qui rappelle le coucher de soleil tropical. Un variateur d'intensité est indispensable pour adapter l'ambiance selon le moment.</p><h3>Les plantes pour une chambre balinaise</h3><p>Les plantes apportent la touche de <strong>verdure tropicale</strong> indispensable. Pour la chambre, choisissez des plantes qui purifient l'air et tolèrent une lumière modérée : le <strong>Sansevieria</strong> (langue de belle-mère) qui libère de l'oxygène la nuit, le <strong>Spathiphyllum</strong> (fleur de lune) avec ses fleurs blanches élégantes, ou le <strong>Pothos</strong> en suspension qui retombe gracieusement depuis une étagère. Placez-les dans des cache-pots en rotin ou en terre cuite pour rester dans l'esprit balinais. Évitez les plantes à forte odeur qui pourraient perturber le sommeil.</p><h3>Les senteurs : l'expérience sensorielle complète</h3><p>Une chambre balinaise n'est complète qu'avec les <strong>bonnes senteurs</strong>. Le frangipanier est la fleur emblématique de Bali : son parfum doux et envoûtant est idéal pour la chambre. Le bois de santal apporte une note chaude et méditative. La citronnelle éloigne les insectes tout en parfumant agréablement. Utilisez des <strong>bougies en cire de soja</strong> parfumées, des <strong>huiles essentielles</strong> dans un diffuseur en bambou, ou simplement des fleurs fraîches dans un vase en terre cuite. Le rituel olfactif du coucher fait partie intégrante de l'expérience balinaise.</p>"

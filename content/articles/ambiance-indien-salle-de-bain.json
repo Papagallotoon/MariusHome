@@ -10,7 +10,113 @@
   "date": "2026-03-28",
   "author": "Marius Dumas",
   "intro": "La salle de bain indienne est un sanctuaire de bien-être où se mêlent les traditions ayurvédiques millénaires et l'artisanat raffiné du sous-continent. Dans la culture indienne, le bain n'est pas un simple acte d'hygiène : c'est un rituel purificateur qui engage le corps et l'esprit. Les palais du Rajasthan abritaient des hammams somptueux décorés de mosaïques, de laiton ciselé et de marbre blanc, où les parfums de rose et de santal accompagnaient des soins ancestraux.\n\nTransposer cette richesse dans une salle de bain contemporaine ne demande pas de grands travaux. Quelques accessoires bien choisis — laiton martelé, cuivre patiné, verre coloré, pierre naturelle — suffisent à transformer une salle d'eau fonctionnelle en espace de bien-être inspiré. L'essentiel est de solliciter tous les sens : le toucher du métal ciselé, le reflet doré du laiton dans la lumière, le parfum du bois de santal et du jasmin.\n\nEn 2026, la tendance « wellness ritual » s'inspire des pratiques ayurvédiques indiennes pour réinventer notre rapport à la salle de bain. Les accessoires artisanaux en métaux nobles remplacent le plastique, les savons naturels aux épices indiennes prennent la place des gels douche industriels, et l'éclairage tamisé des photophores en métal ajouré transforme la douche du soir en expérience méditative.\n\nDécouvrez notre sélection de 5 accessoires pour insuffler l'esprit de l'Inde dans votre salle de bain et transformer chaque bain en rituel de beauté.",
-  "products": [],
+  "products": [
+    {
+      "name": "Miroir Mural Oriental Cadre Métal Doré Ajouré",
+      "badge": "Pièce Maîtresse",
+      "image": "/images/products/miroir-oriental-metal-dore-ajoure.jpg",
+      "rating": 4.3,
+      "amazonAsin": "B08QVQXCL6",
+      "price": "99,99 €",
+      "pros": [
+        "Cadre métal doré à motifs ajourés façon moucharabieh",
+        "Format généreux, effet architectural fort",
+        "S'accorde avec le laiton et le cuivre",
+        "Réfléchit joliment la lumière tamisée du hammam"
+      ],
+      "cons": [
+        "Prix élevé pour un miroir décoratif",
+        "Poids important, fixation murale solide requise",
+        "Pas adapté aux petites salles de bain"
+      ],
+      "description": "Ce miroir au cadre métallique doré et ajouré évoque les moucharabiehs des palais indiens et orientaux. Placé au-dessus du lavabo, il capte et diffracte la lumière à travers ses découpes, un vrai jeu d'ombres digne d'un rituel de beauté ayurvédique.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B08QVQXCL6?tag=secure012de-21"
+    },
+    {
+      "name": "Porte-Savon Mural en Laiton Bronze Antique",
+      "badge": "Meilleur Choix",
+      "image": "/images/products/porte-savon-laiton-bronze-antique-mural.jpg",
+      "rating": 4.6,
+      "amazonAsin": "B0CG8RNWL6",
+      "price": "23,99 €",
+      "pros": [
+        "Finition laiton bronze antique authentique",
+        "Fixation murale, libère de la place sur le lavabo",
+        "Design intemporel, s'accorde avec le cuivre et le marbre",
+        "Facile à nettoyer, résiste à l'humidité"
+      ],
+      "cons": [
+        "Vis de fixation à adapter selon le mur (carrelage)",
+        "La patine peut légèrement évoluer avec le temps",
+        "Petit format, un seul savon à la fois"
+      ],
+      "description": "Ce porte-savon mural en laiton bronze antique installe immédiatement l'esprit du hammam indien. Sa teinte chaude et sa finition vieillie s'accordent avec le cuivre martelé et le marbre blanc pour une salle de bain qui respire l'artisanat.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B0CG8RNWL6?tag=secure012de-21"
+    },
+    {
+      "name": "Lanternes Ajourées en Métal Noir, Lot de 3 Tailles",
+      "badge": "Ambiance Tamisée",
+      "image": "/images/products/lanternes-ajourees-metal-noir-lot-3.jpg",
+      "rating": 4.7,
+      "amazonAsin": "B0983D53WH",
+      "price": "23,99 €",
+      "pros": [
+        "3 tailles (13/16/20cm), composition facile",
+        "Motif ajouré oriental, jeu d'ombres au bougeoir",
+        "Métal noir mat, contraste élégant avec le laiton",
+        "Compatibles bougies classiques ou LED"
+      ],
+      "cons": [
+        "Bougies non incluses",
+        "Le métal noir marque les traces de doigts",
+        "Se salissent en présence de vapeur d'eau régulière"
+      ],
+      "description": "Ce lot de trois lanternes ajourées en métal noir recrée le clair-obscur caractéristique des rituels de beauté indiens. Disposées en cascade sur le rebord de la baignoire, elles projettent des motifs graphiques qui dansent avec la flamme.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B0983D53WH?tag=secure012de-21"
+    },
+    {
+      "name": "Distributeur de Savon Rétro en Laiton Antique",
+      "badge": "Touche Cuivrée",
+      "image": "/images/products/distributeur-savon-laiton-antique-retro.jpg",
+      "rating": 4.4,
+      "amazonAsin": "B01I4KQTBG",
+      "price": "19,99 €",
+      "pros": [
+        "Finition laiton antique façon cuivre martelé",
+        "Pompe fiable, bec verseur bien centré",
+        "Corps en verre robuste et facile à remplir",
+        "S'accorde avec le porte-savon et le miroir doré"
+      ],
+      "cons": [
+        "La finition antique peut légèrement s'estomper à l'usage",
+        "Contenance moyenne, à remplir régulièrement",
+        "Pompe non démontable pour un nettoyage en profondeur"
+      ],
+      "description": "Ce distributeur de savon à la finition laiton antique évoque les objets en cuivre martelé traditionnels de l'artisanat indien. Posé près du lavabo, il remplace élégamment la bouteille plastique tout en poursuivant la palette dorée de la salle de bain.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B01I4KQTBG?tag=secure012de-21"
+    },
+    {
+      "name": "Plateaux Décoratifs en Marbre Blanc, Lot de 2",
+      "badge": "Meilleur Rapport",
+      "image": "/images/products/plateau-marbre-blanc-decoratif-lot-2.jpg",
+      "rating": 4.6,
+      "amazonAsin": "B0FS1MGVFP",
+      "price": "12,59 €",
+      "pros": [
+        "Marbre véritable, fraîcheur et élégance naturelles",
+        "Lot de 2 formats, pratique pour organiser le lavabo",
+        "Surface facile à nettoyer",
+        "Rehausse instantanément les flacons et savons posés dessus"
+      ],
+      "cons": [
+        "Le marbre peut se tacher avec des produits colorés",
+        "Poids non négligeable pour un petit accessoire",
+        "Coins à manipuler avec précaution, matière cassante"
+      ],
+      "description": "Ces plateaux en marbre blanc apportent la touche minérale et fraîche qui structure le rituel beauté ayurvédique. Posés sur le rebord du lavabo, ils organisent savons, flacons d'huiles et bougies avec une élégance discrète.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B0FS1MGVFP?tag=secure012de-21"
+    }
+  ],
   "buyingGuide": {
     "title": "Guide : Comment créer une salle de bain d'inspiration indienne ?",
     "content": "<h3>L'esprit du hammam indien</h3><p>La salle de bain indienne s'inspire des <strong>hammams des palais moghols</strong> et des rituels purificateurs de l'Ayurveda. L'objectif n'est pas de recréer un temple, mais d'insuffler une atmosphère de <strong>bien-être sensoriel</strong> qui transforme les gestes quotidiens en rituels. L'éclairage tamisé, les métaux dorés, les parfums d'épices et de fleurs composent un environnement qui invite à ralentir et à prendre soin de soi. Même dans une petite salle de bain, quelques accessoires bien choisis suffisent à créer cette atmosphère.</p><h3>Les métaux nobles : laiton et cuivre</h3><p>Le <strong>laiton</strong> et le <strong>cuivre</strong> sont les métaux emblématiques de la décoration indienne. Dans la salle de bain, ils remplacent avantageusement le plastique et l'inox froid. Le laiton ciselé apporte une touche d'opulence dorée : porte-savons, boîtes, miroirs. Le cuivre martelé offre une chaleur rosée : distributeurs, gobelets, plateaux. Ces métaux ont de plus des <strong>propriétés antibactériennes</strong> naturelles reconnues par l'Ayurveda. L'entretien est simple : un mélange de citron et de sel polit le laiton, tandis que le cuivre se nettoie avec du vinaigre blanc et du sel. Beaucoup préfèrent laisser la patine naturelle se développer, signe de noblesse du matériau.</p><h3>La lumière : photophores et verre coloré</h3><p>L'éclairage est la clé de l'atmosphère indienne en salle de bain. Les <strong>photophores en verre coloré</strong> — rubis, ambre, émeraude — sont les stars absolues. Allumés lors d'un bain du soir, ils projettent des reflets colorés qui transforment les carrelages blancs en décor de Mille et Une Nuits. Les <strong>lanternes en métal ajouré</strong> créent des motifs d'ombres féeriques sur les murs. Positionnez 3 à 5 photophores de tailles différentes autour de la baignoire ou du lavabo, à des hauteurs variées. Utilisez des <strong>bougies LED</strong> à flamme vacillante pour un effet réaliste sans risque dans un environnement humide.</p><h3>Les senteurs ayurvédiques</h3><p>Le parfum est un élément essentiel du rituel indien. Les senteurs traditionnelles pour la salle de bain sont :</p><ul><li><strong>Le bois de santal</strong> : apaisant et méditatif, idéal pour le bain du soir</li><li><strong>Le jasmin</strong> : envoûtant et féminin, associé à la beauté</li><li><strong>La rose</strong> : purifiante et luxueuse, la reine des fleurs en Inde</li><li><strong>Le curcuma</strong> : purifiant et énergisant, pour le bain du matin</li><li><strong>La cardamome</strong> : rafraîchissante et tonifiante</li></ul><p>Utilisez des <strong>savons artisanaux</strong> aux épices indiennes, des <strong>huiles essentielles</strong> dans un diffuseur, ou simplement des <strong>bougies parfumées</strong> au santal ou au jasmin. Évitez les parfums synthétiques qui dénaturent l'expérience.</p><h3>Le marbre et la pierre</h3><p>Le <strong>marbre</strong> est le matériau roi de l'architecture moghole — le Taj Mahal en est la plus sublime expression. Dans la salle de bain, un <strong>plateau en marbre blanc</strong> sur le lavabo, un <strong>porte-savon en pierre</strong> ou un <strong>gobelet en marbre</strong> apportent une touche de luxe intemporelle. Le marbre blanc veiné de gris est le plus classique, mais le marbre rose du Rajasthan ou le marbre vert du Gujarat sont aussi de belles options. Le marbre résiste parfaitement à l'humidité de la salle de bain. Protégez-le des taches d'huiles colorées avec un traitement hydrofuge.</p><h3>Créer un rituel de bain indien</h3><p>Pour vivre pleinement l'expérience indienne, créez un <strong>rituel de bain</strong> : allumez vos photophores en verre coloré, faites couler un bain additionné de quelques gouttes d'huile essentielle de rose ou de santal, posez un plateau de marbre sur le rebord de la baignoire avec une tasse de chai et un savon artisanal au curcuma. Mettez de la musique de sitar en fond sonore. Ce rituel hebdomadaire transforme la salle de bain en <strong>spa ayurvédique</strong> et fait de chaque bain un moment de ressourcement profond. L'investissement est minime — quelques bougies, une huile essentielle et un peu de temps pour soi.</p>"

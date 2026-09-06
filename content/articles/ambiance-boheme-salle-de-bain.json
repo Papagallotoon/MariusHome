@@ -10,7 +10,113 @@
   "date": "2026-03-28",
   "author": "Marius Dumas",
   "intro": "La salle de bain est souvent la pièce oubliée de la décoration intérieure. Carrelage blanc, mobilier standardisé, éclairage froid : elle reste trop souvent un espace purement fonctionnel, dépourvu de personnalité. Le style bohème vient briser cette monotonie en transformant la salle de bain en un espace chaleureux, vivant et profondément personnel, où les matériaux naturels et les textures artisanales remplacent la froideur du tout-carrelé.\n\nL'esthétique bohème en salle de bain puise dans la même philosophie que le reste de la maison : célébrer l'artisanat, embrasser les imperfections et créer un cocon sensoriel avec des matières organiques. Osier tressé, macramé, terre cuite, bois brut, lin et fleurs séchées composent le vocabulaire décoratif d'une salle de bain qui invite à prendre son temps, à transformer la douche quotidienne en rituel de bien-être.\n\nEn 2026, la tendance « slow bathroom » rejoint parfaitement l'esprit bohème. Face aux rythmes effrénés, la salle de bain devient un sanctuaire où l'on dépose le stress de la journée. Les produits de soin artisanaux remplacent les flacons plastique industriels, les serviettes en coton brut succèdent aux éponges synthétiques, et chaque détail est pensé pour éveiller les sens : la texture rugueuse d'un porte-savon en terracotta, le parfum des fleurs séchées, la douceur d'un panier en osier.\n\nDécouvrez notre sélection de 5 accessoires pour insuffler l'esprit bohème dans votre salle de bain et la transformer en espace d'authenticité et de bien-être.",
-  "products": [],
+  "products": [
+    {
+      "name": "Paniers de Rangement en Osier avec Poignées, Lot de 2",
+      "badge": "Meilleur Choix",
+      "image": "/images/products/panier-rangement-osier-poignees-bois-lot-2.jpg",
+      "rating": 4.6,
+      "amazonAsin": "B0FLX6DR45",
+      "price": "28,99 €",
+      "pros": [
+        "Osier tressé naturel avec poignées en bois",
+        "Idéal pour ranger serviettes ou papier toilette",
+        "Lot de 2, formats complémentaires",
+        "Camoufle le rangement tout en restant décoratif"
+      ],
+      "cons": [
+        "Non étanche, à éviter au contact direct de l'eau",
+        "L'osier naturel craint l'humidité permanente",
+        "Entretien : dépoussiérage régulier nécessaire"
+      ],
+      "description": "Ces paniers en osier tressé apportent le rangement naturel indispensable à une salle de bain bohème. Posés au sol ou sur une étagère, ils remplacent avantageusement le plastique pour ranger serviettes et essentiels du quotidien.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B0FLX6DR45?tag=secure012de-21"
+    },
+    {
+      "name": "Miroirs Muraux Macramé à Franges, Lot de 2",
+      "badge": "Touche Artisanale",
+      "image": "/images/products/miroir-macrame-boheme-franges-lot-2.jpg",
+      "rating": 4.4,
+      "amazonAsin": "B0DP6HR3B4",
+      "price": "27,88 €",
+      "pros": [
+        "Encadrement tissé en macramé avec franges",
+        "Lot de 2, effet composition murale facile",
+        "Léger, se suspend sans perçage lourd",
+        "Apporte lumière et texture en même temps"
+      ],
+      "cons": [
+        "Format modeste, pas un miroir de courtoisie principal",
+        "Le macramé peut jaunir avec l'humidité prolongée",
+        "Fixation simple, à renforcer en salle de bain humide"
+      ],
+      "description": "Ces petits miroirs cerclés de macramé apportent du relief au mur de la salle de bain bohème tout en réfléchissant la lumière. Groupés à deux, ils créent un effet composition beaucoup plus intéressant qu'un miroir classique.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B0DP6HR3B4?tag=secure012de-21"
+    },
+    {
+      "name": "Distributeur de Savon en Céramique Terracotta MSV",
+      "badge": "Essentiel du Quotidien",
+      "image": "/images/products/distributeur-savon-ceramique-terracotta-msv.jpg",
+      "rating": 4.2,
+      "amazonAsin": "B09GBM1XWV",
+      "price": "11,30 €",
+      "pros": [
+        "Céramique terracotta mate, teinte fidèle à la photo",
+        "Contenance généreuse de 300 ml",
+        "Pompe fiable, résiste à un usage quotidien",
+        "Design épuré qui s'accorde avec l'osier et le bois"
+      ],
+      "cons": [
+        "La céramique peut s'ébrécher en cas de chute",
+        "Pompe non remplaçable séparément",
+        "Nettoyage à la main recommandé"
+      ],
+      "description": "Ce distributeur en céramique terracotta mate remplace élégamment la bouteille de plastique sur le rebord du lavabo. Sa teinte chaude s'accorde parfaitement avec les paniers en osier et les accessoires en bois de la salle de bain bohème.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B09GBM1XWV?tag=secure012de-21"
+    },
+    {
+      "name": "Rideau de Douche Tissé Bohème à Pampilles 183x183cm",
+      "badge": "Pièce Maîtresse",
+      "image": "/images/products/rideau-douche-boheme-pampilles-chevrons.jpg",
+      "rating": 4.7,
+      "amazonAsin": "B0BBQ8X83T",
+      "price": "21,85 €",
+      "pros": [
+        "Tissu texturé à motif chevrons touffetés",
+        "Pampilles décoratives en bas de rideau",
+        "Résistant à l'eau malgré son aspect textile",
+        "Remplace avantageusement le plastique classique"
+      ],
+      "cons": [
+        "Séchage plus long qu'un rideau plastique classique",
+        "Crochets à acheter séparément selon le lot",
+        "Blanc cassé, se salit plus vite qu'une couleur foncée"
+      ],
+      "description": "Ce rideau de douche tissé à motif chevrons et pampilles change complètement la perception d'une salle de bain. Son tombé souple et sa texture tissée remplacent le plastique brillant par une matière chaleureuse, typique du style bohème.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B0BBQ8X83T?tag=secure012de-21"
+    },
+    {
+      "name": "Bouquet de Pampas Séchées Naturelles",
+      "badge": "Meilleur Rapport",
+      "image": "/images/products/bouquet-pampas-fleurs-sechees-naturelles.jpg",
+      "rating": 5.0,
+      "amazonAsin": "B0HB3BVKFQ",
+      "price": "16,99 €",
+      "pros": [
+        "100 tiges, largement de quoi garnir un grand vase",
+        "Fleurs séchées naturelles, ne nécessitent aucun entretien",
+        "Résistent parfaitement à l'humidité de la salle de bain",
+        "Silhouette iconique du style bohème"
+      ],
+      "cons": [
+        "Peuvent perdre quelques brins de duvet au transport",
+        "Prennent de la place une fois déployées en bouquet",
+        "À tenir éloignées d'une flamme nue"
+      ],
+      "description": "Ce bouquet de pampas séchées apporte la touche végétale finale à la salle de bain bohème, sans arrosage ni entretien. Posé dans un vase en terre cuite ou en verre, il capte la lumière naturelle et adoucit immédiatement l'ambiance.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B0HB3BVKFQ?tag=secure012de-21"
+    }
+  ],
   "buyingGuide": {
     "title": "Guide : Comment transformer sa salle de bain en espace bohème ?",
     "content": "<h3>Les bases de la salle de bain bohème</h3><p>Transformer une salle de bain en espace bohème ne nécessite pas de gros travaux. L'astuce est de <strong>superposer les éléments décoratifs naturels</strong> sur la base existante. Commencez par identifier les surfaces que vous pouvez habiller : le mur au-dessus du lavabo (miroir en macramé), les étagères (paniers en osier, produits dans des contenants en verre ou céramique), le rebord de baignoire (plateau en bois, bougies), le sol (tapis en jute ou coton tissé) et la porte de douche ou la tringle (rideau en coton). L'idée est de remplacer progressivement les éléments plastiques et standardisés par des alternatives naturelles et artisanales. Même avec un budget modeste, ces quelques changements transforment radicalement l'atmosphère de la pièce.</p><h3>Les matériaux naturels adaptés à l'humidité</h3><p>La salle de bain pose un défi spécifique au style bohème : l'humidité. Tous les matériaux naturels ne supportent pas cet environnement de la même façon. Voici le guide des matières bohèmes classées par résistance à l'humidité :</p><ul><li><strong>Excellente résistance</strong> : terre cuite émaillée, pierre naturelle, teck, bambou traité, céramique artisanale. Ces matériaux peuvent être en contact direct avec l'eau sans problème.</li><li><strong>Bonne résistance</strong> : osier traité, rotin verni, coton (s'il sèche après usage), verre recyclé. À utiliser dans les zones peu éclaboussées.</li><li><strong>Résistance moyenne</strong> : macramé en coton, lin, jute, bois brut non traité. À placer loin des sources d'eau directe et dans une salle de bain bien ventilée.</li><li><strong>Faible résistance</strong> : papier, carton, fleurs séchées non traitées. À réserver aux zones les plus sèches de la pièce.</li></ul><p>La règle d'or : assurez une <strong>ventilation efficace</strong> de votre salle de bain (VMC, fenêtre ou extracteur). C'est la condition sine qua non pour utiliser des matériaux naturels sans risque de moisissure.</p><h3>L'art du rangement bohème</h3><p>Le rangement bohème transforme la nécessité pratique en opportunité décorative. Le principe : <strong>tout ce qui est beau se montre, tout le reste se cache</strong>. Transvasez vos produits de soin dans des flacons en verre ambré ou en céramique artisanale. Rangez les serviettes roulées dans des paniers en osier plutôt que sur des barres chromées. Utilisez des plateaux en bois ou en terre cuite pour regrouper les accessoires du quotidien (brosse à dents dans un gobelet en céramique, savon sur un porte-savon en pierre). Les étagères ouvertes en bois brut remplacent les armoires de toilette fermées pour créer un effet « boutique artisanale ». L'idée est que chaque objet visible contribue à l'esthétique bohème, même les plus utilitaires.</p><h3>Créer une ambiance lumineuse chaleureuse</h3><p>L'éclairage de la salle de bain bohème doit combiner fonctionnalité et atmosphère. Pour le quotidien (maquillage, rasage), un <strong>éclairage de part et d'autre du miroir</strong> en blanc chaud (2700K) est idéal. Pour l'ambiance, ajoutez des bougies dans des photophores en verre recyclé ou en terre cuite, et des guirlandes lumineuses micro-LED enroulées autour d'un miroir ou le long d'une étagère. Si possible, remplacez l'applique murale standard par un modèle en osier ou en bambou. Les ampoules à filament visible (Edison) dans une douille en corde ou en bois apportent une touche vintage bohème. Évitez les néons et les spots LED blanc froid qui détruisent toute ambiance chaleureuse.</p><h3>Les plantes pour une salle de bain bohème vivante</h3><p>Les plantes sont indissociables du style bohème, et certaines espèces adorent l'humidité de la salle de bain :</p><ul><li><strong>Fougère de Boston</strong> (Nephrolepis) : la reine des salles de bain, elle prospère dans l'humidité et la lumière indirecte.</li><li><strong>Pothos</strong> (Epipremnum) : quasi indestructible, ses lianes retombantes sont parfaites en suspension macramé.</li><li><strong>Tillandsia</strong> (plante aérienne) : ne nécessite aucun substrat, se pose sur un morceau de bois flotté ou dans un terrarium.</li><li><strong>Calathea</strong> : feuillage graphique et coloré, adore l'humidité.</li><li><strong>Orchidée</strong> : élégante et adaptée aux salles de bain lumineuses.</li></ul><p>Combinez plantes vivantes (pour la fraîcheur) et fleurs séchées (pour la durabilité et la texture) pour un effet bohème maximal sans entretien excessif.</p><h3>La touche parfumée : senteurs bohèmes naturelles</h3><p>Le parfum est un élément souvent négligé mais essentiel de la salle de bain bohème. Oubliez les désodorisants synthétiques en spray et optez pour des <strong>solutions naturelles</strong>. Un bouquet de lavande séchée suspendu au mur parfume durablement l'espace. Un diffuseur à tiges en rotin dans un flacon en verre ambré offre un parfum constant et délicat. Les savons artisanaux en barre (savon d'Alep, savon de Marseille, savon au lait de chèvre) disposés dans un porte-savon en terre cuite parfument naturellement par évaporation. L'eucalyptus frais suspendu au pommeau de douche libère des huiles essentielles sous l'effet de la vapeur chaude — une astuce simple et spectaculairement efficace. Enfin, les bougies en cire de soja aux huiles essentielles (patchouli, bois de santal, ylang-ylang) complètent l'expérience olfactive bohème.</p>"

@@ -10,7 +10,113 @@
   "date": "2026-03-28",
   "author": "Marius Dumas",
   "intro": "La salle de bain provençale est une invitation au voyage sensoriel, un fragment du sud de la France transposé entre vos quatre murs. Imaginez la lumière dorée du matin filtrant à travers un rideau de lin, le parfum enveloppant de la lavande fraîche, la douceur d'une serviette en lin brut contre votre peau. Ce style, profondément ancré dans l'art de vivre méditerranéen, transforme la routine quotidienne en un rituel de bien-être authentique.\n\nLa Provence possède une palette décorative unique forgée par des siècles de tradition artisanale. Les ocres de Roussillon, les bleus de la lavande de Valensole, les verts argentés des oliviers du Luberon — chaque couleur raconte l'histoire d'un terroir. Les artisans provençaux ont développé un savoir-faire incomparable dans le travail de la terre cuite, du fer forgé, de la pierre calcaire et des textiles naturels. C'est cette richesse que nous pouvons aujourd'hui inviter dans nos salles de bain.\n\nEn 2026, le style provençal connaît un renouveau remarquable. Loin du cliché des tournesols et des cigales en plastique, la nouvelle décoration provençale est épurée, authentique et raffinée. Elle puise dans les matériaux nobles du terroir — la pierre de Cassis, le lin de Vaison-la-Romaine, la terre cuite de Salernes — pour créer des espaces à la fois rustiques et élégants, où chaque objet respire la chaleur du Midi.\n\nDécouvrez notre sélection de 5 objets essentiels pour métamorphoser votre salle de bain en un sanctuaire provençal, où chaque matin commence avec la douceur et la lumière du sud.",
-  "products": [],
+  "products": [
+    {
+      "name": "Miroir Mural Rond Cadre en Fer",
+      "badge": "Pièce Centrale",
+      "image": "/images/products/miroir-mural-rond-cadre-fer.jpg",
+      "rating": 4.3,
+      "amazonAsin": "B0F4K8WKTH",
+      "price": "43,59 €",
+      "pros": [
+        "Cadre en fer véritable, silhouette fine et graphique",
+        "Format rond qui adoucit la salle de bain",
+        "Verre de qualité, reflet net",
+        "S'accorde avec la terre cuite et le lin"
+      ],
+      "cons": [
+        "Fixation murale solide requise vu le poids",
+        "Le fer peut légèrement s'oxyder en cas d'humidité excessive",
+        "Emballage à vérifier à la réception"
+      ],
+      "description": "Ce miroir au cadre en fer reprend la finesse du fer forgé traditionnel provençal. Installé au-dessus du lavabo, il apporte du caractère sans alourdir une petite salle de bain baignée de lumière.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B0F4K8WKTH?tag=secure012de-21"
+    },
+    {
+      "name": "Pot en Terre Cuite Motif Citron, Fabrication Italienne",
+      "badge": "Meilleur Choix",
+      "image": "/images/products/pot-terre-cuite-motif-citron-italie.jpg",
+      "rating": 4.7,
+      "amazonAsin": "B07Z581ML6",
+      "price": "32,99 €",
+      "pros": [
+        "Terre cuite véritable, fabrication artisanale italienne",
+        "Motif citron, clin d'œil méditerranéen assumé",
+        "Soucoupe incluse, utilisable avec une vraie plante",
+        "Format généreux 25cm, bel effet sur un rebord"
+      ],
+      "cons": [
+        "Poids conséquent pour un pot décoratif",
+        "La terre cuite est poreuse, à protéger du gel si extérieur",
+        "Fragile en cas de chute"
+      ],
+      "description": "Ce pot en terre cuite au motif citron peint à la main évoque immédiatement les étés du Luberon. Garni d'un olivier nain ou d'un romarin, il apporte de la couleur et de la vie à la salle de bain provençale.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B07Z581ML6?tag=secure012de-21"
+    },
+    {
+      "name": "Serviette de Bain en Lin Naturel 60x120cm",
+      "badge": "Douceur Naturelle",
+      "image": "/images/products/serviette-bain-lin-linen-world.jpg",
+      "rating": 4.3,
+      "amazonAsin": "B0G1NJCXTF",
+      "price": "22,26 €",
+      "pros": [
+        "Mélange de lin naturel, texture jacquard authentique",
+        "Séchage rapide, bien adapté à un usage quotidien",
+        "Teinte neutre qui s'accorde avec la terre cuite",
+        "Le lin se bonifie lavage après lavage"
+      ],
+      "cons": [
+        "Moins moelleuse qu'une serviette en coton épais",
+        "Séchage à l'air libre recommandé",
+        "Format unique, pas de gant assorti dans ce lot"
+      ],
+      "description": "Cette serviette en lin naturel remplace avantageusement l'éponge classique dans une salle de bain provençale. Sa texture légèrement rugueuse et sa teinte naturelle rappellent le linge de maison traditionnel du Sud de la France.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B0G1NJCXTF?tag=secure012de-21"
+    },
+    {
+      "name": "Distributeur de Savon Céramique Lavande Mat MSV",
+      "badge": "Meilleur Rapport",
+      "image": "/images/products/distributeur-savon-ceramique-lavande-msv.jpg",
+      "rating": 4.0,
+      "amazonAsin": "B0BNLDM7B9",
+      "price": "12,05 €",
+      "pros": [
+        "Céramique teinte lavande mat authentique",
+        "Contenance de 300ml, autonomie confortable",
+        "Petit prix pour une pièce qui change tout",
+        "Pompe fiable au quotidien"
+      ],
+      "cons": [
+        "La céramique peut s'ébrécher en cas de chute",
+        "Pompe non remplaçable séparément",
+        "Nettoyage à la main recommandé"
+      ],
+      "description": "Ce distributeur en céramique teinte lavande complète immédiatement la palette provençale de la salle de bain. Posé près du lavabo, il remplace élégamment la bouteille en plastique tout en gardant l'esprit champs de lavande du Luberon.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B0BNLDM7B9?tag=secure012de-21"
+    },
+    {
+      "name": "Porte-Savon en Galets de Pierre Naturelle",
+      "badge": "Touche Minérale",
+      "image": "/images/products/porte-savon-galets-pierre-naturelle.jpg",
+      "rating": 4.8,
+      "amazonAsin": "B08DL4B12Q",
+      "price": "15,40 €",
+      "pros": [
+        "Véritables galets de rivière, pierre naturelle brute",
+        "Drainage naturel, le savon sèche plus vite",
+        "Chaque exemplaire est unique",
+        "Excellente note client"
+      ],
+      "cons": [
+        "Poids et forme irrégulière selon les galets reçus",
+        "Surface rugueuse, à nettoyer avec une brosse douce",
+        "Format compact, un seul savon à la fois"
+      ],
+      "description": "Ce porte-savon en véritables galets de rivière apporte la touche minérale finale de la salle de bain provençale. Son drainage naturel entre les pierres évite au savon de fondre dans son eau, tout en restant purement décoratif.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B08DL4B12Q?tag=secure012de-21"
+    }
+  ],
   "buyingGuide": {
     "title": "Guide : Comment créer une salle de bain provençale authentique ?",
     "content": "<h3>L'essence du style provençal en salle de bain</h3><p>La salle de bain provençale authentique ne se résume pas à quelques brins de lavande séchée posés sur une étagère. C'est un <strong>art de vivre complet</strong> qui célèbre les matériaux nobles du terroir méditerranéen, la lumière chaude du sud et le savoir-faire artisanal transmis de génération en génération. Le style provençal en décoration puise ses racines dans les mas — ces fermes traditionnelles de Provence — où chaque pièce alliait fonctionnalité rustique et beauté naturelle. La salle de bain, longtemps considérée comme un espace purement utilitaire, devient dans la tradition provençale un lieu de ressourcement où l'on prend le temps de se laver, de se parfumer et de prendre soin de soi avec des produits naturels du terroir.</p><h3>La palette de couleurs provençale</h3><p>Les couleurs de la Provence sont directement empruntées au paysage. Pour votre salle de bain, privilégiez les teintes suivantes :</p><ul><li><strong>Blanc cassé et crème</strong> : la couleur de la pierre calcaire locale, base neutre et lumineuse de toute décoration provençale.</li><li><strong>Ocre jaune et ocre rouge</strong> : les pigments naturels de Roussillon, parfaits pour un mur d'accent chaleureux ou des accessoires terre cuite.</li><li><strong>Bleu lavande</strong> : la teinte emblématique de la Provence, à utiliser par touches délicates dans les serviettes, les flacons ou les objets décoratifs.</li><li><strong>Vert olive et vert sauge</strong> : les verts argentés des collines provençales, apaisants et naturels en salle de bain.</li><li><strong>Terre de Sienne</strong> : la couleur chaude de la terre cuite de Salernes, idéale pour le sol ou les accessoires.</li></ul><p>La règle d'or est de garder une base claire (blanc ou crème) et d'ajouter des touches de couleurs chaudes par les accessoires et les textiles. Évitez les couleurs froides et artificielles qui brisent l'harmonie méditerranéenne.</p><h3>Les matériaux incontournables</h3><p>Cinq matériaux définissent la salle de bain provençale authentique. La <strong>terre cuite</strong> est reine : les tomettes hexagonales de Salernes au sol, les pots et jarres pour le rangement, les carreaux émaillés pour les crédences. Le <strong>fer forgé</strong> apporte structure et caractère : miroirs, porte-serviettes, étagères à volutes. La <strong>pierre calcaire</strong> locale est idéale pour les vasques, les porte-savons et les plans de toilette. Le <strong>lin</strong> et le <strong>coton brut</strong> habillent l'espace de textiles doux et naturels. Enfin, le <strong>bois patiné</strong> — olivier, noyer, chêne blanchi — complète l'ensemble avec des meubles et des étagères au charme rustique. Chacun de ces matériaux vieillit magnifiquement, développant une patine qui renforce le caractère provençal au fil du temps.</p><h3>Les parfums et les plantes aromatiques</h3><p>Une salle de bain provençale sans parfum est comme un été sans cigales : incomplet. La <strong>lavande</strong> est bien sûr la reine incontestée — en sachets dans les tiroirs, en huile essentielle dans le diffuseur, en brins séchés dans un vase. Mais la Provence offre bien d'autres trésors olfactifs. Le <strong>romarin</strong> tonifie et rafraîchit : gardez un petit pot sur le rebord de la fenêtre et froissez une feuille entre vos doigts avant la douche. Le <strong>thym</strong> apporte une note herbacée et purifiante. La <strong>verveine</strong> offre un parfum citronné délicat, parfait pour les savons et les lotions. Enfin, l'<strong>immortelle</strong> (ou hélichryse), cette fleur jaune d'or emblématique du maquis corse et provençal, dégage un parfum envoûtant de miel et de foin. Disposez des petits bouquets d'herbes séchées dans des pots en terre cuite pour un effet visuel et olfactif maximal.</p><h3>L'éclairage chaleureux et naturel</h3><p>La lumière est l'âme de la Provence, et votre salle de bain doit en être baignée. Si vous avez la chance de disposer d'une fenêtre, laissez entrer un maximum de lumière naturelle en optant pour un rideau en lin léger plutôt qu'un store occultant. Pour l'éclairage artificiel, choisissez des <strong>appliques en fer forgé</strong> de part et d'autre du miroir avec des ampoules à lumière chaude (2700K). Des <strong>bougies parfumées</strong> à la lavande ou au romarin posées sur le rebord de la baignoire créent une ambiance de spa provençal les soirs de détente. Évitez les spots LED encastrés à lumière froide qui tuent instantanément l'atmosphère méridionale. L'objectif est de recréer cette <strong>lumière dorée du soir</strong> qui baigne les villages perchés du Ventoux.</p><h3>Accessoires et touches finales</h3><p>Les détails font toute la différence dans une salle de bain provençale. Un <strong>savon de Marseille</strong> authentique (72% d'huile d'olive) posé sur un porte-savon en pierre est à la fois décoratif et fonctionnel. Un <strong>panier en osier tressé</strong> pour le linge sale remplace avantageusement la corbeille en plastique. Des <strong>flacons en verre ambré</strong> remplis d'huiles essentielles ou de lotions maison apportent une touche d'apothicaire provençal. Un <strong>bouquet de lavande séchée</strong> suspendu tête en bas au mur ou posé dans un pot en grès parfume naturellement la pièce pendant des mois. N'oubliez pas un <strong>tapis de bain en coton tissé</strong> aux motifs traditionnels provençaux et un <strong>porte-serviettes en fer forgé</strong> mural pour compléter l'ensemble. Chaque objet doit sembler avoir été chiné dans une brocante de L'Isle-sur-la-Sorgue ou rapporté d'un marché de village.</p>"
