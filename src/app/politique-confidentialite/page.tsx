@@ -107,7 +107,44 @@ export default function PolitiqueConfidentialitePage() {
             </li>
           </ul>
 
-          <h2>5. Partage des données</h2>
+          <h2>5. Utilisation des API Google (YouTube Data API)</h2>
+          <p>
+            {siteConfig.siteName} exploite une chaîne YouTube associée (Marius Concept) sur laquelle
+            des vidéos sont publiées automatiquement à l&apos;aide de l&apos;API YouTube Data (Google).
+            Cet accès est strictement réservé à un usage interne par l&apos;éditeur du site pour gérer
+            sa propre chaîne : il ne concerne pas les visiteurs du site et ne collecte aucune donnée
+            les concernant.
+          </p>
+          <ul>
+            <li>
+              <strong>Portée de l&apos;accès :</strong> le compte technique utilisé par notre pipeline
+              de publication n&apos;a accès qu&apos;aux fonctionnalités nécessaires pour importer des
+              vidéos sur la chaîne YouTube de l&apos;éditeur (scope <code>youtube.upload</code>).
+            </li>
+            <li>
+              <strong>Finalité :</strong> ces données (jetons d&apos;autorisation Google) servent
+              uniquement à automatiser la publication de contenu vidéo sur notre propre chaîne.
+            </li>
+            <li>
+              <strong>Non-partage :</strong> les données obtenues via les API Google ne sont ni
+              vendues, ni partagées avec des tiers, ni utilisées à des fins publicitaires.
+            </li>
+            <li>
+              <strong>Conformité :</strong> notre utilisation des API Google et des données associées
+              respecte la{" "}
+              <a
+                href="https://developers.google.com/terms/api-services-user-data-policy"
+                className="font-medium underline"
+                style={{ color: siteConfig.colors.primary }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Google API Services User Data Policy
+              </a>, y compris ses exigences de &laquo; Limited Use &raquo;.
+            </li>
+          </ul>
+
+          <h2>6. Partage des données</h2>
           <p>
             Nous ne vendons, n&apos;échangeons et ne transférons pas vos données personnelles
             à des tiers, sauf dans les cas suivants :
@@ -117,13 +154,13 @@ export default function PolitiqueConfidentialitePage() {
             <li>Prestataires techniques (hébergeur) qui traitent les données pour notre compte.</li>
           </ul>
 
-          <h2>6. Durée de conservation</h2>
+          <h2>7. Durée de conservation</h2>
           <p>
             Les données de navigation collectées via les cookies d&apos;analyse sont conservées
             pour une durée maximale de 13 mois, conformément aux recommandations de la CNIL.
           </p>
 
-          <h2>7. Vos droits</h2>
+          <h2>8. Vos droits</h2>
           <p>
             Conformément au RGPD, vous disposez des droits suivants concernant vos données personnelles :
           </p>
@@ -141,27 +178,27 @@ export default function PolitiqueConfidentialitePage() {
             </a>
           </p>
 
-          <h2>8. Sécurité</h2>
+          <h2>9. Sécurité</h2>
           <p>
             Nous mettons en oeuvre des mesures techniques et organisationnelles appropriées
             pour protéger vos données contre l&apos;accès non autorisé, la modification, la divulgation
             ou la destruction. Le site utilise le protocole HTTPS pour sécuriser les échanges.
           </p>
 
-          <h2>9. Liens vers des sites tiers</h2>
+          <h2>10. Liens vers des sites tiers</h2>
           <p>
             Notre site contient des liens vers des sites tiers (notamment Amazon.fr). Nous ne sommes
             pas responsables des pratiques de confidentialité de ces sites. Nous vous invitons à
             consulter leurs politiques de confidentialité respectives.
           </p>
 
-          <h2>10. Modifications</h2>
+          <h2>11. Modifications</h2>
           <p>
             Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment.
             Toute modification sera publiée sur cette page avec la date de mise à jour.
           </p>
 
-          <h2>11. Contact</h2>
+          <h2>12. Contact</h2>
           <p>
             Pour toute question relative à cette politique de confidentialité, vous pouvez nous
             contacter à :{" "}
