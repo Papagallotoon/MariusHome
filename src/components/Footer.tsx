@@ -78,6 +78,16 @@ export default function Footer() {
             En tant que Partenaire Amazon, ce site réalise un bénéfice sur les achats remplissant les conditions requises.
             Les prix affichés sont indicatifs et peuvent varier.
           </p>
+          <p className="text-[11px] sm:text-xs text-center mt-3 opacity-70">
+            Nos autres sites :{" "}
+            <a href="https://securitemaison-site.vercel.app" className="hover:text-white transition-colors editorial-link">
+              Sécurité Maison — sécurité domestique
+            </a>{" "}
+            ·{" "}
+            <a href="https://surfcastingpechedubord.vercel.app" className="hover:text-white transition-colors editorial-link">
+              Surfcasting Pêche du Bord — pêche
+            </a>
+          </p>
           <p className="text-[11px] sm:text-xs text-center mt-2 opacity-60">
             &copy; {new Date().getFullYear()} {siteConfig.siteName}. Tous droits réservés.
           </p>
