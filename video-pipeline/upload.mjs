@@ -39,7 +39,9 @@ function buildHookTitle(article) {
 const RANK_EMOJIS = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣"];
 
 function buildDescription(article) {
-  const articleUrl = `${SITE_DOMAIN}/articles/${article.slug}`;
+  // Real route is /{category}/{slug} (see src/app/[category]/[slug]/page.tsx) —
+  // there is no /articles/ route on this site.
+  const articleUrl = `${SITE_DOMAIN}/${article.category}/${article.slug}`;
   const links = article.products
     .slice(0, 5) // matches the products actually featured in the video (see build-script.mjs), same order
     .map((p, i) => `${RANK_EMOJIS[i] || `${i + 1}.`} ${p.name} — ${p.price}\n🛒 ${p.affiliateUrl}`)
