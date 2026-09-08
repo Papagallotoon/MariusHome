@@ -76,14 +76,12 @@ const RANK_INTROS = [
   "Et pour finir, notre dernier choix",
 ];
 
-export function buildScript(article, { coverImage, outroImage } = {}) {
+export function buildScript(article) {
   const lines = [];
-  // Prefers a per-video AI-generated cover (see generate-image.mjs) — falls
-  // back to the static room-photo pool only when that isn't available. The
-  // article's own cover is often just a flat-lay of the products, not a
-  // "pièce", so something styled is always used instead.
-  const intro = coverImage || pickRoomImage(article);
-  const outro = outroImage || intro;
+  // The article's own cover is often just a flat-lay of the products, not a
+  // "pièce" — pick a themed room photo from the static pool instead.
+  const intro = pickRoomImage(article);
+  const outro = intro;
 
   lines.push({
     id: "intro",
