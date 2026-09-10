@@ -1,7 +1,5 @@
 {
   "usedSlugs": [
-    "ambiance-provencal-salon",
-    "best-sellers-deco-amazon-2026",
     "meilleures-bougies-parfumees-2026",
     "meilleures-guirlandes-lumineuses-2026",
     "meilleurs-cadres-photo-affiches-2026",
@@ -25,7 +23,9 @@
     "ambiance-indien-salon",
     "ambiance-industriel-salon",
     "ambiance-japon-salle-de-bain",
-    "ambiance-japon-salon"
+    "ambiance-japon-salon",
+    "ambiance-provencal-salon",
+    "best-sellers-deco-amazon-2026"
   ],
   "lastRunAt": "2026-09-10T15:38:17.000Z"
 }
