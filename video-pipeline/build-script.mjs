@@ -35,6 +35,58 @@ function isDimensionHeavy(text) {
   return DIMENSION_TOKEN.test(text);
 }
 
+// A plain \b treats accented letters (é, à...) as non-word characters, so
+// e.g. `\bcandle\b` styled boundaries can misfire around accented French
+// words next to them — these lookaround-based boundaries only stop at an
+// actual non-letter (see the identical fix on securite-sas, where this
+// caused a real "Caméraéra" duplication bug).
+const NOT_LETTER_BEFORE = "(?<![A-Za-zÀ-ÿ])";
+const NOT_LETTER_AFTER = "(?![A-Za-zÀ-ÿ])";
+function wordFix(word, replacement) {
+  return [new RegExp(`${NOT_LETTER_BEFORE}${word}${NOT_LETTER_AFTER}`, "gi"), replacement];
+}
+
+// Real/marketplace brand names that read badly or risk tripping the
+// multilingual voice into switching language mid-sentence — this catalog
+// is mostly French listings already, so the exposure here is much smaller
+// than on securite-sas, but not zero.
+const BRAND_STRIP = [
+  "VEVOR", "ComSaf", "Umezawa", "Yankee Candle", "Boltze", "Atmosphera",
+  "Artpin", "Duvetnova", "EFELA",
+];
+
+function stripBrandNames(text) {
+  let result = text;
+  for (const brand of BRAND_STRIP) {
+    result = result.replace(new RegExp(`${NOT_LETTER_BEFORE}${brand}${NOT_LETTER_AFTER}`, "gi"), "");
+  }
+  return clean(result);
+}
+
+// A handful of product names carry an English scent/feature name (candle
+// jars, a "smart" connected garland) rather than a brand — translate the
+// recurring ones instead of leaving them in English. This is what caused
+// "la langue qui change" reported by the user — see
+// [[three-videos-per-day-policy]].
+const PRONUNCIATION_FIXES = [
+  wordFix("Vanilla Cupcake", "Vanille Cupcake"),
+  wordFix("Twinkly Strings", "Guirlande Scintillante"),
+  wordFix("Smart WiFi", "Connectée WiFi"),
+  wordFix("Cotton Ball Lights", ""), // redundant, "Coton" already said in French
+  wordFix("Block Print", "Artisanal"),
+  wordFix("Canvas", ""), // redundant, "Toile" already said in French
+];
+
+function fixPronunciation(text) {
+  let result = text;
+  for (const [pattern, replacement] of PRONUNCIATION_FIXES) {
+    result = result.replace(pattern, replacement);
+  }
+  // A fix can empty out a whole word, leaving a dangling " - " separator
+  // behind — strip it rather than reading it aloud.
+  return clean(result.replace(/^[\s-–]+|[\s-–]+$/g, "").replace(/\s+[-–]\s+/g, " "));
+}
+
 const MAX_SPOKEN_NAME_WORDS = 8;
 
 // Product names are written for an Amazon listing, not for being read aloud:
@@ -42,7 +94,7 @@ const MAX_SPOKEN_NAME_WORDS = 8;
 // are exactly the words a TTS voice mangles worst. Strip what we can
 // recognize and cap the length — captions keep the full original name.
 function simplifyNameForSpeech(name) {
-  let cleaned = name
+  let cleaned = stripBrandNames(fixPronunciation(name))
     .replace(/\s*[-–]\s*[A-Za-z][\w'.]*$/, "") // trailing "- BrandName" suffix
     .replace(/^(?:[A-Z]{2,}[A-Z0-9]*\s+)+/, ""); // leading ALL-CAPS brand word(s)
 
@@ -63,7 +115,8 @@ function simplifyNameForSpeech(name) {
 // falls back to no "plus" clause at all rather than reading a stripped,
 // half-empty sentence.
 function pickSpokenPro(pros = []) {
-  return pros.find((p) => !isDimensionHeavy(p)) || null;
+  const pro = pros.find((p) => !isDimensionHeavy(p));
+  return pro ? fixPronunciation(pro) : null;
 }
 
 // Warm, conversational rank intros instead of a flat "Numéro N." recitation
