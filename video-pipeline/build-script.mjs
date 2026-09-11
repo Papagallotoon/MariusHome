@@ -131,9 +131,13 @@ const RANK_INTROS = [
 
 export function buildScript(article) {
   const lines = [];
-  // The article's own cover is often just a flat-lay of the products, not a
-  // "pièce" — pick a themed room photo from the static pool instead.
-  const intro = pickRoomImage(article);
+  // "ambiance-*" articles (article.ambianceStyle set) get a themed room
+  // photo — that pairing is deliberate and looks great. But pickRoomImage()
+  // falls back to the *entire mixed* room pool for anything without a style
+  // (every "top-X-tendance-2026" product article), so e.g. a rugs roundup
+  // could open on an unrelated Japanese-street photo — confusing, not just
+  // bland. For those, the first product's own photo is the relevant image.
+  const intro = article.ambianceStyle ? pickRoomImage(article) : article.products?.[0]?.image || pickRoomImage(article);
   const outro = intro;
 
   lines.push({
