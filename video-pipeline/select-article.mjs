@@ -176,8 +176,17 @@ export function buildSoloArticle() {
   state.soloIndex = soloIndex + 1;
   saveState(state);
 
+  // upload.mjs's buildHookTitle()/buildDescription() need article.slug (and,
+  // on this repo, article.category) — without them hashString(article.slug)
+  // throws mid-upload (a real bug hit in production on 2026-09-13: the video
+  // rendered fine but the upload crashed, so nothing got published). Point
+  // at the source article's real slug/category instead of leaving them
+  // unset: the description link then goes to a real, relevant page (the
+  // full comparison this product came from) instead of a 404.
   const article = {
     title: pick.product.name,
+    slug: pick.sourceArticle.slug,
+    category: pick.sourceArticle.category,
     excerpt: pick.sourceArticle.excerpt,
     hookSubject: pick.product.name,
     products: [pick.product],
