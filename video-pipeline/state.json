@@ -27,13 +27,15 @@
     "top-tableaux-decoration-salon-2026",
     "top-vases-deco-tendance-2026",
     "ambiance-bali-chambre",
-    "top-deco-luxe-maison-2026"
+    "top-deco-luxe-maison-2026",
+    "solo-ambiance-bali-chambre-B0D1KQHTJY"
   ],
-  "lastRunAt": "2026-09-12T16:12:05.615Z",
+  "lastRunAt": "2026-09-13T08:31:35.704Z",
   "dailyCounts": {
-    "date": "2026-09-12",
-    "comparatif": 3,
+    "date": "2026-09-13",
+    "comparatif": 0,
     "audible": 0,
-    "solo": 0
-  }
+    "solo": 1
+  },
+  "soloIndex": 1
 }
