@@ -53,6 +53,11 @@ function wordFix(word, replacement) {
 const BRAND_STRIP = [
   "VEVOR", "ComSaf", "Umezawa", "Yankee Candle", "Boltze", "Atmosphera",
   "Artpin", "Duvetnova", "EFELA",
+  // Électroménager (robots aspirateurs, aspirateurs balai, lave-linge connectés) —
+  // sub-brand/feature names layered onto the product name that are real English
+  // compound words (Power+Lite, Smart+Things, Pro+Wash, Duo+Brush) and trip the
+  // same "la langue qui change" issue as the original catalog's entries.
+  "PowerLite", "SmartThings", "ProWash", "DuoBrush",
 ];
 
 function stripBrandNames(text) {
@@ -75,6 +80,13 @@ const PRONUNCIATION_FIXES = [
   wordFix("Cotton Ball Lights", ""), // redundant, "Coton" already said in French
   wordFix("Block Print", "Artisanal"),
   wordFix("Canvas", ""), // redundant, "Toile" already said in French
+  // Électroménager catalog: "Floor One" (Tineco) is two plain English words
+  // read back-to-back — translate rather than strip since it's the product's
+  // actual positioning (aspire + lave). "Origin" (Dyson V8 Origin) is a real
+  // English word sitting mid-name; nudge it to the French spelling so the
+  // voice doesn't treat it as an English token.
+  wordFix("Floor One", "Tout-en-Un"),
+  wordFix("Origin", "Origine"),
 ];
 
 function fixPronunciation(text) {

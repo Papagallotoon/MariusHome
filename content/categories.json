@@ -54,5 +54,12 @@
     "description": "Conseils d'experts, histoire du design, tendances déco, notions d'architecture et guides pratiques pour réussir votre projet d'intérieur.",
     "image": "/images/categories/guides-inspirations.png",
     "color": "#5b8a8a"
+  },
+  {
+    "name": "Électroménager Connecté",
+    "slug": "electromenager",
+    "description": "Robots aspirateurs-laveurs, aspirateurs sans fil et gros électroménager connecté pour une maison intelligente et impeccable.",
+    "image": "/images/products/roborock-saros-20-neo-aspirateur-laveur.jpg",
+    "color": "#5c6b73"
   }
 ]
