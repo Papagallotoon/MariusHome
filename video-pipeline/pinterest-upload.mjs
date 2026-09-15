@@ -22,6 +22,10 @@ async function pinterest(path, { token, method = "GET", body } = {}) {
 }
 
 async function getAccessToken() {
+  // Trial access can only create Pins on api-sandbox, which rejects OAuth
+  // tokens — it needs a token generated in the developer portal instead.
+  if (process.env.PINTEREST_ACCESS_TOKEN) return process.env.PINTEREST_ACCESS_TOKEN.trim();
+
   const { PINTEREST_APP_ID, PINTEREST_APP_SECRET, PINTEREST_REFRESH_TOKEN } = process.env;
   if (!PINTEREST_APP_ID || !PINTEREST_APP_SECRET || !PINTEREST_REFRESH_TOKEN) {
     throw new Error(
