@@ -50,20 +50,44 @@ async function getAccessToken() {
   return json.access_token;
 }
 
-async function getBoardId(token) {
+async function listBoards(token) {
+  const boards = [];
   let bookmark;
   do {
-    const page = await pinterest(`/boards?page_size=100${bookmark ? `&bookmark=${bookmark}` : ""}`, { token });
-    const found = page.items?.find((b) => b.name === BOARD_NAME);
-    if (found) return found.id;
+    // privacy=ALL: secret boards are missing from the default listing, which
+    // made the create call below fail with "you already have a board with
+    // this name" for a board we could not see.
+    const page = await pinterest(`/boards?page_size=100&privacy=ALL${bookmark ? `&bookmark=${bookmark}` : ""}`, { token });
+    boards.push(...(page.items || []));
     bookmark = page.bookmark;
   } while (bookmark);
-  const created = await pinterest("/boards", {
-    token,
-    method: "POST",
-    body: { name: BOARD_NAME, description: "Sélections déco, tendances et bons plans maison par Marius Concept.", privacy: "PUBLIC" },
-  });
-  return created.id;
+  return boards;
+}
+
+const sameName = (a, b) => a.trim().toLowerCase() === b.trim().toLowerCase();
+
+async function getBoardId(token) {
+  const boards = await listBoards(token);
+  const found = boards.find((b) => sameName(b.name, BOARD_NAME));
+  if (found) return found.id;
+
+  try {
+    const created = await pinterest("/boards", {
+      token,
+      method: "POST",
+      body: { name: BOARD_NAME, description: "Sélections déco, tendances et bons plans maison par Marius Concept.", privacy: "PUBLIC" },
+    });
+    return created.id;
+  } catch (err) {
+    if (!/already have a board/i.test(err.message)) throw err;
+    const again = (await listBoards(token)).find((b) => sameName(b.name, BOARD_NAME));
+    if (again) return again.id;
+    if (boards.length) {
+      console.warn(`Tableau "${BOARD_NAME}" invisible via l'API — utilisation de "${boards[0].name}".`);
+      return boards[0].id;
+    }
+    throw err;
+  }
 }
 
 function articleUrl(article) {
