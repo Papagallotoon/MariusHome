@@ -144,6 +144,37 @@ export default function PolitiqueConfidentialitePage() {
             </li>
           </ul>
 
+          <h2>5 bis. Utilisation de l&apos;API Pinterest</h2>
+          <p>
+            {siteConfig.siteName} publie automatiquement ses propres vidéos et visuels sur son compte
+            Pinterest officiel à l&apos;aide de l&apos;API Pinterest. Cet accès est réservé à
+            l&apos;éditeur du site pour gérer son propre compte : il ne concerne pas les visiteurs du
+            site et ne collecte aucune donnée les concernant.
+          </p>
+          <ul>
+            <li>
+              <strong>Données utilisées :</strong> uniquement le jeton d&apos;autorisation du compte
+              Pinterest de l&apos;éditeur, ainsi que la liste de ses tableaux pour y publier les
+              épingles.
+            </li>
+            <li>
+              <strong>Non-partage :</strong> ces données ne sont ni vendues, ni partagées avec des
+              tiers, ni utilisées à d&apos;autres fins que la publication de nos propres contenus.
+            </li>
+            <li>
+              <strong>Conformité :</strong> cet usage respecte les{" "}
+              <a
+                href="https://policy.pinterest.com/developer-guidelines"
+                className="font-medium underline"
+                style={{ color: siteConfig.colors.primary }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                règles pour les développeurs Pinterest
+              </a>.
+            </li>
+          </ul>
+
           <h2>6. Partage des données</h2>
           <p>
             Nous ne vendons, n&apos;échangeons et ne transférons pas vos données personnelles

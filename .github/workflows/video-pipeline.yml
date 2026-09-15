@@ -59,6 +59,11 @@ jobs:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           FORCE_ARTICLE_SLUG: ${{ inputs.force_article_slug }}
           YT_PRIVACY: public
+          PINTEREST_APP_ID: ${{ secrets.PINTEREST_APP_ID }}
+          PINTEREST_APP_SECRET: ${{ secrets.PINTEREST_APP_SECRET }}
+          PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
+          # Trial access = sandbox Pins only; switch to https://api.pinterest.com/v5 once Standard access is granted.
+          PINTEREST_API_BASE: ${{ vars.PINTEREST_API_BASE || 'https://api-sandbox.pinterest.com/v5' }}
         run: node video-pipeline/run.mjs
 
       - name: Commit updated state

@@ -13,6 +13,7 @@ import { buildScript } from "./build-script.mjs";
 import { synthesizeLines } from "./tts.mjs";
 import { renderVideo } from "./render.mjs";
 import { uploadVideo } from "./upload.mjs";
+import { uploadToPinterest } from "./pinterest-upload.mjs";
 import { sendPostedEmail } from "./notify.mjs";
 import { TMP_DIR, OUT_DIR } from "./config.mjs";
 
@@ -87,6 +88,17 @@ async function main() {
     const videoUrl = `https://youtube.com/watch?v=${result.id}`;
     console.log(`Uploaded: ${videoUrl} (privacy: ${result.status?.privacyStatus})`);
     await sendPostedEmail({ article, videoUrl });
+
+    // Pinterest is a secondary channel: a failure there must not fail the run,
+    // or the YouTube video already published would never get marked as used.
+    if (process.env.PINTEREST_REFRESH_TOKEN) {
+      try {
+        const pin = await uploadToPinterest({ videoPath: outPath, article });
+        console.log(`Pinterest Pin created: ${pin.pinId} -> ${pin.link}`);
+      } catch (err) {
+        console.error("Pinterest upload failed (YouTube publish unaffected):", err.message);
+      }
+    }
   }
 
   markUsed(slug);
