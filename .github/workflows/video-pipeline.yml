@@ -62,8 +62,10 @@ jobs:
           PINTEREST_APP_ID: ${{ secrets.PINTEREST_APP_ID }}
           PINTEREST_APP_SECRET: ${{ secrets.PINTEREST_APP_SECRET }}
           PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
-          # Trial access = sandbox Pins only; switch to https://api.pinterest.com/v5 once Standard access is granted.
-          PINTEREST_API_BASE: ${{ vars.PINTEREST_API_BASE || 'https://api-sandbox.pinterest.com/v5' }}
+          # Trial access uses the normal API; Pins it creates are just visible
+          # to the account owner only until Standard access is granted. The
+          # api-sandbox host needs its own portal-generated token, not OAuth.
+          PINTEREST_API_BASE: ${{ vars.PINTEREST_API_BASE || 'https://api.pinterest.com/v5' }}
         run: node video-pipeline/run.mjs
 
       - name: Commit updated state
