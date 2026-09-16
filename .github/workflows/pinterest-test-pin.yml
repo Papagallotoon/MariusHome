@@ -35,4 +35,7 @@ jobs:
           # generated in the developer portal (Sandbox environment).
           PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_SANDBOX_TOKEN }}
           PINTEREST_API_BASE: https://api-sandbox.pinterest.com/v5
+          # The sandbox has no boards of its own, yet board names still clash
+          # with the real account — use a name reserved for tests.
+          PINTEREST_BOARD_NAME: Marius Concept Sandbox
         run: node video-pipeline/pinterest-test-pin.mjs "${{ inputs.article_slug }}"
