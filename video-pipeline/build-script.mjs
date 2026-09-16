@@ -58,6 +58,12 @@ const BRAND_STRIP = [
   // compound words (Power+Lite, Smart+Things, Pro+Wash, Duo+Brush) and trip the
   // same "la langue qui change" issue as the original catalog's entries.
   "PowerLite", "SmartThings", "ProWash", "DuoBrush",
+  // Suspensions, lampes de chevet, plantes artificielles, parures de lit,
+  // rideaux: marketplace brands that are English/German words or invented
+  // names (Urban Lifestyle, Utopia Bedding, Der Rose, Comely...) — the product
+  // type that follows is already descriptive French, so drop the brand.
+  "Utopia Bedding", "Urban Lifestyle", "Der Rose", "Rayofly", "Comely", "Briloner",
+  "Rootro", "Edishine", "tectake", "Keeplush", "Dreamzie", "Topfinel", "XiDi", "Deconovo",
 ];
 
 function stripBrandNames(text) {
@@ -87,6 +93,12 @@ const PRONUNCIATION_FIXES = [
   // voice doesn't treat it as an English token.
   wordFix("Floor One", "Tout-en-Un"),
   wordFix("Origin", "Origine"),
+  // "Dimmable" is an English tech word (lampes de chevet); "Gatsby" is an
+  // English-named print on a parure de lit; "Dracaena" gets its French
+  // spelling so the voice doesn't read it as Latin/English.
+  wordFix("Dimmable", "à intensité réglable"),
+  wordFix("Gatsby", ""),
+  wordFix("Dracaena", "Dracéna"),
 ];
 
 function fixPronunciation(text) {
