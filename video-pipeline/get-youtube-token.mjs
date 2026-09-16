@@ -8,8 +8,10 @@ import { google } from "googleapis";
 const PORT = 8080;
 const REDIRECT_URI = `http://localhost:${PORT}/oauth2callback`;
 
-const clientId = process.env.YT_CLIENT_ID;
-const clientSecret = process.env.YT_CLIENT_SECRET;
+// Values pasted from the Cloud console often carry stray spaces or quotes.
+const clean = (v) => (v || "").trim().replace(/^["']|["']$/g, "");
+const clientId = clean(process.env.YT_CLIENT_ID);
+const clientSecret = clean(process.env.YT_CLIENT_SECRET);
 
 if (!clientId || !clientSecret) {
   console.error(
@@ -19,6 +21,17 @@ if (!clientId || !clientSecret) {
   );
   process.exit(1);
 }
+
+// A secret copied from the wrong OAuth client (or a masked value) only fails
+// at the token exchange, after the whole consent flow — catch it up front.
+if (!clientSecret.startsWith("GOCSPX-")) {
+  console.error(
+    `Ce code secret ne ressemble pas à un secret Google OAuth (il doit commencer par "GOCSPX-", ${clientSecret.length} caractères ici).\n` +
+      "Ouvrez le client OAuth correspondant à cet ID client, ajoutez un code secret et copiez la valeur complète."
+  );
+  process.exit(1);
+}
+console.log(`Client ID : ${clientId}\nCode secret : GOCSPX-…${clientSecret.slice(-4)}\n`);
 
 const oauth2Client = new google.auth.OAuth2(clientId, clientSecret, REDIRECT_URI);
 
