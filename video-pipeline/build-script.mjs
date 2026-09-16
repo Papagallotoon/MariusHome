@@ -180,10 +180,14 @@ export function buildScript(article) {
 
   lines.push({
     id: "outro",
+    // A single-product spotlight has nothing to choose between.
     spoken:
-      "Alors, lequel est ton coup de cœur ? Tout est disponible sur Amazon, liens juste en dessous. " +
-      "Petite précision : les prix peuvent avoir changé depuis la publication de cette vidéo. " +
-      "Abonne-toi pour ne rater aucune sélection !",
+      products.length === 1
+        ? "Disponible sur Amazon, lien juste en dessous. Petite précision : le prix peut avoir changé depuis la publication de cette vidéo. " +
+          "Si la vidéo t'a plu, mets un j'aime et abonne-toi, ça nous aide énormément !"
+        : "Alors, lequel est ton coup de cœur ? Tout est disponible sur Amazon, liens juste en dessous. " +
+          "Petite précision : les prix peuvent avoir changé depuis la publication de cette vidéo. " +
+          "Abonne-toi pour ne rater aucune sélection !",
     caption: "Liens en description",
     image: outro,
   });
