@@ -61,7 +61,10 @@ jobs:
           YT_PRIVACY: public
           PINTEREST_APP_ID: ${{ secrets.PINTEREST_APP_ID }}
           PINTEREST_APP_SECRET: ${{ secrets.PINTEREST_APP_SECRET }}
-          PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
+          # Left empty (so run.mjs skips Pinterest) until the app gets Standard
+          # access: Trial apps can't create Pins in production. Set the
+          # PINTEREST_ENABLED repo variable to "true" once it's granted.
+          PINTEREST_REFRESH_TOKEN: ${{ vars.PINTEREST_ENABLED == 'true' && secrets.PINTEREST_REFRESH_TOKEN || '' }}
           # Trial access uses the normal API; Pins it creates are just visible
           # to the account owner only until Standard access is granted. The
           # api-sandbox host needs its own portal-generated token, not OAuth.
