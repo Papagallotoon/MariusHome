@@ -7,8 +7,46 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { ROOT_DIR, ARTICLES_DIR, SITE_DOMAIN } from "../config.mjs";
+import { MsEdgeTTS, OUTPUT_FORMAT } from "msedge-tts";
+import { ROOT_DIR, ARTICLES_DIR, SITE_DOMAIN, TTS_VOICE } from "../config.mjs";
+import { getAudioDurationSeconds } from "../ffprobe.mjs";
 import { renderLongVideo, formatTimestamp } from "./render-long.mjs";
+
+const escapeSsml = (t) =>
+  t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&apos;");
+
+// Optional voice-over: <theme>.narration.json maps "<section dir>/<file name>"
+// to the sentence spoken over that image. Same voice as the Shorts, with a
+// slightly slower, calmer prosody suited to a long relaxed video.
+async function attachNarration(themeFile, theme, sections, tmpDir) {
+  const narrationFile = themeFile.replace(/\.json$/, ".narration.json");
+  if (!fs.existsSync(narrationFile)) return;
+  const { prosody, items } = JSON.parse(fs.readFileSync(narrationFile, "utf8"));
+  const used = new Set();
+  const tts = new MsEdgeTTS();
+  await tts.setMetadata(TTS_VOICE, OUTPUT_FORMAT.AUDIO_24KHZ_96KBITRATE_MONO_MP3);
+  let count = 0;
+  for (const section of sections) {
+    for (const [i, imagePath] of section.images.entries()) {
+      const key = `${section.dir}/${path.basename(imagePath)}`;
+      const text = items[key];
+      if (!text) {
+        console.warn(`Pas de commentaire pour ${key}`);
+        continue;
+      }
+      used.add(key);
+      const dir = path.join(tmpDir, "voice", String(count).padStart(3, "0"));
+      fs.mkdirSync(dir, { recursive: true });
+      const { audioFilePath } = await tts.toFile(dir, escapeSsml(text), prosody);
+      section.images[i] = { path: imagePath, voice: audioFilePath, voiceDuration: await getAudioDurationSeconds(audioFilePath) };
+      process.stdout.write(`\rVoix générées : ${++count}`);
+    }
+  }
+  tts.close();
+  process.stdout.write("\n");
+  const orphans = Object.keys(items).filter((k) => !used.has(k));
+  if (orphans.length) console.warn(`Commentaires sans image correspondante : ${orphans.join(", ")}`);
+}
 
 const IMAGE_EXT = /\.(jpe?g|png|webp)$/i;
 const LONG_DIR = path.join(ROOT_DIR, "video-pipeline", "long");
@@ -114,6 +152,7 @@ async function main() {
 
   const imageCount = sections.reduce((n, s) => n + s.images.length, 0);
   console.log(`${sections.length} sections, ${imageCount} images → ${outPath}`);
+  await attachNarration(path.resolve(themeFile), theme, sections, tmpDir);
   const { duration, chapters, withMusic } = await renderLongVideo({ theme: { ...theme, sections }, outPath, tmpDir });
 
   const description = buildDescription(theme, chapters);

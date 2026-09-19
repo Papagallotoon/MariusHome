@@ -119,28 +119,66 @@ function musicTracks() {
     .map((f) => path.join(MUSIC_DIR, f));
 }
 
-async function addAudio(videoFile, duration, outPath, tmpDir) {
+// Mixes the optional voice-over (one file per clip, placed at its clip's start
+// on the final timeline) over looping background music. The music drops to a
+// quiet bed when there's narration so the voice stays clearly intelligible.
+export async function addAudio(videoFile, duration, outPath, tmpDir, voices) {
   const tracks = musicTracks();
-  if (!tracks.length) {
+  const inputs = ["-i", rel(videoFile)];
+  const parts = [];
+  const mixLabels = [];
+  let n = 1;
+
+  if (tracks.length) {
+    // Join the tracks into one finite bed first, then loop that plain file,
+    // bounded by -t: looping the concat demuxer directly never terminated
+    // cleanly once dozens of voice inputs were mixed in.
+    const list = path.join(tmpDir, "music.txt");
+    fs.writeFileSync(list, tracks.map((t) => `file '${t.replace(/\\/g, "/").replace(/'/g, "'\\''")}'`).join("\n"));
+    const bed = path.join(tmpDir, "music-bed.wav");
+    await ffmpeg(["-f", "concat", "-safe", "0", "-i", rel(list), "-ar", "44100", "-ac", "2", rel(bed)]);
+    inputs.push("-stream_loop", "-1", "-t", duration.toFixed(2), "-i", rel(bed));
+    const fadeOut = Math.max(0, duration - 5).toFixed(2);
+    const level = voices.length ? 0.16 : 0.8;
+    parts.push(`[${n}:a]volume=${level},afade=t=in:d=3,afade=t=out:st=${fadeOut}:d=5,aresample=44100[music]`);
+    mixLabels.push("[music]");
+    n++;
+  }
+
+  for (const [i, v] of voices.entries()) {
+    inputs.push("-i", rel(v.file));
+    const ms = Math.round(v.start * 1000);
+    parts.push(`[${n}:a]aresample=44100,adelay=${ms}|${ms}[v${i}]`);
+    mixLabels.push(`[v${i}]`);
+    n++;
+  }
+
+  if (!mixLabels.length) {
     await ffmpeg(["-i", rel(videoFile), "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-shortest", "-c:v", "copy", "-c:a", "aac", rel(outPath)]);
     return false;
   }
-  const list = path.join(tmpDir, "music.txt");
-  fs.writeFileSync(list, tracks.map((t) => `file '${t.replace(/\\/g, "/").replace(/'/g, "'\\''")}'`).join("\n"));
-  const fadeOut = Math.max(0, duration - 5).toFixed(2);
+
+  const graph =
+    parts.join(";") +
+    `;${mixLabels.join("")}amix=inputs=${mixLabels.length}:normalize=0:duration=longest,` +
+    `loudnorm=I=-16:TP=-1.5:LRA=11,aformat=channel_layouts=stereo[a]`;
   await ffmpeg([
-    "-i", rel(videoFile),
-    "-stream_loop", "-1", "-f", "concat", "-safe", "0", "-i", rel(list),
-    "-filter_complex", `[1:a]volume=0.8,afade=t=in:d=3,afade=t=out:st=${fadeOut}:d=5[a]`,
+    ...inputs,
+    "-filter_complex", graph,
     "-map", "0:v", "-map", "[a]",
     "-t", duration.toFixed(2),
     "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
     rel(outPath),
   ]);
-  return true;
+  return tracks.length > 0;
 }
 
-// theme: { sections: [{ title, images: [absPath...] }], imageSeconds? }
+// Voice starts a moment after the crossfade into its image settles, and the
+// image lingers briefly after the sentence ends before fading to the next.
+const VOICE_LEAD = 0.8;
+const VOICE_TAIL = 1.0;
+
+// theme: { sections: [{ title, images: [absPath | { path, voice?, voiceDuration? }] }], imageSeconds? }
 export async function renderLongVideo({ theme, outPath, tmpDir }) {
   fs.mkdirSync(tmpDir, { recursive: true });
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
@@ -149,13 +187,17 @@ export async function renderLongVideo({ theme, outPath, tmpDir }) {
 
   const clips = [];
   const chapters = [];
+  const voices = [];
   let timeline = 0;
   let index = 0;
   for (const section of theme.sections) {
-    section.images.forEach((image, i) => {
+    section.images.forEach((entry, i) => {
+      const item = typeof entry === "string" ? { path: entry } : entry;
+      const duration = item.voice ? Math.max(seconds, VOICE_LEAD + item.voiceDuration + VOICE_TAIL + XFADE) : seconds;
       if (i === 0) chapters.push({ time: timeline, title: section.title });
-      clips.push({ image, duration: seconds, label: i === 0 ? section.title : null, index });
-      timeline += seconds - XFADE;
+      if (item.voice) voices.push({ file: item.voice, start: timeline + VOICE_LEAD });
+      clips.push({ image: item.path, duration, label: i === 0 ? section.title : null, index });
+      timeline += duration - XFADE;
       index++;
     });
   }
@@ -168,7 +210,7 @@ export async function renderLongVideo({ theme, outPath, tmpDir }) {
   process.stdout.write("\n");
 
   const merged = await mergeAll(clips, tmpDir);
-  const withMusic = await addAudio(merged.file, merged.duration, outPath, tmpDir);
+  const withMusic = await addAudio(merged.file, merged.duration, outPath, tmpDir, voices);
   return { duration: merged.duration, chapters, withMusic };
 }
 
