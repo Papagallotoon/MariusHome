@@ -48,14 +48,15 @@
     "solo-ambiance-bali-salle-de-bain-B095CS43KB",
     "solo-ambiance-bali-salon-B0BZ59CGKS",
     "solo-ambiance-bali-salon-B0F21F35GW",
-    "solo-ambiance-bali-salon-B0GXVW2XVM"
+    "solo-ambiance-bali-salon-B0GXVW2XVM",
+    "solo-ambiance-bali-salon-B0DVT78551"
   ],
-  "lastRunAt": "2026-09-19T13:20:12.269Z",
+  "lastRunAt": "2026-09-19T16:21:49.844Z",
   "dailyCounts": {
     "date": "2026-09-19",
     "comparatif": 0,
     "audible": 0,
-    "solo": 3
+    "solo": 4
   },
-  "soloIndex": 13
+  "soloIndex": 14
 }
