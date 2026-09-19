@@ -13,6 +13,33 @@ import { renderLongVideo, formatTimestamp } from "./render-long.mjs";
 const IMAGE_EXT = /\.(jpe?g|png|webp)$/i;
 const LONG_DIR = path.join(ROOT_DIR, "video-pipeline", "long");
 
+const normalize = (s) =>
+  s
+    .normalize("NFD")
+    .replace(/\p{M}/gu, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+
+// Flow exports are often dumped into a single folder: move every image whose
+// file name starts with a section's folder name ("02-tons-chauds…") or its
+// title ("Japandi aux tons chauds…") into that section's folder.
+export function sortDroppedImages(theme) {
+  const base = path.join(LONG_DIR, "images", theme.slug);
+  if (!fs.existsSync(base)) return;
+  const dirs = [base, ...theme.sections.map((s) => path.join(base, s.dir))];
+  for (const s of theme.sections) fs.mkdirSync(path.join(base, s.dir), { recursive: true });
+  for (const dir of dirs) {
+    for (const file of fs.readdirSync(dir).filter((f) => IMAGE_EXT.test(f))) {
+      const name = normalize(file.replace(IMAGE_EXT, ""));
+      const target = theme.sections.find((s) => name.startsWith(normalize(s.dir)) || name.startsWith(normalize(s.title)));
+      if (!target) continue;
+      const dest = path.join(base, target.dir, file);
+      if (path.join(dir, file) !== dest && !fs.existsSync(dest)) fs.renameSync(path.join(dir, file), dest);
+    }
+  }
+}
+
 function resolveSectionImages(theme, section) {
   if (section.images?.length) return section.images.map((p) => path.resolve(ROOT_DIR, p));
   const dir = path.join(LONG_DIR, "images", theme.slug, section.dir);
@@ -68,6 +95,7 @@ async function main() {
     process.exit(1);
   }
   const theme = JSON.parse(fs.readFileSync(path.resolve(themeFile), "utf8"));
+  sortDroppedImages(theme);
 
   const sections = theme.sections
     .map((s) => ({ ...s, images: resolveSectionImages(theme, s) }))
