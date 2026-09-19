@@ -27,8 +27,8 @@ async function attachNarration(themeFile, theme, sections, tmpDir) {
   await tts.setMetadata(TTS_VOICE, OUTPUT_FORMAT.AUDIO_24KHZ_96KBITRATE_MONO_MP3);
   let count = 0;
   for (const section of sections) {
-    for (const [i, imagePath] of section.images.entries()) {
-      const key = `${section.dir}/${path.basename(imagePath)}`;
+    for (const item of section.images) {
+      const key = `${section.dir}/${path.basename(item.path)}`;
       const text = items[key];
       if (!text) {
         console.warn(`Pas de commentaire pour ${key}`);
@@ -38,7 +38,8 @@ async function attachNarration(themeFile, theme, sections, tmpDir) {
       const dir = path.join(tmpDir, "voice", String(count).padStart(3, "0"));
       fs.mkdirSync(dir, { recursive: true });
       const { audioFilePath } = await tts.toFile(dir, escapeSsml(text), prosody);
-      section.images[i] = { path: imagePath, voice: audioFilePath, voiceDuration: await getAudioDurationSeconds(audioFilePath) };
+      item.voice = audioFilePath;
+      item.voiceDuration = await getAudioDurationSeconds(audioFilePath);
       process.stdout.write(`\rVoix générées : ${++count}`);
     }
   }
@@ -105,23 +106,30 @@ function shopTheLook(slugs) {
   return blocks.join("\n\n");
 }
 
+// SEO layout modelled on top-ranking decor channels: a keyword headline, the
+// first hashtags (YouTube shows the first 3 above the title), chapters, what
+// the video covers, shop-the-look links, a long-tail keyword paragraph, then
+// disclosures. Hashtags are capped well under YouTube's 60 limit, beyond
+// which it ignores every hashtag on the video.
 export function buildDescription(theme, chapters) {
-  const lines = [
-    theme.intro,
-    "",
-    "⏱ CHAPITRES",
-    ...chapters.map((c) => `${formatTimestamp(c.time)} ${c.title}`),
-  ];
+  const seo = theme.seo || {};
+  const tags = (theme.hashtags || []).slice(0, 25).map((h) => `#${h}`);
+  const lines = [];
+  if (seo.headline) lines.push(seo.headline, tags.slice(0, 4).join(" "), "");
+  lines.push(theme.intro, "", "⏱ CHAPITRES", ...chapters.map((c) => `${formatTimestamp(c.time)} ${c.title}`));
+  if (seo.covers?.length) lines.push("", "📌 DANS CETTE VIDÉO :", ...seo.covers.map((c) => `• ${c}`));
   const shop = shopTheLook(theme.shop);
   if (shop) lines.push("", "🛒 RECRÉER CE STYLE CHEZ VOUS, NOS SÉLECTIONS :", "", shop);
+  if (seo.keywords) lines.push("", seo.keywords);
   lines.push(
     "",
+    seo.subscribe || "🔔 Abonnez-vous pour plus d'idées déco, de conseils d'aménagement et d'inspirations chaque semaine !",
     `🏡 Toutes nos idées déco : ${SITE_DOMAIN}`,
     "",
     "Images d'inspiration générées par intelligence artificielle.",
     "Certains liens sont des liens d'affiliation Amazon : nous touchons une petite commission sur vos achats, sans surcoût pour vous. Les prix peuvent avoir changé depuis la publication.",
     "",
-    (theme.hashtags || []).map((h) => `#${h}`).join(" ")
+    tags.join(" ")
   );
   return lines.join("\n").slice(0, 5000);
 }
@@ -133,10 +141,17 @@ async function main() {
     process.exit(1);
   }
   const theme = JSON.parse(fs.readFileSync(path.resolve(themeFile), "utf8"));
+  if (theme.introLogo) theme.introLogo = path.resolve(ROOT_DIR, theme.introLogo);
   sortDroppedImages(theme);
 
   const sections = theme.sections
-    .map((s) => ({ ...s, images: resolveSectionImages(theme, s) }))
+    .map((s) => ({
+      ...s,
+      images: resolveSectionImages(theme, s).map((p) => ({
+        path: p,
+        cta: theme.cta?.image === `${s.dir}/${path.basename(p)}` ? theme.cta.text : undefined,
+      })),
+    }))
     .filter((s) => s.images.length);
   const missing = theme.sections.filter((s) => !sections.find((x) => x.title === s.title));
   if (missing.length) console.warn(`Sections sans image, ignorées : ${missing.map((s) => s.title).join(", ")}`);

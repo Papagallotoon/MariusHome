@@ -1,6 +1,13 @@
 {
   "slug": "salons-japandi-2026",
-  "title": "Salons Japandi 2026 : idées déco zen et minimalistes pour s'inspirer",
+  "title": "Salon Japandi : 48 idées déco zen et conseils de pro pour un intérieur apaisant",
+  "introLogo": "video-pipeline/assets/logo-marius-concept.jpg",
+  "introSeconds": 4.5,
+  "introColor": "0x4C5C54",
+  "cta": {
+    "image": "04-coin-lecture/04-coin-lecture.jpeg",
+    "text": "Abonnez-vous  •  Likez la vidéo"
+  },
   "intro": "Le style japandi mêle la sérénité japonaise et la chaleur scandinave : bois clair, lin, tons neutres et objets artisanaux. Voici une série d'idées de salons japandi pour trouver l'inspiration, du petit espace au grand séjour lumineux. Installez-vous, et laissez-vous inspirer.",
   "imageSeconds": 7,
   "imagesPerSection": 8,
@@ -44,5 +51,58 @@
     "top-lampes-de-chevet-deco-2026",
     "top-coussins-deco-tendance-2026"
   ],
-  "hashtags": ["japandi", "decoration", "salon", "decointerieur", "minimalisme", "inspirationdeco", "mariusconcept"]
+  "hashtags": [
+    "japandi",
+    "décorationsalon",
+    "décorationintérieure",
+    "salonjapandi",
+    "décorationmaison",
+    "décozen",
+    "minimalisme",
+    "wabisabi",
+    "décojaponaise",
+    "décoscandinave",
+    "idéesdéco",
+    "aménagementsalon",
+    "petitsalon",
+    "coinlecture",
+    "plantesdintérieur",
+    "relookingsalon",
+    "inspirationdéco",
+    "tendancedéco2026",
+    "intérieurcosy",
+    "mariusconcept"
+  ],
+  "tags": [
+    "salon japandi",
+    "déco japandi",
+    "style japandi",
+    "décoration salon",
+    "déco zen",
+    "intérieur minimaliste",
+    "wabi sabi",
+    "déco japonaise",
+    "déco scandinave",
+    "idées déco salon",
+    "aménagement salon",
+    "petit salon",
+    "coin lecture",
+    "décoration intérieure 2026",
+    "conseils déco"
+  ],
+  "seo": {
+    "headline": "Idées déco salon japandi 2026 | Salon zen et minimaliste | Décoration japonaise et scandinave | Conseils d'aménagement",
+    "covers": [
+      "Les principes du style japandi : l'espace vide, les matières naturelles, les tons neutres",
+      "Architecture japonaise : cloisons coulissantes, poutres, murs à la chaux, meubles bas",
+      "Japandi aux tons chauds : bois foncé, terre cuite, teintes rouille",
+      "Aménager un petit salon japandi : rangements cachés, miroirs, étagères murales",
+      "Créer un coin lecture cosy et apaisant",
+      "Plantes d'intérieur : olivier, bonsaï, monstera, pothos et leur entretien",
+      "Éclairage du soir : lampes en papier, lumière chaude, bougies",
+      "Entretien : lin, bois huilé, tapis en jute, lampes en papier"
+    ],
+    "keywords": "Idées déco salon japandi, salon zen, décoration japonaise, décoration scandinave, intérieur minimaliste, wabi sabi, salon bois clair, salon beige et lin, déco nature, aménagement petit salon, coin lecture cosy, plantes d'intérieur déco, éclairage chaleureux, lampe en papier, tendances décoration intérieure 2026, relooking salon, inspiration déco salon moderne, idées de rénovation salon, conseils décoration intérieure.",
+    "subscribe": "🔔 Abonnez-vous et likez la vidéo pour plus d'idées déco, de conseils d'aménagement et d'inspirations chaque semaine !"
+  }
 }

@@ -1,5 +1,8 @@
 {
-  "prosody": { "rate": "-6%", "pitch": "+2%" },
+  "prosody": {
+    "rate": "-6%",
+    "pitch": "+2%"
+  },
   "items": {
     "01-lumineux/01-lumineux.jpeg": "Bienvenue dans cette visite de salons japandi. Le japandi, c'est la rencontre de deux cultures : la sobriété japonaise et la douceur des intérieurs du nord de l'Europe. Du bois clair, du lin, des tons calmes. Installez-vous, on vous donne nos meilleurs conseils en chemin.",
     "01-lumineux/Salon japandi lumineux et épuré 03.jpg": "Premier secret de ce style : le vide. Les Japonais ont même un mot pour ça, le « ma », l'espace qui respire. Une bonne règle : laissez environ un tiers du sol visible. Au-delà, la pièce paraît encombrée, même avec de beaux meubles.",
@@ -9,7 +12,6 @@
     "01-lumineux/Salon japandi lumineux et épuré 08.jpg": "Ici, le canapé fait face à la fenêtre. C'est une astuce simple pour un salon apaisant : orienter l'assise vers la vue plutôt que vers l'écran. Les voilages en lin filtrent le soleil sans couper la lumière.",
     "01-lumineux/Salon japandi lumineux et épuré.jpeg": "Des étagères fixées au mur plutôt qu'un gros meuble : le sol reste dégagé, et la pièce paraît plus grande. Ajoutez quelques coussins de sol, pratiques pour recevoir, et faciles à ranger ensuite.",
     "01-lumineux/Salon japandi lumineux et épuré.jpg": "Les cloisons coulissantes en papier sont un grand classique japonais. Elles laissent passer la lumière tout en séparant les espaces. Petite anecdote : au Japon, on mesure encore la taille d'une pièce en nombre de tatamis, ces grands tapis de paille tressée.",
-
     "02-tons-chauds/02-tons-chauds.jpeg": "Le japandi n'est pas forcément blanc et beige. Cette version plus chaude joue avec le bois foncé, la terre cuite et un plaid couleur rouille. L'astuce : garder une base neutre, puis ajouter deux ou trois teintes profondes, pas davantage.",
     "02-tons-chauds/Japandi aux tons chauds 04.jpg": "Les murs ont un effet légèrement nuancé, comme de la pierre. C'est une peinture à la chaux, qui donne de la profondeur et de la matière. Elle laisse aussi respirer les murs, ce qui limite l'humidité.",
     "02-tons-chauds/Japandi aux tons chauds 05.jpg": "Les bols en terre cuite faits main sont parfaits pour ce style. Leurs petites irrégularités ne sont pas des défauts : c'est la beauté de l'imperfection, une idée essentielle au Japon. On répare même la vaisselle cassée avec un filet d'or, pour sublimer la fêlure.",
@@ -17,7 +19,6 @@
     "02-tons-chauds/Japandi aux tons chauds 07.jpg": "Les poutres sombres structurent l'espace et attirent le regard vers le haut. Sous un plafond bas, faites plutôt l'inverse : peignez les poutres de la même couleur que le plafond pour agrandir visuellement la pièce.",
     "02-tons-chauds/Japandi aux tons chauds 08.jpg": "Une grande bibliothèque peut vite devenir chargée. Le bon réflexe : laisser environ un tiers de vide sur chaque étagère, alterner des livres couchés et debout, et glisser quelques céramiques entre eux. L'ensemble respire.",
     "02-tons-chauds/Japandi aux tons chauds 09.jpg": "Les grands vases en terre cuite avec des herbes séchées apportent de la hauteur sans aucun entretien. Pour les dépoussiérer, un simple coup de sèche-cheveux à l'air froid, à bonne distance, et elles gardent leur forme.",
-
     "03-petit-espace/03-petit-espace.jpeg": "Place maintenant aux petits espaces. Le japandi y est parfait, car il mise sur l'essentiel. Choisissez des meubles posés sur des pieds : voir le sol sous le canapé donne l'impression d'une pièce plus grande.",
     "03-petit-espace/Petit salon japandi 04.jpg": "Les étagères murales montent jusqu'en haut pour utiliser la hauteur, pas la surface au sol. Et un olivier près de la fenêtre apporte de la vie. Attention, il lui faut énormément de lumière : placez-le devant la fenêtre la plus ensoleillée.",
     "03-petit-espace/Petit salon japandi 05.jpg": "Une banquette sous la fenêtre, c'est à la fois une assise, un coin détente et, si elle a des tiroirs, un rangement caché. Dans un petit salon, chaque meuble doit avoir au moins deux usages.",
@@ -25,8 +26,7 @@
     "03-petit-espace/Petit salon japandi 07.jpg": "La télévision se fait discrète derrière une façade à lattes de bois. Et le miroir rond n'est pas là par hasard : placé face ou à côté d'une fenêtre, il renvoie la lumière naturelle et agrandit la pièce.",
     "03-petit-espace/Petit salon japandi 08.jpg": "Un voilage blanc devant la porte-fenêtre adoucit la lumière sans assombrir la pièce. Pour éviter le repassage, lavez le lin à trente degrés maximum, et suspendez-le encore humide : il se défroissera tout seul.",
     "03-petit-espace/Photorealistic_interior_p.jpg": "Un banc bas le long du mur sert à la fois de meuble télé, de rangement et d'assise d'appoint. Les murs clairs, un seul tapis rond, quelques objets : même dans quelques mètres carrés, l'ambiance reste sereine.",
-
-    "04-coin-lecture/04-coin-lecture.jpeg": "Direction le coin lecture, le refuge du salon. Il suffit de trois choses : un fauteuil confortable, une lampe douce, et une petite table pour poser sa tasse. Placez la lampe à côté du fauteuil, légèrement en arrière, pour éclairer la page sans éblouir.",
+    "04-coin-lecture/04-coin-lecture.jpeg": "Petite pause avant de continuer : si ces idées vous plaisent, abonnez-vous et laissez un j'aime, ça nous aide énormément. Direction le coin lecture, le refuge du salon. Il suffit de trois choses : un fauteuil confortable, une lampe douce, et une petite table pour poser sa tasse. Placez la lampe à côté du fauteuil, légèrement en arrière, pour éclairer la page sans éblouir.",
     "04-coin-lecture/Coin lecture japandi 03.jpg": "Le meilleur emplacement, c'est près d'une fenêtre, pour lire à la lumière du jour. Le bonsaï sur le rebord aime cette lumière. Arrosez-le dès que la surface de la terre est sèche, et éloignez-le des radiateurs.",
     "04-coin-lecture/Coin lecture japandi 04.jpg": "Pas de place pour un fauteuil ? Un gros coussin de sol et un plaid suffisent à créer un coin lecture. Les bibliothèques ouvertes restent légères si on alterne livres, plantes et objets, sans tout remplir.",
     "04-coin-lecture/Coin lecture japandi 05.jpg": "La banquette de fenêtre est le rêve de tout lecteur. Un matelas en lin, quelques coussins, un plateau pour le thé. Et dessous, un panier pour ranger plaids et magazines : tout reste à portée de main, mais hors de vue.",
@@ -35,7 +35,6 @@
     "04-coin-lecture/Coin lecture japandi 08.jpg": "Une banquette de jour en bois, c'est un lit d'appoint pour les invités et un coin sieste au quotidien. Recouvrez-la de lin : cette fibre absorbe l'humidité et reste agréable au toucher, été comme hiver.",
     "04-coin-lecture/Coin lecture japandi 09.jpg": "Ce fauteuil en bois clair recouvert d'une peau douce invite à s'y lover. Pour entretenir un bois huilé, un chiffon à peine humide avec un peu de savon noir suffit. Une à deux fois par an, nourrissez-le avec une fine couche d'huile de lin.",
     "04-coin-lecture/Coin lecture japandi 10.jpg": "Une lampe en papier posée au sol, un fauteuil à barreaux, une petite étagère. Le secret d'un coin lecture réussi, c'est qu'on ait envie d'y aller sans rien déplacer : tout ce qu'il faut est déjà là.",
-
     "05-plantes/05-plantes.jpeg": "Place au vert, maintenant. Les plantes sont essentielles dans un intérieur japandi : elles adoucissent les lignes droites et apportent la touche de nature qui fait tout. L'astuce : jouer sur plusieurs hauteurs, au sol, sur les meubles et en suspension.",
     "05-plantes/Japandi et plantes vertes 03.jpg": "Un olivier dans un pot en pierre, un pothos qui retombe d'une étagère. Le pothos est idéal pour débuter : il pardonne les oublis d'arrosage. Ses feuilles qui tombent un peu vous indiquent simplement qu'il a soif.",
     "05-plantes/Japandi et plantes vertes 04.jpg": "Les grandes feuilles attrapent la poussière, et une feuille poussiéreuse capte moins la lumière. Une fois par mois, essuyez-les avec un chiffon doux et humide. Votre plante sera plus belle, et poussera mieux.",
@@ -45,7 +44,6 @@
     "05-plantes/Japandi et plantes vertes 08.jpg": "Un mur vert sauge, la couleur idéale pour ce style. C'est un vert doux, grisé, qui s'accorde avec le bois et le lin. Et il met en valeur les plantes, qui semblent sortir du mur.",
     "05-plantes/Japandi et plantes vertes 09.jpg": "Ici, la nature a pris le pouvoir, et pourtant la pièce reste calme. Le secret : des pots de la même famille de couleurs, en terre cuite, en pierre ou en blanc. Des pots trop différents rendraient l'ensemble brouillon.",
     "05-plantes/Japandi et plantes vertes.jpg": "En hiver, le chauffage assèche l'air, et les plantes en souffrent. Posez leurs pots sur une soucoupe remplie de billes d'argile et d'un peu d'eau : l'évaporation leur apporte l'humidité dont elles ont besoin.",
-
     "06-soiree/06-soiree.jpeg": "La nuit tombe, et le salon japandi montre une autre facette. Le conseil clé : éteignez le plafonnier. Préférez plusieurs petites sources de lumière, basses et chaudes, réparties dans la pièce. L'ambiance devient immédiatement plus douce.",
     "06-soiree/Ambiance japandi le soir 03.jpg": "Plusieurs suspensions en papier, à des hauteurs différentes, créent un effet de lanternes flottantes. Associées à quelques bougies, elles donnent une lumière dorée très apaisante, idéale pour décompresser.",
     "06-soiree/Ambiance japandi le soir 04.jpg": "L'heure bleue, ce moment où le ciel devient bleu profond juste après le coucher du soleil. Allumez vos lampes à ce moment-là : le contraste entre le bleu dehors et la lumière chaude dedans rend la pièce particulièrement accueillante.",

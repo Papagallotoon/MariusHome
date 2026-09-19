@@ -36,7 +36,26 @@ async function ffmpeg(args) {
   await exec("ffmpeg", ["-y", "-loglevel", "error", ...args], { cwd: ROOT_DIR, maxBuffer: 1 << 26 });
 }
 
-async function renderClip({ image, duration, label, zoomIn, outPath, tmpDir, index, font }) {
+// Brand opener: the logo (drawn on its own flat background) centred on a
+// canvas of the same colour, fading in from black with a slow push-in.
+async function renderIntroCard({ logo, color, duration, outPath }) {
+  const frames = Math.round(duration * FPS);
+  const graph =
+    `color=c=${color}:s=${W * 2}x${H * 2}:d=${duration}[bg];` +
+    `[0:v]scale=-2:${Math.round(H * 2 * 0.9)}[lg];` +
+    `[bg][lg]overlay=(W-w)/2:(H-h)/2:shortest=1,` +
+    `zoompan=z='1+0.05*on/${frames}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s=${W}x${H}:fps=${FPS},` +
+    `fade=t=in:st=0:d=1,format=yuv420p[v]`;
+  await ffmpeg([
+    "-loop", "1", "-t", String(duration), "-i", rel(logo),
+    "-filter_complex", graph,
+    "-map", "[v]", "-t", String(duration), "-r", String(FPS),
+    "-c:v", "libx264", "-preset", "veryfast", "-crf", "18",
+    rel(outPath),
+  ]);
+}
+
+async function renderClip({ image, duration, label, zoomIn, outPath, tmpDir, index, font, cta, logo }) {
   const frames = Math.round(duration * FPS);
   // Any aspect ratio in: blurred cover background + contained foreground, so
   // portrait or square images never get cropped awkwardly.
@@ -62,10 +81,24 @@ async function renderClip({ image, duration, label, zoomIn, outPath, tmpDir, ind
     const alpha = `if(lt(t,0.8),t/0.8,if(lt(t,4.2),1,if(lt(t,5),(5-t)/0.8,0)))`;
     chain += `,drawtext=${fontOpt}:textfile=${rel(labelFile)}:fontsize=58:fontcolor=white:alpha='${alpha}':x=80:y=h-220:box=1:boxcolor=black@0.45:boxborderw=24`;
   }
-  chain += `,format=yuv420p[v]`;
+  // Mid-video reminder: small logo + "subscribe / like" banner top-left,
+  // fading in and out while the matching sentence is spoken.
+  const inputs = ["-i", rel(image)];
+  if (cta && logo) {
+    const ctaFile = path.join(tmpDir, `cta-${index}.txt`);
+    fs.writeFileSync(ctaFile, cta);
+    const show = `between(t,1,${Math.min(duration - 1, 9)})`;
+    const ctaAlpha = `if(lt(t,1),0,if(lt(t,1.6),(t-1)/0.6,if(lt(t,${Math.min(duration - 1, 9) - 0.6}),1,max(0,(${Math.min(duration - 1, 9)}-t)/0.6))))`;
+    chain += `,drawtext=${fontOpt}:textfile=${rel(ctaFile)}:fontsize=46:fontcolor=white:alpha='${ctaAlpha}':x=250:y=108:box=1:boxcolor=0x4C5C54@0.92:boxborderw=26[pre];`;
+    chain += `[1:v]crop=iw*0.62:ih*0.62,scale=150:150,format=rgba,fade=t=in:st=1:d=0.6:alpha=1,fade=t=out:st=${Math.min(duration - 1, 9) - 0.6}:d=0.6:alpha=1[lg];`;
+    chain += `[pre][lg]overlay=70:70:enable='${show}',format=yuv420p[v]`;
+    inputs.push("-loop", "1", "-t", String(duration), "-i", rel(logo));
+  } else {
+    chain += `,format=yuv420p[v]`;
+  }
 
   await ffmpeg([
-    "-i", rel(image),
+    ...inputs,
     "-filter_complex", chain,
     "-map", "[v]",
     "-t", String(duration),
@@ -190,13 +223,22 @@ export async function renderLongVideo({ theme, outPath, tmpDir }) {
   const voices = [];
   let timeline = 0;
   let index = 0;
+
+  if (theme.introLogo) {
+    const duration = theme.introSeconds || 4.5;
+    clips.push({ intro: true, duration, index });
+    timeline += duration - XFADE;
+    index++;
+  }
+
   for (const section of theme.sections) {
     section.images.forEach((entry, i) => {
       const item = typeof entry === "string" ? { path: entry } : entry;
       const duration = item.voice ? Math.max(seconds, VOICE_LEAD + item.voiceDuration + VOICE_TAIL + XFADE) : seconds;
-      if (i === 0) chapters.push({ time: timeline, title: section.title });
+      // YouTube requires the first chapter at 0:00, so it also covers the intro.
+      if (i === 0) chapters.push({ time: chapters.length ? timeline : 0, title: section.title });
       if (item.voice) voices.push({ file: item.voice, start: timeline + VOICE_LEAD });
-      clips.push({ image: item.path, duration, label: i === 0 ? section.title : null, index });
+      clips.push({ image: item.path, duration, label: i === 0 ? section.title : null, index, cta: item.cta });
       timeline += duration - XFADE;
       index++;
     });
@@ -204,7 +246,11 @@ export async function renderLongVideo({ theme, outPath, tmpDir }) {
 
   for (const clip of clips) {
     clip.file = path.join(tmpDir, `clip-${String(clip.index).padStart(4, "0")}.mp4`);
-    await renderClip({ ...clip, zoomIn: clip.index % 2 === 0, outPath: clip.file, tmpDir, font });
+    if (clip.intro) {
+      await renderIntroCard({ logo: theme.introLogo, color: theme.introColor || "0x4C5C54", duration: clip.duration, outPath: clip.file });
+    } else {
+      await renderClip({ ...clip, zoomIn: clip.index % 2 === 0, outPath: clip.file, tmpDir, font, logo: theme.introLogo });
+    }
     process.stdout.write(`\rClips rendus : ${clip.index + 1}/${clips.length}`);
   }
   process.stdout.write("\n");
