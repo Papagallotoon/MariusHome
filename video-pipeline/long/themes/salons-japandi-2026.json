@@ -1,0 +1,48 @@
+{
+  "slug": "salons-japandi-2026",
+  "title": "Salons Japandi 2026 : idées déco zen et minimalistes pour s'inspirer",
+  "intro": "Le style japandi mêle la sérénité japonaise et la chaleur scandinave : bois clair, lin, tons neutres et objets artisanaux. Voici une série d'idées de salons japandi pour trouver l'inspiration, du petit espace au grand séjour lumineux. Installez-vous, et laissez-vous inspirer.",
+  "imageSeconds": 7,
+  "imagesPerSection": 8,
+  "sections": [
+    {
+      "title": "Salon japandi lumineux et épuré",
+      "dir": "01-lumineux",
+      "prompt": "Photorealistic interior photograph of a bright Japandi living room, low light-oak wooden sofa with off-white linen cushions, round paper pendant lamp, natural jute rug, large window with sheer linen curtains, small bonsai on a wooden coffee table, neutral beige and cream palette, soft natural morning light, wide angle, 16:9, interior design magazine style, no people, no text"
+    },
+    {
+      "title": "Japandi aux tons chauds",
+      "dir": "02-tons-chauds",
+      "prompt": "Photorealistic interior photograph of a warm Japandi living room, dark walnut wood furniture, terracotta and clay-toned ceramics, rust linen throw on a low sofa, textured plaster walls, wooden slatted wall panel, warm golden hour light, wide angle, 16:9, interior design magazine style, no people, no text"
+    },
+    {
+      "title": "Petit salon japandi",
+      "dir": "03-petit-espace",
+      "prompt": "Photorealistic interior photograph of a small Japandi living room in a city apartment, compact low sofa, floating wooden shelves with a few ceramics, floor cushions, light oak floor, clever minimal storage, neutral tones, soft daylight, wide angle, 16:9, interior design magazine style, no people, no text"
+    },
+    {
+      "title": "Coin lecture japandi",
+      "dir": "04-coin-lecture",
+      "prompt": "Photorealistic interior photograph of a Japandi reading nook in a living room, wooden lounge chair with a cream wool cushion, washi paper floor lamp, low bookshelf in light wood, stoneware tea set on a small side table, calm neutral palette, soft window light, 16:9, interior design magazine style, no people, no text"
+    },
+    {
+      "title": "Japandi et plantes vertes",
+      "dir": "05-plantes",
+      "prompt": "Photorealistic interior photograph of a Japandi living room filled with green plants, olive tree in a ceramic pot, monstera, hanging greenery, light wood furniture, linen sofa, beige and sage green palette, bright natural light, wide angle, 16:9, interior design magazine style, no people, no text"
+    },
+    {
+      "title": "Ambiance japandi le soir",
+      "dir": "06-soiree",
+      "prompt": "Photorealistic interior photograph of a Japandi living room in the evening, warm dimmed lighting from paper lanterns and a low floor lamp, candles on a wooden tray, linen sofa with wool throw, dark window view, cosy calm atmosphere, 16:9, interior design magazine style, no people, no text"
+    }
+  ],
+  "shop": [
+    "top-vases-deco-tendance-2026",
+    "top-plantes-artificielles-deco-2026",
+    "top-suspensions-luminaires-deco-2026",
+    "top-tapis-deco-tendance-2026",
+    "top-lampes-de-chevet-deco-2026",
+    "top-coussins-deco-tendance-2026"
+  ],
+  "hashtags": ["japandi", "decoration", "salon", "decointerieur", "minimalisme", "inspirationdeco", "mariusconcept"]
+}
