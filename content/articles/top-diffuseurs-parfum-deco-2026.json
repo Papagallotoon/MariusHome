@@ -1,0 +1,100 @@
+{
+  "title": "Top 5 des Diffuseurs de Parfum Déco 2026",
+  "slug": "top-diffuseurs-parfum-deco-2026",
+  "category": "bougies-parfums",
+  "metaDescription": "Les 5 meilleurs diffuseurs d'huiles essentielles déco 2026 : capacité, autonomie, lumière d'ambiance, finitions bois et métal. Comparatif complet.",
+  "excerpt": "Du diffuseur à 20 € au modèle en métal design, notre sélection pour parfumer la maison et poser un joli objet lumineux sur un meuble.",
+  "image": "/images/products/hianjoo-diffuseur-450ml.jpg",
+  "date": "2026-09-21",
+  "author": "Marius Dumas",
+  "hookSubject": "les plus beaux diffuseurs de parfum déco",
+  "format": "comparatif",
+  "intro": "Un diffuseur, ce n'est pas seulement du parfum : c'est une petite lumière, un léger bruit d'eau, et un objet posé sur un meuble. Il joue sur deux sens à la fois, ce qui en fait un accessoire déco à part.\n\nLe critère à regarder en premier est la capacité du réservoir : en dessous de 300 millilitres, il faut le remplir presque tous les jours. Ensuite vient la finition, car un diffuseur reste visible en permanence.\n\nVoici notre sélection des 5 diffuseurs les plus réussis, du premier prix au modèle en métal.",
+  "products": [
+    {
+      "name": "Hianjoo Diffuseur d'Huiles Essentielles 450 ml",
+      "badge": "Meilleur Premier Prix",
+      "image": "/images/products/hianjoo-diffuseur-450ml.jpg",
+      "rating": 4.3,
+      "amazonAsin": "B0DDXKSLFP",
+      "price": "19,99 €",
+      "pros": [
+        "Le moins cher de la sélection",
+        "Grand réservoir de 450 millilitres"
+      ],
+      "cons": [
+        "Finition plastique"
+      ],
+      "description": "Un diffuseur au grand réservoir, qui tient toute une soirée.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B0DDXKSLFP?tag=secure012de-21"
+    },
+    {
+      "name": "GeeRic Diffuseur Ultrasonique 550 ml",
+      "badge": "Bon Rapport Qualité-Prix",
+      "image": "/images/products/geeric-diffuseur-550ml.jpg",
+      "rating": 4.2,
+      "amazonAsin": "B07WHGPY1M",
+      "price": "21,99 €",
+      "pros": [
+        "Le plus grand réservoir du comparatif",
+        "Lumière d'ambiance à plusieurs couleurs"
+      ],
+      "cons": [
+        "Encombrant sur une petite table de chevet"
+      ],
+      "description": "Le plus grand réservoir du comparatif, avec lumière d'ambiance multicolore.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B07WHGPY1M?tag=secure012de-21"
+    },
+    {
+      "name": "Diffuserlove Diffuseur d'Huiles Essentielles 500 ml",
+      "badge": "Le Polyvalent",
+      "image": "/images/products/diffuserlove-diffuseur-500ml.jpg",
+      "rating": 4.4,
+      "amazonAsin": "B07DJ29JC7",
+      "price": "25,99 €",
+      "pros": [
+        "Finition bois clair, discrète",
+        "Arrêt automatique quand le réservoir est vide"
+      ],
+      "cons": [
+        "Le bois est un décor, pas du bois massif"
+      ],
+      "description": "Une finition bois clair qui se fond dans une déco naturelle.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B07DJ29JC7?tag=secure012de-21"
+    },
+    {
+      "name": "Simpeak Diffuseur 400 ml avec Télécommande",
+      "badge": "Notre Sélection",
+      "image": "/images/products/simpeak-diffuseur-400ml.jpg",
+      "rating": 4.5,
+      "amazonAsin": "B08HYXTLDC",
+      "price": "28,99 €",
+      "pros": [
+        "Télécommande fournie",
+        "Minuterie réglable et lumière tamisée"
+      ],
+      "cons": [
+        "Réservoir plus petit que les précédents"
+      ],
+      "description": "Livré avec une télécommande, pratique depuis le canapé.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B08HYXTLDC?tag=secure012de-21"
+    },
+    {
+      "name": "Salking Diffuseur de Parfum en Métal",
+      "badge": "Le Haut de Gamme",
+      "image": "/images/products/salking-diffuseur-metal.jpg",
+      "rating": 4.3,
+      "amazonAsin": "B07D13CTGX",
+      "price": "41,99 €",
+      "pros": [
+        "Corps en métal, rare sur ce type d'objet",
+        "Objet déco à part entière, même éteint"
+      ],
+      "cons": [
+        "Le plus cher de la sélection"
+      ],
+      "description": "Un corps en métal qui tranche avec les diffuseurs en plastique.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B07D13CTGX?tag=secure012de-21"
+    }
+  ]
+}

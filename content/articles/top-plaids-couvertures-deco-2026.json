@@ -1,0 +1,100 @@
+{
+  "title": "Top 5 des Plaids et Couvertures Déco 2026",
+  "slug": "top-plaids-couvertures-deco-2026",
+  "category": "coussins-textiles",
+  "metaDescription": "Les 5 meilleurs plaids déco 2026 : polaire, sherpa, coton gaufré. Comparatif des matières, tailles et prix pour un salon cocooning.",
+  "excerpt": "Du plaid polaire à 14 € à la couverture en coton gaufré, notre sélection pour réchauffer un canapé et donner tout de suite un air cocooning au salon.",
+  "image": "/images/products/blumtal-couverture-polaire.jpg",
+  "date": "2026-09-21",
+  "author": "Marius Dumas",
+  "hookSubject": "les plus beaux plaids et couvertures déco",
+  "format": "coup-de-coeur",
+  "intro": "Un plaid jeté sur l'accoudoir d'un canapé, et la pièce change d'ambiance. C'est l'accessoire déco le moins cher pour réchauffer visuellement un salon, et le plus simple à changer au fil des saisons.\n\nEn 2026, on voit deux matières dominer : la polaire, imbattable sur le rapport chaleur-prix, et le coton gaufré, plus déco, dans des teintes naturelles comme le vert sauge ou le beige.\n\nVoici notre sélection des 5 plaids qui font le meilleur effet sur un canapé.",
+  "products": [
+    {
+      "name": "Blumtal Couverture Polaire 130 x 150 cm",
+      "badge": "Meilleur Premier Prix",
+      "image": "/images/products/blumtal-couverture-polaire.jpg",
+      "rating": 4.5,
+      "amazonAsin": "B08PVVVQTZ",
+      "price": "13,99 €",
+      "pros": [
+        "Le moins cher de la sélection",
+        "Tissu certifié sans substances nocives"
+      ],
+      "cons": [
+        "Format compact, plutôt pour une personne"
+      ],
+      "description": "Un plaid polaire tout simple, certifié sans substances nocives.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B08PVVVQTZ?tag=secure012de-21"
+    },
+    {
+      "name": "Bedsure Plaid Polaire 150 x 200 cm",
+      "badge": "Bon Rapport Qualité-Prix",
+      "image": "/images/products/bedsure-plaid-polaire-150x200.jpg",
+      "rating": 4.6,
+      "amazonAsin": "B077D1V7SJ",
+      "price": "19,99 €",
+      "pros": [
+        "Format généreux",
+        "Des milliers d'avis clients et une très bonne note"
+      ],
+      "cons": [
+        "La polaire peut boulocher après plusieurs lavages"
+      ],
+      "description": "Un grand plaid polaire qui couvre tout un canapé deux places.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B077D1V7SJ?tag=secure012de-21"
+    },
+    {
+      "name": "Exclusivo Mezcla Plaid Polaire Gaufré",
+      "badge": "Le Polyvalent",
+      "image": "/images/products/exclusivo-mezcla-plaid-gaufre.jpg",
+      "rating": 4.6,
+      "amazonAsin": "B0CG5JTSRS",
+      "price": "24,99 €",
+      "pros": [
+        "Le relief du gaufrage fait tout de suite plus déco",
+        "Doux et léger, agréable en mi-saison"
+      ],
+      "cons": [
+        "Moins chaud qu'une polaire épaisse"
+      ],
+      "description": "Un plaid au tissage gaufré, plus déco qu'un plaid uni.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B0CG5JTSRS?tag=secure012de-21"
+    },
+    {
+      "name": "Utopia Bedding Couverture Coton Gaufré",
+      "badge": "Notre Sélection",
+      "image": "/images/products/utopia-couverture-coton-gaufre.jpg",
+      "rating": 4.5,
+      "amazonAsin": "B09MS26RBN",
+      "price": "29,39 €",
+      "pros": [
+        "Coton respirant, utilisable toute l'année",
+        "Coloris naturels, comme le vert sauge"
+      ],
+      "cons": [
+        "Se froisse plus qu'une polaire"
+      ],
+      "description": "Une couverture cent pour cent coton, dans des coloris naturels très en vogue.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B09MS26RBN?tag=secure012de-21"
+    },
+    {
+      "name": "Bedsure Plaid Polaire Sherpa 150 x 200 cm",
+      "badge": "Le Haut de Gamme",
+      "image": "/images/products/bedsure-plaid-sherpa.jpg",
+      "rating": 4.7,
+      "amazonAsin": "B077FF7PZF",
+      "price": "39,99 €",
+      "pros": [
+        "Doublure sherpa très chaude pour l'hiver",
+        "La meilleure note du comparatif"
+      ],
+      "cons": [
+        "Volumineux à ranger en été"
+      ],
+      "description": "Un plaid doublé sherpa, le plus chaud de la sélection.",
+      "affiliateUrl": "https://www.amazon.fr/dp/B077FF7PZF?tag=secure012de-21"
+    }
+  ]
+}
