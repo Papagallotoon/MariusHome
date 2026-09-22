@@ -61,14 +61,15 @@
     "top-paniers-rangement-deco-2026",
     "top-plaids-couvertures-deco-2026",
     "solo-ambiance-boheme-chambre-B0G57RB87M",
-    "solo-ambiance-boheme-deco-2026-B097B385XY"
+    "solo-ambiance-boheme-deco-2026-B097B385XY",
+    "solo-ambiance-boheme-deco-2026-B0CPKNBN7D"
   ],
-  "lastRunAt": "2026-09-22T15:56:06.378Z",
+  "lastRunAt": "2026-09-22T19:03:10.338Z",
   "dailyCounts": {
     "date": "2026-09-22",
     "comparatif": 1,
     "audible": 0,
-    "solo": 2
+    "solo": 3
   },
-  "soloIndex": 21
+  "soloIndex": 22
 }
