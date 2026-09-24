@@ -69,14 +69,15 @@
     "solo-ambiance-boheme-deco-2026-B0F8HZQ6R6",
     "solo-ambiance-boheme-deco-2026-B08LKW64ZZ",
     "solo-ambiance-boheme-deco-2026-B0F9XBQ31Z",
-    "solo-ambiance-boheme-deco-2026-B0GJFK57VQ"
+    "solo-ambiance-boheme-deco-2026-B0GJFK57VQ",
+    "solo-ambiance-boheme-salle-de-bain-B0FLX6DR45"
   ],
-  "lastRunAt": "2026-09-24T16:06:03.572Z",
+  "lastRunAt": "2026-09-24T19:23:04.975Z",
   "dailyCounts": {
     "date": "2026-09-24",
     "comparatif": 0,
     "audible": 0,
-    "solo": 3
+    "solo": 4
   },
-  "soloIndex": 29
+  "soloIndex": 30
 }
