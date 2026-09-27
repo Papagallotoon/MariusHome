@@ -82,14 +82,15 @@
     "solo-ambiance-boheme-salon-B0CRTSPTY5",
     "solo-ambiance-indien-chambre-B08YD97272",
     "solo-ambiance-indien-chambre-B08YNXVJWH",
-    "solo-ambiance-indien-chambre-B0871KF85R"
+    "solo-ambiance-indien-chambre-B0871KF85R",
+    "solo-ambiance-indien-chambre-B00YP9USXG"
   ],
-  "lastRunAt": "2026-09-27T14:14:49.947Z",
+  "lastRunAt": "2026-09-27T19:10:06.739Z",
   "dailyCounts": {
     "date": "2026-09-27",
     "comparatif": 0,
     "audible": 0,
-    "solo": 3
+    "solo": 4
   },
-  "soloIndex": 42
+  "soloIndex": 43
 }
