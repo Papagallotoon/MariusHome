@@ -84,14 +84,15 @@
     "solo-ambiance-indien-chambre-B08YNXVJWH",
     "solo-ambiance-indien-chambre-B0871KF85R",
     "solo-ambiance-indien-chambre-B00YP9USXG",
-    "solo-ambiance-indien-chambre-B09SDXCD2Y"
+    "solo-ambiance-indien-chambre-B09SDXCD2Y",
+    "solo-ambiance-indien-salle-de-bain-B08QVQXCL6"
   ],
-  "lastRunAt": "2026-09-28T07:03:40.630Z",
+  "lastRunAt": "2026-09-28T11:20:28.268Z",
   "dailyCounts": {
     "date": "2026-09-28",
     "comparatif": 0,
     "audible": 0,
-    "solo": 1
+    "solo": 2
   },
-  "soloIndex": 44
+  "soloIndex": 45
 }
