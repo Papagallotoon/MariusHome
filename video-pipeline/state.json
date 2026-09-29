@@ -89,14 +89,15 @@
     "solo-ambiance-indien-salle-de-bain-B0CG8RNWL6",
     "solo-ambiance-indien-salle-de-bain-B0983D53WH",
     "solo-ambiance-indien-salle-de-bain-B01I4KQTBG",
-    "solo-ambiance-indien-salle-de-bain-B0FS1MGVFP"
+    "solo-ambiance-indien-salle-de-bain-B0FS1MGVFP",
+    "solo-ambiance-indien-salon-B08JTX6PXZ"
   ],
-  "lastRunAt": "2026-09-29T10:59:40.160Z",
+  "lastRunAt": "2026-09-29T15:03:18.095Z",
   "dailyCounts": {
     "date": "2026-09-29",
     "comparatif": 0,
     "audible": 0,
-    "solo": 2
+    "solo": 3
   },
-  "soloIndex": 49
+  "soloIndex": 50
 }
