@@ -95,14 +95,15 @@
     "solo-ambiance-indien-salon-B08FMKTGWL",
     "solo-ambiance-indien-salon-B0DKVH3CXZ",
     "solo-ambiance-indien-salon-B0743CKZ5V",
-    "solo-ambiance-industriel-chambre-B0G2S61GN4"
+    "solo-ambiance-industriel-chambre-B0G2S61GN4",
+    "solo-ambiance-industriel-chambre-B0885TF7LL"
   ],
-  "lastRunAt": "2026-09-30T20:34:51.204Z",
+  "lastRunAt": "2026-10-01T07:03:25.390Z",
   "dailyCounts": {
-    "date": "2026-09-30",
+    "date": "2026-10-01",
     "comparatif": 0,
     "audible": 0,
-    "solo": 4
+    "solo": 1
   },
-  "soloIndex": 55
+  "soloIndex": 56
 }
