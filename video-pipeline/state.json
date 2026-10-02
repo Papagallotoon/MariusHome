@@ -99,14 +99,15 @@
     "solo-ambiance-industriel-chambre-B0885TF7LL",
     "solo-ambiance-industriel-chambre-B088BH5YZQ",
     "solo-ambiance-industriel-chambre-B0DV9W2S85",
-    "solo-ambiance-industriel-chambre-B00JQABKCM"
+    "solo-ambiance-industriel-chambre-B00JQABKCM",
+    "solo-ambiance-industriel-salle-de-bain-B08GYKLX3J"
   ],
-  "lastRunAt": "2026-10-01T20:26:48.378Z",
+  "lastRunAt": "2026-10-02T07:03:31.263Z",
   "dailyCounts": {
-    "date": "2026-10-01",
+    "date": "2026-10-02",
     "comparatif": 0,
     "audible": 0,
-    "solo": 4
+    "solo": 1
   },
-  "soloIndex": 59
+  "soloIndex": 60
 }
