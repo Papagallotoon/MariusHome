@@ -107,14 +107,15 @@
     "solo-ambiance-industriel-salle-de-bain-B0CRTRQRKK",
     "solo-ambiance-industriel-salon-B08GY937BX",
     "solo-ambiance-industriel-salon-B0C2Q52CJY",
-    "solo-ambiance-industriel-salon-B07XLSJWZ4"
+    "solo-ambiance-industriel-salon-B07XLSJWZ4",
+    "solo-ambiance-industriel-salon-B08DXJ1C16"
   ],
-  "lastRunAt": "2026-10-03T18:47:10.239Z",
+  "lastRunAt": "2026-10-03T22:03:15.635Z",
   "dailyCounts": {
     "date": "2026-10-03",
     "comparatif": 0,
     "audible": 0,
-    "solo": 4
+    "solo": 5
   },
-  "soloIndex": 67
+  "soloIndex": 68
 }
