@@ -110,14 +110,15 @@
     "solo-ambiance-industriel-salon-B07XLSJWZ4",
     "solo-ambiance-industriel-salon-B08DXJ1C16",
     "solo-ambiance-industriel-salon-B08RNCMWW2",
-    "solo-ambiance-japon-chambre-B0G6JPVBT7"
+    "solo-ambiance-japon-chambre-B0G6JPVBT7",
+    "solo-ambiance-japon-chambre-B0G9BK9YD2"
   ],
-  "lastRunAt": "2026-10-04T10:49:33.519Z",
+  "lastRunAt": "2026-10-04T14:19:25.362Z",
   "dailyCounts": {
     "date": "2026-10-04",
     "comparatif": 0,
     "audible": 0,
-    "solo": 2
+    "solo": 3
   },
-  "soloIndex": 70
+  "soloIndex": 71
 }
