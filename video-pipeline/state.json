@@ -120,14 +120,15 @@
     "solo-ambiance-japon-salle-de-bain-B09M6CTVT5",
     "solo-ambiance-japon-salle-de-bain-B001TH8J4W",
     "solo-ambiance-japon-salle-de-bain-B0727WSK8F",
-    "solo-ambiance-japon-salon-B08HRKD97N"
+    "solo-ambiance-japon-salon-B08HRKD97N",
+    "solo-ambiance-japon-salon-B0C5R8F3BH"
   ],
-  "lastRunAt": "2026-10-06T15:25:44.665Z",
+  "lastRunAt": "2026-10-06T20:28:51.579Z",
   "dailyCounts": {
     "date": "2026-10-06",
     "comparatif": 0,
     "audible": 0,
-    "solo": 3
+    "solo": 4
   },
-  "soloIndex": 80
+  "soloIndex": 81
 }
