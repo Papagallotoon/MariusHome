@@ -124,14 +124,15 @@
     "solo-ambiance-japon-salon-B0C5R8F3BH",
     "solo-ambiance-japon-salon-B089VZGHLF",
     "solo-ambiance-japon-salon-B0H3HKQNQM",
-    "solo-ambiance-japon-salon-B003B33KAA"
+    "solo-ambiance-japon-salon-B003B33KAA",
+    "solo-ambiance-provencal-chambre-B0FD44L77W"
   ],
-  "lastRunAt": "2026-10-07T15:45:28.075Z",
+  "lastRunAt": "2026-10-07T20:43:28.031Z",
   "dailyCounts": {
     "date": "2026-10-07",
     "comparatif": 0,
     "audible": 0,
-    "solo": 3
+    "solo": 4
   },
-  "soloIndex": 84
+  "soloIndex": 85
 }
