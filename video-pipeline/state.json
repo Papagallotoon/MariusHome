@@ -133,14 +133,15 @@
     "solo-ambiance-provencal-salle-de-bain-B0F4K8WKTH",
     "solo-ambiance-provencal-salle-de-bain-B07Z581ML6",
     "solo-ambiance-provencal-salle-de-bain-B0G1NJCXTF",
-    "solo-ambiance-provencal-salle-de-bain-B0BNLDM7B9"
+    "solo-ambiance-provencal-salle-de-bain-B0BNLDM7B9",
+    "solo-ambiance-provencal-salle-de-bain-B08DL4B12Q"
   ],
-  "lastRunAt": "2026-10-09T20:12:48.573Z",
+  "lastRunAt": "2026-10-10T07:03:37.637Z",
   "dailyCounts": {
-    "date": "2026-10-09",
+    "date": "2026-10-10",
     "comparatif": 0,
     "audible": 0,
-    "solo": 4
+    "solo": 1
   },
-  "soloIndex": 93
+  "soloIndex": 94
 }
