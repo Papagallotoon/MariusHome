@@ -141,14 +141,15 @@
     "solo-ambiance-provencal-salon-B007NH6UX4",
     "solo-ambiance-provencal-salon-B0D95JDBWW",
     "solo-best-sellers-deco-amazon-2026-B01N3S7MJA",
-    "solo-best-sellers-deco-amazon-2026-B07CM1WBKP"
+    "solo-best-sellers-deco-amazon-2026-B07CM1WBKP",
+    "solo-best-sellers-deco-amazon-2026-B0DDKDCS1S"
   ],
-  "lastRunAt": "2026-10-11T19:39:29.683Z",
+  "lastRunAt": "2026-10-11T22:44:56.145Z",
   "dailyCounts": {
     "date": "2026-10-11",
     "comparatif": 0,
     "audible": 0,
-    "solo": 4
+    "solo": 5
   },
-  "soloIndex": 101
+  "soloIndex": 102
 }
