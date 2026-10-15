@@ -1,0 +1,645 @@
+{
+ "boutique": {
+  "etsy": "https://viedelivres.etsy.com",
+  "gumroad": ""
+ },
+ "categories": {
+  "coloriage": "Coloriage & mandalas",
+  "jeux": "Jeux & casse-tête",
+  "ebooks": "Guides & ebooks",
+  "bien-etre": "Bien-être & journaux",
+  "organisation": "Organisation & planners"
+ },
+ "livres": [
+  {
+   "slug": "50-mandalas-voyage-au-coeur-de-la-nature",
+   "ratio": 0.7071,
+   "titre": "50 Mandalas – Voyage au cœur de la nature",
+   "sousTitre": "50 mandalas d’animaux à colorier",
+   "prix": "4,99 €",
+   "pages": 55,
+   "extrait": 8,
+   "categorie": "coloriage",
+   "intro": "Offrez-vous une vraie pause : 50 mandalas où les animaux de la nature se mêlent à des motifs symétriques et apaisants. Renard, hibou, colibri, lion, cerf… chaque page est une invitation à ralentir et à laisser vos couleurs prendre vie.",
+   "contenu": [
+    "Un livre PDF de 55 pages",
+    "50 mandalas d’animaux originaux, un par page",
+    "Une introduction pour entrer dans la détente",
+    "Format A4, haute définition"
+   ],
+   "gumroad": "",
+   "etsy": "https://www.etsy.com/fr/listing/4550718689"
+  },
+  {
+   "slug": "dialoguer-avec-les-animaux",
+   "ratio": 0.6401,
+   "titre": "Dialoguer avec les animaux",
+   "sousTitre": "Par le langage du cœur",
+   "prix": "4,99 €",
+   "pages": 47,
+   "extrait": 8,
+   "categorie": "ebooks",
+   "intro": "Et si vous compreniez enfin ce que votre chien, votre chat ou votre cheval essaie de vous dire ? Cet ebook vous emmène à la découverte de la communication animale : postures, sons, chants, phéromones, couleurs, vibrations… et cette écoute intuitive qui rapproche l’humain de l’animal.",
+   "contenu": [
+    "Un ebook PDF de 47 pages, illustré",
+    "Lisible sur téléphone, tablette et ordinateur"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "guide-ultime-fabrication-et-vente-de-bougies",
+   "ratio": 0.6401,
+   "titre": "Le guide ultime des bougies",
+   "sousTitre": "Fabrication et vente de bougies",
+   "prix": "5,99 €",
+   "pages": 49,
+   "extrait": 8,
+   "categorie": "ebooks",
+   "intro": "Vous rêvez de fabriquer vos propres bougies… et peut-être d’en faire une activité ? Ce guide complet vous accompagne pas à pas, de la première coulée jusqu’à la vente.",
+   "contenu": [
+    "Un ebook PDF de 49 pages",
+    "Lisible sur téléphone, tablette et ordinateur"
+   ],
+   "gumroad": "",
+   "etsy": "https://www.etsy.com/fr/listing/4550714037"
+  },
+  {
+   "slug": "agenda-semainier-2027",
+   "ratio": 0.7071,
+   "titre": "Agenda semainier 2027",
+   "sousTitre": "À imprimer ou à utiliser sur tablette",
+   "prix": "6,90 €",
+   "pages": 77,
+   "extrait": 8,
+   "categorie": "organisation",
+   "intro": "Un agenda épuré et élégant pour organiser toute votre année 2027, une semaine à la fois. Imprimez-le et reliez-le, ou importez-le dans votre application de notes : les onglets des mois sont cliquables !",
+   "contenu": [
+    "Page « Cet agenda appartient à »",
+    "Calendriers annuels 2027 et 2028",
+    "Les jours fériés 2027 en France + page anniversaires",
+    "Objectifs & intentions de l’année",
+    "12 pages mensuelles avec objectifs du mois et pense-bête",
+    "53 pages hebdomadaires (du 28 décembre 2026 au 2 janvier 2028) avec priorités & to-do",
+    "Bilan de l’année et pages de notes"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "sudoku-240-grilles",
+   "ratio": 0.7071,
+   "titre": "Sudoku – 240 grilles",
+   "sousTitre": "240 grilles en 4 niveaux",
+   "prix": "4,50 €",
+   "pages": 89,
+   "extrait": 8,
+   "categorie": "jeux",
+   "intro": "Un cahier de sudoku complet pour progresser à votre rythme, du débutant au joueur aguerri. Chaque grille a une solution unique et se résout par la seule logique, sans deviner.",
+   "contenu": [
+    "60 grilles faciles",
+    "60 grilles moyennes",
+    "60 grilles difficiles",
+    "60 grilles expert",
+    "4 grilles par page, cases généreuses",
+    "Toutes les solutions, numérotées, en fin de livre",
+    "Règles et astuces pour débuter"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "mots-meles-grands-caracteres",
+   "ratio": 0.7071,
+   "titre": "Mots mêlés grands caractères",
+   "sousTitre": "50 grilles thématiques",
+   "prix": "4,50 €",
+   "pages": 68,
+   "extrait": 8,
+   "categorie": "jeux",
+   "intro": "Un cahier de mots mêlés conçu pour le confort de lecture : grandes lettres, grilles aérées, et des mots qui se lisent uniquement dans le bon sens (jamais à l’envers). Le plaisir de chercher, sans s’agacer !",
+   "contenu": [
+    "50 grilles de 14 × 14 sur des thèmes du quotidien : au jardin, la boulangerie, les régions, les fromages, la musique, Noël, l’école d’autrefois…",
+    "Une liste de mots à cocher sous chaque grille",
+    "Toutes les solutions en fin de livre"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "mes-mots-meles-enfants",
+   "ratio": 0.7071,
+   "titre": "Mes mots mêlés (enfants)",
+   "sousTitre": "30 grilles pour les enfants de 6 à 9 ans",
+   "prix": "3,50 €",
+   "pages": 43,
+   "extrait": 8,
+   "categorie": "jeux",
+   "intro": "Animaux, dinosaures, l’espace, le cirque, Halloween… 30 grilles sur les thèmes préférés des enfants pour s’entraîner à lire en s’amusant.",
+   "contenu": [
+    "30 grilles de 10 × 10, mots à l’endroit seulement (gauche → droite, haut → bas)",
+    "Une liste de mots à cocher sous chaque grille",
+    "Les solutions en fin de cahier",
+    "Explications adressées directement à l’enfant"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "carnet-de-sante-chien",
+   "ratio": 0.7071,
+   "titre": "Carnet de santé de mon chien",
+   "sousTitre": "À imprimer",
+   "prix": "4,90 €",
+   "pages": 26,
+   "extrait": 8,
+   "categorie": "organisation",
+   "intro": "Dernier vermifuge, date du rappel de vaccin, poids d’il y a six mois, nom du traitement prescrit… Rassemblez tout le suivi de votre chien dans un seul carnet, à emporter chez le vétérinaire ou à confier au pet-sitter.",
+   "contenu": [
+    "Fiche d’identité avec emplacement photo",
+    "Contacts utiles (vétérinaire, urgences, toiletteur, pension…)",
+    "Tableaux de suivi : vaccinations, vermifuges, puces & tiques, poids",
+    "Historique des visites + 6 comptes-rendus de consultation",
+    "Médicaments & traitements",
+    "Alimentation, éducation & comportement, toilettage",
+    "Check-list « valise de vacances » et consignes de garde",
+    "Page souvenirs et pages de notes"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "carnet-de-sante-chat",
+   "ratio": 0.7071,
+   "titre": "Carnet de santé de mon chat",
+   "sousTitre": "À imprimer",
+   "prix": "4,90 €",
+   "pages": 26,
+   "extrait": 8,
+   "categorie": "organisation",
+   "intro": "Dernier vermifuge, date du rappel de vaccin, poids d’il y a six mois, nom du traitement prescrit… Rassemblez tout le suivi de votre chat dans un seul carnet, à emporter chez le vétérinaire ou à confier au pet-sitter.",
+   "contenu": [
+    "Fiche d’identité avec emplacement photo",
+    "Contacts utiles (vétérinaire, urgences, toiletteur, pension…)",
+    "Tableaux de suivi : vaccinations, vermifuges, puces & tiques, poids",
+    "Historique des visites + 6 comptes-rendus de consultation",
+    "Médicaments & traitements",
+    "Alimentation, habitudes & caractère, toilettage",
+    "Check-list « valise de vacances » et consignes de garde",
+    "Page souvenirs et pages de notes"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "mon-budget-familial-2027",
+   "ratio": 0.7071,
+   "titre": "Mon budget familial 2027",
+   "sousTitre": "Planner mensuel à imprimer",
+   "prix": "5,90 €",
+   "pages": 59,
+   "extrait": 8,
+   "categorie": "organisation",
+   "intro": "Savoir où va chaque euro, c’est déjà se sentir plus léger. Ce planner vous accompagne mois après mois : vous prévoyez, vous notez, vous faites le bilan… et vous voyez vos progrès.",
+   "contenu": [
+    "Vue d’ensemble de l’année",
+    "Revenus, charges fixes et liste des abonnements",
+    "3 compteurs d’épargne à colorier (40 paliers chacun)",
+    "Suivi des dettes",
+    "Pour chacun des 12 mois : budget prévisionnel (méthode des enveloppes), suivi des dépenses, bilan prévu / réel",
+    "Bilan 2027"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "journal-de-gratitude-90-jours",
+   "ratio": 0.7071,
+   "titre": "Journal de gratitude – 90 jours",
+   "sousTitre": "90 jours à imprimer",
+   "prix": "4,50 €",
+   "pages": 53,
+   "extrait": 8,
+   "categorie": "bien-etre",
+   "intro": "Cinq minutes par jour pour entraîner votre regard à remarquer ce qui va bien. Un rituel simple, doux et profondément ressourçant.",
+   "contenu": [
+    "90 journées guidées, deux par page :"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "mes-habitudes-2027",
+   "ratio": 0.7071,
+   "titre": "Mes habitudes 2027",
+   "sousTitre": "Habit tracker à imprimer",
+   "prix": "3,90 €",
+   "pages": 20,
+   "extrait": 8,
+   "categorie": "bien-etre",
+   "intro": "Les grandes transformations naissent de petites actions répétées. Choisissez vos habitudes, cochez une case par jour et regardez la chaîne s’allonger !",
+   "contenu": [
+    "Page « Qui je veux devenir »",
+    "L’année 2027 en pixels (suivi de l’humeur, une case par jour)",
+    "12 trackers mensuels datés : jusqu’à 15 habitudes, jours de la semaine indiqués",
+    "Bilan du mois et intentions pour le mois suivant",
+    "Bilan de l’année"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "mon-carnet-de-lecture",
+   "ratio": 0.7071,
+   "titre": "Mon carnet de lecture",
+   "sousTitre": "À imprimer",
+   "prix": "4,50 €",
+   "pages": 72,
+   "extrait": 8,
+   "categorie": "bien-etre",
+   "intro": "Gardez la trace de chaque histoire : le titre, l’auteur, ce que vous avez aimé, cette phrase qui vous a marqué… Dans quelques années, ce sera votre bibliothèque intime.",
+   "contenu": [
+    "Défi lecture de l’année : 60 petits livres à colorier",
+    "Ma pile à lire (2 pages)",
+    "Index de mes lectures (2 pages)",
+    "60 fiches de lecture : titre, auteur, genre, dates, note sur 5 étoiles, résumé, ce que j’ai aimé / moins aimé, personnage préféré, citation",
+    "3 pages de citations favorites"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "menus-de-la-semaine",
+   "ratio": 0.7071,
+   "titre": "Menus de la semaine",
+   "sousTitre": "Planificateur de repas à imprimer",
+   "prix": "4,90 €",
+   "pages": 127,
+   "extrait": 8,
+   "categorie": "organisation",
+   "intro": "Fini le « qu’est-ce qu’on mange ce soir ? ». Planifier ses repas, c’est moins de stress, moins de gaspillage et des courses plus rapides.",
+   "contenu": [
+    "52 pages de menus : petit-déjeuner, déjeuner, dîner, pour les 7 jours, + à préparer à l’avance, restes à utiliser, collations",
+    "52 listes de courses classées par rayon (fruits & légumes, crèmerie, épicerie, surgelés…)",
+    "16 fiches « recettes favorites »",
+    "Inventaire des placards et du congélateur",
+    "Conseils pour planifier en 15 minutes"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "planner-mariage",
+   "ratio": 0.7071,
+   "titre": "Planner mariage",
+   "sousTitre": "Le planner complet à imprimer",
+   "prix": "7,90 €",
+   "pages": 31,
+   "extrait": 8,
+   "categorie": "organisation",
+   "intro": "Des centaines de petites décisions, de devis et de rendez-vous… Ce planner rassemble tout au même endroit pour organiser votre mariage sereinement, à deux.",
+   "contenu": [
+    "Fiche « Notre mariage » et page d’envies (ambiance, tenues, repas, musique…)",
+    "Budget prévisionnel détaillé : prévu, réel, acompte, reste à payer",
+    "Rétroplanning : les étapes clés de 12 mois avant jusqu’à la dernière semaine",
+    "Liste des invités (4 pages) : réponse, régime, table",
+    "14 fiches prestataires : lieu, traiteur, photographe, vidéaste, DJ, fleuriste, robe, costume, coiffure & maquillage, gâteau, faire-part, officiant, transport, décoration",
+    "Plan de table (12 tables)",
+    "Déroulé du jour J et kit de secours",
+    "Suivi des cadeaux & remerciements",
+    "Page souvenirs"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "planner-bougies",
+   "ratio": 0.7071,
+   "titre": "Planner bougies",
+   "sousTitre": "L’atelier bien organisé",
+   "prix": "5,90 €",
+   "pages": 40,
+   "extrait": 8,
+   "categorie": "organisation",
+   "intro": "Une bonne bougie, c’est une recette précise… et beaucoup de tests. Ce planner vous aide à tout consigner pour reproduire vos réussites, comprendre vos échecs et piloter votre activité.",
+   "contenu": [
+    "Mon projet : marque, univers, clientèle, objectifs",
+    "Fournisseurs et inventaire des matières premières",
+    "20 fiches recettes : contenant, cire, additifs, mèche, parfum et dosage, colorant, températures, temps de cure, résultat",
+    "4 pages de tests de combustion",
+    "3 pages de calcul du prix de revient et du prix de vente",
+    "Suivi des ventes, marchés & salons",
+    "Idées de collections par saison"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "journal-anti-stress-30-jours",
+   "ratio": 0.7071,
+   "titre": "Journal anti-stress – 30 jours",
+   "sousTitre": "30 jours pour souffler",
+   "prix": "4,50 €",
+   "pages": 36,
+   "extrait": 8,
+   "categorie": "bien-etre",
+   "intro": "Chaque jour, un petit exercice concret et quelques lignes pour noter ce que vous ressentez. Dix à quinze minutes suffisent.",
+   "contenu": [
+    "Mon point de départ",
+    "30 pages-jours, chacune avec :"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "maison-en-ordre-52-semaines",
+   "ratio": 0.7071,
+   "titre": "Maison en ordre – 52 semaines",
+   "sousTitre": "Le programme de 52 semaines",
+   "prix": "4,90 €",
+   "pages": 60,
+   "extrait": 8,
+   "categorie": "organisation",
+   "intro": "Ranger toute sa maison d’un coup, c’est épuisant… et rarement durable. Ce programme découpe le travail en 52 petites missions : une zone par semaine, cinq tâches, et c’est tout.",
+   "contenu": [
+    "Mode d’emploi et méthode des trois cartons",
+    "Routine quotidienne de 15 minutes et routine hebdomadaire à cocher",
+    "52 missions : entrée, réfrigérateur, placards, salle de bain, papiers, dressing, jouets, numérique, garage, voiture, congélateur, souvenirs, sécurité…",
+    "Pour chaque mission : 5 tâches, ce que j’ai donné / jeté, notes",
+    "Bilan de fin de programme"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "mes-labyrinthes-enfants",
+   "ratio": 0.7071,
+   "titre": "Mes labyrinthes (enfants)",
+   "sousTitre": "45 labyrinthes pour les 5-10 ans",
+   "prix": "3,90 €",
+   "pages": 58,
+   "extrait": 8,
+   "categorie": "coloriage",
+   "intro": "Trouver le chemin du départ à l’arrivée : un jeu simple qui développe la logique, l’anticipation et la motricité fine.",
+   "contenu": [
+    "15 labyrinthes faciles",
+    "14 labyrinthes moyens",
+    "16 labyrinthes difficiles",
+    "Un labyrinthe par page, en grand format",
+    "Toutes les solutions en fin de cahier"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "sudoku-grands-caracteres",
+   "ratio": 0.7071,
+   "titre": "Sudoku grands caractères",
+   "sousTitre": "100 grilles extra-larges",
+   "prix": "4,50 €",
+   "pages": 70,
+   "extrait": 8,
+   "categorie": "jeux",
+   "intro": "Deux grilles seulement par page, de grands chiffres et de grandes cases : le sudoku sans plisser les yeux.",
+   "contenu": [
+    "25 grilles faciles, 25 moyennes, 25 difficiles, 25 expert",
+    "Chaque grille a une solution unique, trouvable par la logique",
+    "Règles et astuces pour débuter",
+    "Toutes les solutions en fin de livre"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "savons-maison-a-froid",
+   "ratio": 0.7044,
+   "titre": "Savons maison à froid",
+   "sousTitre": "Le guide du débutant",
+   "prix": "5,90 €",
+   "pages": 20,
+   "extrait": 8,
+   "categorie": "ebooks",
+   "intro": "Vous rêvez de fabriquer vos propres savons, doux et naturels, mais la soude vous fait un peu peur ? Ce guide vous accompagne de zéro jusqu’à votre premier savon réussi, en toute sécurité.",
+   "contenu": [
+    "Un ebook PDF de 20 pages au format A5, en français",
+    "Lisible sur téléphone, tablette et ordinateur, imprimable"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "produits-menagers-naturels",
+   "ratio": 0.7044,
+   "titre": "Produits ménagers naturels",
+   "sousTitre": "30 recettes simples",
+   "prix": "4,90 €",
+   "pages": 24,
+   "extrait": 8,
+   "categorie": "ebooks",
+   "intro": "Avec 5 ou 6 ingrédients de base, vous pouvez nettoyer toute la maison : cuisine, salle de bains, sols, vitres, linge… pour quelques euros par an et sans produits irritants.",
+   "contenu": [
+    "Un ebook PDF de 24 pages au format A5, en français",
+    "Lisible sur téléphone, tablette et ordinateur, imprimable"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "cosmetiques-maison",
+   "ratio": 0.7044,
+   "titre": "Cosmétiques maison",
+   "sousTitre": "24 recettes faciles pour débuter",
+   "prix": "5,90 €",
+   "pages": 21,
+   "extrait": 8,
+   "categorie": "ebooks",
+   "intro": "Baumes à lèvres, beurre corporel fouetté, gommages, huiles, sticks de massage… Ce guide se concentre sur les soins « anhydres » (sans eau) : les plus faciles et les plus sûrs pour débuter, sans conservateur.",
+   "contenu": [
+    "Un ebook PDF de 21 pages au format A5, en français",
+    "Lisible sur téléphone, tablette et ordinateur, imprimable"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "zero-dechet-en-30-jours",
+   "ratio": 0.7044,
+   "titre": "Zéro déchet en 30 jours",
+   "sousTitre": "Le défi",
+   "prix": "4,90 €",
+   "pages": 18,
+   "extrait": 8,
+   "categorie": "ebooks",
+   "intro": "Le zéro déchet n’est pas une course à la perfection : c’est une direction. Ce programme vous propose 30 petits défis, un par jour, pour alléger votre poubelle, faire des économies et vivre plus simplement, sans culpabilité.",
+   "contenu": [
+    "Un ebook PDF de 18 pages au format A5, en français",
+    "Lisible sur téléphone, tablette et ordinateur, imprimable"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "planner-de-noel",
+   "ratio": 0.7071,
+   "titre": "Planner de Noël",
+   "sousTitre": "À imprimer",
+   "prix": "4,90 €",
+   "pages": 22,
+   "extrait": 8,
+   "categorie": "organisation",
+   "intro": "Cadeaux, repas, invités, décoration, budget… Ce planner rassemble tout au même endroit pour profiter des fêtes au lieu de courir après le temps.",
+   "contenu": [
+    "Rétroplanning : de 6 semaines avant jusqu’au jour J",
+    "Budget des fêtes : prévu / réel",
+    "Liste de cadeaux (3 pages) : pour qui, idée, budget, acheté, emballé",
+    "Suivi des cartes de vœux",
+    "Calendrier de l’Avent en famille : 24 idées d’activités, une par jour",
+    "Calendrier de l’Avent à remplir avec vos propres idées",
+    "Menus du réveillon du 24, du déjeuner du 25 et du réveillon du 31",
+    "Liste de courses des fêtes par rayon",
+    "Planning de cuisson du jour J",
+    "Liste des invités, décoration & table",
+    "Nos traditions et nos plus beaux souvenirs"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "planner-voyage",
+   "ratio": 0.7071,
+   "titre": "Planner voyage",
+   "sousTitre": "Carnet de route à imprimer",
+   "prix": "5,90 €",
+   "pages": 33,
+   "extrait": 8,
+   "categorie": "organisation",
+   "intro": "De la préparation au retour, un seul carnet pour organiser votre voyage puis en garder le souvenir.",
+   "contenu": [
+    "L’essentiel du voyage : destination, dates, voyageurs, envies",
+    "Avant de partir : documents, santé, maison, argent…",
+    "Réservations : transports et hébergements",
+    "Budget prévisionnel",
+    "Ma valise : liste complète à cocher",
+    "10 pages de programme jour par jour",
+    "10 pages de journal de bord pour raconter vos journées",
+    "Suivi des dépenses sur place",
+    "Contacts utiles et sécurité",
+    "Bilan du voyage et coups de cœur"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "planner-demenagement",
+   "ratio": 0.7071,
+   "titre": "Planner déménagement",
+   "sousTitre": "À imprimer",
+   "prix": "4,90 €",
+   "pages": 19,
+   "extrait": 8,
+   "categorie": "organisation",
+   "intro": "Un déménagement, ce sont des dizaines de choses à ne pas oublier. Ce planner vous guide étape par étape pour que tout se passe bien, du premier carton à la première nuit.",
+   "contenu": [
+    "Mon projet : dates, adresses, contacts",
+    "Rétroplanning détaillé : de 2-3 mois avant jusqu’au jour J",
+    "Liste des organismes à prévenir (banque, assurances, impôts, énergie, internet…)",
+    "Comparatif des devis de déménageurs",
+    "Budget du déménagement",
+    "Inventaire des cartons (3 pages) : numéro, pièce, contenu, fragile",
+    "Le carton « première nuit »",
+    "Relevés des compteurs",
+    "Nouvelle maison : checklists cuisine, salon, chambres, salle de bains & extérieurs",
+    "Notes"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "planner-micro-entrepreneur-2027",
+   "ratio": 0.7071,
+   "titre": "Planner micro-entrepreneur 2027",
+   "sousTitre": "À imprimer",
+   "prix": "6,90 €",
+   "pages": 26,
+   "extrait": 8,
+   "categorie": "organisation",
+   "intro": "Être micro-entrepreneur, c’est la liberté… et quelques obligations à ne pas oublier. Ce planner vous aide à piloter votre activité simplement, mois après mois.",
+   "contenu": [
+    "Fiche d’identité de votre entreprise",
+    "Objectifs 2027",
+    "Vue d’ensemble du chiffre d’affaires mois par mois",
+    "Calendrier de vos déclarations de chiffre d’affaires (mensuel ou trimestriel)",
+    "Livre des recettes (6 pages)",
+    "Registre des achats (2 pages), pour les activités de vente de marchandises",
+    "Suivi des factures émises (2 pages)",
+    "Dépenses professionnelles",
+    "Prospection & relances clients",
+    "4 bilans trimestriels + bilan de fin d’année"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "carnet-de-recettes-de-famille",
+   "ratio": 0.7071,
+   "titre": "Carnet de recettes de famille",
+   "sousTitre": "Carnet à remplir",
+   "prix": "5,90 €",
+   "pages": 91,
+   "extrait": 8,
+   "categorie": "organisation",
+   "intro": "Le gâteau de mamie, la sauce de papa, la soupe des dimanches d’hiver… Ce carnet est fait pour rassembler et transmettre les recettes qui comptent.",
+   "contenu": [
+    "80 fiches recettes à remplir : ingrédients, préparation, temps, nombre de personnes, difficulté, note de la famille, « transmise par » et l’histoire de la recette",
+    "4 catégories de 20 fiches avec intercalaires : entrées, plats, desserts, gâteaux & goûters",
+    "Index des recettes (2 pages)",
+    "Mémo des équivalences en cuisine (cuillères, tasses, températures du four)"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "journal-de-grossesse",
+   "ratio": 0.7071,
+   "titre": "Journal de grossesse",
+   "sousTitre": "À imprimer",
+   "prix": "5,90 €",
+   "pages": 24,
+   "extrait": 8,
+   "categorie": "bien-etre",
+   "intro": "Neuf mois, c’est à la fois très long et très court. Ce journal vous aide à garder une trace de chaque étape, à organiser l’arrivée de bébé et à préparer de beaux souvenirs.",
+   "contenu": [
+    "Notre histoire : l’annonce, les premières réactions",
+    "Suivi des rendez-vous",
+    "Mes questions pour la sage-femme / le médecin (2 pages)",
+    "9 pages mois par mois : comment je me sens, ce qui a changé, mes envies et petits maux, un moment à retenir, un mot pour bébé",
+    "Idées de prénoms",
+    "Liste de naissance",
+    "Ma valise de maternité",
+    "Mon projet de naissance",
+    "Ta naissance : la première photo et les premiers détails",
+    "Lettre à mon enfant (2 pages)"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
+   "slug": "dino-doodles-aventure-coloriage",
+   "ratio": 1,
+   "titre": "Dino Doodles – Aventure Coloriage",
+   "sousTitre": "Des dinosaures rigolos à colorier",
+   "prix": "4,99 €",
+   "pages": 42,
+   "extrait": 8,
+   "categorie": "coloriage",
+   "intro": "Des dinosaures souriants, des volcans, des œufs qui éclosent : un livre de coloriage joyeux pour occuper les petits artistes, à imprimer autant de fois que vous le voulez.",
+   "contenu": [
+    "42 pages à colorier",
+    "Des dessins simples aux contours épais, parfaits pour les petites mains",
+    "PDF à imprimer à la maison"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  }
+ ]
+}

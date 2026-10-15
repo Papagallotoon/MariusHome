@@ -7,6 +7,7 @@ export const dynamic = "force-static";
 import { getAllCategories } from "@/lib/categories";
 import { getAllArticles } from "@/lib/articles";
 import { getAllAmbiances } from "@/lib/ambiances";
+import { LIVRES } from "@/lib/bibliotheque";
 
 // Généré depuis content/ à chaque build (export statique) : remplace
 // l'ancien public/sitemap.xml qui listait 18 URLs à la main et n'était
@@ -21,6 +22,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${domain}/mentions-legales`, changeFrequency: "yearly", priority: 0.3 },
     { url: `${domain}/politique-confidentialite`, changeFrequency: "yearly", priority: 0.3 },
     { url: `${domain}/ambiances`, changeFrequency: "weekly", priority: 0.7 },
+    { url: `${domain}/bibliotheque`, changeFrequency: "weekly", priority: 0.7 },
+    ...LIVRES.map((l) => ({ url: `${domain}/bibliotheque/${l.slug}`, changeFrequency: "monthly" as const, priority: 0.5 })),
   ];
 
   const categoryPages: MetadataRoute.Sitemap = getAllCategories().map((c) => ({

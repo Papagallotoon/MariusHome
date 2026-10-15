@@ -11,6 +11,7 @@ const navLinks = [
   { label: "Objets déco", href: "/#univers-objets" },
   { label: "Sélections", href: "/#selections" },
   { label: "Conseil", href: "/#conseil" },
+  { label: "Bibliothèque", href: "/bibliotheque" },
 ];
 
 export default function Header() {
