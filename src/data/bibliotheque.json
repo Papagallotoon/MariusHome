@@ -31,6 +31,26 @@
    "etsy": "https://www.etsy.com/fr/listing/4550718689"
   },
   {
+   "slug": "mandalas-fantastiques",
+   "ratio": 0.7071,
+   "titre": "Mandalas Fantastiques",
+   "sousTitre": "40 créatures légendaires à colorier",
+   "prix": "4,99 €",
+   "pages": 85,
+   "extrait": 8,
+   "categorie": "coloriage",
+   "intro": "Dragons, licornes, phénix, griffons… 40 créatures de légende prennent vie au cœur de mandalas finement ciselés. Un voyage dans l’imaginaire pour colorier, rêver et souffler un peu.",
+   "contenu": [
+    "Un livre PDF de 85 pages",
+    "40 mandalas de créatures fantastiques, tous différents",
+    "Un dessin par page, verso blanc : les feutres ne traversent pas",
+    "Une page nuancier pour tester vos couleurs",
+    "Format A4, haute définition, à imprimer autant de fois que vous voulez"
+   ],
+   "gumroad": "",
+   "etsy": ""
+  },
+  {
    "slug": "dialoguer-avec-les-animaux",
    "ratio": 0.6401,
    "titre": "Dialoguer avec les animaux",
