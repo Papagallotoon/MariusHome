@@ -23,7 +23,7 @@ export default function Rayonnage({ livres, categories }: { livres: Livre[]; cat
           <Link key={l.slug} href={`/bibliotheque/${l.slug}`} className={s.carte}>
             <div className={s.couverture}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={`/bibliotheque/livres/${l.slug}/couverture.jpg`} alt={`Couverture : ${l.titre}`} loading="lazy" />
+              <img src={`/bibliotheque/livres/${l.slug}/couverture.jpg`} alt={`Couverture : ${l.titre}`} decoding="async" />
               <span className={s.feuilleter}>Feuilleter →</span>
             </div>
             <div>
