@@ -143,14 +143,15 @@
     "solo-best-sellers-deco-amazon-2026-B01N3S7MJA",
     "solo-best-sellers-deco-amazon-2026-B07CM1WBKP",
     "solo-best-sellers-deco-amazon-2026-B0DDKDCS1S",
-    "solo-best-sellers-deco-amazon-2026-B093T2JKC8"
+    "solo-best-sellers-deco-amazon-2026-B093T2JKC8",
+    "solo-best-sellers-deco-amazon-2026-B0FFBD8RRL"
   ],
-  "lastRunAt": "2026-10-15T22:00:35.852Z",
+  "lastRunAt": "2026-10-16T07:03:39.280Z",
   "dailyCounts": {
-    "date": "2026-10-15",
+    "date": "2026-10-16",
     "comparatif": 0,
     "audible": 0,
     "solo": 1
   },
-  "soloIndex": 103
+  "soloIndex": 104
 }
