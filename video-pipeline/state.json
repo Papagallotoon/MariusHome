@@ -149,14 +149,15 @@
     "solo-best-sellers-deco-amazon-2026-B0BZ4HBGPN",
     "solo-best-sellers-deco-amazon-2026-B0C3XM6JW5",
     "solo-best-sellers-deco-amazon-2026-B09PTRWRXH",
-    "solo-best-sellers-deco-amazon-2026-B07HCF35NN"
+    "solo-best-sellers-deco-amazon-2026-B07HCF35NN",
+    "solo-meilleures-bougies-parfumees-2026-B004QPNQO2"
   ],
-  "lastRunAt": "2026-10-17T17:55:32.414Z",
+  "lastRunAt": "2026-10-17T21:20:13.076Z",
   "dailyCounts": {
     "date": "2026-10-17",
     "comparatif": 0,
     "audible": 0,
-    "solo": 3
+    "solo": 4
   },
-  "soloIndex": 109
+  "soloIndex": 110
 }
