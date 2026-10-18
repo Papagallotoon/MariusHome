@@ -35,7 +35,7 @@
    "ratio": 0.7071,
    "titre": "Mandalas Fantastiques",
    "sousTitre": "40 créatures légendaires à colorier",
-   "prix": "4,99 €",
+   "prix": "2,99 €",
    "pages": 85,
    "extrait": 8,
    "categorie": "coloriage",
@@ -48,7 +48,47 @@
     "Format A4, haute définition, à imprimer autant de fois que vous voulez"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4596276429"
+  },
+  {
+   "slug": "mandalas-de-la-foret",
+   "ratio": 0.7071,
+   "titre": "Mandalas de la Forêt",
+   "sousTitre": "40 animaux des bois à colorier",
+   "prix": "2,99 €",
+   "pages": 85,
+   "extrait": 8,
+   "categorie": "coloriage",
+   "intro": "Renard, cerf, hibou, ours, hérisson, écureuil, lynx… 40 animaux de nos forêts prennent vie au cœur de mandalas finement détaillés, entre fougères, glands et champignons. Une balade en sous-bois pour colorier, respirer et lâcher prise.",
+   "contenu": [
+    "Un livre PDF de 85 pages",
+    "40 mandalas d’animaux de la forêt, tous différents",
+    "Un dessin par page, verso blanc : les feutres ne traversent pas",
+    "Une page « Ce livre appartient à » et une page nuancier",
+    "Format A4, traits nets en haute définition, à imprimer autant de fois que vous voulez"
+   ],
+   "gumroad": "",
+   "etsy": "https://www.etsy.com/fr/listing/4598030953"
+  },
+  {
+   "slug": "mandalas-de-l-ocean",
+   "ratio": 0.7071,
+   "titre": "Mandalas de l’Océan",
+   "sousTitre": "40 créatures marines à colorier",
+   "prix": "2,99 €",
+   "pages": 85,
+   "extrait": 8,
+   "categorie": "coloriage",
+   "intro": "Tortue de mer, dauphin, baleine à bosse, orque, pieuvre, hippocampe, raie manta… 40 habitants des océans nagent au cœur de mandalas ornés de vagues, de coquillages et de coraux. Une plongée apaisante pour colorier et se ressourcer.",
+   "contenu": [
+    "Un livre PDF de 85 pages",
+    "40 mandalas de créatures marines, tous différents",
+    "Un dessin par page, verso blanc : les feutres ne traversent pas",
+    "Une page « Ce livre appartient à » et une page nuancier",
+    "Format A4, traits nets en haute définition, à imprimer autant de fois que vous voulez"
+   ],
+   "gumroad": "",
+   "etsy": "https://www.etsy.com/fr/listing/4598055310"
   },
   {
    "slug": "dialoguer-avec-les-animaux",
@@ -65,7 +105,7 @@
     "Lisible sur téléphone, tablette et ordinateur"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4310574546"
   },
   {
    "slug": "guide-ultime-fabrication-et-vente-de-bougies",
@@ -104,7 +144,7 @@
     "Bilan de l’année et pages de notes"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598055381"
   },
   {
    "slug": "sudoku-240-grilles",
@@ -126,7 +166,7 @@
     "Règles et astuces pour débuter"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598080358"
   },
   {
    "slug": "mots-meles-grands-caracteres",
@@ -144,7 +184,7 @@
     "Toutes les solutions en fin de livre"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598080828"
   },
   {
    "slug": "mes-mots-meles-enfants",
@@ -163,7 +203,7 @@
     "Explications adressées directement à l’enfant"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598059777"
   },
   {
    "slug": "carnet-de-sante-chien",
@@ -186,7 +226,7 @@
     "Page souvenirs et pages de notes"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598076830"
   },
   {
    "slug": "carnet-de-sante-chat",
@@ -209,7 +249,7 @@
     "Page souvenirs et pages de notes"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598077046"
   },
   {
    "slug": "mon-budget-familial-2027",
@@ -230,7 +270,7 @@
     "Bilan 2027"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598056039"
   },
   {
    "slug": "journal-de-gratitude-90-jours",
@@ -246,7 +286,7 @@
     "90 journées guidées, deux par page :"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598056483"
   },
   {
    "slug": "mes-habitudes-2027",
@@ -266,7 +306,7 @@
     "Bilan de l’année"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598056689"
   },
   {
    "slug": "mon-carnet-de-lecture",
@@ -286,7 +326,7 @@
     "3 pages de citations favorites"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598057065"
   },
   {
    "slug": "menus-de-la-semaine",
@@ -306,7 +346,7 @@
     "Conseils pour planifier en 15 minutes"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598057287"
   },
   {
    "slug": "planner-mariage",
@@ -330,7 +370,7 @@
     "Page souvenirs"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598057637"
   },
   {
    "slug": "planner-bougies",
@@ -352,7 +392,7 @@
     "Idées de collections par saison"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598057907"
   },
   {
    "slug": "journal-anti-stress-30-jours",
@@ -369,7 +409,7 @@
     "30 pages-jours, chacune avec :"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598079522"
   },
   {
    "slug": "maison-en-ordre-52-semaines",
@@ -389,7 +429,7 @@
     "Bilan de fin de programme"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598079738"
   },
   {
    "slug": "mes-labyrinthes-enfants",
@@ -409,7 +449,7 @@
     "Toutes les solutions en fin de cahier"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598081576"
   },
   {
    "slug": "sudoku-grands-caracteres",
@@ -428,7 +468,7 @@
     "Toutes les solutions en fin de livre"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598081834"
   },
   {
    "slug": "savons-maison-a-froid",
@@ -445,7 +485,7 @@
     "Lisible sur téléphone, tablette et ordinateur, imprimable"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598071438"
   },
   {
    "slug": "produits-menagers-naturels",
@@ -462,7 +502,7 @@
     "Lisible sur téléphone, tablette et ordinateur, imprimable"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598051079"
   },
   {
    "slug": "cosmetiques-maison",
@@ -479,7 +519,7 @@
     "Lisible sur téléphone, tablette et ordinateur, imprimable"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598051889"
   },
   {
    "slug": "zero-dechet-en-30-jours",
@@ -496,7 +536,7 @@
     "Lisible sur téléphone, tablette et ordinateur, imprimable"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598052325"
   },
   {
    "slug": "planner-de-noel",
@@ -522,7 +562,7 @@
     "Nos traditions et nos plus beaux souvenirs"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598074362"
   },
   {
    "slug": "planner-voyage",
@@ -547,7 +587,7 @@
     "Bilan du voyage et coups de cœur"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598053625"
   },
   {
    "slug": "planner-demenagement",
@@ -572,7 +612,7 @@
     "Notes"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598053851"
   },
   {
    "slug": "planner-micro-entrepreneur-2027",
@@ -597,7 +637,7 @@
     "4 bilans trimestriels + bilan de fin d’année"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598075358"
   },
   {
    "slug": "carnet-de-recettes-de-famille",
@@ -616,7 +656,7 @@
     "Mémo des équivalences en cuisine (cuillères, tasses, températures du four)"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598075630"
   },
   {
    "slug": "journal-de-grossesse",
@@ -641,7 +681,7 @@
     "Lettre à mon enfant (2 pages)"
    ],
    "gumroad": "",
-   "etsy": ""
+   "etsy": "https://www.etsy.com/fr/listing/4598054725"
   },
   {
    "slug": "dino-doodles-aventure-coloriage",
