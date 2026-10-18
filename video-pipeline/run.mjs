@@ -3,6 +3,7 @@ import path from "node:path";
 import {
   selectNextArticleForType,
   buildSoloArticle,
+  selectNextRequete,
   loadArticleBySlug,
   markUsed,
   recentlyPublished,
@@ -39,17 +40,26 @@ async function main() {
     // Daily format mix: 2 comparatif / 2 audible / 1 solo, per the standing
     // rule — nextFormatType() says which slot today's run should fill.
     const targetType = nextFormatType();
-    picked = targetType === "solo" ? buildSoloArticle() : selectNextArticleForType(targetType);
+    picked =
+      targetType === "requete"
+        ? selectNextRequete()
+        : targetType === "solo"
+          ? buildSoloArticle()
+          : selectNextArticleForType(targetType);
     // The target type may be out of fresh content (nothing authored yet, or
     // its catalog is fully used up for now) — try the other comparatif/
     // audible type fresh, then a solo spotlight, rather than ever calling
     // selectNextArticleForType again for the same type: that would either
     // return null again, or — before 2026-09-12 — silently re-upload an
     // already-published topic as if it were new.
-    if (!picked && targetType !== "solo") {
+    if (!picked && targetType !== "solo" && targetType !== "requete") {
       const altType = targetType === "comparatif" ? "audible" : "comparatif";
       console.log(`No fresh "${targetType}" article available — trying "${altType}" instead.`);
       picked = selectNextArticleForType(altType);
+    }
+    if (!picked && targetType !== "requete") {
+      console.log("No fresh comparatif/audible article left — trying a fresh requete topic.");
+      picked = selectNextRequete();
     }
     if (!picked) {
       console.log("No fresh comparatif/audible article left — falling back to a solo spotlight.");

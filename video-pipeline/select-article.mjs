@@ -2,6 +2,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { ARTICLES_DIR, STATE_PATH } from "./config.mjs";
 
+const REQUETES_PATH = path.join(path.dirname(STATE_PATH), "requetes.json");
+
 export function loadState() {
   if (!fs.existsSync(STATE_PATH)) return { usedSlugs: [] };
   return JSON.parse(fs.readFileSync(STATE_PATH, "utf8"));
@@ -51,7 +53,10 @@ export function recentlyPublished() {
 // single-product spotlight, synthesized on the fly from one product picked
 // out of the comparatif catalog (see buildSoloArticle below) instead of
 // requiring dozens of hand-authored one-product articles.
-const FORMAT_SEQUENCE = ["comparatif", "audible", "comparatif", "audible", "solo"];
+// 2026-10-18 : tous les comparatifs sont publies -> la journee alterne des
+// shorts "requete" (une vraie question deco, requetes.json) et des solos.
+// Un comparatif neuf (nouvel article) reprend automatiquement sa place.
+const FORMAT_SEQUENCE = ["requete", "comparatif", "requete", "solo", "requete"];
 
 function todayKey() {
   return new Date().toISOString().slice(0, 10); // UTC date, matches cron's own clock
@@ -60,7 +65,7 @@ function todayKey() {
 function getDailyCounts() {
   const state = loadState();
   if (!state.dailyCounts || state.dailyCounts.date !== todayKey()) {
-    return { date: todayKey(), comparatif: 0, audible: 0, solo: 0 };
+    return { date: todayKey(), requete: 0, comparatif: 0, audible: 0, solo: 0 };
   }
   return state.dailyCounts;
 }
@@ -72,7 +77,7 @@ function getDailyCounts() {
 // erroring.
 export function nextFormatType() {
   const counts = getDailyCounts();
-  const totalToday = counts.comparatif + counts.audible + counts.solo;
+  const totalToday = (counts.requete || 0) + (counts.comparatif || 0) + (counts.audible || 0) + (counts.solo || 0);
   if (totalToday < FORMAT_SEQUENCE.length) return FORMAT_SEQUENCE[totalToday];
   return totalToday % 2 === 0 ? "comparatif" : "audible";
 }
@@ -153,6 +158,36 @@ export function selectNextArticleForType(type) {
 // synthetic single-product article. state.soloIndex rotates deterministically
 // through every (article, product) pair so the same product isn't spotlit
 // every time.
+// --- Anti-repetition helpers -------------------------------------------
+const ASIN_RE = /\/dp\/([A-Z0-9]{10})/i;
+function asinOf(product) {
+  return product.affiliateUrl?.match(ASIN_RE)?.[1] || null;
+}
+// Source article (topic) of an already-published slug: "solo-<src>-<ASIN>",
+// "req-..." (looked up in requetes.json) or a plain comparatif slug.
+function sourceOfSlug(slug, reqMap) {
+  if (slug.startsWith("solo-")) return slug.slice(5).replace(/-[A-Z0-9]{10}$/, "");
+  if (slug.startsWith("req-")) return reqMap[slug] || slug;
+  return slug;
+}
+const RECENT_TOPICS = 6; // never the same topic twice within the last 6 shorts
+
+function recentSources(state) {
+  const reqMap = Object.fromEntries(loadRequetes().map((r) => [r.slug, r.source]));
+  return new Set(state.usedSlugs.slice(-RECENT_TOPICS).map((s) => sourceOfSlug(s, reqMap)));
+}
+
+// Product names already shown in a short (any format) — the same product can
+// sit in two articles (e.g. a best-seller also in the candles roundup).
+function shownNames(state) {
+  const reqs = Object.fromEntries(loadRequetes().map((r) => [r.slug, r]));
+  const names = new Set();
+  for (const slug of state.usedSlugs) {
+    if (slug.startsWith("req-") && reqs[slug]) names.add(reqs[slug].pick.toLowerCase());
+  }
+  return names;
+}
+
 export function buildSoloArticle() {
   const state = loadState();
   const files = fs
@@ -165,35 +200,81 @@ export function buildSoloArticle() {
     const slug = file.replace(/\.json$/, "");
     const article = readArticle(file);
     if (articleType(article) === "audible") continue; // solo spotlights a physical product
-    for (const product of article.products) {
-      pool.push({ sourceSlug: slug, sourceArticle: article, product });
-    }
+    article.products.forEach((product, rank) => pool.push({ sourceSlug: slug, sourceArticle: article, product, rank }));
   }
   if (pool.length === 0) return null;
+  // Interleave topics: every article's #1, then every #2... so two solos in a
+  // row never come from the same roundup.
+  pool.sort((a, b) => a.rank - b.rank || a.sourceSlug.localeCompare(b.sourceSlug));
 
-  const soloIndex = state.soloIndex || 0;
-  const pick = pool[soloIndex % pool.length];
-  state.soloIndex = soloIndex + 1;
+  const usedAsins = new Set(state.usedSlugs.filter((s) => s.startsWith("solo-")).map((s) => s.slice(-10)));
+  const usedNames = new Set();
+  const recent = recentSources(state);
+  const fresh = pool.filter((p) => {
+    const asin = asinOf(p.product);
+    if (asin && usedAsins.has(asin)) return false;
+    const key = p.product.name.toLowerCase();
+    if (usedNames.has(key)) return false; // same product listed in two articles
+    usedNames.add(key);
+    return true;
+  });
+  if (fresh.length === 0) return null; // everything shown once: skip rather than repeat
+  const pick = fresh.find((p) => !recent.has(p.sourceSlug)) || fresh[0];
+  state.soloIndex = (state.soloIndex || 0) + 1;
   saveState(state);
 
-  // upload.mjs's buildHookTitle()/buildDescription() need article.slug (and,
-  // on this repo, article.category) — without them hashString(article.slug)
-  // throws mid-upload (a real bug hit in production on 2026-09-13: the video
-  // rendered fine but the upload crashed, so nothing got published). Point
-  // at the source article's real slug/category instead of leaving them
-  // unset: the description link then goes to a real, relevant page (the
-  // full comparison this product came from) instead of a 404.
   const article = {
     title: pick.product.name,
     slug: pick.sourceArticle.slug,
     category: pick.sourceArticle.category,
     excerpt: pick.sourceArticle.excerpt,
     hookSubject: pick.product.name,
+    videoType: "solo",
     products: [pick.product],
   };
   return {
-    slug: `solo-${pick.sourceSlug}-${pick.product.affiliateUrl?.match(/\/dp\/([A-Z0-9]+)/i)?.[1] || soloIndex}`,
+    slug: `solo-${pick.sourceSlug}-${asinOf(pick.product) || state.soloIndex}`,
     article,
     actualType: "solo",
   };
+}
+
+// --- "requete" shorts (one real deco question answered in ~30 s) ---------
+export function loadRequetes() {
+  if (!fs.existsSync(REQUETES_PATH)) return [];
+  try {
+    const list = JSON.parse(fs.readFileSync(REQUETES_PATH, "utf8").replace(/^﻿/, ""));
+    return Array.isArray(list) ? list : [];
+  } catch {
+    return [];
+  }
+}
+
+export function buildRequeteArticle(r) {
+  const file = path.join(ARTICLES_DIR, `${r.source}.json`);
+  if (!fs.existsSync(file)) return null;
+  const source = readArticle(`${r.source}.json`);
+  const pick = source.products.find((p) => p.name.toLowerCase().includes(r.pick.toLowerCase())) || source.products[0];
+  if (!pick) return null;
+  const article = {
+    videoType: "requete",
+    slug: source.slug || r.source,
+    category: source.category,
+    title: r.title,
+    hook: r.hook,
+    tips: r.tips,
+    keywords: r.keywords || [],
+    excerpt: [r.title, "", ...r.tips.map(([spoken]) => `✅ ${spoken}`)].join("\n"),
+    products: [pick],
+  };
+  return { slug: r.slug, article, actualType: "requete" };
+}
+
+// Next unpublished requete whose topic was not covered in the last shorts.
+export function selectNextRequete() {
+  const state = loadState();
+  const recent = recentSources(state);
+  const fresh = loadRequetes().filter((r) => !state.usedSlugs.includes(r.slug));
+  const r = fresh.find((x) => !recent.has(x.source)) || fresh[0];
+  return r ? buildRequeteArticle(r) : null;
 }

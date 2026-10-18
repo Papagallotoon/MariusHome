@@ -153,7 +153,47 @@ const RANK_INTROS = [
   "Et pour finir, notre dernier choix",
 ];
 
+// "requete" short: the question as hook, 3 quick tips, one product, outro.
+function buildRequeteScript(article) {
+  const [pick] = article.products;
+  const lines = [{ id: "intro", spoken: clean(fixPronunciation(article.hook)), caption: article.title, image: pick.image }];
+  article.tips.forEach(([spoken, caption], i) => {
+    lines.push({ id: `tip-${i}`, spoken: clean(fixPronunciation(spoken)), caption, image: pick.image });
+  });
+  lines.push({
+    id: "product-0",
+    spoken: clean(`Notre coup de cœur : ${simplifyNameForSpeech(stripDimensionsForSpeech(pick.name))}, à ${pick.price} !`),
+    caption: `${pick.name}\n${pick.price}`,
+    image: pick.image,
+    product: pick,
+  });
+  lines.push({
+    id: "outro",
+    spoken: "Le lien est juste en dessous. Abonne-toi pour d'autres idées déco !",
+    caption: "Lien en description",
+    image: pick.image,
+  });
+  return lines;
+}
+
+// Solo intros: picked per product (not per source article), so several solos
+// from the same roundup never open on the same sentence.
+const SOLO_INTROS = [
+  (n) => `Regarde cette pépite : ${n} !`,
+  (n) => `Tu connais ça ? ${n}.`,
+  (n) => `Avant d'acheter, regarde ça : ${n}.`,
+  (n) => `Coup de cœur du jour : ${n} !`,
+  (n) => `On l'a repéré pour toi : ${n}.`,
+  (n) => `On a trouvé ça sur Amazon et on adore : ${n}.`,
+];
+function hashName(str) {
+  let h = 0;
+  for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0;
+  return h;
+}
+
 export function buildScript(article) {
+  if (article.videoType === "requete") return buildRequeteScript(article);
   const lines = [];
   // "ambiance-*" articles (article.ambianceStyle set) get a themed room
   // photo — that pairing is deliberate and looks great. But pickRoomImage()
@@ -164,9 +204,13 @@ export function buildScript(article) {
   const intro = article.ambianceStyle ? pickRoomImage(article) : article.products?.[0]?.image || pickRoomImage(article);
   const outro = intro;
 
+  const soloName = simplifyNameForSpeech(stripDimensionsForSpeech(article.title));
   lines.push({
     id: "intro",
-    spoken: clean(`${stripDimensionsForSpeech(article.title)} ! ${stripDimensionsForSpeech(article.excerpt)}`),
+    spoken:
+      article.videoType === "solo"
+        ? clean(SOLO_INTROS[hashName(article.title) % SOLO_INTROS.length](soloName))
+        : clean(`${stripDimensionsForSpeech(article.title)} ! ${stripDimensionsForSpeech(article.excerpt)}`),
     caption: article.title,
     image: intro,
   });

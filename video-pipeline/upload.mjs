@@ -32,7 +32,11 @@ const HOOK_TEMPLATES = [
 ];
 
 function buildHookTitle(article) {
-  const template = HOOK_TEMPLATES[hashString(article.slug) % HOOK_TEMPLATES.length];
+  // A requete short's title IS the question people search: keep it exact.
+  if (article.videoType === "requete") return `${article.title} #Shorts`.slice(0, 100);
+  // Hash on the video's own title (product name), not the source article:
+  // otherwise every solo from one roundup got the very same hook.
+  const template = HOOK_TEMPLATES[hashString(article.title) % HOOK_TEMPLATES.length];
   return `${template(article.title)} #Shorts`.slice(0, 100);
 }
 
@@ -75,7 +79,7 @@ export async function uploadVideo({ videoPath, article }) {
       snippet: {
         title: buildHookTitle(article),
         description: buildDescription(article),
-        tags: ["decoration", "deco", "maison", "shorts"],
+        tags: [...new Set([...(article.keywords || []), "decoration", "deco", "maison", "shorts"])].slice(0, 15),
         categoryId: "26", // Howto & Style
       },
       status: {
