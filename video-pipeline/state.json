@@ -154,16 +154,17 @@
     "req-deco-boheme-pas-cher",
     "req-aspirateur-poils-animaux",
     "livre-50-mandalas-voyage-au-coeur-de-la-nature",
-    "req-chambre-japonaise-zen"
+    "req-chambre-japonaise-zen",
+    "solo-meilleurs-cadres-photo-affiches-2026-B073WX4RC8"
   ],
-  "lastRunAt": "2026-10-19T15:51:06.774Z",
+  "lastRunAt": "2026-10-19T20:41:19.058Z",
   "dailyCounts": {
     "date": "2026-10-19",
     "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
-    "solo": 0
+    "solo": 1
   },
-  "soloIndex": 110
+  "soloIndex": 111
 }
