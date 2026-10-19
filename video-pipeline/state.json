@@ -153,12 +153,13 @@
     "solo-meilleures-bougies-parfumees-2026-B004QPNQO2",
     "req-deco-boheme-pas-cher",
     "req-aspirateur-poils-animaux",
-    "livre-50-mandalas-voyage-au-coeur-de-la-nature"
+    "livre-50-mandalas-voyage-au-coeur-de-la-nature",
+    "req-chambre-japonaise-zen"
   ],
-  "lastRunAt": "2026-10-19T10:24:06.710Z",
+  "lastRunAt": "2026-10-19T15:51:06.774Z",
   "dailyCounts": {
     "date": "2026-10-19",
-    "requete": 1,
+    "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
