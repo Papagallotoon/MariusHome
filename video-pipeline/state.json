@@ -151,12 +151,14 @@
     "solo-best-sellers-deco-amazon-2026-B09PTRWRXH",
     "solo-best-sellers-deco-amazon-2026-B07HCF35NN",
     "solo-meilleures-bougies-parfumees-2026-B004QPNQO2",
-    "req-deco-boheme-pas-cher"
+    "req-deco-boheme-pas-cher",
+    "req-aspirateur-poils-animaux"
   ],
-  "lastRunAt": "2026-10-18T07:03:10.653Z",
+  "lastRunAt": "2026-10-19T07:03:09.217Z",
   "dailyCounts": {
-    "date": "2026-10-18",
+    "date": "2026-10-19",
     "requete": 1,
+    "livre": 0,
     "comparatif": 0,
     "audible": 0,
     "solo": 0
