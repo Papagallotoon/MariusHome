@@ -91,7 +91,7 @@ async function getBoardId(token) {
 }
 
 function articleUrl(article) {
-  const url = new URL(`${SITE_DOMAIN}/${article.category}/${article.slug}`);
+  const url = new URL(article.siteUrl || `${SITE_DOMAIN}/${article.category}/${article.slug}`);
   url.searchParams.set("utm_source", "pinterest");
   url.searchParams.set("utm_medium", "social");
   return url.toString();

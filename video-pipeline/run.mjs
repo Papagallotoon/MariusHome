@@ -4,6 +4,7 @@ import {
   selectNextArticleForType,
   buildSoloArticle,
   selectNextRequete,
+  selectNextLivre,
   loadArticleBySlug,
   markUsed,
   recentlyPublished,
@@ -41,7 +42,9 @@ async function main() {
     // rule — nextFormatType() says which slot today's run should fill.
     const targetType = nextFormatType();
     picked =
-      targetType === "requete"
+      targetType === "livre"
+        ? selectNextLivre()
+        : targetType === "requete"
         ? selectNextRequete()
         : targetType === "solo"
           ? buildSoloArticle()
@@ -52,7 +55,11 @@ async function main() {
     // selectNextArticleForType again for the same type: that would either
     // return null again, or — before 2026-09-12 — silently re-upload an
     // already-published topic as if it were new.
-    if (!picked && targetType !== "solo" && targetType !== "requete") {
+    if (!picked && targetType === "livre") {
+      console.log("No fresh livre left — trying a fresh requete topic.");
+      picked = selectNextRequete();
+    }
+    if (!picked && targetType !== "solo" && targetType !== "requete" && targetType !== "livre") {
       const altType = targetType === "comparatif" ? "audible" : "comparatif";
       console.log(`No fresh "${targetType}" article available — trying "${altType}" instead.`);
       picked = selectNextArticleForType(altType);
@@ -60,6 +67,10 @@ async function main() {
     if (!picked && targetType !== "requete") {
       console.log("No fresh comparatif/audible article left — trying a fresh requete topic.");
       picked = selectNextRequete();
+    }
+    if (!picked && targetType !== "livre") {
+      console.log("No fresh requete left — trying a book from the Bibliotheque.");
+      picked = selectNextLivre();
     }
     if (!picked) {
       console.log("No fresh comparatif/audible article left — falling back to a solo spotlight.");

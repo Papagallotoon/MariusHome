@@ -192,7 +192,52 @@ function hashName(str) {
   return h;
 }
 
+// "livre" short: flip through a book of the Bibliotheque, page by page.
+const LIVRE_HOOKS = [
+  (t) => `Viens feuilleter avec moi : ${t} !`,
+  (t) => `On ouvre ensemble ${t} ?`,
+  (t) => `Petit tour dans les pages de ${t} !`,
+  (t) => `Regarde ce qu'il y a dans ${t} !`,
+];
+function firstSentence(text) {
+  const m = (text || "").match(/^[^.!?…]+[.!?…]?/);
+  return m ? m[0].trim() : "";
+}
+function buildLivreScript(article) {
+  const p = article.pages;
+  const at = (i) => p[Math.min(i, p.length - 1)];
+  const hook = LIVRE_HOOKS[hashName(article.title) % LIVRE_HOOKS.length](article.title);
+  const lines = [{ id: "intro", spoken: clean(hook), caption: article.title, image: article.cover }];
+  const lead = ["Au programme", "Et aussi"];
+  const facts = [
+    firstSentence(article.intro),
+    ...article.contenu.filter((c) => !/pdf|lisible|format|imprim|\bpages?\b|télécharg/i.test(c)).slice(0, 2).map((c, i) => `${lead[i]} : ${c.charAt(0).toLowerCase()}${c.slice(1)}.`),
+  ].filter(Boolean);
+  const captions = [article.sousTitre || article.title, ...article.contenu.filter((c) => !/pdf|lisible|format|imprim|\bpages?\b|télécharg/i.test(c)).slice(0, 2)];
+  facts.forEach((f, i) => {
+    lines.push({ id: `page-${i}`, spoken: clean(fixPronunciation(stripDimensionsForSpeech(f))), caption: captions[i] || "", image: at(i * 2 + 1) });
+  });
+  lines.push({
+    id: "product-0",
+    spoken: clean(
+      article.categorie === "ebooks"
+        ? `Le livre complet fait ${article.pageCount} pages, en PDF à lire partout, à ${article.price}.`
+        : `Le livre complet fait ${article.pageCount} pages, en PDF à imprimer chez toi, à ${article.price}.`
+    ),
+    caption: `${article.pageCount} pages · ${article.categorie === "ebooks" ? "ebook PDF" : "PDF à imprimer"}\n${article.price}`,
+    image: at(p.length - 1),
+  });
+  lines.push({
+    id: "outro",
+    spoken: "Feuillette-le gratuitement sur marius-home point com, rubrique Bibliothèque. Le lien est juste en dessous !",
+    caption: "marius-home.com/bibliotheque",
+    image: article.cover,
+  });
+  return lines;
+}
+
 export function buildScript(article) {
+  if (article.videoType === "livre") return buildLivreScript(article);
   if (article.videoType === "requete") return buildRequeteScript(article);
   const lines = [];
   // "ambiance-*" articles (article.ambianceStyle set) get a themed room

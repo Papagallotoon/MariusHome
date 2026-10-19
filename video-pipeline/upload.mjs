@@ -34,6 +34,7 @@ const HOOK_TEMPLATES = [
 function buildHookTitle(article) {
   // A requete short's title IS the question people search: keep it exact.
   if (article.videoType === "requete") return `${article.title} #Shorts`.slice(0, 100);
+  if (article.videoType === "livre") return `${article.title} : feuillette l'extrait 📖 #Shorts`.slice(0, 100);
   // Hash on the video's own title (product name), not the source article:
   // otherwise every solo from one roundup got the very same hook.
   const template = HOOK_TEMPLATES[hashString(article.title) % HOOK_TEMPLATES.length];
@@ -42,7 +43,27 @@ function buildHookTitle(article) {
 
 const RANK_EMOJIS = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣"];
 
+function buildLivreDescription(article) {
+  return [
+    `${article.title} – ${article.sousTitre}`,
+    "",
+    article.intro,
+    "",
+    `📖 Feuillette l'extrait gratuitement, page par page : ${article.siteUrl}`,
+    article.etsyUrl ? `🛒 Le livre complet (PDF à imprimer, ${article.price}) : ${article.etsyUrl}` : "",
+    "",
+    ...article.contenu.map((c) => `✅ ${c}`),
+    "",
+    "Éditions Marius Dumas – toute la Bibliothèque : https://marius-home.com/bibliotheque",
+    "",
+    "#livre #pdf #shorts",
+  ]
+    .filter((l, i, a) => l !== "" || a[i - 1] !== "")
+    .join("\n");
+}
+
 function buildDescription(article) {
+  if (article.videoType === "livre") return buildLivreDescription(article);
   // Real route is /{category}/{slug} (see src/app/[category]/[slug]/page.tsx) —
   // there is no /articles/ route on this site.
   const articleUrl = `${SITE_DOMAIN}/${article.category}/${article.slug}`;

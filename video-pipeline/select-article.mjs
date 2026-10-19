@@ -56,7 +56,9 @@ export function recentlyPublished() {
 // 2026-10-18 : tous les comparatifs sont publies -> la journee alterne des
 // shorts "requete" (une vraie question deco, requetes.json) et des solos.
 // Un comparatif neuf (nouvel article) reprend automatiquement sa place.
-const FORMAT_SEQUENCE = ["requete", "comparatif", "requete", "solo", "requete"];
+// "livre" = un Short qui feuillette un livre de la Bibliotheque du site
+// (couverture + pages d'extrait, src/data/bibliotheque.json).
+const FORMAT_SEQUENCE = ["requete", "livre", "comparatif", "solo", "livre"];
 
 function todayKey() {
   return new Date().toISOString().slice(0, 10); // UTC date, matches cron's own clock
@@ -65,7 +67,7 @@ function todayKey() {
 function getDailyCounts() {
   const state = loadState();
   if (!state.dailyCounts || state.dailyCounts.date !== todayKey()) {
-    return { date: todayKey(), requete: 0, comparatif: 0, audible: 0, solo: 0 };
+    return { date: todayKey(), requete: 0, livre: 0, comparatif: 0, audible: 0, solo: 0 };
   }
   return state.dailyCounts;
 }
@@ -77,7 +79,7 @@ function getDailyCounts() {
 // erroring.
 export function nextFormatType() {
   const counts = getDailyCounts();
-  const totalToday = (counts.requete || 0) + (counts.comparatif || 0) + (counts.audible || 0) + (counts.solo || 0);
+  const totalToday = (counts.requete || 0) + (counts.livre || 0) + (counts.comparatif || 0) + (counts.audible || 0) + (counts.solo || 0);
   if (totalToday < FORMAT_SEQUENCE.length) return FORMAT_SEQUENCE[totalToday];
   return totalToday % 2 === 0 ? "comparatif" : "audible";
 }
@@ -277,4 +279,64 @@ export function selectNextRequete() {
   const fresh = loadRequetes().filter((r) => !state.usedSlugs.includes(r.slug));
   const r = fresh.find((x) => !recent.has(x.source)) || fresh[0];
   return r ? buildRequeteArticle(r) : null;
+}
+
+// --- "livre" shorts: flip through one book of the site's Bibliotheque ------
+const BIBLIO_PATH = path.resolve(ARTICLES_DIR, "..", "..", "src", "data", "bibliotheque.json");
+const BIBLIO_PUBLIC = path.resolve(ARTICLES_DIR, "..", "..", "public", "bibliotheque", "livres");
+
+export function loadLivres() {
+  if (!fs.existsSync(BIBLIO_PATH)) return [];
+  try {
+    const data = JSON.parse(fs.readFileSync(BIBLIO_PATH, "utf8").replace(/^﻿/, ""));
+    return Array.isArray(data.livres) ? data.livres : [];
+  } catch {
+    return [];
+  }
+}
+
+export function buildLivreArticle(l) {
+  const dir = path.join(BIBLIO_PUBLIC, l.slug);
+  const cover = `/bibliotheque/livres/${l.slug}/couverture.jpg`;
+  if (!fs.existsSync(path.join(dir, "couverture.jpg"))) return null;
+  const pages = [];
+  for (let i = 1; i <= 8; i++) {
+    if (fs.existsSync(path.join(dir, `page-${i}.jpg`))) pages.push(`/bibliotheque/livres/${l.slug}/page-${i}.jpg`);
+  }
+  if (pages.length < 3) return null;
+  const siteUrl = `https://marius-home.com/bibliotheque/${l.slug}`;
+  const article = {
+    videoType: "livre",
+    slug: l.slug,
+    category: "bibliotheque",
+    title: l.titre,
+    sousTitre: l.sousTitre || "",
+    intro: l.intro || "",
+    contenu: l.contenu || [],
+    pageCount: l.pages,
+    categorie: l.categorie,
+    price: l.prix,
+    cover,
+    pages,
+    siteUrl,
+    etsyUrl: l.etsy || "",
+    keywords: [l.titre.toLowerCase(), "livre a imprimer", "pdf a imprimer"],
+    excerpt: `${l.titre} – ${l.sousTitre || ""}`,
+    products: [{ name: l.titre, price: l.prix, image: cover, affiliateUrl: l.etsy || siteUrl }],
+  };
+  return { slug: `livre-${l.slug}`, article, actualType: "livre" };
+}
+
+// Next book never shown, alternating themes (coloriage, planners, guides...).
+export function selectNextLivre() {
+  const state = loadState();
+  const fresh = loadLivres().filter((l) => !state.usedSlugs.includes(`livre-${l.slug}`));
+  const lastLivre = [...state.usedSlugs].reverse().find((s) => s.startsWith("livre-"));
+  const lastCat = lastLivre ? loadLivres().find((l) => `livre-${l.slug}` === lastLivre)?.categorie : null;
+  const ordered = [...fresh.filter((l) => l.categorie !== lastCat), ...fresh];
+  for (const l of ordered) {
+    const picked = buildLivreArticle(l);
+    if (picked) return picked;
+  }
+  return null;
 }
