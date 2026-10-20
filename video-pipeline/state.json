@@ -157,12 +157,13 @@
     "req-chambre-japonaise-zen",
     "solo-meilleurs-cadres-photo-affiches-2026-B073WX4RC8",
     "req-robot-aspirateur-laveur-vaut-le-coup",
-    "livre-dialoguer-avec-les-animaux"
+    "livre-dialoguer-avec-les-animaux",
+    "req-bougie-qui-sent-le-plus"
   ],
-  "lastRunAt": "2026-10-20T13:02:32.545Z",
+  "lastRunAt": "2026-10-20T22:11:00.013Z",
   "dailyCounts": {
     "date": "2026-10-20",
-    "requete": 1,
+    "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
