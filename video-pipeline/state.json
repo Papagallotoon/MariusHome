@@ -156,13 +156,14 @@
     "livre-50-mandalas-voyage-au-coeur-de-la-nature",
     "req-chambre-japonaise-zen",
     "solo-meilleurs-cadres-photo-affiches-2026-B073WX4RC8",
-    "req-robot-aspirateur-laveur-vaut-le-coup"
+    "req-robot-aspirateur-laveur-vaut-le-coup",
+    "livre-dialoguer-avec-les-animaux"
   ],
-  "lastRunAt": "2026-10-20T07:03:05.519Z",
+  "lastRunAt": "2026-10-20T13:02:32.545Z",
   "dailyCounts": {
     "date": "2026-10-20",
     "requete": 1,
-    "livre": 0,
+    "livre": 1,
     "comparatif": 0,
     "audible": 0,
     "solo": 0
