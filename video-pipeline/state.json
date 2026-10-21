@@ -160,12 +160,13 @@
     "livre-dialoguer-avec-les-animaux",
     "req-bougie-qui-sent-le-plus",
     "req-salle-de-bain-boheme",
-    "livre-mandalas-fantastiques"
+    "livre-mandalas-fantastiques",
+    "req-guirlande-lumineuse-chambre"
   ],
-  "lastRunAt": "2026-10-21T12:03:14.511Z",
+  "lastRunAt": "2026-10-21T19:27:53.021Z",
   "dailyCounts": {
     "date": "2026-10-21",
-    "requete": 1,
+    "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
