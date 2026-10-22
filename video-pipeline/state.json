@@ -163,12 +163,13 @@
     "livre-mandalas-fantastiques",
     "req-guirlande-lumineuse-chambre",
     "req-tapis-salon-taille",
-    "livre-guide-ultime-fabrication-et-vente-de-bougies"
+    "livre-guide-ultime-fabrication-et-vente-de-bougies",
+    "req-salon-industriel-loft"
   ],
-  "lastRunAt": "2026-10-22T12:02:53.550Z",
+  "lastRunAt": "2026-10-22T16:14:46.130Z",
   "dailyCounts": {
     "date": "2026-10-22",
-    "requete": 1,
+    "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
