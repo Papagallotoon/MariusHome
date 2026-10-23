@@ -165,16 +165,17 @@
     "req-tapis-salon-taille",
     "livre-guide-ultime-fabrication-et-vente-de-bougies",
     "req-salon-industriel-loft",
-    "solo-top-aspirateurs-sans-fil-2026-B0D9PQD5V4"
+    "solo-top-aspirateurs-sans-fil-2026-B0D9PQD5V4",
+    "req-diffuseur-huiles-essentielles-choisir"
   ],
-  "lastRunAt": "2026-10-22T22:12:11.149Z",
+  "lastRunAt": "2026-10-23T07:03:05.494Z",
   "dailyCounts": {
-    "date": "2026-10-22",
-    "requete": 2,
-    "livre": 1,
+    "date": "2026-10-23",
+    "requete": 1,
+    "livre": 0,
     "comparatif": 0,
     "audible": 0,
-    "solo": 1
+    "solo": 0
   },
   "soloIndex": 112
 }
