@@ -1131,5 +1131,577 @@
    "bouquet lavande",
    "deco lavande"
   ]
+ },
+ {
+  "slug": "req-diffuseur-combien-gouttes",
+  "source": "top-diffuseurs-parfum-deco-2026",
+  "pick": "GeeRic",
+  "title": "Diffuseur d'huiles essentielles : combien de gouttes mettre ?",
+  "hook": "Combien de gouttes dans ton diffuseur ? La réponse en 30 secondes !",
+  "tips": [
+   [
+    "En général, 5 à 10 gouttes pour un réservoir plein suffisent largement.",
+    "5 à 10 gouttes"
+   ],
+   [
+    "Mieux vaut diffuser 30 minutes à 1 heure, puis faire une pause.",
+    "30 min à 1 h"
+   ],
+   [
+    "Rince le réservoir chaque semaine pour éviter les dépôts.",
+    "Rince chaque semaine"
+   ]
+  ],
+  "keywords": [
+   "diffuseur huiles essentielles",
+   "combien de gouttes diffuseur",
+   "diffuseur ultrasonique"
+  ]
+ },
+ {
+  "slug": "req-robot-station-vidage",
+  "source": "top-robots-aspirateurs-laveurs-2026",
+  "pick": "Eufy Omni",
+  "title": "Robot aspirateur avec station : ça vaut le coup ?",
+  "hook": "Robot aspirateur avec station : vrai confort ou dépense inutile ?",
+  "tips": [
+   [
+    "La station vide le bac toute seule : tu n'y touches plus pendant des semaines.",
+    "Vidage automatique"
+   ],
+   [
+    "Certaines lavent et sèchent aussi les serpillières.",
+    "Serpillières lavées"
+   ],
+   [
+    "Prévois la place : une station prend plus d'espace qu'une simple base.",
+    "Prévois la place"
+   ]
+  ],
+  "keywords": [
+   "robot aspirateur station",
+   "robot aspirateur laveur",
+   "station de vidage"
+  ]
+ },
+ {
+  "slug": "req-laver-plaid-polaire",
+  "source": "top-plaids-couvertures-deco-2026",
+  "pick": "Blumtal",
+  "title": "Plaid polaire : comment le laver sans l'abîmer ?",
+  "hook": "Ton plaid polaire bouloche ? Tu le laves sûrement mal !",
+  "tips": [
+   [
+    "Lave-le à 30 degrés maximum, sur un programme délicat.",
+    "30 °C, programme délicat"
+   ],
+   [
+    "Oublie l'adoucissant : il écrase les fibres.",
+    "Pas d'adoucissant"
+   ],
+   [
+    "Fais-le sécher à plat ou à l'air libre, loin du radiateur.",
+    "Séchage à l'air libre"
+   ]
+  ],
+  "keywords": [
+   "laver plaid polaire",
+   "plaid polaire",
+   "entretien plaid"
+  ]
+ },
+ {
+  "slug": "req-voilage-ou-occultant",
+  "source": "top-rideaux-deco-tendance-2026",
+  "pick": "Topfinel",
+  "title": "Voilage ou rideau occultant dans le salon ?",
+  "hook": "Voilage ou rideau occultant pour ton salon ? On t'aide à choisir !",
+  "tips": [
+   [
+    "Le voilage laisse passer la lumière tout en cachant la vue de l'extérieur.",
+    "Voilage : lumière et intimité"
+   ],
+   [
+    "L'occultant est plutôt fait pour la chambre ou une pièce très exposée.",
+    "Occultant : chambre"
+   ],
+   [
+    "Tu peux aussi superposer les deux sur une double tringle.",
+    "Ou les deux"
+   ]
+  ],
+  "keywords": [
+   "voilage salon",
+   "rideau salon",
+   "voilage lin"
+  ]
+ },
+ {
+  "slug": "req-lustre-sputnik-table",
+  "source": "top-suspensions-luminaires-deco-2026",
+  "pick": "Sputnik",
+  "title": "Lustre Sputnik : la star au-dessus de la table",
+  "hook": "Le lustre Sputnik, tu connais ? Il change toute une salle à manger !",
+  "tips": [
+   [
+    "Ses bras en étoile donnent un look rétro et industriel.",
+    "Look rétro"
+   ],
+   [
+    "Accroche-le à environ 75 centimètres au-dessus de la table.",
+    "À 75 cm de la table"
+   ],
+   [
+    "Choisis des ampoules à lumière chaude pour éviter l'effet néon.",
+    "Ampoules chaudes"
+   ]
+  ],
+  "keywords": [
+   "lustre sputnik",
+   "suspension industrielle",
+   "luminaire salle a manger"
+  ]
+ },
+ {
+  "slug": "req-affiches-botaniques",
+  "source": "top-tableaux-decoration-salon-2026",
+  "pick": "Plante Verte",
+  "title": "Déco murale pas chère : la composition d'affiches botaniques",
+  "hook": "Un mur nu et peu de budget ? Fais une composition botanique !",
+  "tips": [
+   [
+    "Un lot d'affiches assorties donne un mur harmonieux tout de suite.",
+    "Un lot assorti"
+   ],
+   [
+    "Garde les mêmes cadres pour un rendu propre.",
+    "Mêmes cadres"
+   ],
+   [
+    "Accroche-les en grille, avec le même écart entre chaque.",
+    "En grille"
+   ]
+  ],
+  "keywords": [
+   "affiche botanique",
+   "deco murale pas cher",
+   "composition cadres"
+  ]
+ },
+ {
+  "slug": "req-tapis-rond-ou-mettre",
+  "source": "top-tapis-deco-tendance-2026",
+  "pick": "Rond",
+  "title": "Tapis rond : où le mettre pour que ce soit joli ?",
+  "hook": "Un tapis rond, oui, mais où ? Trois idées qui marchent !",
+  "tips": [
+   [
+    "Sous une table ronde, il reprend la forme et délimite le coin repas.",
+    "Sous une table ronde"
+   ],
+   [
+    "Dans une chambre, au pied du lit, pour poser les pieds au chaud.",
+    "Au pied du lit"
+   ],
+   [
+    "Dans un coin lecture, avec un fauteuil et une lampe.",
+    "Coin lecture"
+   ]
+  ],
+  "keywords": [
+   "tapis rond",
+   "tapis rond fourrure",
+   "deco chambre"
+  ]
+ },
+ {
+  "slug": "req-palmier-artificiel-coin",
+  "source": "top-plantes-artificielles-deco-2026",
+  "pick": "Palmier Areca",
+  "title": "Grande plante artificielle : dans quel coin la mettre ?",
+  "hook": "Une grande plante, même fausse, change toute une pièce. Voici où la mettre !",
+  "tips": [
+   [
+    "Dans un angle vide du salon, elle comble l'espace sans encombrer.",
+    "Un angle vide"
+   ],
+   [
+    "Près d'une fenêtre, elle paraît plus naturelle.",
+    "Près d'une fenêtre"
+   ],
+   [
+    "Elle ne craint pas le manque de lumière : parfait pour une entrée sombre.",
+    "Entrée sombre ? Aucun souci"
+   ]
+  ],
+  "keywords": [
+   "grande plante artificielle",
+   "palmier artificiel",
+   "plante artificielle salon"
+  ]
+ },
+ {
+  "slug": "req-etagere-flottante-fixer",
+  "source": "top-etageres-murales-deco-2026",
+  "pick": "Sorbus",
+  "title": "Étagère flottante : comment bien la fixer ?",
+  "hook": "Ton étagère flottante penche ? Voici comment bien la fixer !",
+  "tips": [
+   [
+    "Utilise des chevilles adaptées à ton mur : placo, brique ou béton.",
+    "Chevilles adaptées au mur"
+   ],
+   [
+    "Vérifie l'horizontale avec un niveau avant de percer.",
+    "Un niveau avant de percer"
+   ],
+   [
+    "Respecte la charge maximale indiquée : pas de gros livres sur une petite étagère.",
+    "Respecte la charge"
+   ]
+  ],
+  "keywords": [
+   "etagere flottante",
+   "fixer etagere",
+   "etagere murale"
+  ]
+ },
+ {
+  "slug": "req-miroirs-composition",
+  "source": "top-miroirs-deco-mural-2026",
+  "pick": "Umbra Dima",
+  "title": "Composition de miroirs : l'astuce déco qui agrandit",
+  "hook": "Plusieurs petits miroirs plutôt qu'un grand ? Voici pourquoi ça marche !",
+  "tips": [
+   [
+    "Un lot de petits miroirs crée un effet déco et reflète la lumière.",
+    "Effet déco + lumière"
+   ],
+   [
+    "Accroche-les à hauteur d'yeux, en groupe serré.",
+    "Groupés, à hauteur d'yeux"
+   ],
+   [
+    "Parfait au-dessus d'une console ou d'un buffet.",
+    "Au-dessus d'une console"
+   ]
+  ],
+  "keywords": [
+   "composition miroirs",
+   "miroir deco",
+   "miroir mural"
+  ]
+ },
+ {
+  "slug": "req-ranger-jouets-paniers",
+  "source": "top-paniers-rangement-deco-2026",
+  "pick": "STOBSK",
+  "title": "Ranger les jouets joliment : l'astuce des paniers",
+  "hook": "Les jouets envahissent le salon ? Les paniers sont tes alliés !",
+  "tips": [
+   [
+    "Un grand panier en corde suffit pour ranger les peluches en deux secondes.",
+    "Un panier, deux secondes"
+   ],
+   [
+    "Les enfants rangent plus facilement quand c'est ouvert et à leur hauteur.",
+    "Ouvert et à leur hauteur"
+   ],
+   [
+    "Choisis des couleurs neutres : le salon reste joli.",
+    "Couleurs neutres"
+   ]
+  ],
+  "keywords": [
+   "rangement jouets",
+   "panier rangement",
+   "panier corde"
+  ]
+ },
+ {
+  "slug": "req-changer-chambre-parure",
+  "source": "top-parures-de-lit-deco-2026",
+  "pick": "Gatsby",
+  "title": "Changer le style de ta chambre… juste avec la parure de lit",
+  "hook": "Changer de déco sans changer de meubles ? Commence par le lit !",
+  "tips": [
+   [
+    "Le lit est la plus grande surface de la chambre : il donne le ton.",
+    "Le lit donne le ton"
+   ],
+   [
+    "Un motif graphique réveille une chambre trop sage.",
+    "Un motif graphique"
+   ],
+   [
+    "Rappelle une couleur de la parure dans un coussin ou un tableau.",
+    "Rappelle la couleur"
+   ]
+  ],
+  "keywords": [
+   "parure de lit",
+   "deco chambre",
+   "housse de couette"
+  ]
+ },
+ {
+  "slug": "req-miroir-oriental",
+  "source": "ambiance-indien-salle-de-bain",
+  "pick": "Miroir Mural Oriental",
+  "title": "Miroir oriental doré : l'effet palais dans ta salle de bain",
+  "hook": "Un seul objet pour une salle de bain façon palais : le miroir oriental !",
+  "tips": [
+   [
+    "Le métal doré ajouré attire la lumière et l'œil.",
+    "Doré et ajouré"
+   ],
+   [
+    "Associe-le à des lanternes pour des ombres magnifiques le soir.",
+    "Avec des lanternes"
+   ],
+   [
+    "Reste sobre sur le reste pour qu'il soit la vedette.",
+    "Il est la vedette"
+   ]
+  ],
+  "keywords": [
+   "miroir oriental",
+   "salle de bain orientale",
+   "miroir dore"
+  ]
+ },
+ {
+  "slug": "req-horloge-vintage",
+  "source": "ambiance-industriel-chambre",
+  "pick": "Horloge Murale",
+  "title": "Horloge murale vintage : la touche loft",
+  "hook": "Une horloge vintage, et ta pièce prend un air de loft !",
+  "tips": [
+   [
+    "Une horloge double face rappelle les gares d'autrefois.",
+    "Style gare"
+   ],
+   [
+    "Elle se marie avec le métal noir et le bois brut.",
+    "Métal noir + bois brut"
+   ],
+   [
+    "Place-la en hauteur, bien visible depuis l'entrée de la pièce.",
+    "En hauteur"
+   ]
+  ],
+  "keywords": [
+   "horloge murale vintage",
+   "horloge industrielle",
+   "deco loft"
+  ]
+ },
+ {
+  "slug": "req-terrasse-boheme",
+  "source": "ambiance-boheme-deco-2026",
+  "pick": "Guirlande Lumineuse Extérieure",
+  "title": "Terrasse bohème : l'ambiance guinguette chez toi",
+  "hook": "Ta terrasse en mode guinguette ? Deux objets suffisent !",
+  "tips": [
+   [
+    "Une guirlande à grosses ampoules au-dessus de la table, et c'est la fête.",
+    "Une guirlande guinguette"
+   ],
+   [
+    "Des lanternes en bois posées au sol pour la lumière douce.",
+    "Des lanternes"
+   ],
+   [
+    "Des fauteuils en osier avec coussins pour le confort.",
+    "Fauteuils en osier"
+   ]
+  ],
+  "keywords": [
+   "terrasse boheme",
+   "guirlande guinguette",
+   "deco exterieur"
+  ]
+ },
+ {
+  "slug": "req-bougie-combien-temps",
+  "source": "meilleures-bougies-parfumees-2026",
+  "pick": "Rituals",
+  "title": "Bougie parfumée : combien de temps la laisser allumée ?",
+  "hook": "Combien de temps laisser brûler ta bougie ? La règle d'or !",
+  "tips": [
+   [
+    "Au premier allumage, laisse fondre toute la surface pour éviter l'effet tunnel.",
+    "Toute la surface"
+   ],
+   [
+    "Ensuite, pas plus de quatre heures d'affilée.",
+    "4 h maximum"
+   ],
+   [
+    "Ne la laisse jamais sans surveillance.",
+    "Toujours surveillée"
+   ]
+  ],
+  "keywords": [
+   "bougie parfumee",
+   "combien de temps bougie",
+   "effet tunnel bougie"
+  ]
+ },
+ {
+  "slug": "req-grand-miroir-entree",
+  "source": "top-deco-luxe-maison-2026",
+  "pick": "Grand Miroir Doré",
+  "title": "Grand miroir dans l'entrée : l'astuce qui fait tout de suite chic",
+  "hook": "Une entrée qui fait luxe ? Mise sur un grand miroir !",
+  "tips": [
+   [
+    "Un grand miroir agrandit visuellement une entrée souvent étroite.",
+    "Agrandit l'entrée"
+   ],
+   [
+    "Le cadre doré apporte la touche haut de gamme.",
+    "Cadre doré"
+   ],
+   [
+    "Pratique aussi pour un dernier coup d'œil avant de sortir.",
+    "Le dernier coup d'œil"
+   ]
+  ],
+  "keywords": [
+   "grand miroir",
+   "miroir entree",
+   "miroir dore"
+  ]
+ },
+ {
+  "slug": "req-vase-verre-bougie",
+  "source": "top-vases-deco-tendance-2026",
+  "pick": "Verre Fumé",
+  "title": "Vase en verre : une idée déco de table",
+  "hook": "Un vase en verre fumé, c'est pas que pour les fleurs !",
+  "tips": [
+   [
+    "Mets-y une bougie : ça devient un photophore élégant.",
+    "En photophore"
+   ],
+   [
+    "Ou une seule branche d'eucalyptus pour un effet minimaliste.",
+    "Une seule branche"
+   ],
+   [
+    "Groupe-le avec deux bougies de hauteurs différentes.",
+    "Avec des bougies"
+   ]
+  ],
+  "keywords": [
+   "vase verre",
+   "deco de table",
+   "photophore"
+  ]
+ },
+ {
+  "slug": "req-cadre-chene-affiche",
+  "source": "meilleurs-cadres-photo-affiches-2026",
+  "pick": "Hovsta",
+  "title": "Mettre en valeur une affiche : le bon cadre",
+  "hook": "Ton affiche fait poster d'ado ? Le cadre change tout !",
+  "tips": [
+   [
+    "Un cadre en bois clair rend n'importe quelle affiche plus élégante.",
+    "Cadre bois clair"
+   ],
+   [
+    "Un passe-partout blanc autour de l'image fait tout de suite galerie.",
+    "Le passe-partout"
+   ],
+   [
+    "Pose-le sur une étagère, appuyé au mur, pour un look décontracté.",
+    "Posé sur une étagère"
+   ]
+  ],
+  "keywords": [
+   "cadre affiche",
+   "cadre photo bois",
+   "deco murale"
+  ]
+ },
+ {
+  "slug": "req-rideaux-velours-chic",
+  "source": "top-rideaux-deco-tendance-2026",
+  "pick": "Velours",
+  "title": "Rideaux en velours : le look chic et chaleureux",
+  "hook": "Des rideaux en velours, et ton salon devient chic !",
+  "tips": [
+   [
+    "Le velours tombe bien droit et apporte du volume.",
+    "Un beau tombé"
+   ],
+   [
+    "Il garde aussi un peu la chaleur l'hiver.",
+    "Plus chaud l'hiver"
+   ],
+   [
+    "Laisse-les toucher le sol pour un effet plus luxueux.",
+    "Jusqu'au sol"
+   ]
+  ],
+  "keywords": [
+   "rideaux velours",
+   "rideau salon chic",
+   "rideau velours"
+  ]
+ },
+ {
+  "slug": "req-lave-linge-top-hublot",
+  "source": "top-machines-a-laver-connectees-2026",
+  "pick": "Candy Lave-Linge Top",
+  "title": "Lave-linge top ou hublot : lequel choisir ?",
+  "hook": "Machine à laver top ou hublot ? La différence en 30 secondes !",
+  "tips": [
+   [
+    "Le top s'ouvre par le dessus : idéal quand la place manque en largeur.",
+    "Top : peu de largeur"
+   ],
+   [
+    "Le hublot peut se placer sous un plan de travail.",
+    "Hublot : sous le plan"
+   ],
+   [
+    "Mesure bien ton emplacement avant d'acheter, porte ouverte comprise.",
+    "Mesure avant d'acheter"
+   ]
+  ],
+  "keywords": [
+   "lave linge top",
+   "lave linge hublot",
+   "machine a laver"
+  ]
+ },
+ {
+  "slug": "req-guirlande-led-wifi",
+  "source": "meilleures-guirlandes-lumineuses-2026",
+  "pick": "Twinkly",
+  "title": "Guirlande connectée : à quoi ça sert ?",
+  "hook": "Une guirlande pilotée depuis ton téléphone ? Voici ce que ça change !",
+  "tips": [
+   [
+    "Tu changes les couleurs et les effets depuis une appli.",
+    "Couleurs à volonté"
+   ],
+   [
+    "Tu peux programmer l'allumage et l'extinction.",
+    "Programmable"
+   ],
+   [
+    "Elle sert aussi bien pour Noël que toute l'année.",
+    "Toute l'année"
+   ]
+  ],
+  "keywords": [
+   "guirlande connectee",
+   "guirlande led wifi",
+   "deco lumineuse"
+  ]
  }
 ]
