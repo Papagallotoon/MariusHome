@@ -172,12 +172,13 @@
     "req-miroir-agrandir-piece",
     "req-salon-provencal",
     "req-plaid-canape-matiere",
-    "livre-agenda-semainier-2027"
+    "livre-agenda-semainier-2027",
+    "req-salle-de-bain-zen-japonaise"
   ],
-  "lastRunAt": "2026-10-29T11:11:55.085Z",
+  "lastRunAt": "2026-10-29T15:30:02.422Z",
   "dailyCounts": {
     "date": "2026-10-29",
-    "requete": 1,
+    "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
