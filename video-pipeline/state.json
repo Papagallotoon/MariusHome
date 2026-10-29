@@ -170,11 +170,12 @@
     "livre-mandalas-de-la-foret",
     "req-chambre-boheme-cocon",
     "req-miroir-agrandir-piece",
-    "req-salon-provencal"
+    "req-salon-provencal",
+    "req-plaid-canape-matiere"
   ],
-  "lastRunAt": "2026-10-28T20:14:53.074Z",
+  "lastRunAt": "2026-10-29T07:02:35.142Z",
   "dailyCounts": {
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "requete": 1,
     "livre": 0,
     "comparatif": 0,
