@@ -174,16 +174,17 @@
     "req-plaid-canape-matiere",
     "livre-agenda-semainier-2027",
     "req-salle-de-bain-zen-japonaise",
-    "solo-top-deco-luxe-maison-2026-B0C4VT7VQ4"
+    "solo-top-deco-luxe-maison-2026-B0C4VT7VQ4",
+    "req-lampe-de-chevet-lumiere"
   ],
-  "lastRunAt": "2026-10-29T20:25:21.768Z",
+  "lastRunAt": "2026-10-30T07:03:39.934Z",
   "dailyCounts": {
-    "date": "2026-10-29",
-    "requete": 2,
-    "livre": 1,
+    "date": "2026-10-30",
+    "requete": 1,
+    "livre": 0,
     "comparatif": 0,
     "audible": 0,
-    "solo": 1
+    "solo": 0
   },
   "soloIndex": 113
 }
