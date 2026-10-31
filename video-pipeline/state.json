@@ -179,13 +179,14 @@
     "livre-mandalas-de-l-ocean",
     "req-salon-japonais-wabi-sabi",
     "solo-top-diffuseurs-parfum-deco-2026-B0DDXKSLFP",
-    "req-plante-artificielle-realiste"
+    "req-plante-artificielle-realiste",
+    "livre-sudoku-240-grilles"
   ],
-  "lastRunAt": "2026-10-31T07:02:39.906Z",
+  "lastRunAt": "2026-10-31T10:40:26.276Z",
   "dailyCounts": {
     "date": "2026-10-31",
     "requete": 1,
-    "livre": 0,
+    "livre": 1,
     "comparatif": 0,
     "audible": 0,
     "solo": 0
