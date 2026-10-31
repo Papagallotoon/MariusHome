@@ -178,16 +178,17 @@
     "req-lampe-de-chevet-lumiere",
     "livre-mandalas-de-l-ocean",
     "req-salon-japonais-wabi-sabi",
-    "solo-top-diffuseurs-parfum-deco-2026-B0DDXKSLFP"
+    "solo-top-diffuseurs-parfum-deco-2026-B0DDXKSLFP",
+    "req-plante-artificielle-realiste"
   ],
-  "lastRunAt": "2026-10-30T20:00:01.415Z",
+  "lastRunAt": "2026-10-31T07:02:39.906Z",
   "dailyCounts": {
-    "date": "2026-10-30",
-    "requete": 2,
-    "livre": 1,
+    "date": "2026-10-31",
+    "requete": 1,
+    "livre": 0,
     "comparatif": 0,
     "audible": 0,
-    "solo": 1
+    "solo": 0
   },
   "soloIndex": 114
 }
