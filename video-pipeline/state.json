@@ -180,12 +180,13 @@
     "req-salon-japonais-wabi-sabi",
     "solo-top-diffuseurs-parfum-deco-2026-B0DDXKSLFP",
     "req-plante-artificielle-realiste",
-    "livre-sudoku-240-grilles"
+    "livre-sudoku-240-grilles",
+    "req-salle-de-bain-industrielle"
   ],
-  "lastRunAt": "2026-10-31T10:40:26.276Z",
+  "lastRunAt": "2026-10-31T14:42:48.718Z",
   "dailyCounts": {
     "date": "2026-10-31",
-    "requete": 1,
+    "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
