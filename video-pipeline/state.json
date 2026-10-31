@@ -181,16 +181,17 @@
     "solo-top-diffuseurs-parfum-deco-2026-B0DDXKSLFP",
     "req-plante-artificielle-realiste",
     "livre-sudoku-240-grilles",
-    "req-salle-de-bain-industrielle"
+    "req-salle-de-bain-industrielle",
+    "solo-top-etageres-murales-deco-2026-B082CRZLZY"
   ],
-  "lastRunAt": "2026-10-31T14:42:48.718Z",
+  "lastRunAt": "2026-10-31T19:25:57.066Z",
   "dailyCounts": {
     "date": "2026-10-31",
     "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
-    "solo": 0
+    "solo": 1
   },
-  "soloIndex": 114
+  "soloIndex": 115
 }
