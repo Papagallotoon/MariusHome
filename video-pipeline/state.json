@@ -184,12 +184,13 @@
     "req-salle-de-bain-industrielle",
     "solo-top-etageres-murales-deco-2026-B082CRZLZY",
     "req-coussins-canape-combien",
-    "livre-carnet-de-sante-chien"
+    "livre-carnet-de-sante-chien",
+    "req-chambre-indienne"
   ],
-  "lastRunAt": "2026-11-01T12:03:14.370Z",
+  "lastRunAt": "2026-11-01T15:26:41.855Z",
   "dailyCounts": {
     "date": "2026-11-01",
-    "requete": 1,
+    "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
