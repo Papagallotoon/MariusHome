@@ -12,6 +12,223 @@
  },
  "livres": [
   {
+   "slug": "trilogie-mandalas",
+   "ratio": 0.7071,
+   "titre": "Trilogie Mandalas",
+   "sousTitre": "120 mandalas à colorier",
+   "prix": "5,99 €",
+   "pages": 255,
+   "extrait": 6,
+   "categorie": "coloriage",
+   "intro": "Les 3 livres de mandalas des Éditions Marius Dumas réunis à prix réduit : créatures fantastiques, animaux de la forêt et de l’océan.",
+   "contenu": [
+    "Mandalas Fantastiques : 40 créatures légendaires",
+    "Mandalas de la Forêt : 40 animaux",
+    "Mandalas de l’Océan : 40 créatures marines"
+   ],
+   "gumroad": "",
+   "etsy": "https://www.etsy.com/fr/listing/4607785470"
+  },
+  {
+   "slug": "pack-organisation-2027",
+   "ratio": 0.7071,
+   "titre": "Pack Organisation 2027",
+   "sousTitre": "4 planners à prix réduit",
+   "prix": "6,98 €",
+   "pages": 283,
+   "extrait": 6,
+   "categorie": "organisation",
+   "intro": "Agenda, budget, habitudes et repas : les 4 planners pour démarrer 2027 du bon pied, réunis à prix réduit.",
+   "contenu": [
+    "Agenda Semainier 2027",
+    "Mon Budget Familial 2027",
+    "Mes Habitudes 2027",
+    "Menus de la Semaine"
+   ],
+   "gumroad": "",
+   "etsy": "https://www.etsy.com/fr/listing/4607784564"
+  },
+  {
+   "slug": "pack-noel-magique",
+   "ratio": 0.7071,
+   "titre": "Pack Noël Magique",
+   "sousTitre": "3 PDF à prix réduit",
+   "prix": "5,99 €",
+   "pages": 41,
+   "extrait": 6,
+   "categorie": "organisation",
+   "intro": "Le planner de Noël, le calendrier de l’Avent et les étiquettes cadeaux réunis dans un seul pack, moins cher qu’à l’unité.",
+   "contenu": [
+    "Mon Planner de Noël complet",
+    "Calendrier de l’Avent : 24 activités en famille",
+    "56 étiquettes cadeaux"
+   ],
+   "gumroad": "",
+   "etsy": "https://www.etsy.com/fr/listing/4607763571"
+  },
+  {
+   "slug": "etiquettes-cadeaux-de-noel",
+   "ratio": 0.7071,
+   "titre": "Étiquettes cadeaux de Noël",
+   "sousTitre": "56 étiquettes à imprimer",
+   "prix": "2,99 €",
+   "pages": 9,
+   "extrait": 6,
+   "categorie": "organisation",
+   "intro": "Imprimez, découpez, écrivez le prénom… et c’est prêt ! 56 étiquettes « Pour / De » en 8 modèles colorés.",
+   "contenu": [
+    "48 étiquettes en 8 modèles",
+    "8 étiquettes à personnaliser",
+    "Lignes de découpe et trou pour le ruban",
+    "Conseils d’impression"
+   ],
+   "gumroad": "",
+   "etsy": "https://www.etsy.com/fr/listing/4607783270"
+  },
+  {
+   "slug": "calendrier-de-l-avent",
+   "ratio": 0.7071,
+   "titre": "Calendrier de l’Avent",
+   "sousTitre": "24 activités en famille à imprimer",
+   "prix": "2,99 €",
+   "pages": 10,
+   "extrait": 6,
+   "categorie": "organisation",
+   "intro": "Un calendrier de l’Avent coloré et sans chocolat obligatoire : chaque jour, une petite activité à partager en famille.",
+   "contenu": [
+    "24 étiquettes numérotées de 1 à 24",
+    "24 cartes activités illustrées",
+    "6 cartes vierges à compléter",
+    "Un poster compte à rebours à colorier",
+    "Une page mode d’emploi"
+   ],
+   "gumroad": "",
+   "etsy": "https://www.etsy.com/fr/listing/4607762137"
+  },
+  {
+   "slug": "marque-pages-a-imprimer",
+   "ratio": 0.7071,
+   "titre": "Marque-pages",
+   "sousTitre": "24 modèles à imprimer",
+   "prix": "2,99 €",
+   "pages": 8,
+   "extrait": 6,
+   "categorie": "bien-etre",
+   "intro": "De jolis marque-pages colorés pour les amoureux des livres, à glisser dans un roman, une carte ou un petit colis cadeau.",
+   "contenu": [
+    "12 marque-pages illustrés avec une petite phrase",
+    "4 marque-pages à colorier",
+    "4 suivis « Mes lectures »",
+    "4 défis « 12 livres »",
+    "Format 4,3 × 20,8 cm"
+   ],
+   "gumroad": "",
+   "etsy": "https://www.etsy.com/fr/listing/4608306833"
+  },
+  {
+   "slug": "coloriages-de-noel-adultes",
+   "ratio": 0.7071,
+   "titre": "Coloriages de Noël",
+   "sousTitre": "30 mandalas de Noël pour adultes",
+   "prix": "2,99 €",
+   "pages": 34,
+   "extrait": 6,
+   "categorie": "coloriage",
+   "intro": "30 motifs de Noël détaillés, inspirés des mandalas et du zentangle : boules, flocons, sapins, étoiles et couronnes.",
+   "contenu": [
+    "8 boules de Noël garnies de mandalas",
+    "8 flocons de neige mandala",
+    "6 sapins aux motifs zentangle",
+    "8 étoiles et couronnes",
+    "Un dessin par page, verso blanc"
+   ],
+   "gumroad": "",
+   "etsy": "https://www.etsy.com/fr/listing/4608306235"
+  },
+  {
+   "slug": "jeux-baby-shower-garcon",
+   "ratio": 0.7071,
+   "titre": "Jeux Baby Shower garçon",
+   "sousTitre": "9 jeux en français à imprimer",
+   "prix": "3,49 €",
+   "pages": 23,
+   "extrait": 6,
+   "categorie": "jeux",
+   "intro": "Tout ce qu’il faut pour animer la baby shower ou la gender reveal d’un petit garçon, dans des tons bleu et vert d’eau. Réponses incluses.",
+   "contenu": [
+    "Bingo de bébé : 20 cartes + cartes d’appel",
+    "Papa ou maman ?",
+    "Qui connaît le mieux la future maman ?",
+    "Quiz des bébés animaux",
+    "Mots mêlés et mots mélangés",
+    "Prédictions, conseils et vœux pour bébé"
+   ],
+   "gumroad": "",
+   "etsy": "https://www.etsy.com/fr/listing/4608324632"
+  },
+  {
+   "slug": "jeux-baby-shower-fille",
+   "ratio": 0.7071,
+   "titre": "Jeux Baby Shower fille",
+   "sousTitre": "9 jeux en français à imprimer",
+   "prix": "3,49 €",
+   "pages": 23,
+   "extrait": 6,
+   "categorie": "jeux",
+   "intro": "Tout ce qu’il faut pour animer la baby shower ou la gender reveal d’une petite fille, dans de jolis tons rose et pêche. Réponses incluses.",
+   "contenu": [
+    "Bingo de bébé : 20 cartes + cartes d’appel",
+    "Papa ou maman ?",
+    "Qui connaît le mieux la future maman ?",
+    "Quiz des bébés animaux",
+    "Mots mêlés et mots mélangés",
+    "Prédictions, conseils et vœux pour bébé"
+   ],
+   "gumroad": "",
+   "etsy": "https://www.etsy.com/fr/listing/4608323964"
+  },
+  {
+   "slug": "jeux-de-noel-pour-adultes",
+   "ratio": 0.7071,
+   "titre": "Jeux de Noël pour adultes",
+   "sousTitre": "Le kit complet pour animer la soirée",
+   "prix": "3,49 €",
+   "pages": 13,
+   "extrait": 6,
+   "categorie": "jeux",
+   "intro": "5 jeux prêts à imprimer pour mettre l’ambiance au repas de famille, entre amis ou à la fête de Noël du bureau, de 4 à 30 participants.",
+   "contenu": [
+    "Le grand quiz de Noël : 20 questions",
+    "« Tu préfères… » : 16 cartes",
+    "Défis de Noël : 16 cartes",
+    "« Trouve quelqu’un qui… »",
+    "Mots mêlés et mots mélangés de Noël",
+    "Toutes les réponses pour l’animateur"
+   ],
+   "gumroad": "",
+   "etsy": "https://www.etsy.com/fr/listing/4608323246"
+  },
+  {
+   "slug": "bingo-de-noel",
+   "ratio": 0.7071,
+   "titre": "Bingo de Noël",
+   "sousTitre": "30 cartes différentes à imprimer",
+   "prix": "2,99 €",
+   "pages": 19,
+   "extrait": 6,
+   "categorie": "jeux",
+   "intro": "Le jeu idéal pour le repas de famille, la classe ou la fête de Noël du bureau : simple, rapide à lancer, et qui fait rire petits et grands.",
+   "contenu": [
+    "30 cartes de bingo grand format, toutes différentes",
+    "40 cartes d’appel à découper",
+    "2 cartes vierges à compléter",
+    "Règles du jeu et 3 variantes",
+    "De 2 à 30 joueurs, dès 6 ans"
+   ],
+   "gumroad": "",
+   "etsy": "https://www.etsy.com/fr/listing/4608303261"
+  },
+  {
    "slug": "50-mandalas-voyage-au-coeur-de-la-nature",
    "ratio": 0.7071,
    "titre": "50 Mandalas – Voyage au cœur de la nature",
