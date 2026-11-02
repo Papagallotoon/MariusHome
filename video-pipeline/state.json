@@ -186,16 +186,17 @@
     "req-coussins-canape-combien",
     "livre-carnet-de-sante-chien",
     "req-chambre-indienne",
-    "solo-top-lampes-de-chevet-deco-2026-B078WXZ69Q"
+    "solo-top-lampes-de-chevet-deco-2026-B078WXZ69Q",
+    "req-salle-de-bain-bali-spa"
   ],
-  "lastRunAt": "2026-11-01T22:38:48.518Z",
+  "lastRunAt": "2026-11-02T07:04:26.957Z",
   "dailyCounts": {
-    "date": "2026-11-01",
-    "requete": 2,
-    "livre": 1,
+    "date": "2026-11-02",
+    "requete": 1,
+    "livre": 0,
     "comparatif": 0,
     "audible": 0,
-    "solo": 1
+    "solo": 0
   },
   "soloIndex": 116
 }
