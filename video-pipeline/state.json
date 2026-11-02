@@ -187,13 +187,14 @@
     "livre-carnet-de-sante-chien",
     "req-chambre-indienne",
     "solo-top-lampes-de-chevet-deco-2026-B078WXZ69Q",
-    "req-salle-de-bain-bali-spa"
+    "req-salle-de-bain-bali-spa",
+    "livre-mots-meles-grands-caracteres"
   ],
-  "lastRunAt": "2026-11-02T07:04:26.957Z",
+  "lastRunAt": "2026-11-02T12:04:06.080Z",
   "dailyCounts": {
     "date": "2026-11-02",
     "requete": 1,
-    "livre": 0,
+    "livre": 1,
     "comparatif": 0,
     "audible": 0,
     "solo": 0
