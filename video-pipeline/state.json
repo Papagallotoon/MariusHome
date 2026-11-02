@@ -188,12 +188,13 @@
     "req-chambre-indienne",
     "solo-top-lampes-de-chevet-deco-2026-B078WXZ69Q",
     "req-salle-de-bain-bali-spa",
-    "livre-mots-meles-grands-caracteres"
+    "livre-mots-meles-grands-caracteres",
+    "req-etagere-murale-sans-percer"
   ],
-  "lastRunAt": "2026-11-02T12:04:06.080Z",
+  "lastRunAt": "2026-11-02T18:45:54.966Z",
   "dailyCounts": {
     "date": "2026-11-02",
-    "requete": 1,
+    "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
