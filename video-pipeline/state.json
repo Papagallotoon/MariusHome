@@ -189,16 +189,17 @@
     "solo-top-lampes-de-chevet-deco-2026-B078WXZ69Q",
     "req-salle-de-bain-bali-spa",
     "livre-mots-meles-grands-caracteres",
-    "req-etagere-murale-sans-percer"
+    "req-etagere-murale-sans-percer",
+    "solo-top-machines-a-laver-connectees-2026-B0DJWD2JXJ"
   ],
-  "lastRunAt": "2026-11-02T18:45:54.966Z",
+  "lastRunAt": "2026-11-02T23:11:26.608Z",
   "dailyCounts": {
     "date": "2026-11-02",
     "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
-    "solo": 0
+    "solo": 1
   },
-  "soloIndex": 116
+  "soloIndex": 117
 }
