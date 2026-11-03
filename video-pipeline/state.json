@@ -193,16 +193,17 @@
     "solo-top-machines-a-laver-connectees-2026-B0DJWD2JXJ",
     "req-rideaux-occultants-chambre",
     "livre-trilogie-mandalas",
-    "req-salon-boheme-fauteuil"
+    "req-salon-boheme-fauteuil",
+    "solo-top-miroirs-deco-mural-2026-B08PKT8BS9"
   ],
-  "lastRunAt": "2026-11-03T16:30:07.878Z",
+  "lastRunAt": "2026-11-03T23:54:31.977Z",
   "dailyCounts": {
     "date": "2026-11-03",
     "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
-    "solo": 0
+    "solo": 1
   },
-  "soloIndex": 117
+  "soloIndex": 118
 }
