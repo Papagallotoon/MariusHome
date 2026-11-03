@@ -192,12 +192,13 @@
     "req-etagere-murale-sans-percer",
     "solo-top-machines-a-laver-connectees-2026-B0DJWD2JXJ",
     "req-rideaux-occultants-chambre",
-    "livre-trilogie-mandalas"
+    "livre-trilogie-mandalas",
+    "req-salon-boheme-fauteuil"
   ],
-  "lastRunAt": "2026-11-03T12:02:53.845Z",
+  "lastRunAt": "2026-11-03T16:30:07.878Z",
   "dailyCounts": {
     "date": "2026-11-03",
-    "requete": 1,
+    "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
