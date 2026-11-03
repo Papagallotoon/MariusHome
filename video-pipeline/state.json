@@ -190,16 +190,17 @@
     "req-salle-de-bain-bali-spa",
     "livre-mots-meles-grands-caracteres",
     "req-etagere-murale-sans-percer",
-    "solo-top-machines-a-laver-connectees-2026-B0DJWD2JXJ"
+    "solo-top-machines-a-laver-connectees-2026-B0DJWD2JXJ",
+    "req-rideaux-occultants-chambre"
   ],
-  "lastRunAt": "2026-11-02T23:11:26.608Z",
+  "lastRunAt": "2026-11-03T07:02:44.838Z",
   "dailyCounts": {
-    "date": "2026-11-02",
-    "requete": 2,
-    "livre": 1,
+    "date": "2026-11-03",
+    "requete": 1,
+    "livre": 0,
     "comparatif": 0,
     "audible": 0,
-    "solo": 1
+    "solo": 0
   },
   "soloIndex": 117
 }
