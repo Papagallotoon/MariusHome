@@ -191,13 +191,14 @@
     "livre-mots-meles-grands-caracteres",
     "req-etagere-murale-sans-percer",
     "solo-top-machines-a-laver-connectees-2026-B0DJWD2JXJ",
-    "req-rideaux-occultants-chambre"
+    "req-rideaux-occultants-chambre",
+    "livre-trilogie-mandalas"
   ],
-  "lastRunAt": "2026-11-03T07:02:44.838Z",
+  "lastRunAt": "2026-11-03T12:02:53.845Z",
   "dailyCounts": {
     "date": "2026-11-03",
     "requete": 1,
-    "livre": 0,
+    "livre": 1,
     "comparatif": 0,
     "audible": 0,
     "solo": 0
