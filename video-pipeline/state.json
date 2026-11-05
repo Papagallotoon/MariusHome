@@ -198,13 +198,14 @@
     "req-parure-de-lit-matiere",
     "livre-pack-organisation-2027",
     "req-deco-bali-salon",
-    "req-vase-tendance"
+    "req-vase-tendance",
+    "livre-marque-pages-a-imprimer"
   ],
-  "lastRunAt": "2026-11-05T00:34:14.211Z",
+  "lastRunAt": "2026-11-05T07:04:01.753Z",
   "dailyCounts": {
     "date": "2026-11-05",
     "requete": 1,
-    "livre": 0,
+    "livre": 1,
     "comparatif": 0,
     "audible": 0,
     "solo": 0
