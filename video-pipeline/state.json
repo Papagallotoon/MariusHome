@@ -200,16 +200,17 @@
     "req-deco-bali-salon",
     "req-vase-tendance",
     "livre-marque-pages-a-imprimer",
-    "req-lave-linge-connecte-utile"
+    "req-lave-linge-connecte-utile",
+    "solo-top-paniers-rangement-deco-2026-B09X9ZHMQR"
   ],
-  "lastRunAt": "2026-11-05T12:03:16.801Z",
+  "lastRunAt": "2026-11-05T17:04:01.881Z",
   "dailyCounts": {
     "date": "2026-11-05",
     "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
-    "solo": 0
+    "solo": 1
   },
-  "soloIndex": 118
+  "soloIndex": 119
 }
