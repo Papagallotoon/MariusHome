@@ -199,12 +199,13 @@
     "livre-pack-organisation-2027",
     "req-deco-bali-salon",
     "req-vase-tendance",
-    "livre-marque-pages-a-imprimer"
+    "livre-marque-pages-a-imprimer",
+    "req-lave-linge-connecte-utile"
   ],
-  "lastRunAt": "2026-11-05T07:04:01.753Z",
+  "lastRunAt": "2026-11-05T12:03:16.801Z",
   "dailyCounts": {
     "date": "2026-11-05",
-    "requete": 1,
+    "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
