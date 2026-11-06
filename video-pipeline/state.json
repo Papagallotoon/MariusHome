@@ -202,16 +202,17 @@
     "livre-marque-pages-a-imprimer",
     "req-lave-linge-connecte-utile",
     "solo-top-paniers-rangement-deco-2026-B09X9ZHMQR",
-    "livre-pack-noel-magique"
+    "livre-pack-noel-magique",
+    "req-chambre-provencale"
   ],
-  "lastRunAt": "2026-11-05T21:31:38.009Z",
+  "lastRunAt": "2026-11-06T07:03:12.700Z",
   "dailyCounts": {
-    "date": "2026-11-05",
-    "requete": 2,
-    "livre": 2,
+    "date": "2026-11-06",
+    "requete": 1,
+    "livre": 0,
     "comparatif": 0,
     "audible": 0,
-    "solo": 1
+    "solo": 0
   },
   "soloIndex": 119
 }
