@@ -203,13 +203,14 @@
     "req-lave-linge-connecte-utile",
     "solo-top-paniers-rangement-deco-2026-B09X9ZHMQR",
     "livre-pack-noel-magique",
-    "req-chambre-provencale"
+    "req-chambre-provencale",
+    "livre-coloriages-de-noel-adultes"
   ],
-  "lastRunAt": "2026-11-06T07:03:12.700Z",
+  "lastRunAt": "2026-11-06T12:04:48.935Z",
   "dailyCounts": {
     "date": "2026-11-06",
     "requete": 1,
-    "livre": 0,
+    "livre": 1,
     "comparatif": 0,
     "audible": 0,
     "solo": 0
