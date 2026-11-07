@@ -208,12 +208,13 @@
     "req-cadres-photo-mur",
     "solo-top-parures-de-lit-deco-2026-B07RX7CXF8",
     "req-chambre-industrielle",
-    "livre-etiquettes-cadeaux-de-noel"
+    "livre-etiquettes-cadeaux-de-noel",
+    "req-panier-rangement-salon"
   ],
-  "lastRunAt": "2026-11-07T11:24:46.153Z",
+  "lastRunAt": "2026-11-07T15:03:24.268Z",
   "dailyCounts": {
     "date": "2026-11-07",
-    "requete": 1,
+    "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
