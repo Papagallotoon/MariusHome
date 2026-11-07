@@ -207,13 +207,14 @@
     "livre-coloriages-de-noel-adultes",
     "req-cadres-photo-mur",
     "solo-top-parures-de-lit-deco-2026-B07RX7CXF8",
-    "req-chambre-industrielle"
+    "req-chambre-industrielle",
+    "livre-etiquettes-cadeaux-de-noel"
   ],
-  "lastRunAt": "2026-11-07T07:03:04.905Z",
+  "lastRunAt": "2026-11-07T11:24:46.153Z",
   "dailyCounts": {
     "date": "2026-11-07",
     "requete": 1,
-    "livre": 0,
+    "livre": 1,
     "comparatif": 0,
     "audible": 0,
     "solo": 0
