@@ -212,12 +212,13 @@
     "req-panier-rangement-salon",
     "solo-top-plaids-couvertures-deco-2026-B08PVVVQTZ",
     "req-salon-indien-bollywood",
-    "livre-jeux-baby-shower-garcon"
+    "livre-jeux-baby-shower-garcon",
+    "req-suspension-rotin"
   ],
-  "lastRunAt": "2026-11-08T11:37:01.802Z",
+  "lastRunAt": "2026-11-08T15:32:57.102Z",
   "dailyCounts": {
     "date": "2026-11-08",
-    "requete": 1,
+    "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
