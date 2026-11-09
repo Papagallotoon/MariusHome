@@ -213,13 +213,14 @@
     "solo-top-plaids-couvertures-deco-2026-B08PVVVQTZ",
     "req-salon-indien-bollywood",
     "livre-jeux-baby-shower-garcon",
-    "req-suspension-rotin"
+    "req-suspension-rotin",
+    "req-chambre-bali-cocon"
   ],
-  "lastRunAt": "2026-11-08T15:32:57.102Z",
+  "lastRunAt": "2026-11-09T07:02:58.525Z",
   "dailyCounts": {
-    "date": "2026-11-08",
-    "requete": 2,
-    "livre": 1,
+    "date": "2026-11-09",
+    "requete": 1,
+    "livre": 0,
     "comparatif": 0,
     "audible": 0,
     "solo": 0
