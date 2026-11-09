@@ -214,13 +214,14 @@
     "req-salon-indien-bollywood",
     "livre-jeux-baby-shower-garcon",
     "req-suspension-rotin",
-    "req-chambre-bali-cocon"
+    "req-chambre-bali-cocon",
+    "livre-calendrier-de-l-avent"
   ],
-  "lastRunAt": "2026-11-09T07:02:58.525Z",
+  "lastRunAt": "2026-11-09T12:03:23.550Z",
   "dailyCounts": {
     "date": "2026-11-09",
     "requete": 1,
-    "livre": 0,
+    "livre": 1,
     "comparatif": 0,
     "audible": 0,
     "solo": 0
