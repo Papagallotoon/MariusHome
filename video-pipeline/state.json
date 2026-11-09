@@ -215,12 +215,13 @@
     "livre-jeux-baby-shower-garcon",
     "req-suspension-rotin",
     "req-chambre-bali-cocon",
-    "livre-calendrier-de-l-avent"
+    "livre-calendrier-de-l-avent",
+    "req-tableau-salon-taille"
   ],
-  "lastRunAt": "2026-11-09T12:03:23.550Z",
+  "lastRunAt": "2026-11-09T21:44:10.949Z",
   "dailyCounts": {
     "date": "2026-11-09",
-    "requete": 1,
+    "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
