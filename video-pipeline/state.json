@@ -223,13 +223,14 @@
     "req-aspirateur-laveur-sans-fil",
     "livre-carnet-de-sante-chat",
     "req-salle-de-bain-provencale",
-    "req-guirlande-rideau-lumineux"
+    "req-guirlande-rideau-lumineux",
+    "livre-jeux-de-noel-pour-adultes"
   ],
-  "lastRunAt": "2026-11-12T01:21:53.840Z",
+  "lastRunAt": "2026-11-12T07:03:20.086Z",
   "dailyCounts": {
     "date": "2026-11-12",
     "requete": 1,
-    "livre": 0,
+    "livre": 1,
     "comparatif": 0,
     "audible": 0,
     "solo": 0
