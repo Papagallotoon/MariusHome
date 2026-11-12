@@ -225,16 +225,17 @@
     "req-salle-de-bain-provencale",
     "req-guirlande-rideau-lumineux",
     "livre-jeux-de-noel-pour-adultes",
-    "req-bouquet-lavande-sechee"
+    "req-bouquet-lavande-sechee",
+    "solo-top-plantes-artificielles-deco-2026-B0CJRJ4Z7B"
   ],
-  "lastRunAt": "2026-11-12T12:03:27.087Z",
+  "lastRunAt": "2026-11-12T17:01:50.351Z",
   "dailyCounts": {
     "date": "2026-11-12",
     "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
-    "solo": 0
+    "solo": 1
   },
-  "soloIndex": 121
+  "soloIndex": 122
 }
