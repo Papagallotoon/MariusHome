@@ -224,12 +224,13 @@
     "livre-carnet-de-sante-chat",
     "req-salle-de-bain-provencale",
     "req-guirlande-rideau-lumineux",
-    "livre-jeux-de-noel-pour-adultes"
+    "livre-jeux-de-noel-pour-adultes",
+    "req-bouquet-lavande-sechee"
   ],
-  "lastRunAt": "2026-11-12T07:03:20.086Z",
+  "lastRunAt": "2026-11-12T12:03:27.087Z",
   "dailyCounts": {
     "date": "2026-11-12",
-    "requete": 1,
+    "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
