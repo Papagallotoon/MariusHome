@@ -227,16 +227,17 @@
     "livre-jeux-de-noel-pour-adultes",
     "req-bouquet-lavande-sechee",
     "solo-top-plantes-artificielles-deco-2026-B0CJRJ4Z7B",
-    "livre-mon-budget-familial-2027"
+    "livre-mon-budget-familial-2027",
+    "req-diffuseur-combien-gouttes"
   ],
-  "lastRunAt": "2026-11-12T21:54:27.527Z",
+  "lastRunAt": "2026-11-13T07:02:51.232Z",
   "dailyCounts": {
-    "date": "2026-11-12",
-    "requete": 2,
-    "livre": 2,
+    "date": "2026-11-13",
+    "requete": 1,
+    "livre": 0,
     "comparatif": 0,
     "audible": 0,
-    "solo": 1
+    "solo": 0
   },
   "soloIndex": 122
 }
