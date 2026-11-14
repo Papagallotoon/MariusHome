@@ -231,12 +231,13 @@
     "req-diffuseur-combien-gouttes",
     "livre-bingo-de-noel",
     "req-robot-station-vidage",
-    "livre-journal-de-gratitude-90-jours"
+    "livre-journal-de-gratitude-90-jours",
+    "req-laver-plaid-polaire"
   ],
-  "lastRunAt": "2026-11-14T07:02:54.446Z",
+  "lastRunAt": "2026-11-14T11:52:04.219Z",
   "dailyCounts": {
     "date": "2026-11-14",
-    "requete": 1,
+    "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
