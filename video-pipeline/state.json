@@ -230,13 +230,14 @@
     "livre-mon-budget-familial-2027",
     "req-diffuseur-combien-gouttes",
     "livre-bingo-de-noel",
-    "req-robot-station-vidage"
+    "req-robot-station-vidage",
+    "livre-journal-de-gratitude-90-jours"
   ],
-  "lastRunAt": "2026-11-14T00:15:30.211Z",
+  "lastRunAt": "2026-11-14T07:02:54.446Z",
   "dailyCounts": {
     "date": "2026-11-14",
     "requete": 1,
-    "livre": 0,
+    "livre": 1,
     "comparatif": 0,
     "audible": 0,
     "solo": 0
