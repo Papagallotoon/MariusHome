@@ -238,13 +238,14 @@
     "req-lustre-sputnik-table",
     "livre-mes-habitudes-2027",
     "req-affiches-botaniques",
-    "req-tapis-rond-ou-mettre"
+    "req-tapis-rond-ou-mettre",
+    "livre-menus-de-la-semaine"
   ],
-  "lastRunAt": "2026-11-16T07:02:47.135Z",
+  "lastRunAt": "2026-11-16T12:03:13.438Z",
   "dailyCounts": {
     "date": "2026-11-16",
     "requete": 1,
-    "livre": 0,
+    "livre": 1,
     "comparatif": 0,
     "audible": 0,
     "solo": 0
