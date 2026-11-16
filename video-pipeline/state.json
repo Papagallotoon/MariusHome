@@ -237,13 +237,14 @@
     "livre-mes-mots-meles-enfants",
     "req-lustre-sputnik-table",
     "livre-mes-habitudes-2027",
-    "req-affiches-botaniques"
+    "req-affiches-botaniques",
+    "req-tapis-rond-ou-mettre"
   ],
-  "lastRunAt": "2026-11-15T20:29:26.076Z",
+  "lastRunAt": "2026-11-16T07:02:47.135Z",
   "dailyCounts": {
-    "date": "2026-11-15",
-    "requete": 2,
-    "livre": 1,
+    "date": "2026-11-16",
+    "requete": 1,
+    "livre": 0,
     "comparatif": 0,
     "audible": 0,
     "solo": 0
