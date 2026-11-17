@@ -244,16 +244,17 @@
     "solo-top-robots-aspirateurs-laveurs-2026-B0DSZJKXBC",
     "req-palmier-artificiel-coin",
     "livre-mon-carnet-de-lecture",
-    "req-etagere-flottante-fixer"
+    "req-etagere-flottante-fixer",
+    "solo-top-suspensions-luminaires-deco-2026-B07TSTBMW5"
   ],
-  "lastRunAt": "2026-11-17T17:50:15.293Z",
+  "lastRunAt": "2026-11-17T23:03:14.757Z",
   "dailyCounts": {
     "date": "2026-11-17",
     "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
-    "solo": 0
+    "solo": 1
   },
-  "soloIndex": 124
+  "soloIndex": 125
 }
