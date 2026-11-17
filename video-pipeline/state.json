@@ -243,12 +243,13 @@
     "req-voilage-ou-occultant",
     "solo-top-robots-aspirateurs-laveurs-2026-B0DSZJKXBC",
     "req-palmier-artificiel-coin",
-    "livre-mon-carnet-de-lecture"
+    "livre-mon-carnet-de-lecture",
+    "req-etagere-flottante-fixer"
   ],
-  "lastRunAt": "2026-11-17T13:03:36.089Z",
+  "lastRunAt": "2026-11-17T17:50:15.293Z",
   "dailyCounts": {
     "date": "2026-11-17",
-    "requete": 1,
+    "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
