@@ -106,6 +106,46 @@
    "etsy": "https://www.etsy.com/fr/listing/4607762137"
   },
   {
+   "slug": "calendrier-de-l-avent-couple",
+   "ratio": 0.7071,
+   "titre": "Calendrier de l’Avent pour couple",
+   "sousTitre": "24 moments à deux à imprimer jusqu’à Noël",
+   "prix": "2,99 €",
+   "pages": 10,
+   "extrait": 6,
+   "categorie": "organisation",
+   "intro": "Un calendrier de l’Avent sans chocolat obligatoire : chaque jour, un petit moment à vivre à deux pour ralentir et se retrouver en décembre.",
+   "contenu": [
+    "24 cartes « moments à deux », une par jour",
+    "24 étiquettes numérotées de 1 à 24",
+    "6 cartes vierges à compléter",
+    "12 questions pour se redécouvrir",
+    "Une page mode d’emploi"
+   ],
+   "gumroad": "",
+   "etsy": "https://www.etsy.com/fr/listing/4619578989"
+  },
+  {
+   "slug": "kit-lutin-farceur",
+   "ratio": 0.7071,
+   "titre": "Kit Lutin farceur",
+   "sousTitre": "Tout pour faire venir le lutin de Noël à la maison",
+   "prix": "3,49 €",
+   "pages": 14,
+   "extrait": 6,
+   "categorie": "organisation",
+   "intro": "Le lutin farceur arrive du Pôle Nord début décembre et fait une petite bêtise chaque nuit jusqu’au 24. Ce kit vous donne tout ce qu’il faut, sans vous creuser la tête le soir.",
+   "contenu": [
+    "Lettres d’arrivée et de départ du lutin",
+    "Carte d’identité du lutin et ses règles d’or",
+    "24 idées de bêtises faciles, à cocher",
+    "24 petits mots du lutin + 6 cartes vierges",
+    "Panneaux rigolos, médailles et tickets magiques"
+   ],
+   "gumroad": "",
+   "etsy": "https://www.etsy.com/fr/listing/4619577917"
+  },
+  {
    "slug": "marque-pages-a-imprimer",
    "ratio": 0.7071,
    "titre": "Marque-pages",
@@ -227,6 +267,25 @@
    ],
    "gumroad": "",
    "etsy": "https://www.etsy.com/fr/listing/4608303261"
+  },
+  {
+   "slug": "bingo-de-noel-en-images",
+   "ratio": 0.7071,
+   "titre": "Bingo de Noël en images",
+   "sousTitre": "30 cartes illustrées, sans savoir lire, dès 3 ans",
+   "prix": "2,99 €",
+   "pages": 21,
+   "extrait": 6,
+   "categorie": "jeux",
+   "intro": "Un bingo tout en dessins : pas besoin de savoir lire ! Parfait pour les petits dès 3 ans, la maternelle, les repas de famille et les goûters de Noël.",
+   "contenu": [
+    "30 grandes cartes de bingo illustrées, toutes différentes",
+    "27 cartes d’appel avec le dessin et son nom",
+    "Une planche de pions à découper",
+    "Les règles et des variantes"
+   ],
+   "gumroad": "",
+   "etsy": "https://www.etsy.com/fr/listing/4614413949"
   },
   {
    "slug": "50-mandalas-voyage-au-coeur-de-la-nature",
