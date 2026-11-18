@@ -245,16 +245,17 @@
     "req-palmier-artificiel-coin",
     "livre-mon-carnet-de-lecture",
     "req-etagere-flottante-fixer",
-    "solo-top-suspensions-luminaires-deco-2026-B07TSTBMW5"
+    "solo-top-suspensions-luminaires-deco-2026-B07TSTBMW5",
+    "req-miroirs-composition"
   ],
-  "lastRunAt": "2026-11-17T23:03:14.757Z",
+  "lastRunAt": "2026-11-18T07:02:55.472Z",
   "dailyCounts": {
-    "date": "2026-11-17",
-    "requete": 2,
-    "livre": 1,
+    "date": "2026-11-18",
+    "requete": 1,
+    "livre": 0,
     "comparatif": 0,
     "audible": 0,
-    "solo": 1
+    "solo": 0
   },
   "soloIndex": 125
 }
