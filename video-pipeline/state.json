@@ -247,12 +247,13 @@
     "req-etagere-flottante-fixer",
     "solo-top-suspensions-luminaires-deco-2026-B07TSTBMW5",
     "req-miroirs-composition",
-    "livre-calendrier-de-l-avent-couple"
+    "livre-calendrier-de-l-avent-couple",
+    "req-ranger-jouets-paniers"
   ],
-  "lastRunAt": "2026-11-18T12:02:49.156Z",
+  "lastRunAt": "2026-11-18T17:30:28.106Z",
   "dailyCounts": {
     "date": "2026-11-18",
-    "requete": 1,
+    "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
