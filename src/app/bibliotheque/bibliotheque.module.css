@@ -78,11 +78,15 @@
 
 /* ---------- Liseuse ---------- */
 .lecteur { min-height: calc(100svh - 82px); display: flex; flex-direction: column; color: var(--creme); background: radial-gradient(ellipse at 50% 0%, #3a5040 0%, var(--foret) 65%); }
-.barre { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 20px; border-bottom: 1px solid rgba(244,239,228,.1); }
+.barre { position: sticky; top: 0; z-index: 5; background: rgba(28,44,34,.96); display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 20px; border-bottom: 1px solid rgba(244,239,228,.1); }
 .retour { text-decoration: none; color: #d8cdb5; font-size: .9rem; white-space: nowrap; }
 .retour:hover { color: var(--or); }
 .titreLivre { font-size: 1.35rem !important; color: var(--creme); text-align: center; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
 .prixBarre { color: var(--or); font-size: .9rem; white-space: nowrap; }
+.achatBarre { white-space: nowrap; text-decoration: none; font-size: .88rem; font-weight: 500; padding: 8px 16px; border-radius: 999px; background: var(--or); color: var(--foret); }
+.achatBarre:hover { background: var(--creme); }
+.ctaAchat { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 0 16px 34px; font-size: .8rem; color: #d8cdb5; }
+.ctaAchat .bouton { width: min(460px, 100%); justify-content: center; font-weight: 500; }
 .scene { flex: 1; display: grid; place-items: center; padding: 22px 16px; }
 .page { position: relative; padding: 0; border: 0; cursor: pointer; width: min(680px, 100%, calc((100svh - 260px) * var(--ratio, .707))); aspect-ratio: var(--ratio, .707); max-width: 100%; background: #fff; border-radius: 3px 8px 8px 3px; box-shadow: 0 30px 60px -20px rgba(0,0,0,.6), 0 0 0 1px rgba(0,0,0,.05); overflow: hidden; }
 .page img { width: 100%; height: 100%; object-fit: contain; background: #fff; }
@@ -115,6 +119,8 @@
 @keyframes entreGauche { from { opacity: 0; transform: translateX(-40px); } to { opacity: 1; transform: none; } }
 
 @media (max-width: 760px) {
+  .barre { flex-wrap: wrap; gap: 8px 12px; padding: 10px 16px; }
+  .titreLivre { order: 3; flex-basis: 100%; font-size: 1.05rem !important; white-space: nowrap !important; line-height: 1.3 !important; margin: 0 !important; }
   .introGrille { grid-template-columns: 1fr; gap: 30px; }
   .introImage { width: 100%; max-width: 320px; margin: 0 auto; }
   .grille { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 16px; }

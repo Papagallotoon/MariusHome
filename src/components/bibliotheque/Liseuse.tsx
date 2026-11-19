@@ -43,7 +43,13 @@ export default function Liseuse({ livre, boutique }: Props) {
       <div className={s.barre}>
         <Link href="/bibliotheque" className={s.retour}>← La bibliothèque</Link>
         <h1 className={s.titreLivre}>{livre.titre}</h1>
-        <span className={s.prixBarre}>{livre.prix}</span>
+        {etsy ? (
+          <a className={s.achatBarre} href={etsy} target="_blank" rel="noopener">
+            Acheter · {livre.prix}
+          </a>
+        ) : (
+          <span className={s.prixBarre}>{livre.prix}</span>
+        )}
       </div>
 
       <div
@@ -89,7 +95,7 @@ export default function Liseuse({ livre, boutique }: Props) {
                   </a>
                 )}
                 {etsy && (
-                  <a className={`${s.bouton} ${gumroad ? s.boutonClair : s.boutonPlein}`} href={etsy} target="_blank" rel="noopener noreferrer">
+                  <a className={`${s.bouton} ${gumroad ? s.boutonClair : s.boutonPlein}`} href={etsy} target="_blank" rel="noopener">
                     {gumroad ? "Voir sur Etsy" : "Acheter sur Etsy"}
                   </a>
                 )}
@@ -117,6 +123,15 @@ export default function Liseuse({ livre, boutique }: Props) {
           {page === N ? "Fin de l’extrait →" : "Suivant →"}
         </button>
       </div>
+
+      {etsy && page <= N && (
+        <div className={s.ctaAchat}>
+          <a className={`${s.bouton} ${s.boutonPlein}`} href={etsy} target="_blank" rel="noopener">
+            Télécharger le PDF complet · {livre.prix}
+          </a>
+          <span>{livre.pages} pages · téléchargement immédiat sur Etsy</span>
+        </div>
+      )}
     </section>
   );
 }
