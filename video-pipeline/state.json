@@ -251,13 +251,14 @@
     "req-ranger-jouets-paniers",
     "solo-top-tableaux-decoration-salon-2026-B09YHFR4G4",
     "req-changer-chambre-parure",
-    "livre-bingo-de-noel-en-images"
+    "livre-bingo-de-noel-en-images",
+    "req-miroir-oriental"
   ],
-  "lastRunAt": "2026-11-19T19:44:32.012Z",
+  "lastRunAt": "2026-11-20T01:05:44.881Z",
   "dailyCounts": {
-    "date": "2026-11-19",
+    "date": "2026-11-20",
     "requete": 1,
-    "livre": 1,
+    "livre": 0,
     "comparatif": 0,
     "audible": 0,
     "solo": 0
