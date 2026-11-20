@@ -254,16 +254,17 @@
     "livre-bingo-de-noel-en-images",
     "req-miroir-oriental",
     "livre-kit-lutin-farceur",
-    "req-horloge-vintage"
+    "req-horloge-vintage",
+    "solo-top-tapis-deco-tendance-2026-B0DVCHZK56"
   ],
-  "lastRunAt": "2026-11-20T12:03:34.653Z",
+  "lastRunAt": "2026-11-20T17:29:07.019Z",
   "dailyCounts": {
     "date": "2026-11-20",
     "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
-    "solo": 0
+    "solo": 1
   },
-  "soloIndex": 126
+  "soloIndex": 127
 }
