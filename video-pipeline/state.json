@@ -253,12 +253,13 @@
     "req-changer-chambre-parure",
     "livre-bingo-de-noel-en-images",
     "req-miroir-oriental",
-    "livre-kit-lutin-farceur"
+    "livre-kit-lutin-farceur",
+    "req-horloge-vintage"
   ],
-  "lastRunAt": "2026-11-20T07:02:46.011Z",
+  "lastRunAt": "2026-11-20T12:03:34.653Z",
   "dailyCounts": {
     "date": "2026-11-20",
-    "requete": 1,
+    "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
