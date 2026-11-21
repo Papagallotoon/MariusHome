@@ -256,16 +256,17 @@
     "livre-kit-lutin-farceur",
     "req-horloge-vintage",
     "solo-top-tapis-deco-tendance-2026-B0DVCHZK56",
-    "livre-journal-anti-stress-30-jours"
+    "livre-journal-anti-stress-30-jours",
+    "req-terrasse-boheme"
   ],
-  "lastRunAt": "2026-11-20T22:19:04.118Z",
+  "lastRunAt": "2026-11-21T07:03:01.757Z",
   "dailyCounts": {
-    "date": "2026-11-20",
-    "requete": 2,
-    "livre": 2,
+    "date": "2026-11-21",
+    "requete": 1,
+    "livre": 0,
     "comparatif": 0,
     "audible": 0,
-    "solo": 1
+    "solo": 0
   },
   "soloIndex": 127
 }
