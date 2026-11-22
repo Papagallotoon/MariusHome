@@ -263,16 +263,17 @@
     "solo-top-vases-deco-tendance-2026-B0DY6X2ZJ7",
     "req-grand-miroir-entree",
     "livre-mes-labyrinthes-enfants",
-    "req-cadre-chene-affiche"
+    "req-cadre-chene-affiche",
+    "solo-meilleures-guirlandes-lumineuses-2026-B0FC6KV1VW"
   ],
-  "lastRunAt": "2026-11-22T16:35:50.574Z",
+  "lastRunAt": "2026-11-22T21:09:03.548Z",
   "dailyCounts": {
     "date": "2026-11-22",
     "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
-    "solo": 0
+    "solo": 1
   },
-  "soloIndex": 128
+  "soloIndex": 129
 }
