@@ -267,16 +267,17 @@
     "solo-meilleures-guirlandes-lumineuses-2026-B0FC6KV1VW",
     "req-rideaux-velours-chic",
     "livre-planner-bougies",
-    "req-vase-verre-bougie"
+    "req-vase-verre-bougie",
+    "solo-meilleures-bougies-parfumees-2026-B07DHNYP2Z"
   ],
-  "lastRunAt": "2026-11-23T15:35:40.434Z",
+  "lastRunAt": "2026-11-23T20:30:10.089Z",
   "dailyCounts": {
     "date": "2026-11-23",
     "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
-    "solo": 0
+    "solo": 1
   },
-  "soloIndex": 129
+  "soloIndex": 130
 }
