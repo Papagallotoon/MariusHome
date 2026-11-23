@@ -266,12 +266,13 @@
     "req-cadre-chene-affiche",
     "solo-meilleures-guirlandes-lumineuses-2026-B0FC6KV1VW",
     "req-rideaux-velours-chic",
-    "livre-planner-bougies"
+    "livre-planner-bougies",
+    "req-vase-verre-bougie"
   ],
-  "lastRunAt": "2026-11-23T12:03:34.638Z",
+  "lastRunAt": "2026-11-23T15:35:40.434Z",
   "dailyCounts": {
     "date": "2026-11-23",
-    "requete": 1,
+    "requete": 2,
     "livre": 1,
     "comparatif": 0,
     "audible": 0,
