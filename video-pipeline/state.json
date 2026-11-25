@@ -274,13 +274,14 @@
     "req-guirlande-led-wifi",
     "solo-meilleurs-cadres-photo-affiches-2026-B09RCMV6T3",
     "livre-maison-en-ordre-52-semaines",
-    "livre-savons-maison-a-froid"
+    "livre-savons-maison-a-froid",
+    "livre-planner-de-noel"
   ],
-  "lastRunAt": "2026-11-25T02:58:39.317Z",
+  "lastRunAt": "2026-11-25T07:03:04.357Z",
   "dailyCounts": {
     "date": "2026-11-25",
     "requete": 0,
-    "livre": 1,
+    "livre": 2,
     "comparatif": 0,
     "audible": 0,
     "solo": 0
