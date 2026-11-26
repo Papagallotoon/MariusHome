@@ -280,13 +280,14 @@
     "solo-top-aspirateurs-sans-fil-2026-B0C5MDCNLZ",
     "livre-planner-voyage",
     "livre-cosmetiques-maison",
-    "livre-planner-demenagement"
+    "livre-planner-demenagement",
+    "livre-zero-dechet-en-30-jours"
   ],
-  "lastRunAt": "2026-11-26T07:03:55.389Z",
+  "lastRunAt": "2026-11-26T12:03:08.056Z",
   "dailyCounts": {
     "date": "2026-11-26",
     "requete": 0,
-    "livre": 2,
+    "livre": 3,
     "comparatif": 0,
     "audible": 0,
     "solo": 0
