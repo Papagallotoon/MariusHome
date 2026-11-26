@@ -281,16 +281,17 @@
     "livre-planner-voyage",
     "livre-cosmetiques-maison",
     "livre-planner-demenagement",
-    "livre-zero-dechet-en-30-jours"
+    "livre-zero-dechet-en-30-jours",
+    "solo-top-coussins-deco-tendance-2026-B0FF992F5M"
   ],
-  "lastRunAt": "2026-11-26T12:03:08.056Z",
+  "lastRunAt": "2026-11-26T18:36:41.264Z",
   "dailyCounts": {
     "date": "2026-11-26",
     "requete": 0,
     "livre": 3,
     "comparatif": 0,
     "audible": 0,
-    "solo": 0
+    "solo": 1
   },
-  "soloIndex": 132
+  "soloIndex": 133
 }
