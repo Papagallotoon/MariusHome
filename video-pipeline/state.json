@@ -284,13 +284,14 @@
     "livre-zero-dechet-en-30-jours",
     "solo-top-coussins-deco-tendance-2026-B0FF992F5M",
     "livre-planner-micro-entrepreneur-2027",
-    "livre-journal-de-grossesse"
+    "livre-journal-de-grossesse",
+    "livre-carnet-de-recettes-de-famille"
   ],
-  "lastRunAt": "2026-11-27T07:03:03.869Z",
+  "lastRunAt": "2026-11-27T12:03:16.915Z",
   "dailyCounts": {
     "date": "2026-11-27",
     "requete": 0,
-    "livre": 1,
+    "livre": 2,
     "comparatif": 0,
     "audible": 0,
     "solo": 0
