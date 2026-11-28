@@ -287,16 +287,17 @@
     "livre-journal-de-grossesse",
     "livre-carnet-de-recettes-de-famille",
     "livre-dino-doodles-aventure-coloriage",
-    "solo-top-deco-luxe-maison-2026-B0GP89Q98N"
+    "solo-top-deco-luxe-maison-2026-B0GP89Q98N",
+    "solo-top-diffuseurs-parfum-deco-2026-B07WHGPY1M"
   ],
-  "lastRunAt": "2026-11-27T23:38:33.766Z",
+  "lastRunAt": "2026-11-28T07:03:15.327Z",
   "dailyCounts": {
-    "date": "2026-11-27",
+    "date": "2026-11-28",
     "requete": 0,
-    "livre": 3,
+    "livre": 0,
     "comparatif": 0,
     "audible": 0,
     "solo": 1
   },
-  "soloIndex": 134
+  "soloIndex": 135
 }
